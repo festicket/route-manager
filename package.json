@@ -4,7 +4,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "rollup src/index.js --o dist/bundle.js --f es"
+    "build": "rollup src/index.js --o dist/index.js --f es"
   },
   "dependencies": {
     "rollup": "^0.54.1"
