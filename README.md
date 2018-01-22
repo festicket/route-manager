@@ -1,2 +1,1 @@
 # sample-react-components-library
-.
