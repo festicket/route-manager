@@ -1,7 +1,9 @@
 [ignore]
 .*/dist/.*
 .*/node_modules/.*
-.*/rollup.config.js
+.*/rollup\.config\.js
+.*/commitlint\.config\.js
+.*/package\.json
 
 [include]
 
