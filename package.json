@@ -4,9 +4,13 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "rollup src/index.js --o dist/index.js --f es"
+    "build": "rollup src/index.js --o dist/index.js --f es",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^6.0.2",
+    "@commitlint/config-angular": "^6.0.2",
     "rollup": "^0.54.1"
   }
 }
