@@ -1,3 +1,3 @@
-import ExampleComponent from './ExampleComponent/index.js';
+import ExampleComponent from './ExampleComponent';
 
 export { ExampleComponent };

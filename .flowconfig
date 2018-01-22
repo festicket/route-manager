@@ -1,0 +1,15 @@
+[ignore]
+.*/dist/.*
+.*/node_modules/.*
+.*/rollup.config.js
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+all=true
+
+[strict]

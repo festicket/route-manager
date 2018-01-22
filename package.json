@@ -4,7 +4,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "rollup src/index.js --o dist/index.js --f es",
+    "build": "flow check && rollup --config",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint src/**/*"
   },
@@ -14,14 +14,19 @@
     "@commitlint/config-angular": "^6.0.2",
     "@festicket/eslint-config": "^1.0.0",
     "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
+    "babel-preset-flow": "^6.23.0",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
+    "flow-bin": "^0.63.1",
     "husky": "^0.14.3",
-    "rollup": "^0.54.1"
+    "rollup": "^0.54.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-node-resolve": "^3.0.2"
   }
 }
