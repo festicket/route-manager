@@ -27,13 +27,13 @@
     ]
   },
   "dependencies": {
-    "@storybook/react": "^3.3.10",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "styled-components": "^3.0.2"
   },
   "devDependencies": {
+    "@storybook/react": "^3.3.10",
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-angular": "^6.0.2",
     "@festicket/eslint-config": "^1.0.0",
