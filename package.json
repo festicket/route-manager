@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@storybook/react": "^3.3.10",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
@@ -23,6 +24,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
+    "babel-plugin-flow-react-proptypes": "^14.0.2",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.16.0",
@@ -42,6 +44,7 @@
   },
   "peerDependencies": {
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "prop-types": "^15.6.0"
   }
 }

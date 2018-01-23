@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function ExampleComponent({ name }) {
   return React.createElement(
@@ -9,5 +10,8 @@ function ExampleComponent({ name }) {
     '.'
   );
 }
+ExampleComponent.propTypes = {
+  name: PropTypes.string.isRequired
+};
 
 export { ExampleComponent };
