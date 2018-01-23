@@ -7,7 +7,8 @@
     "build": "flow check && rollup --config",
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "lint": "eslint src/**/*"
+    "lint": "eslint src/**/*",
+    "postinstall": "flow-typed install"
   },
   "dependencies": {
     "@storybook/react": "^3.3.10"
@@ -29,6 +30,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "flow-bin": "^0.63.1",
+    "flow-typed": "^2.2.3",
     "husky": "^0.14.3",
     "require-context": "^1.0.2",
     "rollup": "^0.54.1",
