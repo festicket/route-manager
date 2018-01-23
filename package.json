@@ -27,7 +27,8 @@
     "@storybook/react": "^3.3.10",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "styled-components": "^3.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
@@ -68,6 +69,7 @@
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "styled-components": "^3.0.2"
   }
 }
