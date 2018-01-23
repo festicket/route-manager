@@ -19,6 +19,7 @@ export default {
         'node_modules/react-dom/**',
         'node_modules/prop-types/**',
         'node_modules/create-react-class/**',
+        'node_modules/@storybook/**',
       ],
     }),
     resolve({
