@@ -11,7 +11,9 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "flow check && lint-staged",
-    "lint": "eslint ./src/**/* --ext .js --ext .jsx",
+    "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
+    "lint:css": "stylelint ./src/**/*",
+    "lint": "npm run lint:js && npm run lint:css",
     "test": "jest",
     "postinstall": "flow-typed install --ignoreDeps peer",
     "prepublish": "npm run build"
@@ -19,6 +21,7 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint --fix",
+      "stylelint",
       "jest --bail --findRelatedTests",
       "git add"
     ]
@@ -64,7 +67,11 @@
     "rollup": "^0.54.1",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-node-resolve": "^3.0.2",
-    "rollup-plugin-peer-deps-external": "^2.0.0"
+    "rollup-plugin-peer-deps-external": "^2.0.0",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.2.2"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
