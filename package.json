@@ -33,10 +33,10 @@
     "styled-components": "^3.0.2"
   },
   "devDependencies": {
-    "@storybook/react": "^3.3.10",
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-angular": "^6.0.2",
     "@festicket/eslint-config": "^1.0.0",
+    "@storybook/react": "^3.3.10",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
