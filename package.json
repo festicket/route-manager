@@ -7,16 +7,16 @@
   ],
   "private": true,
   "scripts": {
-    "build": "flow check && rollup --config",
+    "build": "./scripts/ci/build",
+    "lint:js": "./scripts/ci/lint:js",
+    "lint:css": "./scripts/ci/lint:css",
+    "lint": "./scripts/ci/lint",
+    "test": "./scripts/ci/test",
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "flow check && lint-staged",
-    "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
-    "lint:css": "stylelint ./src/**/*",
-    "lint": "npm run lint:js && npm run lint:css",
-    "test": "jest",
     "postinstall": "flow-typed install --ignoreDeps peer",
-    "prepublish": "npm run build"
+    "prepublish": "./scripts/ci/build"
   },
   "lint-staged": {
     "*.{js,jsx}": [
