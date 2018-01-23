@@ -5,4 +5,14 @@ module.exports = {
   env: {
     'jest/globals': true,
   },
+  settings: {
+    'import/resolver': {
+      jest: {
+        jestConfigFile: './jest.config.local.js',
+      },
+    },
+  },
+  rules: {
+    'import/no-extraneous-dependencies': ['off'],
+  },
 };

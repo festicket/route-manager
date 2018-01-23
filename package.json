@@ -8,7 +8,8 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint ./src/**/* --ext .js --ext .jsx",
-    "test": "NODE_ENV=test jest",
+    "test": "jest --config=jest.config.local.js",
+    "test:ci": "jest --config=jest.config.ci.js",
     "postinstall": "flow-typed install --ignoreDeps peer"
   },
   "dependencies": {
@@ -32,6 +33,7 @@
     "babel-preset-react": "^6.24.1",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-jest": "^1.1.0",
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jest": "^21.7.0",

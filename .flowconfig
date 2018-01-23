@@ -14,5 +14,6 @@
 
 [options]
 all=true
+module.name_mapper='^@festicket\/sample-react-components-library$' -> '<PROJECT_ROOT>/src/'
 
 [strict]
