@@ -1,7 +1,8 @@
 {
   "name": "sample-react-components-library",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": ["dist/"],
   "private": true,
   "scripts": {
     "build": "flow check && rollup --config",
