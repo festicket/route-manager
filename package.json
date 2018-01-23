@@ -15,7 +15,7 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "flow check && lint-staged",
-    "postinstall": "flow-typed install --ignoreDeps peer",
+    "postinstall": "flow-typed install --overwrite --ignoreDeps peer",
     "prepublish": "./scripts/ci/build"
   },
   "lint-staged": {
@@ -58,7 +58,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "flow-bin": "^0.63.1",
-    "flow-typed": "^2.2.3",
+    "flow-typed": "flowtype/flow-typed#master",
     "husky": "^0.14.3",
     "jest": "^22.1.4",
     "jest-enzyme": "^4.0.2",
