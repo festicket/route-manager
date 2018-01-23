@@ -8,7 +8,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       jest: {
-        jestConfigFile: './jest.config.local.js',
+        jestConfigFile: './jest.config.js',
       },
     },
   },

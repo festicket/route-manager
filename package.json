@@ -9,8 +9,7 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint ./src/**/* --ext .js --ext .jsx",
-    "test": "jest --config=jest.config.local.js",
-    "test:ci": "jest --config=jest.config.ci.js",
+    "test": "jest --config=jest.config.js",
     "postinstall": "flow-typed install --ignoreDeps peer",
     "prepublish": "npm run build"
   },
