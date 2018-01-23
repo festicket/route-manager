@@ -1,5 +1,5 @@
 {
-  "name": "sample-react-components-library",
+  "name": "@festicket/sample-react-components-library",
   "version": "1.0.0",
   "main": "dist/index.js",
   "files": [
