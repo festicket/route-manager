@@ -1,6 +1,6 @@
 import React from 'react';
-import Component from './';
 import renderer from 'react-test-renderer';
+import Component from './';
 
 it('renders correctly', () => {
   const tree = renderer.create(<Component name="Ben" />).toJSON();
