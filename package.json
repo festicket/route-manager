@@ -10,10 +10,18 @@
     "build": "flow check && rollup --config",
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
+    "precommit": "lint-staged",
     "lint": "eslint ./src/**/* --ext .js --ext .jsx",
-    "test": "jest --config=jest.config.js",
+    "test": "jest",
     "postinstall": "flow-typed install --ignoreDeps peer",
     "prepublish": "npm run build"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "jest --bail --findRelatedTests",
+      "git add"
+    ]
   },
   "dependencies": {
     "@storybook/react": "^3.3.10",
@@ -46,6 +54,7 @@
     "flow-typed": "^2.2.3",
     "husky": "^0.14.3",
     "jest": "^22.1.4",
+    "lint-staged": "^6.0.1",
     "react-test-renderer": "^16.2.0",
     "rollup": "^0.54.1",
     "rollup-plugin-babel": "^3.0.3",
