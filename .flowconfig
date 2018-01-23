@@ -5,6 +5,7 @@
 .*/commitlint\.config\.js
 .*/package\.json
 .*/\.storybook/config\.js
+.*/setupTests\.js
 
 [include]
 

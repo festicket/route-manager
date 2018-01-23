@@ -10,7 +10,7 @@
     "build": "flow check && rollup --config",
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "precommit": "lint-staged",
+    "precommit": "flow check && lint-staged",
     "lint": "eslint ./src/**/* --ext .js --ext .jsx",
     "test": "jest",
     "postinstall": "flow-typed install --ignoreDeps peer",
@@ -18,7 +18,6 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "flow check",
       "eslint --fix",
       "jest --bail --findRelatedTests",
       "git add"
@@ -43,6 +42,9 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.0",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-import-resolver-jest": "^1.1.0",
@@ -55,6 +57,7 @@
     "flow-typed": "^2.2.3",
     "husky": "^0.14.3",
     "jest": "^22.1.4",
+    "jest-enzyme": "^4.0.2",
     "lint-staged": "^6.0.1",
     "react-test-renderer": "^16.2.0",
     "rollup": "^0.54.1",

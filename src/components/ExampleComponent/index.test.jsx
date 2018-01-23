@@ -1,8 +1,9 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { ExampleComponent } from '@festicket/sample-react-components-library';
 
 it('renders correctly', () => {
-  const tree = renderer.create(<ExampleComponent name="Ben" />).toJSON();
-  expect(tree).toMatchSnapshot();
+  const tree = shallow(<ExampleComponent name="Ben" />);
+  expect(toJson(tree)).toMatchSnapshot();
 });
