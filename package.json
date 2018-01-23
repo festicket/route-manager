@@ -2,7 +2,9 @@
   "name": "sample-react-components-library",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "private": true,
   "scripts": {
     "build": "flow check && rollup --config",
@@ -47,7 +49,6 @@
     "react-test-renderer": "^16.2.0",
     "rollup": "^0.54.1",
     "rollup-plugin-babel": "^3.0.3",
-    "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.0.0"
   },
