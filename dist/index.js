@@ -1,10 +1,12 @@
 import React from 'react';
 
-function ExampleComponent() {
+function ExampleComponent({ name }) {
   return React.createElement(
     'div',
     null,
-    'Testing.'
+    'Hi ',
+    name,
+    '.'
   );
 }
 

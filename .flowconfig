@@ -4,6 +4,7 @@
 .*/rollup\.config\.js
 .*/commitlint\.config\.js
 .*/package\.json
+.*/\.storybook/config\.js
 
 [include]
 

@@ -8,10 +8,13 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint src/**/*",
-    "postinstall": "flow-typed install"
+    "postinstall": "flow-typed install --ignoreDeps peer"
   },
   "dependencies": {
-    "@storybook/react": "^3.3.10"
+    "@storybook/react": "^3.3.10",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
@@ -32,7 +35,6 @@
     "flow-bin": "^0.63.1",
     "flow-typed": "^2.2.3",
     "husky": "^0.14.3",
-    "require-context": "^1.0.2",
     "rollup": "^0.54.1",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.2.6",
