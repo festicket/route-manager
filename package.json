@@ -8,6 +8,7 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint src/**/*",
+    "test": "NODE_ENV=test jest",
     "postinstall": "flow-typed install --ignoreDeps peer"
   },
   "dependencies": {
@@ -24,9 +25,11 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.1.0",
     "babel-plugin-flow-react-proptypes": "^14.0.2",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-babel": "^4.1.2",
@@ -36,6 +39,8 @@
     "flow-bin": "^0.63.1",
     "flow-typed": "^2.2.3",
     "husky": "^0.14.3",
+    "jest": "^22.1.4",
+    "react-test-renderer": "^16.2.0",
     "rollup": "^0.54.1",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.2.6",
@@ -43,8 +48,8 @@
     "rollup-plugin-peer-deps-external": "^2.0.0"
   },
   "peerDependencies": {
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "prop-types": "^15.6.0"
+    "react-dom": "^16.0.0"
   }
 }

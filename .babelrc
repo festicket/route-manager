@@ -1,4 +1,9 @@
 {
-  "presets": ["flow"],
-  "plugins": ["transform-react-jsx", "flow-react-proptypes"]
+  "presets": ["react"],
+  "plugins": ["flow-react-proptypes"],
+  "env": {
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
 }
