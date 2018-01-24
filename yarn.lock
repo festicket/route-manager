@@ -172,6 +172,10 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@festicket/eslint-config/-/eslint-config-1.0.0.tgz#a16de2e12c94d711a2eae376b7ecf032a8e7b9d1"
 
+"@festicket/react-generators@festicket/sample-react-components-library#master":
+  version "0.0.0"
+  resolved "git+ssh://git@github.com/festicket/sample-react-components-library.git#d668efd38b435618b84a7571e35e916c37435ad2"
+
 "@marionebl/sander@^0.6.0":
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@marionebl/sander/-/sander-0.6.1.tgz#1958965874f24bc51be48875feb50d642fc41f7b"
