@@ -1,9 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<styled.div>
-  Hi 
-  Ben
-  .
-</styled.div>
+.c0 {
+  color: red;
+}
+
+<ExampleComponent
+  name="Ben"
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      Hi 
+      Ben
+      .
+    </div>
+  </styled.div>
+</ExampleComponent>
 `;

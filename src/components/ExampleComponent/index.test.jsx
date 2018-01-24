@@ -1,9 +1,8 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { mount } from 'enzyme';
 import { ExampleComponent } from '@festicket/sample-react-components-library';
 
 it('renders correctly', () => {
-  const tree = shallow(<ExampleComponent name="Ben" />);
-  expect(toJson(tree)).toMatchSnapshot();
+  const tree = mount(<ExampleComponent name="Ben" />);
+  expect(tree).toMatchSnapshot();
 });

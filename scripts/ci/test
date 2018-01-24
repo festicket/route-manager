@@ -1,2 +1,1 @@
-flow check
-jest
+npm run test
