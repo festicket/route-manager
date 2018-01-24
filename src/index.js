@@ -1,3 +1,1 @@
-import ExampleComponent from './components/ExampleComponent';
-
-export { ExampleComponent };
+export { default as ExampleComponent } from './components/ExampleComponent';
