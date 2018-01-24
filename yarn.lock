@@ -172,9 +172,9 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@festicket/eslint-config/-/eslint-config-1.0.0.tgz#a16de2e12c94d711a2eae376b7ecf032a8e7b9d1"
 
-"@festicket/react-generators@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@festicket/react-generators/-/react-generators-0.1.1.tgz#9496922c8295526c29e282be767f56114b9532ba"
+"@festicket/react-generators@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@festicket/react-generators/-/react-generators-0.1.2.tgz#9800a6e5fbbe583a3923420745080929b3947082"
   dependencies:
     inquirer-directory "^2.1.0"
 
