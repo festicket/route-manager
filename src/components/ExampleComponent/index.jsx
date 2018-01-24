@@ -1,12 +1,19 @@
+// Lib
+// -------------
 import React from 'react';
 
+// Components
+// -------------
+
 // Styles
-import { Wrapper } from './styles';
+// -------------
+// import { Wrapper } from './styles';
 
-type Props = {
-  name: string,
-};
+// Flow Types
+// -------------
+// type Props = {
+// };
 
-export default function ExampleComponent({ name }: Props) {
-  return <Wrapper>Hi {name}.</Wrapper>;
+export default function ExampleComponent() {
+  return <div />;
 }

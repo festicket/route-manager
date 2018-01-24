@@ -4,5 +4,5 @@ import ExampleComponent from './';
 
 storiesOf('ExampleComponent', module)
   .add('default', () => (
-    <ExampleComponent name="Ben" />
+    <ExampleComponent />
   ));
