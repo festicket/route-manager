@@ -7,6 +7,7 @@
 .*/\.storybook/config\.js
 .*/setupTests\.js
 .*/svg\.template\.js
+.*/plopfile\.js
 .*/react-generators/.*
 
 [include]
