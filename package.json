@@ -11,7 +11,7 @@
     "build": "rollup --config",
     "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
     "lint:css": "stylelint ./src/**/*",
-    "svg": "svgr src/svgs -d src/components --template svg.template.js --single-quote",
+    "svg": "svgr svgs -d src/components --template svg.template.js --single-quote",
     "lint": "npm run lint:js && npm run lint:css",
     "flow": "flow check",
     "test": "jest",
