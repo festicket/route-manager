@@ -7,7 +7,8 @@
   ],
   "private": true,
   "scripts": {
-    "build": "npm run test && rollup --config",
+    "prebuild": "npm run test",
+    "build": "rollup --config",
     "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
     "lint:css": "stylelint ./src/**/*",
     "svg": "svgr src/svgs -d src/components --template svg.template.js --single-quote",
