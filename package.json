@@ -11,7 +11,6 @@
     "prebuild": "npm run test",
     "build": "rollup --config",
     "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
-    "lint:css": "stylelint ./src/**/*",
     "svg": "svgr svgs -d src/components --template svg.template.js --single-quote",
     "lint": "npm run lint:js && npm run lint:css",
     "flow": "flow",
@@ -26,7 +25,6 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint --fix",
-      "stylelint",
       "jest --bail --findRelatedTests",
       "git add"
     ]
@@ -78,10 +76,6 @@
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.0.0",
-    "stylelint": "^8.4.0",
-    "stylelint-config-standard": "^18.0.0",
-    "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.2.2",
     "svgr": "^1.7.0"
   },
   "peerDependencies": {
