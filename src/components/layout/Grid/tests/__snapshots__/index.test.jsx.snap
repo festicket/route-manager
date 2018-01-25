@@ -1,0 +1,551 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Grid /> with 1 column 1`] = `
+.c0 {
+  margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+<Primitive
+  className="c0"
+  element="div"
+>
+  <Styled(Primitive)
+    width={1}
+  >
+    Item 1
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={1}
+  >
+    Item 2
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={1}
+  >
+    Item 3
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={1}
+  >
+    Item 4
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={1}
+  >
+    Item 5
+  </Styled(Primitive)>
+</Primitive>
+`;
+
+exports[`<Grid /> with 2 columns 1`] = `
+.c0 {
+  margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+<Primitive
+  className="c0"
+  element="div"
+>
+  <Styled(Primitive)
+    width={0.5}
+  >
+    Item 1
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.5}
+  >
+    Item 2
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.5}
+  >
+    Item 3
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.5}
+  >
+    Item 4
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.5}
+  >
+    Item 5
+  </Styled(Primitive)>
+</Primitive>
+`;
+
+exports[`<Grid /> with 3 columns 1`] = `
+.c0 {
+  margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+<Primitive
+  className="c0"
+  element="div"
+>
+  <Styled(Primitive)
+    width={0.3333333333333333}
+  >
+    Item 1
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.3333333333333333}
+  >
+    Item 2
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.3333333333333333}
+  >
+    Item 3
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.3333333333333333}
+  >
+    Item 4
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.3333333333333333}
+  >
+    Item 5
+  </Styled(Primitive)>
+</Primitive>
+`;
+
+exports[`<Grid /> with 3 columns and span 1`] = `
+.c0 {
+  margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+<Primitive
+  className="c0"
+  element="div"
+>
+  <Styled(Primitive)
+    width={0.6666666666666666}
+  >
+    Item 1
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.3333333333333333}
+  >
+    Item 2
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.3333333333333333}
+  >
+    Item 3
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.3333333333333333}
+  >
+    Item 4
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.3333333333333333}
+  >
+    Item 5
+  </Styled(Primitive)>
+</Primitive>
+`;
+
+exports[`<Grid /> with 4 columns 1`] = `
+.c0 {
+  margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+<Primitive
+  className="c0"
+  element="div"
+>
+  <Styled(Primitive)
+    width={0.25}
+  >
+    Item 1
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.25}
+  >
+    Item 2
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.25}
+  >
+    Item 3
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.25}
+  >
+    Item 4
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.25}
+  >
+    Item 5
+  </Styled(Primitive)>
+</Primitive>
+`;
+
+exports[`<Grid /> with 5 columns 1`] = `
+.c0 {
+  margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+<Primitive
+  className="c0"
+  element="div"
+>
+  <Styled(Primitive)
+    width={0.2}
+  >
+    Item 1
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.2}
+  >
+    Item 2
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.2}
+  >
+    Item 3
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.2}
+  >
+    Item 4
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.2}
+  >
+    Item 5
+  </Styled(Primitive)>
+</Primitive>
+`;
+
+exports[`<Grid /> with custom Grid and GridElement elements 1`] = `
+.c0 {
+  margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+<Primitive
+  className="c0"
+  element="article"
+>
+  <Styled(Primitive)
+    element="section"
+    width={0.5}
+  >
+    Item 1
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    element="section"
+    width={0.5}
+  >
+    Item 2
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    element="section"
+    width={0.5}
+  >
+    Item 3
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    element="section"
+    width={0.5}
+  >
+    Item 4
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    element="section"
+    width={0.5}
+  >
+    Item 5
+  </Styled(Primitive)>
+</Primitive>
+`;
+
+exports[`<Grid /> with custom Grid element 1`] = `
+.c0 {
+  margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+<Primitive
+  className="c0"
+  element="article"
+>
+  <Styled(Primitive)
+    width={0.5}
+  >
+    Item 1
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.5}
+  >
+    Item 2
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.5}
+  >
+    Item 3
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.5}
+  >
+    Item 4
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={0.5}
+  >
+    Item 5
+  </Styled(Primitive)>
+</Primitive>
+`;
+
+exports[`<Grid /> with initial props 1`] = `
+.c0 {
+  margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+<Primitive
+  className="c0"
+  element="div"
+/>
+`;
+
+exports[`<Grid /> with responsive columns 1`] = `
+.c0 {
+  margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+<Primitive
+  className="c0"
+  element="div"
+>
+  <Styled(Primitive)
+    width={
+      Object {
+        "lg": 0.25,
+        "md": 0.3333333333333333,
+        "sm": 0.5,
+        "xlg": 0.2,
+      }
+    }
+  >
+    First Element
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={
+      Object {
+        "lg": 0.25,
+        "md": 0.3333333333333333,
+        "sm": 0.5,
+        "xlg": 0.2,
+      }
+    }
+  >
+    Second Element
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={
+      Object {
+        "lg": 0.25,
+        "md": 0.3333333333333333,
+        "sm": 0.5,
+        "xlg": 0.2,
+      }
+    }
+  >
+    Third Element
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={
+      Object {
+        "lg": 0.25,
+        "md": 0.3333333333333333,
+        "sm": 0.5,
+        "xlg": 0.2,
+      }
+    }
+  >
+    Fourth Element
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={
+      Object {
+        "lg": 0.25,
+        "md": 0.3333333333333333,
+        "sm": 0.5,
+        "xlg": 0.2,
+      }
+    }
+  >
+    Fifth Element
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={
+      Object {
+        "lg": 0.25,
+        "md": 0.3333333333333333,
+        "sm": 0.5,
+        "xlg": 0.2,
+      }
+    }
+  >
+    Sixth Element
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={
+      Object {
+        "lg": 0.25,
+        "md": 0.3333333333333333,
+        "sm": 0.5,
+        "xlg": 0.2,
+      }
+    }
+  >
+    Seventh Element
+  </Styled(Primitive)>
+  <Styled(Primitive)
+    width={
+      Object {
+        "lg": 0.25,
+        "md": 0.3333333333333333,
+        "sm": 0.5,
+        "xlg": 0.2,
+      }
+    }
+  >
+    Eighth Element
+  </Styled(Primitive)>
+</Primitive>
+`;
