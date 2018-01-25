@@ -2,7 +2,7 @@
 /* stylelint-disable */
 
 import { css } from 'styled-components';
-import theme from '../theme.js'; // eslint-disable-line
+import theme from '../theme';
 
 export default function breakpointWrapper(label: string) {
   return (...args: any) => () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grid, GridElement } from './index';
+import { Grid, GridElement } from './';
 
 storiesOf('Components / Layout / Grid', module)
   .add('2 Columns', () => (
