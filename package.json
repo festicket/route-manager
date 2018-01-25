@@ -12,7 +12,7 @@
     "build": "rollup --config",
     "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
     "svg": "svgr svgs -d src/components --template svg.template.js --single-quote",
-    "lint": "npm run lint:js && npm run lint:css",
+    "lint": "npm run lint:js",
     "flow": "flow",
     "flow:libdefs": "flow gen-flow-files src/ --out-dir dist/",
     "test": "jest",
