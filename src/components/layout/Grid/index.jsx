@@ -48,13 +48,18 @@ function stripUnwantedProps({ className }: any) {
 }
 
 type PrimitiveTypes = {
-  element: 'article' | 'section' | 'div' | 'header' | 'footer',
-  children: any,
+  element?: 'article' | 'section' | 'div' | 'header' | 'footer',
+  children?: any,
 };
 
 function Primitive({ element = 'div', children, ...props }: PrimitiveTypes) {
   return React.createElement(element, stripUnwantedProps(props), children);
 }
+
+Primitive.defaultProps = {
+  element: 'div',
+  children: undefined,
+};
 
 const StyledGridElement = styled(Primitive)`
   padding: ${gap / 2}px 0;

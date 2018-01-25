@@ -20,6 +20,7 @@ exports[`<Grid /> with 1 column 1`] = `
 
 <Primitive
   className="c0"
+  element="div"
 >
   <Component
     width={1}
@@ -69,6 +70,7 @@ exports[`<Grid /> with 2 columns 1`] = `
 
 <Primitive
   className="c0"
+  element="div"
 >
   <Component
     width={0.5}
@@ -118,6 +120,7 @@ exports[`<Grid /> with 3 columns 1`] = `
 
 <Primitive
   className="c0"
+  element="div"
 >
   <Component
     width={0.3333333333333333}
@@ -167,6 +170,7 @@ exports[`<Grid /> with 3 columns and span 1`] = `
 
 <Primitive
   className="c0"
+  element="div"
 >
   <Component
     width={0.6666666666666666}
@@ -216,6 +220,7 @@ exports[`<Grid /> with 4 columns 1`] = `
 
 <Primitive
   className="c0"
+  element="div"
 >
   <Component
     width={0.25}
@@ -265,6 +270,7 @@ exports[`<Grid /> with 5 columns 1`] = `
 
 <Primitive
   className="c0"
+  element="div"
 >
   <Component
     width={0.2}
@@ -419,6 +425,7 @@ exports[`<Grid /> with initial props 1`] = `
 
 <Primitive
   className="c0"
+  element="div"
 />
 `;
 
@@ -442,6 +449,7 @@ exports[`<Grid /> with responsive columns 1`] = `
 
 <Primitive
   className="c0"
+  element="div"
 >
   <Component
     width={
