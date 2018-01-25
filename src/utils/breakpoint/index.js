@@ -4,7 +4,7 @@
 import { css } from 'styled-components';
 import theme from '../theme';
 
-export default function breakpointWrapper(label: string) {
+export default function breakpoint(label: string) {
   return (...args: any) => () => {
     switch (label) {
       case 'xs':

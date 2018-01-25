@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import breakpoint from '../../../utils/breakpoints';
+import breakpoint from '../../../utils/breakpoint';
 import transformWidthNumber from './utils/transformWidthNumber';
 
 const gap = 30;

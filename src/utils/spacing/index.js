@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import breakpoint from '../breakpoints';
+import breakpoint from '../breakpoint';
 
 export default (size: string) => {
   switch (size) {
