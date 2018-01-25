@@ -20,4 +20,5 @@ export default {
       exclude: 'node_modules/**',
     }),
   ],
+  external: ['@festicket/react-ui-components'],
 };
