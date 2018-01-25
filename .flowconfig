@@ -18,6 +18,6 @@
 
 [options]
 all=true
-module.name_mapper='^@festicket\/sample-react-components-library$' -> '<PROJECT_ROOT>/src/'
+module.name_mapper='^@festicket\/react-ui-components$' -> '<PROJECT_ROOT>/src/'
 
 [strict]

@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { ExampleComponent } from '@festicket/sample-react-components-library';
+import { ExampleComponent } from '@festicket/react-ui-components';
 
 describe('<ExampleComponent />', () => {
   test('with initial props', () => {
