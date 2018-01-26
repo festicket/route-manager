@@ -25,7 +25,6 @@ exports[`<Text /> primitive should render correctly based on color prop 1`] = `
     size="regular"
     spacing="md"
     underline={false}
-    variant="p"
     weight="regular"
   >
     <Primitive
@@ -35,7 +34,6 @@ exports[`<Text /> primitive should render correctly based on color prop 1`] = `
       size="regular"
       spacing="md"
       underline={false}
-      variant="p"
       weight="regular"
     >
       <p
@@ -73,7 +71,6 @@ exports[`<Text /> primitive should render correctly based on element prop 1`] = 
     size="regular"
     spacing="md"
     underline={false}
-    variant="p"
     weight="regular"
   >
     <Primitive
@@ -83,7 +80,6 @@ exports[`<Text /> primitive should render correctly based on element prop 1`] = 
       size="regular"
       spacing="md"
       underline={false}
-      variant="p"
       weight="regular"
     >
       <h3
@@ -121,7 +117,6 @@ exports[`<Text /> primitive should render correctly based on size prop 1`] = `
     size="tiny"
     spacing="md"
     underline={false}
-    variant="p"
     weight="regular"
   >
     <Primitive
@@ -131,7 +126,6 @@ exports[`<Text /> primitive should render correctly based on size prop 1`] = `
       size="tiny"
       spacing="md"
       underline={false}
-      variant="p"
       weight="regular"
     >
       <p
@@ -169,7 +163,6 @@ exports[`<Text /> primitive should render correctly based on underline prop 1`] 
     size="regular"
     spacing="md"
     underline={true}
-    variant="p"
     weight="regular"
   >
     <Primitive
@@ -179,7 +172,6 @@ exports[`<Text /> primitive should render correctly based on underline prop 1`] 
       size="regular"
       spacing="md"
       underline={true}
-      variant="p"
       weight="regular"
     >
       <p
@@ -231,7 +223,6 @@ exports[`<Text /> primitive should render correctly based on variant prop 1`] = 
     size="regular"
     spacing="md"
     underline={false}
-    variant="h2"
     weight="regular"
   >
     <Primitive
@@ -241,7 +232,6 @@ exports[`<Text /> primitive should render correctly based on variant prop 1`] = 
       size="regular"
       spacing="md"
       underline={false}
-      variant="h2"
       weight="regular"
     >
       <h3
@@ -279,7 +269,6 @@ exports[`<Text /> primitive should render correctly based on weight prop 1`] = `
     size="regular"
     spacing="md"
     underline={false}
-    variant="p"
     weight="light"
   >
     <Primitive
@@ -289,7 +278,6 @@ exports[`<Text /> primitive should render correctly based on weight prop 1`] = `
       size="regular"
       spacing="md"
       underline={false}
-      variant="p"
       weight="light"
     >
       <p
@@ -327,7 +315,6 @@ exports[`<Text /> primitive with default props 1`] = `
     size="regular"
     spacing="md"
     underline={false}
-    variant="p"
     weight="regular"
   >
     <Primitive
@@ -337,7 +324,6 @@ exports[`<Text /> primitive with default props 1`] = `
       size="regular"
       spacing="md"
       underline={false}
-      variant="p"
       weight="regular"
     >
       <p
@@ -375,7 +361,6 @@ exports[`<TextPrimitive /> with initial props 1`] = `
     size="regular"
     spacing="md"
     underline={false}
-    variant="p"
     weight="regular"
   >
     <Primitive
@@ -385,7 +370,6 @@ exports[`<TextPrimitive /> with initial props 1`] = `
       size="regular"
       spacing="md"
       underline={false}
-      variant="p"
       weight="regular"
     >
       <p

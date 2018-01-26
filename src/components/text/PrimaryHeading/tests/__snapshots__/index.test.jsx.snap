@@ -26,6 +26,7 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
 
 <PrimaryHeading
   as="h1"
+  color="black"
 >
   <TextPrimitive
     color="black"
@@ -42,7 +43,6 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
       size="regular"
       spacing="md"
       underline={false}
-      variant="h1"
       weight="bold"
     >
       <Primitive
@@ -52,7 +52,6 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
         size="regular"
         spacing="md"
         underline={false}
-        variant="h1"
         weight="bold"
       >
         <h1

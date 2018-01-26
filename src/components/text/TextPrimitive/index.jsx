@@ -134,16 +134,16 @@ TextPrimitive.defaultProps = {
 };
 
 export function TextPrimitive(props: Props) {
-  const { variant, children } = props;
+  const { variant, children, ...rest } = props;
 
   switch (variant) {
     case 'h1':
-      return <H1 {...props}>{children}</H1>;
+      return <H1 {...rest}>{children}</H1>;
     case 'h2':
-      return <H2 {...props}>{children}</H2>;
+      return <H2 {...rest}>{children}</H2>;
     case 'h3':
-      return <H3 {...props}>{children}</H3>;
+      return <H3 {...rest}>{children}</H3>;
     default:
-      return <Paragraph {...props}>{children}</Paragraph>;
+      return <Paragraph {...rest}>{children}</Paragraph>;
   }
 }
