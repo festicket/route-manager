@@ -1,0 +1,399 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> primitive should render correctly based on color prop 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+<TextPrimitive
+  color="grey"
+  element="p"
+  size="regular"
+  spacing="md"
+  underline={false}
+  variant="p"
+  weight="regular"
+>
+  <Styled(Primitive)
+    color="grey"
+    element="p"
+    size="regular"
+    spacing="md"
+    underline={false}
+    variant="p"
+    weight="regular"
+  >
+    <Primitive
+      className="c0"
+      color="grey"
+      element="p"
+      size="regular"
+      spacing="md"
+      underline={false}
+      variant="p"
+      weight="regular"
+    >
+      <p
+        className="c0"
+      >
+        default
+      </p>
+    </Primitive>
+  </Styled(Primitive)>
+</TextPrimitive>
+`;
+
+exports[`<Text /> primitive should render correctly based on element prop 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+<TextPrimitive
+  color="black"
+  element="h3"
+  size="regular"
+  spacing="md"
+  underline={false}
+  variant="p"
+  weight="regular"
+>
+  <Styled(Primitive)
+    color="black"
+    element="h3"
+    size="regular"
+    spacing="md"
+    underline={false}
+    variant="p"
+    weight="regular"
+  >
+    <Primitive
+      className="c0"
+      color="black"
+      element="h3"
+      size="regular"
+      spacing="md"
+      underline={false}
+      variant="p"
+      weight="regular"
+    >
+      <h3
+        className="c0"
+      >
+        default
+      </h3>
+    </Primitive>
+  </Styled(Primitive)>
+</TextPrimitive>
+`;
+
+exports[`<Text /> primitive should render correctly based on size prop 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.12;
+}
+
+<TextPrimitive
+  color="black"
+  element="p"
+  size="tiny"
+  spacing="md"
+  underline={false}
+  variant="p"
+  weight="regular"
+>
+  <Styled(Primitive)
+    color="black"
+    element="p"
+    size="tiny"
+    spacing="md"
+    underline={false}
+    variant="p"
+    weight="regular"
+  >
+    <Primitive
+      className="c0"
+      color="black"
+      element="p"
+      size="tiny"
+      spacing="md"
+      underline={false}
+      variant="p"
+      weight="regular"
+    >
+      <p
+        className="c0"
+      >
+        default
+      </p>
+    </Primitive>
+  </Styled(Primitive)>
+</TextPrimitive>
+`;
+
+exports[`<Text /> primitive should render correctly based on underline prop 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+<TextPrimitive
+  color="grey"
+  element="p"
+  size="regular"
+  spacing="md"
+  underline={true}
+  variant="p"
+  weight="regular"
+>
+  <Styled(Primitive)
+    color="grey"
+    element="p"
+    size="regular"
+    spacing="md"
+    underline={true}
+    variant="p"
+    weight="regular"
+  >
+    <Primitive
+      className="c0"
+      color="grey"
+      element="p"
+      size="regular"
+      spacing="md"
+      underline={true}
+      variant="p"
+      weight="regular"
+    >
+      <p
+        className="c0"
+      >
+        default
+      </p>
+    </Primitive>
+  </Styled(Primitive)>
+</TextPrimitive>
+`;
+
+exports[`<Text /> primitive should render correctly based on variant prop 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 28px;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+<TextPrimitive
+  color="black"
+  element="h3"
+  size="regular"
+  spacing="md"
+  underline={false}
+  variant="h2"
+  weight="regular"
+>
+  <Styled(Primitive)
+    color="black"
+    element="h3"
+    size="regular"
+    spacing="md"
+    underline={false}
+    variant="h2"
+    weight="regular"
+  >
+    <Primitive
+      className="c0"
+      color="black"
+      element="h3"
+      size="regular"
+      spacing="md"
+      underline={false}
+      variant="h2"
+      weight="regular"
+    >
+      <h3
+        className="c0"
+      >
+        default
+      </h3>
+    </Primitive>
+  </Styled(Primitive)>
+</TextPrimitive>
+`;
+
+exports[`<Text /> primitive should render correctly based on weight prop 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+<TextPrimitive
+  color="black"
+  element="p"
+  size="regular"
+  spacing="md"
+  underline={false}
+  variant="p"
+  weight="light"
+>
+  <Styled(Primitive)
+    color="black"
+    element="p"
+    size="regular"
+    spacing="md"
+    underline={false}
+    variant="p"
+    weight="light"
+  >
+    <Primitive
+      className="c0"
+      color="black"
+      element="p"
+      size="regular"
+      spacing="md"
+      underline={false}
+      variant="p"
+      weight="light"
+    >
+      <p
+        className="c0"
+      >
+        default
+      </p>
+    </Primitive>
+  </Styled(Primitive)>
+</TextPrimitive>
+`;
+
+exports[`<Text /> primitive with default props 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+<TextPrimitive
+  color="black"
+  element="p"
+  size="regular"
+  spacing="md"
+  underline={false}
+  variant="p"
+  weight="regular"
+>
+  <Styled(Primitive)
+    color="black"
+    element="p"
+    size="regular"
+    spacing="md"
+    underline={false}
+    variant="p"
+    weight="regular"
+  >
+    <Primitive
+      className="c0"
+      color="black"
+      element="p"
+      size="regular"
+      spacing="md"
+      underline={false}
+      variant="p"
+      weight="regular"
+    >
+      <p
+        className="c0"
+      >
+        default
+      </p>
+    </Primitive>
+  </Styled(Primitive)>
+</TextPrimitive>
+`;
+
+exports[`<TextPrimitive /> with initial props 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+<TextPrimitive
+  color="black"
+  element="p"
+  size="regular"
+  spacing="md"
+  underline={false}
+  variant="p"
+  weight="regular"
+>
+  <Styled(Primitive)
+    color="black"
+    element="p"
+    size="regular"
+    spacing="md"
+    underline={false}
+    variant="p"
+    weight="regular"
+  >
+    <Primitive
+      className="c0"
+      color="black"
+      element="p"
+      size="regular"
+      spacing="md"
+      underline={false}
+      variant="p"
+      weight="regular"
+    >
+      <p
+        className="c0"
+      >
+        Test
+      </p>
+    </Primitive>
+  </Styled(Primitive)>
+</TextPrimitive>
+`;
