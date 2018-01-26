@@ -5,33 +5,38 @@ import transformWidthNumber from './utils/transformWidthNumber';
 
 const gap = 30;
 
-type BreakpointWidth = number | string;
-
 type BreakpointsShape = {|
-  xs?: BreakpointWidth,
-  sm?: BreakpointWidth,
-  md?: BreakpointWidth,
-  lg?: BreakpointWidth,
-  xlg?: BreakpointWidth,
+  xs?: number,
+  sm?: number,
+  md?: number,
+  lg?: number,
+  xlg?: number,
 |};
 
 type GridElementTypes = {
-  width: BreakpointWidth | BreakpointsShape,
+  width: number | BreakpointsShape,
 };
+
+function entries<T>(obj: { [string]: T }): Array<[string, T]> {
+  const keys: string[] = Object.keys(obj);
+  return keys.map(key => [key, obj[key]]);
+}
 
 const GridElementWidth = (props: GridElementTypes) => {
   if (typeof props.width === 'object') {
-    return Object.entries(props.width).map(bp => {
-      const width = transformWidthNumber(bp[1]);
+    return entries(props.width).map(
+      ([breakpointKey, breakpointValue]: [string, number]) => {
+        const width = transformWidthNumber(breakpointValue);
 
-      const rules = {
-        width,
-      };
+        const rules = {
+          width,
+        };
 
-      return breakpoint(`from-${bp[0]}`)`
+        return breakpoint(`from-${breakpointKey}`)`
         ${rules}
       `;
-    });
+      },
+    );
   }
 
   const width = transformWidthNumber(props.width);
