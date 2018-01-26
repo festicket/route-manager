@@ -11,9 +11,8 @@
     "prebuild": "npm run test",
     "build": "rollup --config",
     "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
-    "lint:flow": "flow check",
     "svg": "svgr svgs -d src/components --template svg.template.js --single-quote",
-    "lint": "npm run lint:js && npm run lint:flow",
+    "lint": "npm run lint:js && npm run flow",
     "flow": "flow",
     "flow:libdefs": "flow gen-flow-files src/ --out-dir dist/",
     "test": "jest",
@@ -25,7 +24,7 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "flow check",
+      "flow",
       "eslint --fix",
       "jest --bail --findRelatedTests",
       "git add"
