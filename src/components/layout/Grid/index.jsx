@@ -48,8 +48,16 @@ const GridElementWidth = (props: GridElementTypes) => {
 
 // Takes props object but we are only interested in passing className.
 // Otherwise we will get annoying warnings about invalid props on html elements.
-function stripUnwantedProps({ className }: any) {
-  return { className };
+function stripUnwantedProps(props: {}, keys: Array<string>): {} {
+  const filteredProps = {};
+
+  keys.forEach((key: string) => {
+    if (key in props) {
+      filteredProps[key] = props[key];
+    }
+  });
+
+  return filteredProps;
 }
 
 type PrimitiveTypes = {
@@ -57,8 +65,13 @@ type PrimitiveTypes = {
   children?: Node,
 };
 
-function Primitive({ element = 'div', children, ...props }: PrimitiveTypes) {
-  return React.createElement(element, stripUnwantedProps(props), children);
+function Primitive(props: PrimitiveTypes) {
+  const { element = 'div', children, ...rest } = props;
+  return React.createElement(
+    element,
+    stripUnwantedProps(rest, ['className', 'id']),
+    children,
+  );
 }
 
 Primitive.defaultProps = {
