@@ -7,3 +7,6 @@ export { default as theme } from './utils/theme';
 export { Grid, GridElement } from './components/layout/Grid';
 export { TextPrimitive } from './components/text/TextPrimitive';
 export { default as PrimaryHeading } from './components/text/PrimaryHeading';
+export {
+  default as SecondaryHeading,
+} from './components/text/SecondaryHeading';
