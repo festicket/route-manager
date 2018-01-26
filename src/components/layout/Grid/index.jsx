@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { type Node } from 'react';
 import styled from 'styled-components';
 import breakpoint from '../../../utils/breakpoint';
 import transformWidthNumber from './utils/transformWidthNumber';
@@ -49,7 +49,7 @@ function stripUnwantedProps({ className }: any) {
 
 type PrimitiveTypes = {
   element?: 'article' | 'section' | 'div' | 'header' | 'footer',
-  children?: any,
+  children?: Node,
 };
 
 function Primitive({ element = 'div', children, ...props }: PrimitiveTypes) {
