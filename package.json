@@ -18,13 +18,12 @@
     "test": "jest",
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "precommit": "lint-staged",
+    "precommit": "npm run flow && lint-staged",
     "postinstall": "flow-typed install --overwrite --ignoreDeps peer",
     "prepublish": "npm run build"
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "flow",
       "eslint --fix",
       "jest --bail --findRelatedTests",
       "git add"
