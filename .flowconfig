@@ -8,6 +8,7 @@
 .*/setupTests\.js
 .*/svg\.template\.js
 .*/plopfile\.js
+.*/jest\.config\.js
 .*/react-generators/.*
 
 [include]
@@ -15,9 +16,11 @@
 [libs]
 
 [lints]
+all=warn
 
 [options]
 all=true
 module.name_mapper='^@festicket\/react-ui-components$' -> '<PROJECT_ROOT>/src/'
+include_warnings=true
 
 [strict]
