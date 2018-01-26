@@ -1,0 +1,20 @@
+import React from 'react';
+import { mount } from 'enzyme';
+import { TertiaryHeading } from '@festicket/react-ui-components';
+
+describe('<TertiaryHeading />', () => {
+  test('with initial props', () => {
+    const tree = mount(<TertiaryHeading>test</TertiaryHeading>);
+    expect(tree).toMatchSnapshot();
+  });
+
+  test('with color prop', () => {
+    const tree = mount(<TertiaryHeading color="white">test</TertiaryHeading>);
+    expect(tree).toMatchSnapshot();
+  });
+
+  test('with weight prop', () => {
+    const tree = mount(<TertiaryHeading weight="light">test</TertiaryHeading>);
+    expect(tree).toMatchSnapshot();
+  });
+});

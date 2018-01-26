@@ -10,3 +10,4 @@ export { default as PrimaryHeading } from './components/text/PrimaryHeading';
 export {
   default as SecondaryHeading,
 } from './components/text/SecondaryHeading';
+export { default as TertiaryHeading } from './components/text/TertiaryHeading';
