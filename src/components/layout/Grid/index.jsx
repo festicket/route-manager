@@ -17,16 +17,11 @@ type GridElementTypes = {
   width: number | BreakpointsShape,
 };
 
-function entries<T>(obj: { [string]: T }): Array<[string, T]> {
-  const keys: string[] = Object.keys(obj);
-  return keys.map(key => [key, obj[key]]);
-}
-
 const GridElementWidth = (props: GridElementTypes) => {
   if (typeof props.width === 'object') {
-    return entries(props.width).map(
-      ([breakpointKey, breakpointValue]: [string, number]) => {
-        const width = transformWidthNumber(breakpointValue);
+    return Object.entries(props.width).map(
+      ([breakpointKey, breakpointValue]) => {
+        const width = transformWidthNumber(parseInt(breakpointValue, 10));
 
         const rules = {
           width,
