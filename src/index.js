@@ -13,3 +13,4 @@ export {
 export { default as TertiaryHeading } from './components/text/TertiaryHeading';
 export { default as Bodytext } from './components/text/Bodytext';
 export { default as Highlight } from './components/text/Highlight';
+export { default as Hyperlink } from './components/text/Hyperlink';
