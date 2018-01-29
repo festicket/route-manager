@@ -8,8 +8,8 @@ describe('<Bodytext />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test('with size prop', () => {
-    const tree = mount(<Bodytext size="small">Small size</Bodytext>);
+  test('with element prop', () => {
+    const tree = mount(<Bodytext element="span">Small size</Bodytext>);
     expect(tree).toMatchSnapshot();
   });
 });

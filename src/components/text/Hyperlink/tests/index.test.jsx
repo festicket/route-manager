@@ -8,8 +8,8 @@ describe('<Hyperlink />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test('with size prop', () => {
-    const tree = mount(<Hyperlink size="small">Small size</Hyperlink>);
+  test('with element prop', () => {
+    const tree = mount(<Hyperlink element="span">Small size</Hyperlink>);
     expect(tree).toMatchSnapshot();
   });
 });

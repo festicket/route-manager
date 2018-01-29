@@ -18,8 +18,8 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
 }
 
 <TertiaryHeading
-  as="h3"
   color="white"
+  element="h3"
   weight="bold"
 >
   <TextPrimitive
@@ -77,8 +77,8 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
 }
 
 <TertiaryHeading
-  as="h3"
   color="black"
+  element="h3"
   weight="bold"
 >
   <TextPrimitive
@@ -136,8 +136,8 @@ exports[`<TertiaryHeading /> with weight prop 1`] = `
 }
 
 <TertiaryHeading
-  as="h3"
   color="black"
+  element="h3"
   weight="light"
 >
   <TextPrimitive

@@ -3,23 +3,23 @@ import React, { type Node } from 'react';
 import { TextPrimitive } from '../TextPrimitive/';
 
 PrimaryHeading.defaultProps = {
-  as: 'h1',
+  element: 'h1',
   color: 'black',
 };
 
 type PrimaryHeadingProps = {
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
+  element?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
   children: Node | string,
   color?: 'black' | 'white',
 };
 
 export default function PrimaryHeading({
-  as,
+  element,
   children,
   color,
 }: PrimaryHeadingProps) {
   return (
-    <TextPrimitive element={as} variant="h1" weight="bold" color={color}>
+    <TextPrimitive element={element} variant="h1" weight="bold" color={color}>
       {children}
     </TextPrimitive>
   );

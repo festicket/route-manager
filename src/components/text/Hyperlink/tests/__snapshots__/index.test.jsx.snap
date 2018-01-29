@@ -1,5 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Hyperlink /> with element prop 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+<Hyperlink
+  color="black"
+  element="span"
+  size="regular"
+>
+  <TextPrimitive
+    color="black"
+    element="span"
+    size="regular"
+    spacing="md"
+    underline={true}
+    variant="p"
+    weight="regular"
+  >
+    <Styled(Primitive)
+      color="black"
+      element="span"
+      size="regular"
+      spacing="md"
+      underline={true}
+      weight="regular"
+    >
+      <Primitive
+        className="c0"
+        color="black"
+        element="span"
+        size="regular"
+        spacing="md"
+        underline={true}
+        weight="regular"
+      >
+        <span
+          className="c0"
+        >
+          Small size
+        </span>
+      </Primitive>
+    </Styled(Primitive)>
+  </TextPrimitive>
+</Hyperlink>
+`;
+
 exports[`<Hyperlink /> with initial props 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
@@ -11,8 +63,8 @@ exports[`<Hyperlink /> with initial props 1`] = `
 }
 
 <Hyperlink
-  as="p"
   color="black"
+  element="p"
   size="regular"
 >
   <TextPrimitive
@@ -45,58 +97,6 @@ exports[`<Hyperlink /> with initial props 1`] = `
           className="c0"
         >
           Regular size
-        </p>
-      </Primitive>
-    </Styled(Primitive)>
-  </TextPrimitive>
-</Hyperlink>
-`;
-
-exports[`<Hyperlink /> with size prop 1`] = `
-.c0 {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: 20px;
-  text-decoration: underline;
-  font-size: 16px;
-  line-height: 1.12;
-}
-
-<Hyperlink
-  as="p"
-  color="black"
-  size="small"
->
-  <TextPrimitive
-    color="black"
-    element="p"
-    size="small"
-    spacing="md"
-    underline={true}
-    variant="p"
-    weight="regular"
-  >
-    <Styled(Primitive)
-      color="black"
-      element="p"
-      size="small"
-      spacing="md"
-      underline={true}
-      weight="regular"
-    >
-      <Primitive
-        className="c0"
-        color="black"
-        element="p"
-        size="small"
-        spacing="md"
-        underline={true}
-        weight="regular"
-      >
-        <p
-          className="c0"
-        >
-          Small size
         </p>
       </Primitive>
     </Styled(Primitive)>

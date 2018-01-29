@@ -8,8 +8,8 @@ describe('<Highlight />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test('with size prop', () => {
-    const tree = mount(<Highlight size="small">Small size</Highlight>);
+  test('with element prop', () => {
+    const tree = mount(<Highlight element="span">Small size</Highlight>);
     expect(tree).toMatchSnapshot();
   });
 });

@@ -25,8 +25,8 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
 }
 
 <PrimaryHeading
-  as="h1"
   color="black"
+  element="h1"
 >
   <TextPrimitive
     color="black"

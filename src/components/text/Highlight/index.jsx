@@ -3,27 +3,27 @@ import React, { type Node } from 'react';
 import { TextPrimitive } from '../TextPrimitive/';
 
 Highlight.defaultProps = {
-  as: 'p',
+  element: 'p',
   color: 'black',
   size: 'regular',
 };
 
 type HighlightProps = {
-  as?: 'p' | 'span',
+  element?: 'p' | 'span',
   children: Node | string,
   color?: 'black' | 'white',
   size?: 'small' | 'regular' | 'tiny',
 };
 
 export default function Highlight({
-  as,
+  element,
   children,
   color,
   size,
 }: HighlightProps) {
   return (
     <TextPrimitive
-      element={as}
+      element={element}
       variant="p"
       weight="regular"
       size={size}
