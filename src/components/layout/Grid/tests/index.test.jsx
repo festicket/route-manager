@@ -1,17 +1,17 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import { Grid, GridElement } from '../';
 
 describe('<Grid />', () => {
   test('with initial props', () => {
-    const wrapper = shallow(<Grid />);
+    const wrapper = mount(<Grid />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   test('with 1 column', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Grid>
         <GridElement width={1 / 1}>Item 1</GridElement>
         <GridElement width={1 / 1}>Item 2</GridElement>
@@ -24,7 +24,7 @@ describe('<Grid />', () => {
   });
 
   test('with 2 columns', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Grid>
         <GridElement width={1 / 2}>Item 1</GridElement>
         <GridElement width={1 / 2}>Item 2</GridElement>
@@ -37,7 +37,7 @@ describe('<Grid />', () => {
   });
 
   test('with 3 columns', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Grid>
         <GridElement width={1 / 3}>Item 1</GridElement>
         <GridElement width={1 / 3}>Item 2</GridElement>
@@ -50,7 +50,7 @@ describe('<Grid />', () => {
   });
 
   test('with 3 columns and span', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Grid>
         <GridElement width={2 / 3}>Item 1</GridElement>
         <GridElement width={1 / 3}>Item 2</GridElement>
@@ -63,7 +63,7 @@ describe('<Grid />', () => {
   });
 
   test('with 4 columns', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Grid>
         <GridElement width={1 / 4}>Item 1</GridElement>
         <GridElement width={1 / 4}>Item 2</GridElement>
@@ -76,7 +76,7 @@ describe('<Grid />', () => {
   });
 
   test('with 5 columns', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Grid>
         <GridElement width={1 / 5}>Item 1</GridElement>
         <GridElement width={1 / 5}>Item 2</GridElement>
@@ -89,7 +89,7 @@ describe('<Grid />', () => {
   });
 
   test('with custom Grid element', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Grid element="article">
         <GridElement width={1 / 2}>Item 1</GridElement>
         <GridElement width={1 / 2}>Item 2</GridElement>
@@ -102,7 +102,7 @@ describe('<Grid />', () => {
   });
 
   test('with custom Grid and GridElement elements', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Grid element="article">
         <GridElement element="section" width={1 / 2}>
           Item 1
@@ -125,7 +125,7 @@ describe('<Grid />', () => {
   });
 
   test('with responsive columns', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Grid>
         <GridElement
           width={{

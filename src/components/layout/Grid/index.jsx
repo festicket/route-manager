@@ -1,10 +1,19 @@
+// Lib
+// -------------
 import React, { type Node } from 'react';
 import styled from 'styled-components';
+
+// Utils
+// -------------
 import breakpoint from '../../../utils/breakpoint';
 import transformWidthNumber from './utils/transformWidthNumber';
 
-const gap = 30;
+// Components
+// -------------
+import Primitive, { type PrimitiveTypes } from '../Primitive';
 
+// Flow Types
+// -------------
 type BreakpointsShape = {|
   xs?: number,
   sm?: number,
@@ -13,28 +22,37 @@ type BreakpointsShape = {|
   xlg?: number,
 |};
 
-type GridElementTypes = {
+type GridElementTypes = {|
+  element?: 'article' | 'section' | 'div' | 'header' | 'footer',
+  children?: Node,
   width: number | BreakpointsShape,
-};
+|};
 
-function entries<T>(obj: { [string]: T }): Array<[string, T]> {
-  const keys: string[] = Object.keys(obj);
-  return keys.map(key => [key, obj[key]]);
-}
+type GridTypes = PrimitiveTypes;
+
+// Module
+// -------------
+const gap = 30;
 
 const GridElementWidth = (props: GridElementTypes) => {
+  /*
+  If width is passed as an object of breakpoints,
+  loop through each entry and produce media queries
+  from the breakpoint module. Otherwise, pass the value to
+  `transformWidthNumber` and return the new width CSS rule.
+  */
   if (typeof props.width === 'object') {
-    return entries(props.width).map(
-      ([breakpointKey, breakpointValue]: [string, number]) => {
-        const width = transformWidthNumber(breakpointValue);
+    return Object.entries(props.width).map(
+      ([breakpointKey, breakpointValue]) => {
+        const width = transformWidthNumber(parseInt(breakpointValue, 10));
 
         const rules = {
           width,
         };
 
         return breakpoint(`from-${breakpointKey}`)`
-        ${rules}
-      `;
+          ${rules}
+        `;
       },
     );
   }
@@ -46,52 +64,21 @@ const GridElementWidth = (props: GridElementTypes) => {
   };
 };
 
-// Takes props object but we are only interested in passing className.
-// Otherwise we will get annoying warnings about invalid props on html elements.
-function stripUnwantedProps(props: {}, keys: Array<string>): {} {
-  const filteredProps = {};
-
-  keys.forEach((key: string) => {
-    if (key in props) {
-      filteredProps[key] = props[key];
-    }
-  });
-
-  return filteredProps;
-}
-
-type PrimitiveTypes = {
-  element?: 'article' | 'section' | 'div' | 'header' | 'footer',
-  children?: Node,
-};
-
-function Primitive(props: PrimitiveTypes) {
-  const { element = 'div', children, ...rest } = props;
-  return React.createElement(
-    element,
-    stripUnwantedProps(rest, ['className', 'id']),
-    children,
-  );
-}
-
-Primitive.defaultProps = {
-  element: 'div',
-  children: undefined,
-};
-
 const StyledGridElement = styled(Primitive)`
   padding: ${gap / 2}px 0;
+  box-sizing: border-box;
+  ${GridElementWidth};
+
   ${breakpoint('from-sm')`
     padding: ${gap / 2}px;
   `};
-  ${GridElementWidth};
 `;
 
 export const GridElement = (props: GridElementTypes) => (
   <StyledGridElement {...props} />
 );
 
-export const Grid = styled(Primitive)`
+const StyledGrid = styled(Primitive)`
   margin: -${gap / 2}px 0;
 
   ${breakpoint('from-sm')`
@@ -100,3 +87,5 @@ export const Grid = styled(Primitive)`
     margin: -${gap / 2}px;
   `};
 `;
+
+export const Grid = (props: GridTypes) => <StyledGrid {...props} />;
