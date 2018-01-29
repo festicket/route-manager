@@ -35,6 +35,12 @@ type GridTypes = PrimitiveTypes;
 const gap = 30;
 
 const GridElementWidth = (props: GridElementTypes) => {
+  /*
+  If width is passed as an object of breakpoints,
+  loop through each entry and produce media queries
+  from the breakpoint module. Otherwise, pass the value to
+  `transformWidthNumber` and return the new width CSS rule.
+  */
   if (typeof props.width === 'object') {
     return Object.entries(props.width).map(
       ([breakpointKey, breakpointValue]) => {
