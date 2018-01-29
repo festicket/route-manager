@@ -1,6 +1,3 @@
-/* eslint consistent-return: 0 default-case: 0 */
-/* stylelint-disable */
-
 import { css } from 'styled-components';
 import theme from '../theme';
 
@@ -92,6 +89,8 @@ export default function breakpoint(label: string) {
             ${css(...args)};
           }
         `;
+      default:
+        return null;
     }
   };
 }
