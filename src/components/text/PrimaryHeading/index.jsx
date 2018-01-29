@@ -7,15 +7,17 @@ PrimaryHeading.defaultProps = {
   color: 'black',
 };
 
+type PrimaryHeadingProps = {
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
+  children: Node | string,
+  color?: 'black' | 'white',
+};
+
 export default function PrimaryHeading({
   as,
   children,
   color,
-}: {
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
-  children: Node | string,
-  color?: 'black' | 'white',
-}) {
+}: PrimaryHeadingProps) {
   return (
     <TextPrimitive element={as} variant="h1" weight="bold" color={color}>
       {children}

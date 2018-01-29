@@ -8,17 +8,19 @@ SecondaryHeading.defaultProps = {
   weight: 'bold',
 };
 
+type SecondaryHeadingProps = {
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
+  children: Node | string,
+  color?: 'black' | 'white',
+  weight?: 'bold' | 'light',
+};
+
 export default function SecondaryHeading({
   as,
   children,
   color,
   weight,
-}: {
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
-  children: Node | string,
-  color?: 'black' | 'white',
-  weight?: 'bold' | 'light',
-}) {
+}: SecondaryHeadingProps) {
   return (
     <TextPrimitive element={as} variant="h2" weight={weight} color={color}>
       {children}

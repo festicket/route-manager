@@ -2,23 +2,25 @@ import React, { type Node } from 'react';
 
 import { TextPrimitive } from '../TextPrimitive/';
 
-Bodytext.defaultProps = {
+Highlight.defaultProps = {
   as: 'p',
   color: 'black',
   size: 'regular',
 };
 
-export default function Bodytext({
-  as,
-  children,
-  color,
-  size,
-}: {
+type HighlightProps = {
   as?: 'p' | 'span',
   children: Node | string,
   color?: 'black' | 'white',
   size?: 'small' | 'regular' | 'tiny',
-}) {
+};
+
+export default function Highlight({
+  as,
+  children,
+  color,
+  size,
+}: HighlightProps) {
   return (
     <TextPrimitive
       element={as}

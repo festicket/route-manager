@@ -2,23 +2,25 @@ import React, { type Node } from 'react';
 
 import { TextPrimitive } from '../TextPrimitive/';
 
-Bodytext.defaultProps = {
+Hyperlink.defaultProps = {
   as: 'p',
   color: 'black',
   size: 'regular',
 };
 
-export default function Bodytext({
-  as,
-  children,
-  color,
-  size,
-}: {
+type HyperlinkProps = {
   as?: 'p' | 'span',
   children: Node | string,
   color?: 'black' | 'white',
   size?: 'small' | 'regular' | 'tiny',
-}) {
+};
+
+export default function Hyperlink({
+  as,
+  children,
+  color,
+  size,
+}: HyperlinkProps) {
   return (
     <TextPrimitive
       element={as}
