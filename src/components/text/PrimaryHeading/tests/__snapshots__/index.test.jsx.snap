@@ -4,7 +4,7 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   text-decoration: none;
   font-size: 36px;
   line-height: 39px;
@@ -27,12 +27,13 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
 <PrimaryHeading
   color="black"
   element="h1"
+  spacing="none"
 >
   <TextPrimitive
     color="black"
     element="h1"
     size="regular"
-    spacing="md"
+    spacing="none"
     underline={false}
     variant="h1"
     weight="bold"
@@ -41,7 +42,7 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
       color="black"
       element="h1"
       size="regular"
-      spacing="md"
+      spacing="none"
       underline={false}
       weight="bold"
     >
@@ -50,7 +51,7 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
         color="black"
         element="h1"
         size="regular"
-        spacing="md"
+        spacing="none"
         underline={false}
         weight="bold"
       >

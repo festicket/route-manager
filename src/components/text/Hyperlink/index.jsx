@@ -6,6 +6,7 @@ Hyperlink.defaultProps = {
   element: 'p',
   color: 'black',
   size: 'regular',
+  spacing: 'none',
 };
 
 type HyperlinkProps = {
@@ -13,6 +14,7 @@ type HyperlinkProps = {
   children: Node | string,
   color?: 'black' | 'white',
   size?: 'small' | 'regular' | 'tiny',
+  spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',
 };
 
 export default function Hyperlink({
@@ -20,6 +22,7 @@ export default function Hyperlink({
   children,
   color,
   size,
+  spacing,
 }: HyperlinkProps) {
   return (
     <TextPrimitive
@@ -28,6 +31,7 @@ export default function Hyperlink({
       weight="regular"
       size={size}
       color={color}
+      spacing={spacing}
       underline
     >
       {children}

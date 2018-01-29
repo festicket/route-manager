@@ -6,6 +6,7 @@ Bodytext.defaultProps = {
   element: 'p',
   color: 'black',
   size: 'regular',
+  spacing: 'none',
 };
 
 type BodytextProps = {
@@ -13,6 +14,7 @@ type BodytextProps = {
   children: Node | string,
   color?: 'black' | 'white',
   size?: 'small' | 'regular' | 'tiny',
+  spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',
 };
 
 export default function Bodytext({
@@ -20,6 +22,7 @@ export default function Bodytext({
   children,
   color,
   size,
+  spacing,
 }: BodytextProps) {
   return (
     <TextPrimitive
@@ -28,6 +31,7 @@ export default function Bodytext({
       weight="light"
       size={size}
       color={color}
+      spacing={spacing}
     >
       {children}
     </TextPrimitive>

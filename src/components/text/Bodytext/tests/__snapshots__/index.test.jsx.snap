@@ -1,11 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Bodytext /> with element prop 1`] = `
+exports[`<Bodytext /> that it renders correctly 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   text-decoration: none;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+<Bodytext
+  color="black"
+  element="p"
+  size="regular"
+  spacing="none"
+>
+  <TextPrimitive
+    color="black"
+    element="p"
+    size="regular"
+    spacing="none"
+    underline={false}
+    variant="p"
+    weight="light"
+  >
+    <Styled(Primitive)
+      color="black"
+      element="p"
+      size="regular"
+      spacing="none"
+      underline={false}
+      weight="light"
+    >
+      <Primitive
+        className="c0"
+        color="black"
+        element="p"
+        size="regular"
+        spacing="none"
+        underline={false}
+        weight="light"
+      >
+        <p
+          className="c0"
+        >
+          Regular size
+        </p>
+      </Primitive>
+    </Styled(Primitive)>
+  </TextPrimitive>
+</Bodytext>
+`;
+
+exports[`<Bodytext /> that it renders correctly with element prop 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 0;
+  text-decoration: none;
+  margin-bottom: 0;
   font-size: 18px;
   line-height: 1.12;
 }
@@ -14,12 +69,13 @@ exports[`<Bodytext /> with element prop 1`] = `
   color="black"
   element="span"
   size="regular"
+  spacing="none"
 >
   <TextPrimitive
     color="black"
     element="span"
     size="regular"
-    spacing="md"
+    spacing="none"
     underline={false}
     variant="p"
     weight="light"
@@ -28,7 +84,7 @@ exports[`<Bodytext /> with element prop 1`] = `
       color="black"
       element="span"
       size="regular"
-      spacing="md"
+      spacing="none"
       underline={false}
       weight="light"
     >
@@ -37,7 +93,7 @@ exports[`<Bodytext /> with element prop 1`] = `
         color="black"
         element="span"
         size="regular"
-        spacing="md"
+        spacing="none"
         underline={false}
         weight="light"
       >
@@ -52,7 +108,7 @@ exports[`<Bodytext /> with element prop 1`] = `
 </Bodytext>
 `;
 
-exports[`<Bodytext /> with initial props 1`] = `
+exports[`<Bodytext /> that it renders correctly with spacing prop 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -66,6 +122,7 @@ exports[`<Bodytext /> with initial props 1`] = `
   color="black"
   element="p"
   size="regular"
+  spacing="md"
 >
   <TextPrimitive
     color="black"
@@ -96,7 +153,7 @@ exports[`<Bodytext /> with initial props 1`] = `
         <p
           className="c0"
         >
-          Regular size
+          Spacing Test
         </p>
       </Primitive>
     </Styled(Primitive)>

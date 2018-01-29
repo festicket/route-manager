@@ -4,7 +4,7 @@ exports[`<SecondaryHeading /> with color prop 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   text-decoration: none;
   font-size: 26px;
   line-height: 28px;
@@ -27,13 +27,14 @@ exports[`<SecondaryHeading /> with color prop 1`] = `
 <SecondaryHeading
   color="white"
   element="h2"
+  spacing="none"
   weight="bold"
 >
   <TextPrimitive
     color="white"
     element="h2"
     size="regular"
-    spacing="md"
+    spacing="none"
     underline={false}
     variant="h2"
     weight="bold"
@@ -42,7 +43,7 @@ exports[`<SecondaryHeading /> with color prop 1`] = `
       color="white"
       element="h2"
       size="regular"
-      spacing="md"
+      spacing="none"
       underline={false}
       weight="bold"
     >
@@ -51,7 +52,7 @@ exports[`<SecondaryHeading /> with color prop 1`] = `
         color="white"
         element="h2"
         size="regular"
-        spacing="md"
+        spacing="none"
         underline={false}
         weight="bold"
       >
@@ -70,7 +71,7 @@ exports[`<SecondaryHeading /> with initial props 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   text-decoration: none;
   font-size: 26px;
   line-height: 28px;
@@ -93,13 +94,14 @@ exports[`<SecondaryHeading /> with initial props 1`] = `
 <SecondaryHeading
   color="black"
   element="h2"
+  spacing="none"
   weight="bold"
 >
   <TextPrimitive
     color="black"
     element="h2"
     size="regular"
-    spacing="md"
+    spacing="none"
     underline={false}
     variant="h2"
     weight="bold"
@@ -108,7 +110,7 @@ exports[`<SecondaryHeading /> with initial props 1`] = `
       color="black"
       element="h2"
       size="regular"
-      spacing="md"
+      spacing="none"
       underline={false}
       weight="bold"
     >
@@ -117,7 +119,7 @@ exports[`<SecondaryHeading /> with initial props 1`] = `
         color="black"
         element="h2"
         size="regular"
-        spacing="md"
+        spacing="none"
         underline={false}
         weight="bold"
       >
@@ -136,7 +138,7 @@ exports[`<SecondaryHeading /> with weight prop 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   text-decoration: none;
   font-size: 26px;
   line-height: 28px;
@@ -159,13 +161,14 @@ exports[`<SecondaryHeading /> with weight prop 1`] = `
 <SecondaryHeading
   color="black"
   element="h2"
+  spacing="none"
   weight="light"
 >
   <TextPrimitive
     color="black"
     element="h2"
     size="regular"
-    spacing="md"
+    spacing="none"
     underline={false}
     variant="h2"
     weight="light"
@@ -174,7 +177,7 @@ exports[`<SecondaryHeading /> with weight prop 1`] = `
       color="black"
       element="h2"
       size="regular"
-      spacing="md"
+      spacing="none"
       underline={false}
       weight="light"
     >
@@ -183,7 +186,7 @@ exports[`<SecondaryHeading /> with weight prop 1`] = `
         color="black"
         element="h2"
         size="regular"
-        spacing="md"
+        spacing="none"
         underline={false}
         weight="light"
       >

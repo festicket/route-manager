@@ -4,7 +4,7 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   text-decoration: none;
   font-size: 18px;
   line-height: 20px;
@@ -20,13 +20,14 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
 <TertiaryHeading
   color="white"
   element="h3"
+  spacing="none"
   weight="bold"
 >
   <TextPrimitive
     color="white"
     element="h3"
     size="regular"
-    spacing="md"
+    spacing="none"
     underline={false}
     variant="h3"
     weight="bold"
@@ -35,7 +36,7 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
       color="white"
       element="h3"
       size="regular"
-      spacing="md"
+      spacing="none"
       underline={false}
       weight="bold"
     >
@@ -44,7 +45,7 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
         color="white"
         element="h3"
         size="regular"
-        spacing="md"
+        spacing="none"
         underline={false}
         weight="bold"
       >
@@ -63,7 +64,7 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   text-decoration: none;
   font-size: 18px;
   line-height: 20px;
@@ -79,13 +80,14 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
 <TertiaryHeading
   color="black"
   element="h3"
+  spacing="none"
   weight="bold"
 >
   <TextPrimitive
     color="black"
     element="h3"
     size="regular"
-    spacing="md"
+    spacing="none"
     underline={false}
     variant="h3"
     weight="bold"
@@ -94,7 +96,7 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
       color="black"
       element="h3"
       size="regular"
-      spacing="md"
+      spacing="none"
       underline={false}
       weight="bold"
     >
@@ -103,7 +105,7 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
         color="black"
         element="h3"
         size="regular"
-        spacing="md"
+        spacing="none"
         underline={false}
         weight="bold"
       >
@@ -122,7 +124,7 @@ exports[`<TertiaryHeading /> with weight prop 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   text-decoration: none;
   font-size: 18px;
   line-height: 20px;
@@ -138,13 +140,14 @@ exports[`<TertiaryHeading /> with weight prop 1`] = `
 <TertiaryHeading
   color="black"
   element="h3"
+  spacing="none"
   weight="light"
 >
   <TextPrimitive
     color="black"
     element="h3"
     size="regular"
-    spacing="md"
+    spacing="none"
     underline={false}
     variant="h3"
     weight="light"
@@ -153,7 +156,7 @@ exports[`<TertiaryHeading /> with weight prop 1`] = `
       color="black"
       element="h3"
       size="regular"
-      spacing="md"
+      spacing="none"
       underline={false}
       weight="light"
     >
@@ -162,7 +165,7 @@ exports[`<TertiaryHeading /> with weight prop 1`] = `
         color="black"
         element="h3"
         size="regular"
-        spacing="md"
+        spacing="none"
         underline={false}
         weight="light"
       >

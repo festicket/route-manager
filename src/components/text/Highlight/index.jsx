@@ -6,6 +6,7 @@ Highlight.defaultProps = {
   element: 'p',
   color: 'black',
   size: 'regular',
+  spacing: 'none',
 };
 
 type HighlightProps = {
@@ -13,6 +14,7 @@ type HighlightProps = {
   children: Node | string,
   color?: 'black' | 'white',
   size?: 'small' | 'regular' | 'tiny',
+  spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',
 };
 
 export default function Highlight({
@@ -20,6 +22,7 @@ export default function Highlight({
   children,
   color,
   size,
+  spacing,
 }: HighlightProps) {
   return (
     <TextPrimitive
@@ -28,6 +31,7 @@ export default function Highlight({
       weight="regular"
       size={size}
       color={color}
+      spacing={spacing}
     >
       {children}
     </TextPrimitive>

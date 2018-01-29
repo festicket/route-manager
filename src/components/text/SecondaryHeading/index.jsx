@@ -6,6 +6,7 @@ SecondaryHeading.defaultProps = {
   element: 'h2',
   color: 'black',
   weight: 'bold',
+  spacing: 'none',
 };
 
 type SecondaryHeadingProps = {
@@ -13,6 +14,7 @@ type SecondaryHeadingProps = {
   children: Node | string,
   color?: 'black' | 'white',
   weight?: 'bold' | 'light',
+  spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',
 };
 
 export default function SecondaryHeading({
@@ -20,9 +22,16 @@ export default function SecondaryHeading({
   children,
   color,
   weight,
+  spacing,
 }: SecondaryHeadingProps) {
   return (
-    <TextPrimitive element={element} variant="h2" weight={weight} color={color}>
+    <TextPrimitive
+      element={element}
+      variant="h2"
+      weight={weight}
+      color={color}
+      spacing={spacing}
+    >
       {children}
     </TextPrimitive>
   );
