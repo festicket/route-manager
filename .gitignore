@@ -3,3 +3,5 @@
 /flow-typed
 /dist
 **/.DS_Store
+/public
+/storybook-static

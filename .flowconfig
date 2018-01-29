@@ -10,6 +10,7 @@
 .*/plopfile\.js
 .*/jest\.config\.js
 .*/react-generators/.*
+.*/storybook-static/.*
 
 [include]
 
