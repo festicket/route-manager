@@ -1,8 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Grid /> with 1 column 1`] = `
+.c1 {
+  padding: 15px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .c0 {
   margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c1 {
+    padding: 15px;
+  }
 }
 
 @media (min-width:568px) {
@@ -18,41 +30,130 @@ exports[`<Grid /> with 1 column 1`] = `
   }
 }
 
-<Primitive
-  className="c0"
-  element="div"
->
-  <Component
-    width={1}
-  >
-    Item 1
-  </Component>
-  <Component
-    width={1}
-  >
-    Item 2
-  </Component>
-  <Component
-    width={1}
-  >
-    Item 3
-  </Component>
-  <Component
-    width={1}
-  >
-    Item 4
-  </Component>
-  <Component
-    width={1}
-  >
-    Item 5
-  </Component>
-</Primitive>
+<Component>
+  <Styled(Primitive)>
+    <Primitive
+      className="c0"
+    >
+      <div
+        className="c0"
+      >
+        <Component
+          width={1}
+        >
+          <Styled(Primitive)
+            width={1}
+          >
+            <Primitive
+              className="c1"
+              width={1}
+            >
+              <div
+                className="c1"
+                width={1}
+              >
+                Item 1
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={1}
+        >
+          <Styled(Primitive)
+            width={1}
+          >
+            <Primitive
+              className="c1"
+              width={1}
+            >
+              <div
+                className="c1"
+                width={1}
+              >
+                Item 2
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={1}
+        >
+          <Styled(Primitive)
+            width={1}
+          >
+            <Primitive
+              className="c1"
+              width={1}
+            >
+              <div
+                className="c1"
+                width={1}
+              >
+                Item 3
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={1}
+        >
+          <Styled(Primitive)
+            width={1}
+          >
+            <Primitive
+              className="c1"
+              width={1}
+            >
+              <div
+                className="c1"
+                width={1}
+              >
+                Item 4
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={1}
+        >
+          <Styled(Primitive)
+            width={1}
+          >
+            <Primitive
+              className="c1"
+              width={1}
+            >
+              <div
+                className="c1"
+                width={1}
+              >
+                Item 5
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+      </div>
+    </Primitive>
+  </Styled(Primitive)>
+</Component>
 `;
 
 exports[`<Grid /> with 2 columns 1`] = `
+.c1 {
+  padding: 15px 0;
+  box-sizing: border-box;
+  width: 50%;
+}
+
 .c0 {
   margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c1 {
+    padding: 15px;
+  }
 }
 
 @media (min-width:568px) {
@@ -68,41 +169,130 @@ exports[`<Grid /> with 2 columns 1`] = `
   }
 }
 
-<Primitive
-  className="c0"
-  element="div"
->
-  <Component
-    width={0.5}
-  >
-    Item 1
-  </Component>
-  <Component
-    width={0.5}
-  >
-    Item 2
-  </Component>
-  <Component
-    width={0.5}
-  >
-    Item 3
-  </Component>
-  <Component
-    width={0.5}
-  >
-    Item 4
-  </Component>
-  <Component
-    width={0.5}
-  >
-    Item 5
-  </Component>
-</Primitive>
+<Component>
+  <Styled(Primitive)>
+    <Primitive
+      className="c0"
+    >
+      <div
+        className="c0"
+      >
+        <Component
+          width={0.5}
+        >
+          <Styled(Primitive)
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              width={0.5}
+            >
+              <div
+                className="c1"
+                width={0.5}
+              >
+                Item 1
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.5}
+        >
+          <Styled(Primitive)
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              width={0.5}
+            >
+              <div
+                className="c1"
+                width={0.5}
+              >
+                Item 2
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.5}
+        >
+          <Styled(Primitive)
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              width={0.5}
+            >
+              <div
+                className="c1"
+                width={0.5}
+              >
+                Item 3
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.5}
+        >
+          <Styled(Primitive)
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              width={0.5}
+            >
+              <div
+                className="c1"
+                width={0.5}
+              >
+                Item 4
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.5}
+        >
+          <Styled(Primitive)
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              width={0.5}
+            >
+              <div
+                className="c1"
+                width={0.5}
+              >
+                Item 5
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+      </div>
+    </Primitive>
+  </Styled(Primitive)>
+</Component>
 `;
 
 exports[`<Grid /> with 3 columns 1`] = `
+.c1 {
+  padding: 15px 0;
+  box-sizing: border-box;
+  width: 33.33333333333333%;
+}
+
 .c0 {
   margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c1 {
+    padding: 15px;
+  }
 }
 
 @media (min-width:568px) {
@@ -118,41 +308,142 @@ exports[`<Grid /> with 3 columns 1`] = `
   }
 }
 
-<Primitive
-  className="c0"
-  element="div"
->
-  <Component
-    width={0.3333333333333333}
-  >
-    Item 1
-  </Component>
-  <Component
-    width={0.3333333333333333}
-  >
-    Item 2
-  </Component>
-  <Component
-    width={0.3333333333333333}
-  >
-    Item 3
-  </Component>
-  <Component
-    width={0.3333333333333333}
-  >
-    Item 4
-  </Component>
-  <Component
-    width={0.3333333333333333}
-  >
-    Item 5
-  </Component>
-</Primitive>
+<Component>
+  <Styled(Primitive)>
+    <Primitive
+      className="c0"
+    >
+      <div
+        className="c0"
+      >
+        <Component
+          width={0.3333333333333333}
+        >
+          <Styled(Primitive)
+            width={0.3333333333333333}
+          >
+            <Primitive
+              className="c1"
+              width={0.3333333333333333}
+            >
+              <div
+                className="c1"
+                width={0.3333333333333333}
+              >
+                Item 1
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.3333333333333333}
+        >
+          <Styled(Primitive)
+            width={0.3333333333333333}
+          >
+            <Primitive
+              className="c1"
+              width={0.3333333333333333}
+            >
+              <div
+                className="c1"
+                width={0.3333333333333333}
+              >
+                Item 2
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.3333333333333333}
+        >
+          <Styled(Primitive)
+            width={0.3333333333333333}
+          >
+            <Primitive
+              className="c1"
+              width={0.3333333333333333}
+            >
+              <div
+                className="c1"
+                width={0.3333333333333333}
+              >
+                Item 3
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.3333333333333333}
+        >
+          <Styled(Primitive)
+            width={0.3333333333333333}
+          >
+            <Primitive
+              className="c1"
+              width={0.3333333333333333}
+            >
+              <div
+                className="c1"
+                width={0.3333333333333333}
+              >
+                Item 4
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.3333333333333333}
+        >
+          <Styled(Primitive)
+            width={0.3333333333333333}
+          >
+            <Primitive
+              className="c1"
+              width={0.3333333333333333}
+            >
+              <div
+                className="c1"
+                width={0.3333333333333333}
+              >
+                Item 5
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+      </div>
+    </Primitive>
+  </Styled(Primitive)>
+</Component>
 `;
 
 exports[`<Grid /> with 3 columns and span 1`] = `
+.c2 {
+  padding: 15px 0;
+  box-sizing: border-box;
+  width: 33.33333333333333%;
+}
+
+.c1 {
+  padding: 15px 0;
+  box-sizing: border-box;
+  width: 66.66666666666666%;
+}
+
 .c0 {
   margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c2 {
+    padding: 15px;
+  }
+}
+
+@media (min-width:568px) {
+  .c1 {
+    padding: 15px;
+  }
 }
 
 @media (min-width:568px) {
@@ -168,41 +459,130 @@ exports[`<Grid /> with 3 columns and span 1`] = `
   }
 }
 
-<Primitive
-  className="c0"
-  element="div"
->
-  <Component
-    width={0.6666666666666666}
-  >
-    Item 1
-  </Component>
-  <Component
-    width={0.3333333333333333}
-  >
-    Item 2
-  </Component>
-  <Component
-    width={0.3333333333333333}
-  >
-    Item 3
-  </Component>
-  <Component
-    width={0.3333333333333333}
-  >
-    Item 4
-  </Component>
-  <Component
-    width={0.3333333333333333}
-  >
-    Item 5
-  </Component>
-</Primitive>
+<Component>
+  <Styled(Primitive)>
+    <Primitive
+      className="c0"
+    >
+      <div
+        className="c0"
+      >
+        <Component
+          width={0.6666666666666666}
+        >
+          <Styled(Primitive)
+            width={0.6666666666666666}
+          >
+            <Primitive
+              className="c1"
+              width={0.6666666666666666}
+            >
+              <div
+                className="c1"
+                width={0.6666666666666666}
+              >
+                Item 1
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.3333333333333333}
+        >
+          <Styled(Primitive)
+            width={0.3333333333333333}
+          >
+            <Primitive
+              className="c2"
+              width={0.3333333333333333}
+            >
+              <div
+                className="c2"
+                width={0.3333333333333333}
+              >
+                Item 2
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.3333333333333333}
+        >
+          <Styled(Primitive)
+            width={0.3333333333333333}
+          >
+            <Primitive
+              className="c2"
+              width={0.3333333333333333}
+            >
+              <div
+                className="c2"
+                width={0.3333333333333333}
+              >
+                Item 3
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.3333333333333333}
+        >
+          <Styled(Primitive)
+            width={0.3333333333333333}
+          >
+            <Primitive
+              className="c2"
+              width={0.3333333333333333}
+            >
+              <div
+                className="c2"
+                width={0.3333333333333333}
+              >
+                Item 4
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.3333333333333333}
+        >
+          <Styled(Primitive)
+            width={0.3333333333333333}
+          >
+            <Primitive
+              className="c2"
+              width={0.3333333333333333}
+            >
+              <div
+                className="c2"
+                width={0.3333333333333333}
+              >
+                Item 5
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+      </div>
+    </Primitive>
+  </Styled(Primitive)>
+</Component>
 `;
 
 exports[`<Grid /> with 4 columns 1`] = `
+.c1 {
+  padding: 15px 0;
+  box-sizing: border-box;
+  width: 25%;
+}
+
 .c0 {
   margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c1 {
+    padding: 15px;
+  }
 }
 
 @media (min-width:568px) {
@@ -218,41 +598,130 @@ exports[`<Grid /> with 4 columns 1`] = `
   }
 }
 
-<Primitive
-  className="c0"
-  element="div"
->
-  <Component
-    width={0.25}
-  >
-    Item 1
-  </Component>
-  <Component
-    width={0.25}
-  >
-    Item 2
-  </Component>
-  <Component
-    width={0.25}
-  >
-    Item 3
-  </Component>
-  <Component
-    width={0.25}
-  >
-    Item 4
-  </Component>
-  <Component
-    width={0.25}
-  >
-    Item 5
-  </Component>
-</Primitive>
+<Component>
+  <Styled(Primitive)>
+    <Primitive
+      className="c0"
+    >
+      <div
+        className="c0"
+      >
+        <Component
+          width={0.25}
+        >
+          <Styled(Primitive)
+            width={0.25}
+          >
+            <Primitive
+              className="c1"
+              width={0.25}
+            >
+              <div
+                className="c1"
+                width={0.25}
+              >
+                Item 1
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.25}
+        >
+          <Styled(Primitive)
+            width={0.25}
+          >
+            <Primitive
+              className="c1"
+              width={0.25}
+            >
+              <div
+                className="c1"
+                width={0.25}
+              >
+                Item 2
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.25}
+        >
+          <Styled(Primitive)
+            width={0.25}
+          >
+            <Primitive
+              className="c1"
+              width={0.25}
+            >
+              <div
+                className="c1"
+                width={0.25}
+              >
+                Item 3
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.25}
+        >
+          <Styled(Primitive)
+            width={0.25}
+          >
+            <Primitive
+              className="c1"
+              width={0.25}
+            >
+              <div
+                className="c1"
+                width={0.25}
+              >
+                Item 4
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.25}
+        >
+          <Styled(Primitive)
+            width={0.25}
+          >
+            <Primitive
+              className="c1"
+              width={0.25}
+            >
+              <div
+                className="c1"
+                width={0.25}
+              >
+                Item 5
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+      </div>
+    </Primitive>
+  </Styled(Primitive)>
+</Component>
 `;
 
 exports[`<Grid /> with 5 columns 1`] = `
+.c1 {
+  padding: 15px 0;
+  box-sizing: border-box;
+  width: 20%;
+}
+
 .c0 {
   margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c1 {
+    padding: 15px;
+  }
 }
 
 @media (min-width:568px) {
@@ -268,41 +737,130 @@ exports[`<Grid /> with 5 columns 1`] = `
   }
 }
 
-<Primitive
-  className="c0"
-  element="div"
->
-  <Component
-    width={0.2}
-  >
-    Item 1
-  </Component>
-  <Component
-    width={0.2}
-  >
-    Item 2
-  </Component>
-  <Component
-    width={0.2}
-  >
-    Item 3
-  </Component>
-  <Component
-    width={0.2}
-  >
-    Item 4
-  </Component>
-  <Component
-    width={0.2}
-  >
-    Item 5
-  </Component>
-</Primitive>
+<Component>
+  <Styled(Primitive)>
+    <Primitive
+      className="c0"
+    >
+      <div
+        className="c0"
+      >
+        <Component
+          width={0.2}
+        >
+          <Styled(Primitive)
+            width={0.2}
+          >
+            <Primitive
+              className="c1"
+              width={0.2}
+            >
+              <div
+                className="c1"
+                width={0.2}
+              >
+                Item 1
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.2}
+        >
+          <Styled(Primitive)
+            width={0.2}
+          >
+            <Primitive
+              className="c1"
+              width={0.2}
+            >
+              <div
+                className="c1"
+                width={0.2}
+              >
+                Item 2
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.2}
+        >
+          <Styled(Primitive)
+            width={0.2}
+          >
+            <Primitive
+              className="c1"
+              width={0.2}
+            >
+              <div
+                className="c1"
+                width={0.2}
+              >
+                Item 3
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.2}
+        >
+          <Styled(Primitive)
+            width={0.2}
+          >
+            <Primitive
+              className="c1"
+              width={0.2}
+            >
+              <div
+                className="c1"
+                width={0.2}
+              >
+                Item 4
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.2}
+        >
+          <Styled(Primitive)
+            width={0.2}
+          >
+            <Primitive
+              className="c1"
+              width={0.2}
+            >
+              <div
+                className="c1"
+                width={0.2}
+              >
+                Item 5
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+      </div>
+    </Primitive>
+  </Styled(Primitive)>
+</Component>
 `;
 
 exports[`<Grid /> with custom Grid and GridElement elements 1`] = `
+.c1 {
+  padding: 15px 0;
+  box-sizing: border-box;
+  width: 50%;
+}
+
 .c0 {
   margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c1 {
+    padding: 15px;
+  }
 }
 
 @media (min-width:568px) {
@@ -318,46 +876,150 @@ exports[`<Grid /> with custom Grid and GridElement elements 1`] = `
   }
 }
 
-<Primitive
-  className="c0"
+<Component
   element="article"
 >
-  <Component
-    element="section"
-    width={0.5}
+  <Styled(Primitive)
+    element="article"
   >
-    Item 1
-  </Component>
-  <Component
-    element="section"
-    width={0.5}
-  >
-    Item 2
-  </Component>
-  <Component
-    element="section"
-    width={0.5}
-  >
-    Item 3
-  </Component>
-  <Component
-    element="section"
-    width={0.5}
-  >
-    Item 4
-  </Component>
-  <Component
-    element="section"
-    width={0.5}
-  >
-    Item 5
-  </Component>
-</Primitive>
+    <Primitive
+      className="c0"
+      element="article"
+    >
+      <article
+        className="c0"
+      >
+        <Component
+          element="section"
+          width={0.5}
+        >
+          <Styled(Primitive)
+            element="section"
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              element="section"
+              width={0.5}
+            >
+              <section
+                className="c1"
+                width={0.5}
+              >
+                Item 1
+              </section>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          element="section"
+          width={0.5}
+        >
+          <Styled(Primitive)
+            element="section"
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              element="section"
+              width={0.5}
+            >
+              <section
+                className="c1"
+                width={0.5}
+              >
+                Item 2
+              </section>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          element="section"
+          width={0.5}
+        >
+          <Styled(Primitive)
+            element="section"
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              element="section"
+              width={0.5}
+            >
+              <section
+                className="c1"
+                width={0.5}
+              >
+                Item 3
+              </section>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          element="section"
+          width={0.5}
+        >
+          <Styled(Primitive)
+            element="section"
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              element="section"
+              width={0.5}
+            >
+              <section
+                className="c1"
+                width={0.5}
+              >
+                Item 4
+              </section>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          element="section"
+          width={0.5}
+        >
+          <Styled(Primitive)
+            element="section"
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              element="section"
+              width={0.5}
+            >
+              <section
+                className="c1"
+                width={0.5}
+              >
+                Item 5
+              </section>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+      </article>
+    </Primitive>
+  </Styled(Primitive)>
+</Component>
 `;
 
 exports[`<Grid /> with custom Grid element 1`] = `
+.c1 {
+  padding: 15px 0;
+  box-sizing: border-box;
+  width: 50%;
+}
+
 .c0 {
   margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c1 {
+    padding: 15px;
+  }
 }
 
 @media (min-width:568px) {
@@ -373,36 +1035,118 @@ exports[`<Grid /> with custom Grid element 1`] = `
   }
 }
 
-<Primitive
-  className="c0"
+<Component
   element="article"
 >
-  <Component
-    width={0.5}
+  <Styled(Primitive)
+    element="article"
   >
-    Item 1
-  </Component>
-  <Component
-    width={0.5}
-  >
-    Item 2
-  </Component>
-  <Component
-    width={0.5}
-  >
-    Item 3
-  </Component>
-  <Component
-    width={0.5}
-  >
-    Item 4
-  </Component>
-  <Component
-    width={0.5}
-  >
-    Item 5
-  </Component>
-</Primitive>
+    <Primitive
+      className="c0"
+      element="article"
+    >
+      <article
+        className="c0"
+      >
+        <Component
+          width={0.5}
+        >
+          <Styled(Primitive)
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              width={0.5}
+            >
+              <div
+                className="c1"
+                width={0.5}
+              >
+                Item 1
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.5}
+        >
+          <Styled(Primitive)
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              width={0.5}
+            >
+              <div
+                className="c1"
+                width={0.5}
+              >
+                Item 2
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.5}
+        >
+          <Styled(Primitive)
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              width={0.5}
+            >
+              <div
+                className="c1"
+                width={0.5}
+              >
+                Item 3
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.5}
+        >
+          <Styled(Primitive)
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              width={0.5}
+            >
+              <div
+                className="c1"
+                width={0.5}
+              >
+                Item 4
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={0.5}
+        >
+          <Styled(Primitive)
+            width={0.5}
+          >
+            <Primitive
+              className="c1"
+              width={0.5}
+            >
+              <div
+                className="c1"
+                width={0.5}
+              >
+                Item 5
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+      </article>
+    </Primitive>
+  </Styled(Primitive)>
+</Component>
 `;
 
 exports[`<Grid /> with initial props 1`] = `
@@ -423,15 +1167,57 @@ exports[`<Grid /> with initial props 1`] = `
   }
 }
 
-<Primitive
-  className="c0"
-  element="div"
-/>
+<Component>
+  <Styled(Primitive)>
+    <Primitive
+      className="c0"
+    >
+      <div
+        className="c0"
+      />
+    </Primitive>
+  </Styled(Primitive)>
+</Component>
 `;
 
 exports[`<Grid /> with responsive columns 1`] = `
+.c1 {
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
 .c0 {
   margin: -15px 0;
+}
+
+@media (min-width:568px) {
+  .c1 {
+    width: 0%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    width: 0%;
+  }
+}
+
+@media (min-width:960px) {
+  .c1 {
+    width: 0%;
+  }
+}
+
+@media (min-width:1220px) {
+  .c1 {
+    width: 0%;
+  }
+}
+
+@media (min-width:568px) {
+  .c1 {
+    padding: 15px;
+  }
 }
 
 @media (min-width:568px) {
@@ -447,105 +1233,392 @@ exports[`<Grid /> with responsive columns 1`] = `
   }
 }
 
-<Primitive
-  className="c0"
-  element="div"
->
-  <Component
-    width={
-      Object {
-        "lg": 0.25,
-        "md": 0.3333333333333333,
-        "sm": 0.5,
-        "xlg": 0.2,
-      }
-    }
-  >
-    First Element
-  </Component>
-  <Component
-    width={
-      Object {
-        "lg": 0.25,
-        "md": 0.3333333333333333,
-        "sm": 0.5,
-        "xlg": 0.2,
-      }
-    }
-  >
-    Second Element
-  </Component>
-  <Component
-    width={
-      Object {
-        "lg": 0.25,
-        "md": 0.3333333333333333,
-        "sm": 0.5,
-        "xlg": 0.2,
-      }
-    }
-  >
-    Third Element
-  </Component>
-  <Component
-    width={
-      Object {
-        "lg": 0.25,
-        "md": 0.3333333333333333,
-        "sm": 0.5,
-        "xlg": 0.2,
-      }
-    }
-  >
-    Fourth Element
-  </Component>
-  <Component
-    width={
-      Object {
-        "lg": 0.25,
-        "md": 0.3333333333333333,
-        "sm": 0.5,
-        "xlg": 0.2,
-      }
-    }
-  >
-    Fifth Element
-  </Component>
-  <Component
-    width={
-      Object {
-        "lg": 0.25,
-        "md": 0.3333333333333333,
-        "sm": 0.5,
-        "xlg": 0.2,
-      }
-    }
-  >
-    Sixth Element
-  </Component>
-  <Component
-    width={
-      Object {
-        "lg": 0.25,
-        "md": 0.3333333333333333,
-        "sm": 0.5,
-        "xlg": 0.2,
-      }
-    }
-  >
-    Seventh Element
-  </Component>
-  <Component
-    width={
-      Object {
-        "lg": 0.25,
-        "md": 0.3333333333333333,
-        "sm": 0.5,
-        "xlg": 0.2,
-      }
-    }
-  >
-    Eighth Element
-  </Component>
-</Primitive>
+<Component>
+  <Styled(Primitive)>
+    <Primitive
+      className="c0"
+    >
+      <div
+        className="c0"
+      >
+        <Component
+          width={
+            Object {
+              "lg": 0.25,
+              "md": 0.3333333333333333,
+              "sm": 0.5,
+              "xlg": 0.2,
+            }
+          }
+        >
+          <Styled(Primitive)
+            width={
+              Object {
+                "lg": 0.25,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xlg": 0.2,
+              }
+            }
+          >
+            <Primitive
+              className="c1"
+              width={
+                Object {
+                  "lg": 0.25,
+                  "md": 0.3333333333333333,
+                  "sm": 0.5,
+                  "xlg": 0.2,
+                }
+              }
+            >
+              <div
+                className="c1"
+                width={
+                  Object {
+                    "lg": 0.25,
+                    "md": 0.3333333333333333,
+                    "sm": 0.5,
+                    "xlg": 0.2,
+                  }
+                }
+              >
+                First Element
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={
+            Object {
+              "lg": 0.25,
+              "md": 0.3333333333333333,
+              "sm": 0.5,
+              "xlg": 0.2,
+            }
+          }
+        >
+          <Styled(Primitive)
+            width={
+              Object {
+                "lg": 0.25,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xlg": 0.2,
+              }
+            }
+          >
+            <Primitive
+              className="c1"
+              width={
+                Object {
+                  "lg": 0.25,
+                  "md": 0.3333333333333333,
+                  "sm": 0.5,
+                  "xlg": 0.2,
+                }
+              }
+            >
+              <div
+                className="c1"
+                width={
+                  Object {
+                    "lg": 0.25,
+                    "md": 0.3333333333333333,
+                    "sm": 0.5,
+                    "xlg": 0.2,
+                  }
+                }
+              >
+                Second Element
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={
+            Object {
+              "lg": 0.25,
+              "md": 0.3333333333333333,
+              "sm": 0.5,
+              "xlg": 0.2,
+            }
+          }
+        >
+          <Styled(Primitive)
+            width={
+              Object {
+                "lg": 0.25,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xlg": 0.2,
+              }
+            }
+          >
+            <Primitive
+              className="c1"
+              width={
+                Object {
+                  "lg": 0.25,
+                  "md": 0.3333333333333333,
+                  "sm": 0.5,
+                  "xlg": 0.2,
+                }
+              }
+            >
+              <div
+                className="c1"
+                width={
+                  Object {
+                    "lg": 0.25,
+                    "md": 0.3333333333333333,
+                    "sm": 0.5,
+                    "xlg": 0.2,
+                  }
+                }
+              >
+                Third Element
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={
+            Object {
+              "lg": 0.25,
+              "md": 0.3333333333333333,
+              "sm": 0.5,
+              "xlg": 0.2,
+            }
+          }
+        >
+          <Styled(Primitive)
+            width={
+              Object {
+                "lg": 0.25,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xlg": 0.2,
+              }
+            }
+          >
+            <Primitive
+              className="c1"
+              width={
+                Object {
+                  "lg": 0.25,
+                  "md": 0.3333333333333333,
+                  "sm": 0.5,
+                  "xlg": 0.2,
+                }
+              }
+            >
+              <div
+                className="c1"
+                width={
+                  Object {
+                    "lg": 0.25,
+                    "md": 0.3333333333333333,
+                    "sm": 0.5,
+                    "xlg": 0.2,
+                  }
+                }
+              >
+                Fourth Element
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={
+            Object {
+              "lg": 0.25,
+              "md": 0.3333333333333333,
+              "sm": 0.5,
+              "xlg": 0.2,
+            }
+          }
+        >
+          <Styled(Primitive)
+            width={
+              Object {
+                "lg": 0.25,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xlg": 0.2,
+              }
+            }
+          >
+            <Primitive
+              className="c1"
+              width={
+                Object {
+                  "lg": 0.25,
+                  "md": 0.3333333333333333,
+                  "sm": 0.5,
+                  "xlg": 0.2,
+                }
+              }
+            >
+              <div
+                className="c1"
+                width={
+                  Object {
+                    "lg": 0.25,
+                    "md": 0.3333333333333333,
+                    "sm": 0.5,
+                    "xlg": 0.2,
+                  }
+                }
+              >
+                Fifth Element
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={
+            Object {
+              "lg": 0.25,
+              "md": 0.3333333333333333,
+              "sm": 0.5,
+              "xlg": 0.2,
+            }
+          }
+        >
+          <Styled(Primitive)
+            width={
+              Object {
+                "lg": 0.25,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xlg": 0.2,
+              }
+            }
+          >
+            <Primitive
+              className="c1"
+              width={
+                Object {
+                  "lg": 0.25,
+                  "md": 0.3333333333333333,
+                  "sm": 0.5,
+                  "xlg": 0.2,
+                }
+              }
+            >
+              <div
+                className="c1"
+                width={
+                  Object {
+                    "lg": 0.25,
+                    "md": 0.3333333333333333,
+                    "sm": 0.5,
+                    "xlg": 0.2,
+                  }
+                }
+              >
+                Sixth Element
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={
+            Object {
+              "lg": 0.25,
+              "md": 0.3333333333333333,
+              "sm": 0.5,
+              "xlg": 0.2,
+            }
+          }
+        >
+          <Styled(Primitive)
+            width={
+              Object {
+                "lg": 0.25,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xlg": 0.2,
+              }
+            }
+          >
+            <Primitive
+              className="c1"
+              width={
+                Object {
+                  "lg": 0.25,
+                  "md": 0.3333333333333333,
+                  "sm": 0.5,
+                  "xlg": 0.2,
+                }
+              }
+            >
+              <div
+                className="c1"
+                width={
+                  Object {
+                    "lg": 0.25,
+                    "md": 0.3333333333333333,
+                    "sm": 0.5,
+                    "xlg": 0.2,
+                  }
+                }
+              >
+                Seventh Element
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+        <Component
+          width={
+            Object {
+              "lg": 0.25,
+              "md": 0.3333333333333333,
+              "sm": 0.5,
+              "xlg": 0.2,
+            }
+          }
+        >
+          <Styled(Primitive)
+            width={
+              Object {
+                "lg": 0.25,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xlg": 0.2,
+              }
+            }
+          >
+            <Primitive
+              className="c1"
+              width={
+                Object {
+                  "lg": 0.25,
+                  "md": 0.3333333333333333,
+                  "sm": 0.5,
+                  "xlg": 0.2,
+                }
+              }
+            >
+              <div
+                className="c1"
+                width={
+                  Object {
+                    "lg": 0.25,
+                    "md": 0.3333333333333333,
+                    "sm": 0.5,
+                    "xlg": 0.2,
+                  }
+                }
+              >
+                Eighth Element
+              </div>
+            </Primitive>
+          </Styled(Primitive)>
+        </Component>
+      </div>
+    </Primitive>
+  </Styled(Primitive)>
+</Component>
 `;
