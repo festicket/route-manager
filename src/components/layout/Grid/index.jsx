@@ -81,6 +81,8 @@ Primitive.defaultProps = {
 
 const StyledGridElement = styled(Primitive)`
   padding: ${gap / 2}px 0;
+  box-sizing: border-box;
+
   ${breakpoint('from-sm')`
     padding: ${gap / 2}px;
   `};
