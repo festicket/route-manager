@@ -11,7 +11,7 @@ Highlight.defaultProps = {
 
 type HighlightProps = {
   element?: 'p' | 'span',
-  children: Node | string,
+  children: Node,
   color?: 'black' | 'white',
   size?: 'small' | 'regular' | 'tiny',
   spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',
