@@ -1,20 +1,20 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { Bodytext } from '@festicket/react-ui-components';
+import { BodyText } from '@festicket/react-ui-components';
 
-describe('<Bodytext />', () => {
+describe('<BodyText />', () => {
   test('that it renders correctly', () => {
-    const tree = mount(<Bodytext size="regular">Regular size</Bodytext>);
+    const tree = mount(<BodyText size="regular">Regular size</BodyText>);
     expect(tree).toMatchSnapshot();
   });
 
   test('that it renders correctly with element prop', () => {
-    const tree = mount(<Bodytext element="span">Small size</Bodytext>);
+    const tree = mount(<BodyText element="span">Small size</BodyText>);
     expect(tree).toMatchSnapshot();
   });
 
   test('that it renders correctly with spacing prop', () => {
-    const tree = mount(<Bodytext spacing="md">Spacing Test</Bodytext>);
+    const tree = mount(<BodyText spacing="md">Spacing Test</BodyText>);
     expect(tree).toMatchSnapshot();
   });
 });

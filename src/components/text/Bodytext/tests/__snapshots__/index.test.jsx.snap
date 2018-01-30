@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Bodytext /> that it renders correctly 1`] = `
+exports[`<BodyText /> that it renders correctly 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -11,7 +11,7 @@ exports[`<Bodytext /> that it renders correctly 1`] = `
   line-height: 1.12;
 }
 
-<Bodytext
+<BodyText
   color="black"
   element="p"
   size="regular"
@@ -51,10 +51,10 @@ exports[`<Bodytext /> that it renders correctly 1`] = `
       </Primitive>
     </Styled(Primitive)>
   </TextPrimitive>
-</Bodytext>
+</BodyText>
 `;
 
-exports[`<Bodytext /> that it renders correctly with element prop 1`] = `
+exports[`<BodyText /> that it renders correctly with element prop 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -65,7 +65,7 @@ exports[`<Bodytext /> that it renders correctly with element prop 1`] = `
   line-height: 1.12;
 }
 
-<Bodytext
+<BodyText
   color="black"
   element="span"
   size="regular"
@@ -105,10 +105,10 @@ exports[`<Bodytext /> that it renders correctly with element prop 1`] = `
       </Primitive>
     </Styled(Primitive)>
   </TextPrimitive>
-</Bodytext>
+</BodyText>
 `;
 
-exports[`<Bodytext /> that it renders correctly with spacing prop 1`] = `
+exports[`<BodyText /> that it renders correctly with spacing prop 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -118,7 +118,7 @@ exports[`<Bodytext /> that it renders correctly with spacing prop 1`] = `
   line-height: 1.12;
 }
 
-<Bodytext
+<BodyText
   color="black"
   element="p"
   size="regular"
@@ -158,5 +158,5 @@ exports[`<Bodytext /> that it renders correctly with spacing prop 1`] = `
       </Primitive>
     </Styled(Primitive)>
   </TextPrimitive>
-</Bodytext>
+</BodyText>
 `;

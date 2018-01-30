@@ -1,20 +1,20 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Bodytext from './';
+import BodyText from './';
 import { Background } from '../../../utils/storybook-helpers/';
 
-storiesOf('Components / Text / Bodytext', module).add('variations', () => (
+storiesOf('Components / Text / BodyText', module).add('variations', () => (
   <Background.White>
-    <Bodytext size="tiny">Tiny size</Bodytext>
-    <Bodytext size="small">Small size</Bodytext>
-    <Bodytext size="regular">Regular size</Bodytext>
-    <Bodytext size="small" spacing="md">
+    <BodyText size="tiny">Tiny size</BodyText>
+    <BodyText size="small">Small size</BodyText>
+    <BodyText size="regular">Regular size</BodyText>
+    <BodyText size="small" spacing="md">
       Small size with medium spacing
-    </Bodytext>
+    </BodyText>
     <Background.Black>
-      <Bodytext size="small" spacing="sm" color="white">
+      <BodyText size="small" spacing="sm" color="white">
         Small size with small spacing + white color
-      </Bodytext>
+      </BodyText>
     </Background.Black>
   </Background.White>
 ));
