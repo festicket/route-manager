@@ -8,7 +8,7 @@ const req = require.context("../src/", true, /story\.jsx$/);
 addDecorator(story => <ThemeProvider theme={theme}>{story()}</ThemeProvider>);
 
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  req.keys().forEach(req);
 }
 
 configure(loadStories, module);
