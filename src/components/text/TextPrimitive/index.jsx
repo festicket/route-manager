@@ -134,16 +134,19 @@ TextPrimitive.defaultProps = {
 };
 
 export function TextPrimitive(props: Props) {
-  const { variant, children, ...rest } = props;
+  // we don't need variant or children beyond this scope.
+  // we pass the remainder down to the styled primitives.
+  // size, spacing, weight, color and underline.
+  const { variant, children, ...remaining } = props;
 
   switch (variant) {
     case 'h1':
-      return <H1 {...rest}>{children}</H1>;
+      return <H1 {...remaining}>{children}</H1>;
     case 'h2':
-      return <H2 {...rest}>{children}</H2>;
+      return <H2 {...remaining}>{children}</H2>;
     case 'h3':
-      return <H3 {...rest}>{children}</H3>;
+      return <H3 {...remaining}>{children}</H3>;
     default:
-      return <Paragraph {...rest}>{children}</Paragraph>;
+      return <Paragraph {...remaining}>{children}</Paragraph>;
   }
 }
