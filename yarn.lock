@@ -168,9 +168,9 @@
   dependencies:
     find-up "^2.1.0"
 
-"@festicket/eslint-config@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@festicket/eslint-config/-/eslint-config-1.1.3.tgz#2109784fe982ab399f027cc63b8052cab78cfe2d"
+"@festicket/eslint-config@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@festicket/eslint-config/-/eslint-config-1.1.5.tgz#8877357f352d0e79b5c1d24e1108bd3b59c66750"
   dependencies:
     eslint-config-airbnb "^16.1.0"
     eslint-config-airbnb-base "^12.1.0"
