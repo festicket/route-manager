@@ -11,7 +11,7 @@ Bodytext.defaultProps = {
 
 type BodytextProps = {
   element?: 'p' | 'span',
-  children: Node,
+  children: Node | string,
   color?: 'black' | 'white',
   size?: 'small' | 'regular' | 'tiny',
   spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',

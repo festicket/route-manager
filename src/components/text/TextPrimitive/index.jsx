@@ -120,7 +120,7 @@ type Props = {
   color?: 'white' | 'black' | 'grey' | 'red' | 'inherit',
   spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',
   underline?: boolean,
-  children: Node,
+  children: Node | string,
 };
 
 TextPrimitive.defaultProps = {
