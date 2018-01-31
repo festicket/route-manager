@@ -1,7 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Separator /> with dark variant 1`] = `
+.c0 {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 10px 0;
+}
+
+<Separator
+  variant="dark"
+>
+  <styled.hr
+    margin={true}
+    marginLarge={false}
+    variant="dark"
+  >
+    <hr
+      className="c0"
+    />
+  </styled.hr>
+</Separator>
+`;
+
 exports[`<Separator /> with initial props 1`] = `
+.c0 {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 10px 0;
+}
+
 <Separator>
-  <div />
+  <styled.hr
+    margin={true}
+    marginLarge={false}
+    variant="medium"
+  >
+    <hr
+      className="c0"
+    />
+  </styled.hr>
+</Separator>
+`;
+
+exports[`<Separator /> with light variant 1`] = `
+.c0 {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 10px 0;
+}
+
+<Separator
+  variant="light"
+>
+  <styled.hr
+    margin={true}
+    marginLarge={false}
+    variant="light"
+  >
+    <hr
+      className="c0"
+    />
+  </styled.hr>
+</Separator>
+`;
+
+exports[`<Separator /> with marginLarge 1`] = `
+.c0 {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 10px 0;
+  margin: 50px 0;
+}
+
+<Separator
+  marginLarge={true}
+  variant="dark"
+>
+  <styled.hr
+    margin={true}
+    marginLarge={true}
+    variant="dark"
+  >
+    <hr
+      className="c0"
+    />
+  </styled.hr>
+</Separator>
+`;
+
+exports[`<Separator /> with medium variant 1`] = `
+.c0 {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 10px 0;
+}
+
+<Separator
+  variant="medium"
+>
+  <styled.hr
+    margin={true}
+    marginLarge={false}
+    variant="medium"
+  >
+    <hr
+      className="c0"
+    />
+  </styled.hr>
 </Separator>
 `;
