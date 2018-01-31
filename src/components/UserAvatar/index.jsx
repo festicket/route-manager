@@ -7,13 +7,34 @@ import React from 'react';
 
 // Styles
 // -------------
-// import { Wrapper } from './styles';
+import { Wrapper } from './styles';
 
 // Flow Types
 // -------------
-// type Props = {
-// };
+type Props = {
+  className?: string,
+  initial?: string,
+  avatarLarge?: string,
+  variant?: 'small' | 'medium' | 'large',
+};
 
-export default function UserAvatar() {
-  return <div />;
+export default function UserAvatar({
+  className,
+  avatarLarge,
+  initial,
+  variant = 'small',
+}: Props) {
+  const style = avatarLarge ? { backgroundImage: `url(${avatarLarge})` } : {};
+
+  return (
+    <Wrapper
+      className={className}
+      style={style}
+      variant={variant}
+      avatarLarge={avatarLarge}
+      initial={initial}
+    >
+      {initial}
+    </Wrapper>
+  );
 }
