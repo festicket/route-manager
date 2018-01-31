@@ -13,7 +13,7 @@
     "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
     "svg": "svgr svgs -d src/components --template svg.template.js --single-quote",
     "lint": "npm run lint:js && npm run flow",
-    "flow": "flow",
+    "flow": "glow",
     "flow:libdefs": "flow gen-flow-files src/ --out-dir dist/",
     "test": "jest",
     "start": "start-storybook -p 9001 -c .storybook",
