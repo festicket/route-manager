@@ -1,0 +1,15 @@
+#! /bin/bash
+
+set -ex
+
+export PERCY_ENABLE=0;
+
+if [ "$SEMAPHORE_CURRENT_JOB"	 == "1" ]
+then
+  export PERCY_ENABLE="1";
+fi
+
+npm run build-storybook
+npm run percy-storybook
+
+exit

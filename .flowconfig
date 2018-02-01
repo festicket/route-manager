@@ -9,6 +9,7 @@
 <PROJECT_ROOT>/plopfile\.js
 <PROJECT_ROOT>/jest\.config\.js
 .*/react-generators/.*
+<PROJECT_ROOT>/node_modules/config-chain/.*
 
 [include]
 
