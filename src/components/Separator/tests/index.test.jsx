@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import { mount } from 'enzyme';
 import { Separator } from '@festicket/react-ui-components';

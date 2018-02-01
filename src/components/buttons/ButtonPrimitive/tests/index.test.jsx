@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import { mount } from 'enzyme';
 import { ButtonPrimitive } from '@festicket/react-ui-components';

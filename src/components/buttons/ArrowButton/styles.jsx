@@ -1,3 +1,5 @@
+// @flow
+
 import styled from 'styled-components';
 import { prop } from 'styled-tools';
 import BackArrow from '../../icons/BackArrow';

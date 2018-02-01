@@ -1,3 +1,5 @@
+// @flow
+
 import styled, { css } from 'styled-components';
 import { prop, ifProp, switchProp } from 'styled-tools';
 import breakpoint from '../../utils/breakpoint';

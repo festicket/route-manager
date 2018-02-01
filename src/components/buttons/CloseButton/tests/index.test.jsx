@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import { mount } from 'enzyme';
 import { CloseButton } from '@festicket/react-ui-components';
