@@ -2,11 +2,14 @@
 
 set -ex
 
+PERCY_ENABLE = 0;
+
 if [ "$SEMAPHORE_CURRENT_JOB"	 == "1" ]
 then
-  echo '--- DEPLOYING PERCY ---'
-  npm run build-storybook
-  npm run percy-storybook
+  PERCY_ENABLE = 1;
 fi
+
+npm run build-storybook
+npm run percy-storybook
 
 exit
