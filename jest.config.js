@@ -1,3 +1,4 @@
+// @flow
 const { IS_CI } = process.env;
 
 module.exports = {

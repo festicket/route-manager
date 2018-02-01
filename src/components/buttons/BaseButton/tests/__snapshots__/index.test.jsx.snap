@@ -1,7 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<BaseButton /> with href 1`] = `
+<Styled(BaseButtonComponent)
+  href="https://www.google.com"
+  size="responsive"
+  type="button"
+  variant="primary"
+/>
+`;
+
 exports[`<BaseButton /> with initial props 1`] = `
-<BaseButton>
-  <div />
-</BaseButton>
+<Styled(BaseButtonComponent)
+  size="responsive"
+  type="button"
+  variant="primary"
+/>
 `;

@@ -1,4 +1,9 @@
 // @flow
+import { darken } from 'polished';
+
+export function hoverColor(color: string): string {
+  return darken(0.05, color);
+}
 
 export default {
   colors: {
@@ -20,6 +25,9 @@ export default {
     brand: {
       primary: '#8C64CB',
       primaryBackground: '#F9F7FC', // primary with transrency 5% on white background
+    },
+    facebook: {
+      primary: '#4B69AC',
     },
     shadowColor: 'rgba(36, 37, 41, 0.15)',
   },
