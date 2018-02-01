@@ -2,11 +2,11 @@
 
 set -ex
 
-PERCY_ENABLE = 0;
+export PERCY_ENABLE=0;
 
 if [ "$SEMAPHORE_CURRENT_JOB"	 == "1" ]
 then
-  PERCY_ENABLE = 1;
+  export PERCY_ENABLE="1";
 fi
 
 npm run build-storybook
