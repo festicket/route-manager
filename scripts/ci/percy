@@ -1,2 +1,6 @@
-npm run build-storybook
-npm run percy-storybook
+#! /bin/bash
+
+if [ $SEMAPHORE_CURRENT_JOB	 == 1 ] then
+  npm run build-storybook
+  npm run percy-storybook
+fi
