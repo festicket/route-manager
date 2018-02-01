@@ -1,0 +1,2 @@
+npm run build-storybook
+npm run percy-storybook
