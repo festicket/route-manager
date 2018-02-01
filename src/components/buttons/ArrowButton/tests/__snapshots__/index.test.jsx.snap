@@ -2,6 +2,7 @@
 
 exports[`<ArrowButton /> with initial props 1`] = `
 <Anchor
+  element={[Function]}
   external={true}
   href="/magazine"
 >

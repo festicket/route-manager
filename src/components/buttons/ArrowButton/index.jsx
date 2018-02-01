@@ -1,9 +1,12 @@
+// @flow
+
 // Lib
 // -------------
 import React from 'react';
 
 // Components
 // -------------
+import Anchor from '../../text/Anchor';
 
 // Styles
 // -------------
@@ -15,10 +18,10 @@ type Props = {
   element?: any,
 };
 
-export default function ArrowButton({ element: El, ...props }: Props) {
+export default function ArrowButton(props: Props) {
   return (
-    <El {...props}>
+    <Anchor {...props}>
       <StyledBackArrow width="18" height="18" />
-    </El>
+    </Anchor>
   );
 }
