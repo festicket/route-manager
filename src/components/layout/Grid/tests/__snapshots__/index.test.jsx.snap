@@ -1192,25 +1192,25 @@ exports[`<Grid /> with responsive columns 1`] = `
 
 @media (min-width:568px) {
   .c1 {
-    width: 0%;
+    width: 50%;
   }
 }
 
 @media (min-width:768px) {
   .c1 {
-    width: 0%;
+    width: 33.33333333333333%;
   }
 }
 
 @media (min-width:960px) {
   .c1 {
-    width: 0%;
+    width: 25%;
   }
 }
 
 @media (min-width:1220px) {
   .c1 {
-    width: 0%;
+    width: 20%;
   }
 }
 
