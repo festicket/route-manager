@@ -6,7 +6,7 @@ import { ButtonRound } from '@festicket/react-ui-components';
 
 import { ThemeProvider } from 'styled-components';
 import theme from '../../../../utils/theme';
-import FacebookIcon from '../../../icons/Facebook';
+import FacebookIcon from '../../../icons/social/Facebook';
 
 describe('<ButtonRound />', () => {
   test('with initial props', () => {

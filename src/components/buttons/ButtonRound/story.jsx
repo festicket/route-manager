@@ -7,11 +7,11 @@ import { storiesOf } from '@storybook/react';
 import ButtonRound from './';
 
 // Icons
-import FacebookIcon from '../../icons/Facebook';
-import InstagramIcon from '../../icons/Instagram';
-import PinterestIcon from '../../icons/Pinterest';
-import LinkedInIcon from '../../icons/LinkedIn';
-import TwitterIcon from '../../icons/Twitter';
+import FacebookIcon from '../../icons/social/Facebook';
+import InstagramIcon from '../../icons/social/Instagram';
+import PinterestIcon from '../../icons/social/Pinterest';
+import LinkedInIcon from '../../icons/social/LinkedIn';
+import TwitterIcon from '../../icons/social/Twitter';
 
 const Box = styled.div`
   padding: 30px;
