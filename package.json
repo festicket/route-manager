@@ -20,7 +20,7 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "npm run flow && lint-staged",
-    "postinstall": "npx flow-typed install --overwrite --ignoreDeps peer",
+    "postinstall": "flow-typed install --overwrite --ignoreDeps peer",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release",
     "build-storybook": "build-storybook"
@@ -68,7 +68,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "flow-bin": "^0.63.1",
-    "flow-typed": "flowtype/flow-typed#master",
+    "flow-typed": "^2.3.0",
     "husky": "^0.14.3",
     "jest": "^22.1.4",
     "jest-enzyme": "^4.0.2",
@@ -80,12 +80,12 @@
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.0.0",
+    "semantic-release": "^12.4.1",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.2.2",
-    "svgr": "^1.7.0",
-    "semantic-release": "^12.4.1"
+    "svgr": "^1.7.0"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
