@@ -1,7 +1,12 @@
 #! /bin/bash
 
-if [ $SEMAPHORE_CURRENT_JOB	 == 1 ] then
-  echo '--- DEPLOYING PERCY ---';
+set -ex
+
+if [ "$SEMAPHORE_CURRENT_JOB"	 == "1" ]
+then
+  echo '--- DEPLOYING PERCY ---'
   npm run build-storybook
   npm run percy-storybook
 fi
+
+exit
