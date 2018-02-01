@@ -1,6 +1,6 @@
 {
   "name": "@festicket/react-ui-components",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "dist/index.js",
   "files": [
     "dist/"
@@ -21,7 +21,9 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "npm run flow && lint-staged",
     "postinstall": "npx flow-typed install --overwrite --ignoreDeps peer",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "semantic-release": "semantic-release",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -82,12 +84,20 @@
     "stylelint-config-standard": "^18.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.2.2",
-    "svgr": "^1.7.0"
+    "svgr": "^1.7.0",
+    "semantic-release": "^12.4.1"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "styled-components": "^2.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/festicket/react-ui-components.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
