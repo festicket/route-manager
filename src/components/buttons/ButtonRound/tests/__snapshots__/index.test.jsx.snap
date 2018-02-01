@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<ButtonRound /> with href and icon 1`] = `
+<Styled(ButtonRoundComponent)
+  href="https://www.facebook.com/festicket"
+  variant="dark"
+>
+  <Styled(Facebook) />
+</Styled(ButtonRoundComponent)>
+`;
+
 exports[`<ButtonRound /> with initial props 1`] = `
-<ButtonRound>
-  <div />
-</ButtonRound>
+<Styled(ButtonRoundComponent)
+  variant="dark"
+/>
 `;

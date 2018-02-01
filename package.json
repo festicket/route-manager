@@ -10,7 +10,7 @@
     "generate": "plop",
     "build": "rollup --config",
     "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
-    "svg": "svgr svgs -d src/components --template svg.template.js --single-quote",
+    "svg": "svgr svgs -d src/components --template svg.template.js --single-quote --no-title",
     "lint": "npm run lint:js && npm run flow",
     "flow": "flow",
     "glow": "glow",
