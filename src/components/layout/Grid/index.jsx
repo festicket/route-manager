@@ -46,7 +46,7 @@ const GridElementWidth = (props: GridElementTypes) => {
   if (typeof props.width === 'object') {
     return Object.entries(props.width).map(
       ([breakpointKey, breakpointValue]) => {
-        const width = transformWidthNumber(parseInt(breakpointValue, 10));
+        const width = transformWidthNumber(parseFloat(breakpointValue));
 
         const rules = {
           width,
