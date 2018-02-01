@@ -1,6 +1,6 @@
 {
   "name": "@festicket/react-ui-components",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "dist/index.js",
   "files": [
     "dist/"
@@ -8,7 +8,6 @@
   "private": true,
   "scripts": {
     "generate": "plop",
-    "prebuild": "npm run test",
     "build": "rollup --config",
     "postbuild": "npm run flow:libdefs",
     "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
@@ -22,7 +21,9 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "npm run flow && lint-staged",
     "postinstall": "flow-typed install --overwrite --ignoreDeps peer",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "semantic-release": "semantic-release",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -67,7 +68,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "flow-bin": "^0.63.1",
-    "flow-typed": "flowtype/flow-typed#master",
+    "flow-typed": "^2.3.0",
     "husky": "^0.14.3",
     "jest": "^22.1.4",
     "jest-enzyme": "^4.0.2",
@@ -79,6 +80,7 @@
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.0.0",
+    "semantic-release": "^12.4.1",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
     "stylelint-config-styled-components": "^0.1.1",
@@ -90,5 +92,12 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "styled-components": "^2.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/festicket/react-ui-components.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
