@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ArrowButton /> with initial props 1`] = `
-<ArrowButton>
-  <div />
-</ArrowButton>
+<Anchor
+  external={true}
+  href="/magazine"
+>
+  <Styled(Styled(BackArrow))
+    height="18"
+    width="18"
+  />
+</Anchor>
 `;

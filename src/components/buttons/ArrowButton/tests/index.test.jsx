@@ -1,10 +1,13 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import { ArrowButton } from '@festicket/react-ui-components';
+import { shallow } from 'enzyme';
+import ArrowButton from '../';
+import Anchor from '../../../text/Anchor';
 
 describe('<ArrowButton />', () => {
   test('with initial props', () => {
-    const tree = mount(<ArrowButton />);
+    const tree = shallow(
+      <ArrowButton element={Anchor} href="/magazine" external />,
+    );
     expect(tree).toMatchSnapshot();
   });
 });

@@ -7,13 +7,18 @@ import React from 'react';
 
 // Styles
 // -------------
-// import { Wrapper } from './styles';
+import { StyledBackArrow } from './styles';
 
 // Flow Types
 // -------------
-// type Props = {
-// };
+type Props = {
+  element?: any,
+};
 
-export default function ArrowButton() {
-  return <div />;
+export default function ArrowButton({ element: El, ...props }: Props) {
+  return (
+    <El {...props}>
+      <StyledBackArrow width="18" height="18" />
+    </El>
+  );
 }
