@@ -29,9 +29,9 @@ const StyledChevronRight = styled(ChevronRight)`
   })};
 `;
 
-function RoundedChevronButtonComponent({ className, direction }) {
+function RoundedChevronButtonComponent({ className, direction, ...props }) {
   return (
-    <SecondaryButton className={className}>
+    <SecondaryButton className={className} {...props}>
       <StyledChevronRight direction={direction} />
     </SecondaryButton>
   );

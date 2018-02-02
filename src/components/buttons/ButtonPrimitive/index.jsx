@@ -19,6 +19,7 @@ import Link from '../../text/Anchor';
 type Props = {
   element: string,
   children?: Node,
+  onClick?: () => mixed,
   fontSize?: string,
   isDisabled?: boolean,
   render?: () => mixed,
