@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ButtonPrimitive /> with initial props 1`] = `
-<ButtonPrimitive>
-  <div />
-</ButtonPrimitive>
-`;
