@@ -2,7 +2,7 @@
 
 // Lib
 // -------------
-import React from 'react';
+import React, { type Node } from 'react';
 import styled, { css } from 'styled-components';
 import { prop, switchProp } from 'styled-tools';
 import { hoverColor } from '../../../utils/theme';
