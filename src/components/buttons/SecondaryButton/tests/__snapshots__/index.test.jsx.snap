@@ -1,7 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SecondaryButton /> with initial props 1`] = `
-<SecondaryButton>
-  <div />
-</SecondaryButton>
+exports[`<SecondaryButton /> Snapshot Bordered 1`] = `
+<Styled(Primitive)
+  element="a"
+  fontSize="regular"
+  fullWidth={false}
+  isDisabled={false}
+  render={[Function]}
+  size="regular"
+  to="#"
+  variant="bordered"
+/>
+`;
+
+exports[`<SecondaryButton /> Snapshot Bordered Small 1`] = `
+<Styled(Primitive)
+  element="a"
+  fontSize="regular"
+  fullWidth={false}
+  isDisabled={false}
+  render={[Function]}
+  size="small"
+  to="#"
+  variant="bordered"
+/>
+`;
+
+exports[`<SecondaryButton /> Snapshot Default 1`] = `
+<Styled(Primitive)
+  element="a"
+  fontSize="regular"
+  fullWidth={false}
+  isDisabled={false}
+  render={[Function]}
+  size="regular"
+  to="#"
+  variant="regular"
+/>
+`;
+
+exports[`<SecondaryButton /> Snapshot Default Button Element 1`] = `
+<Styled(Primitive)
+  element="button"
+  fontSize="regular"
+  fullWidth={false}
+  isDisabled={false}
+  render={[Function]}
+  size="regular"
+  to="#"
+  variant="regular"
+/>
+`;
+
+exports[`<SecondaryButton /> Snapshot Default Small 1`] = `
+<Styled(Primitive)
+  element="a"
+  fontSize="regular"
+  fullWidth={false}
+  isDisabled={false}
+  render={[Function]}
+  size="small"
+  to="#"
+  variant="regular"
+/>
 `;

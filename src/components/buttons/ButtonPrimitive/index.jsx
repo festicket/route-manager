@@ -36,8 +36,6 @@ function Button(props) {
   delete newProps.isDisabled;
   delete newProps.render;
 
-  console.log('Debug render', props.render);
-
   const resultChildren = render();
 
   return (
