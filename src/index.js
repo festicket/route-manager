@@ -20,6 +20,9 @@ export { default as PrimaryButton } from './components/buttons/PrimaryButton';
 export {
   default as SecondaryButton,
 } from './components/buttons/SecondaryButton';
+export {
+  default as RoundedChevronButton,
+} from './components/buttons/RoundedChevronButton';
 
 // Text
 export { TextPrimitive } from './components/text/TextPrimitive';
