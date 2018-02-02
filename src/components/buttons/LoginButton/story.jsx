@@ -1,9 +1,11 @@
 // @flow
-
+/* eslint no-console:0 */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import LoginButton from './';
 
-storiesOf('Components / Buttons / LoginButton', module).add('default', () => (
-  <LoginButton />
+const handleClick = () => console.log('Click!');
+
+storiesOf('Components / Buttons / LoginButton', module).add('Base', () => (
+  <LoginButton handleClick={handleClick}>Log In</LoginButton>
 ));
