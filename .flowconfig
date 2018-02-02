@@ -10,6 +10,7 @@
 <PROJECT_ROOT>/jest\.config\.js
 .*/react-generators/.*
 <PROJECT_ROOT>/node_modules/config-chain/.*
+.*/storybook-static/.*
 
 [include]
 

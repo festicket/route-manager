@@ -20,3 +20,14 @@ export { default as PrimaryButton } from './components/buttons/PrimaryButton';
 export {
   default as SecondaryButton,
 } from './components/buttons/SecondaryButton';
+
+// Text
+export { TextPrimitive } from './components/text/TextPrimitive';
+export { default as PrimaryHeading } from './components/text/PrimaryHeading';
+export {
+  default as SecondaryHeading,
+} from './components/text/SecondaryHeading';
+export { default as TertiaryHeading } from './components/text/TertiaryHeading';
+export { default as BodyText } from './components/text/BodyText';
+export { default as Highlight } from './components/text/Highlight';
+export { default as Hyperlink } from './components/text/Hyperlink';

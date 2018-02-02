@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PrimaryHeading /> with initial props 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 39px;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    font-size: 42px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+}
+
+<PrimaryHeading
+  color="black"
+  element="h1"
+  spacing="none"
+>
+  <TextPrimitive
+    color="black"
+    element="h1"
+    size="regular"
+    spacing="none"
+    underline={false}
+    variant="h1"
+    weight="bold"
+  >
+    <Styled(Primitive)
+      color="black"
+      element="h1"
+      size="regular"
+      spacing="none"
+      underline={false}
+      weight="bold"
+    >
+      <Primitive
+        className="c0"
+        color="black"
+        element="h1"
+        size="regular"
+        spacing="none"
+        underline={false}
+        weight="bold"
+      >
+        <h1
+          className="c0"
+        >
+          Primary Heading
+        </h1>
+      </Primitive>
+    </Styled(Primitive)>
+  </TextPrimitive>
+</PrimaryHeading>
+`;

@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import { configure, addDecorator, setAddon, getStorybook } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
