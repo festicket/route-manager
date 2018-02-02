@@ -18,7 +18,7 @@ import ChevronRight from '../../icons/ui/ChevronRight';
 // Flow Types
 // -------------
 type Props = {
-  direction?: 'right' | 'down' | 'left' | 'up',
+  direction: 'right' | 'down' | 'left' | 'up',
 };
 
 const StyledChevronRight = styled(ChevronRight)`

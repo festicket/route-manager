@@ -26,5 +26,6 @@ exports[`<RoundedChevronButton /> with initial props 1`] = `
 
 <RoundedChevronButtonComponent
   className="c0"
+  direction="right"
 />
 `;
