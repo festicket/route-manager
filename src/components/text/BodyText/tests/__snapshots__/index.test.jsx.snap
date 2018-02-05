@@ -12,17 +12,13 @@ exports[`<BodyText /> that it renders correctly 1`] = `
 }
 
 <BodyText
-  color="black"
-  element="p"
   size="regular"
-  spacing="none"
 >
   <TextPrimitive
     color="black"
     element="p"
     size="regular"
     spacing="none"
-    underline={false}
     variant="p"
     weight="light"
   >
@@ -66,17 +62,13 @@ exports[`<BodyText /> that it renders correctly with element prop 1`] = `
 }
 
 <BodyText
-  color="black"
   element="span"
-  size="regular"
-  spacing="none"
 >
   <TextPrimitive
     color="black"
     element="span"
     size="regular"
     spacing="none"
-    underline={false}
     variant="p"
     weight="light"
   >
@@ -119,9 +111,6 @@ exports[`<BodyText /> that it renders correctly with spacing prop 1`] = `
 }
 
 <BodyText
-  color="black"
-  element="p"
-  size="regular"
   spacing="md"
 >
   <TextPrimitive
@@ -129,7 +118,6 @@ exports[`<BodyText /> that it renders correctly with spacing prop 1`] = `
     element="p"
     size="regular"
     spacing="md"
-    underline={false}
     variant="p"
     weight="light"
   >

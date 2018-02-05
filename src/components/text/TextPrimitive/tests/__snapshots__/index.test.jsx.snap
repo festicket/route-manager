@@ -13,11 +13,6 @@ exports[`<Text /> primitive should render correctly based on color prop 1`] = `
 <TextPrimitive
   color="grey"
   element="p"
-  size="regular"
-  spacing="md"
-  underline={false}
-  variant="p"
-  weight="regular"
 >
   <Styled(Primitive)
     color="grey"
@@ -57,13 +52,7 @@ exports[`<Text /> primitive should render correctly based on element prop 1`] = 
 }
 
 <TextPrimitive
-  color="black"
   element="h3"
-  size="regular"
-  spacing="md"
-  underline={false}
-  variant="p"
-  weight="regular"
 >
   <Styled(Primitive)
     color="black"
@@ -103,13 +92,8 @@ exports[`<Text /> primitive should render correctly based on size prop 1`] = `
 }
 
 <TextPrimitive
-  color="black"
   element="p"
   size="tiny"
-  spacing="md"
-  underline={false}
-  variant="p"
-  weight="regular"
 >
   <Styled(Primitive)
     color="black"
@@ -151,11 +135,7 @@ exports[`<Text /> primitive should render correctly based on underline prop 1`] 
 <TextPrimitive
   color="grey"
   element="p"
-  size="regular"
-  spacing="md"
   underline={true}
-  variant="p"
-  weight="regular"
 >
   <Styled(Primitive)
     color="grey"
@@ -209,18 +189,12 @@ exports[`<Text /> primitive should render correctly based on variant prop 1`] = 
 }
 
 <TextPrimitive
-  color="black"
   element="h3"
-  size="regular"
-  spacing="md"
-  underline={false}
   variant="h2"
-  weight="regular"
 >
   <Styled(Primitive)
     color="black"
     element="h3"
-    size="regular"
     spacing="md"
     underline={false}
     weight="regular"
@@ -229,7 +203,6 @@ exports[`<Text /> primitive should render correctly based on variant prop 1`] = 
       className="c0"
       color="black"
       element="h3"
-      size="regular"
       spacing="md"
       underline={false}
       weight="regular"
@@ -255,12 +228,7 @@ exports[`<Text /> primitive should render correctly based on weight prop 1`] = `
 }
 
 <TextPrimitive
-  color="black"
   element="p"
-  size="regular"
-  spacing="md"
-  underline={false}
-  variant="p"
   weight="light"
 >
   <Styled(Primitive)
@@ -300,15 +268,7 @@ exports[`<Text /> primitive with default props 1`] = `
   line-height: 1.12;
 }
 
-<TextPrimitive
-  color="black"
-  element="p"
-  size="regular"
-  spacing="md"
-  underline={false}
-  variant="p"
-  weight="regular"
->
+<TextPrimitive>
   <Styled(Primitive)
     color="black"
     element="p"
@@ -346,15 +306,7 @@ exports[`<TextPrimitive /> with initial props 1`] = `
   line-height: 1.12;
 }
 
-<TextPrimitive
-  color="black"
-  element="p"
-  size="regular"
-  spacing="md"
-  underline={false}
-  variant="p"
-  weight="regular"
->
+<TextPrimitive>
   <Styled(Primitive)
     color="black"
     element="p"

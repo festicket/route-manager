@@ -12,17 +12,13 @@ exports[`<Highlight /> with element prop 1`] = `
 }
 
 <Highlight
-  color="black"
   element="span"
-  size="regular"
-  spacing="none"
 >
   <TextPrimitive
     color="black"
     element="span"
     size="regular"
     spacing="none"
-    underline={false}
     variant="p"
     weight="regular"
   >
@@ -66,17 +62,13 @@ exports[`<Highlight /> with initial props 1`] = `
 }
 
 <Highlight
-  color="black"
-  element="p"
   size="regular"
-  spacing="none"
 >
   <TextPrimitive
     color="black"
     element="p"
     size="regular"
     spacing="none"
-    underline={false}
     variant="p"
     weight="regular"
   >

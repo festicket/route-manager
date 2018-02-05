@@ -12,10 +12,7 @@ exports[`<Hyperlink /> with element prop 1`] = `
 }
 
 <Hyperlink
-  color="black"
   element="span"
-  size="regular"
-  spacing="none"
 >
   <TextPrimitive
     color="black"
@@ -66,10 +63,7 @@ exports[`<Hyperlink /> with initial props 1`] = `
 }
 
 <Hyperlink
-  color="black"
-  element="p"
   size="regular"
-  spacing="none"
 >
   <TextPrimitive
     color="black"

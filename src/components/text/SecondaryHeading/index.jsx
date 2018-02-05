@@ -1,28 +1,20 @@
-import React, { type Node } from 'react';
-
+import * as React from 'react';
 import { TextPrimitive } from '../TextPrimitive/';
-
-SecondaryHeading.defaultProps = {
-  element: 'h2',
-  color: 'black',
-  weight: 'bold',
-  spacing: 'none',
-};
 
 type SecondaryHeadingProps = {
   element?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
-  children: Node | string,
+  children: React.Node,
   color?: 'black' | 'white',
   weight?: 'bold' | 'light',
   spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',
 };
 
 export default function SecondaryHeading({
-  element,
+  element = 'h2',
   children,
-  color,
-  weight,
-  spacing,
+  color = 'black',
+  weight = 'bold',
+  spacing = 'none',
 }: SecondaryHeadingProps) {
   return (
     <TextPrimitive

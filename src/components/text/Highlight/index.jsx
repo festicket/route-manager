@@ -1,28 +1,21 @@
-import React, { type Node } from 'react';
+import * as React from 'react';
 
 import { TextPrimitive } from '../TextPrimitive/';
 
-Highlight.defaultProps = {
-  element: 'p',
-  color: 'black',
-  size: 'regular',
-  spacing: 'none',
-};
-
 type HighlightProps = {
   element?: 'p' | 'span',
-  children: Node | string,
+  children: React.Node,
   color?: 'black' | 'white',
   size?: 'small' | 'regular' | 'tiny',
   spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',
 };
 
 export default function Highlight({
-  element,
+  element = 'p',
   children,
-  color,
-  size,
-  spacing,
+  color = 'black',
+  size = 'regular',
+  spacing = 'none',
 }: HighlightProps) {
   return (
     <TextPrimitive

@@ -26,16 +26,13 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
   <TextPrimitive
     color="white"
     element="h3"
-    size="regular"
     spacing="none"
-    underline={false}
     variant="h3"
     weight="bold"
   >
     <Styled(Primitive)
       color="white"
       element="h3"
-      size="regular"
       spacing="none"
       underline={false}
       weight="bold"
@@ -44,7 +41,6 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
         className="c0"
         color="white"
         element="h3"
-        size="regular"
         spacing="none"
         underline={false}
         weight="bold"
@@ -86,16 +82,13 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
   <TextPrimitive
     color="black"
     element="h3"
-    size="regular"
     spacing="none"
-    underline={false}
     variant="h3"
     weight="bold"
   >
     <Styled(Primitive)
       color="black"
       element="h3"
-      size="regular"
       spacing="none"
       underline={false}
       weight="bold"
@@ -104,7 +97,6 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
         className="c0"
         color="black"
         element="h3"
-        size="regular"
         spacing="none"
         underline={false}
         weight="bold"
@@ -146,16 +138,13 @@ exports[`<TertiaryHeading /> with weight prop 1`] = `
   <TextPrimitive
     color="black"
     element="h3"
-    size="regular"
     spacing="none"
-    underline={false}
     variant="h3"
     weight="light"
   >
     <Styled(Primitive)
       color="black"
       element="h3"
-      size="regular"
       spacing="none"
       underline={false}
       weight="light"
@@ -164,7 +153,6 @@ exports[`<TertiaryHeading /> with weight prop 1`] = `
         className="c0"
         color="black"
         element="h3"
-        size="regular"
         spacing="none"
         underline={false}
         weight="light"
