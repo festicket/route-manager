@@ -1,6 +1,7 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import commonjs from 'rollup-plugin-commonjs';
 
 export default {
   input: 'src/index.js',
@@ -18,6 +19,10 @@ export default {
     }),
     babel({
       exclude: 'node_modules/**',
+    }),
+    commonjs({
+      exclude: 'node_modules/**',
+      namedExports: { lodash: 'at' },
     }),
   ],
   external: ['@festicket/react-ui-components'],
