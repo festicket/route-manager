@@ -34,14 +34,14 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
     variant="h1"
     weight="bold"
   >
-    <Styled(Primitive$2)
+    <Styled(Primitive)
       color="black"
       element="h1"
       spacing="none"
       underline={false}
       weight="bold"
     >
-      <Primitive$2
+      <Primitive
         className="c0"
         color="black"
         element="h1"
@@ -54,8 +54,8 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
         >
           Primary Heading test
         </h1>
-      </Primitive$2>
-    </Styled(Primitive$2)>
+      </Primitive>
+    </Styled(Primitive)>
   </TextPrimitive>
 </PrimaryHeading>
 `;

@@ -22,7 +22,7 @@ exports[`<Highlight /> with element prop 1`] = `
     variant="p"
     weight="regular"
   >
-    <Styled(Primitive$2)
+    <Styled(Primitive)
       color="black"
       element="span"
       size="regular"
@@ -30,7 +30,7 @@ exports[`<Highlight /> with element prop 1`] = `
       underline={false}
       weight="regular"
     >
-      <Primitive$2
+      <Primitive
         className="c0"
         color="black"
         element="span"
@@ -44,8 +44,8 @@ exports[`<Highlight /> with element prop 1`] = `
         >
           Element prop test
         </span>
-      </Primitive$2>
-    </Styled(Primitive$2)>
+      </Primitive>
+    </Styled(Primitive)>
   </TextPrimitive>
 </Highlight>
 `;
@@ -72,7 +72,7 @@ exports[`<Highlight /> with initial props 1`] = `
     variant="p"
     weight="regular"
   >
-    <Styled(Primitive$2)
+    <Styled(Primitive)
       color="black"
       element="p"
       size="regular"
@@ -80,7 +80,7 @@ exports[`<Highlight /> with initial props 1`] = `
       underline={false}
       weight="regular"
     >
-      <Primitive$2
+      <Primitive
         className="c0"
         color="black"
         element="p"
@@ -94,8 +94,8 @@ exports[`<Highlight /> with initial props 1`] = `
         >
           Regular size test
         </p>
-      </Primitive$2>
-    </Styled(Primitive$2)>
+      </Primitive>
+    </Styled(Primitive)>
   </TextPrimitive>
 </Highlight>
 `;

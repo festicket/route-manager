@@ -23,7 +23,7 @@ exports[`<Hyperlink /> with element prop 1`] = `
     variant="p"
     weight="regular"
   >
-    <Styled(Primitive$2)
+    <Styled(Primitive)
       color="black"
       element="span"
       size="regular"
@@ -31,7 +31,7 @@ exports[`<Hyperlink /> with element prop 1`] = `
       underline={true}
       weight="regular"
     >
-      <Primitive$2
+      <Primitive
         className="c0"
         color="black"
         element="span"
@@ -45,8 +45,8 @@ exports[`<Hyperlink /> with element prop 1`] = `
         >
           Small size test
         </span>
-      </Primitive$2>
-    </Styled(Primitive$2)>
+      </Primitive>
+    </Styled(Primitive)>
   </TextPrimitive>
 </Hyperlink>
 `;
@@ -74,7 +74,7 @@ exports[`<Hyperlink /> with initial props 1`] = `
     variant="p"
     weight="regular"
   >
-    <Styled(Primitive$2)
+    <Styled(Primitive)
       color="black"
       element="p"
       size="regular"
@@ -82,7 +82,7 @@ exports[`<Hyperlink /> with initial props 1`] = `
       underline={true}
       weight="regular"
     >
-      <Primitive$2
+      <Primitive
         className="c0"
         color="black"
         element="p"
@@ -96,8 +96,8 @@ exports[`<Hyperlink /> with initial props 1`] = `
         >
           Regular size test
         </p>
-      </Primitive$2>
-    </Styled(Primitive$2)>
+      </Primitive>
+    </Styled(Primitive)>
   </TextPrimitive>
 </Hyperlink>
 `;
