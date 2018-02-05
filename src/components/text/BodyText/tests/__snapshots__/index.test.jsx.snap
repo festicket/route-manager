@@ -22,7 +22,7 @@ exports[`<BodyText /> that it renders correctly 1`] = `
     variant="p"
     weight="light"
   >
-    <Styled(Primitive)
+    <Styled(Primitive$2)
       color="black"
       element="p"
       size="regular"
@@ -30,7 +30,7 @@ exports[`<BodyText /> that it renders correctly 1`] = `
       underline={false}
       weight="light"
     >
-      <Primitive
+      <Primitive$2
         className="c0"
         color="black"
         element="p"
@@ -44,8 +44,8 @@ exports[`<BodyText /> that it renders correctly 1`] = `
         >
           Regular size
         </p>
-      </Primitive>
-    </Styled(Primitive)>
+      </Primitive$2>
+    </Styled(Primitive$2)>
   </TextPrimitive>
 </BodyText>
 `;
@@ -72,7 +72,7 @@ exports[`<BodyText /> that it renders correctly with element prop 1`] = `
     variant="p"
     weight="light"
   >
-    <Styled(Primitive)
+    <Styled(Primitive$2)
       color="black"
       element="span"
       size="regular"
@@ -80,7 +80,7 @@ exports[`<BodyText /> that it renders correctly with element prop 1`] = `
       underline={false}
       weight="light"
     >
-      <Primitive
+      <Primitive$2
         className="c0"
         color="black"
         element="span"
@@ -94,8 +94,8 @@ exports[`<BodyText /> that it renders correctly with element prop 1`] = `
         >
           Element Prop Test
         </span>
-      </Primitive>
-    </Styled(Primitive)>
+      </Primitive$2>
+    </Styled(Primitive$2)>
   </TextPrimitive>
 </BodyText>
 `;
@@ -121,7 +121,7 @@ exports[`<BodyText /> that it renders correctly with spacing prop 1`] = `
     variant="p"
     weight="light"
   >
-    <Styled(Primitive)
+    <Styled(Primitive$2)
       color="black"
       element="p"
       size="regular"
@@ -129,7 +129,7 @@ exports[`<BodyText /> that it renders correctly with spacing prop 1`] = `
       underline={false}
       weight="light"
     >
-      <Primitive
+      <Primitive$2
         className="c0"
         color="black"
         element="p"
@@ -143,8 +143,8 @@ exports[`<BodyText /> that it renders correctly with spacing prop 1`] = `
         >
           Spacing Prop Test
         </p>
-      </Primitive>
-    </Styled(Primitive)>
+      </Primitive$2>
+    </Styled(Primitive$2)>
   </TextPrimitive>
 </BodyText>
 `;

@@ -30,14 +30,14 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
     variant="h3"
     weight="bold"
   >
-    <Styled(Primitive)
+    <Styled(Primitive$2)
       color="white"
       element="h3"
       spacing="none"
       underline={false}
       weight="bold"
     >
-      <Primitive
+      <Primitive$2
         className="c0"
         color="white"
         element="h3"
@@ -50,8 +50,8 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
         >
           color prop test
         </h3>
-      </Primitive>
-    </Styled(Primitive)>
+      </Primitive$2>
+    </Styled(Primitive$2)>
   </TextPrimitive>
 </TertiaryHeading>
 `;
@@ -86,14 +86,14 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
     variant="h3"
     weight="bold"
   >
-    <Styled(Primitive)
+    <Styled(Primitive$2)
       color="black"
       element="h3"
       spacing="none"
       underline={false}
       weight="bold"
     >
-      <Primitive
+      <Primitive$2
         className="c0"
         color="black"
         element="h3"
@@ -106,8 +106,8 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
         >
           Tertiary heading test
         </h3>
-      </Primitive>
-    </Styled(Primitive)>
+      </Primitive$2>
+    </Styled(Primitive$2)>
   </TextPrimitive>
 </TertiaryHeading>
 `;
@@ -142,14 +142,14 @@ exports[`<TertiaryHeading /> with weight prop 1`] = `
     variant="h3"
     weight="light"
   >
-    <Styled(Primitive)
+    <Styled(Primitive$2)
       color="black"
       element="h3"
       spacing="none"
       underline={false}
       weight="light"
     >
-      <Primitive
+      <Primitive$2
         className="c0"
         color="black"
         element="h3"
@@ -162,8 +162,8 @@ exports[`<TertiaryHeading /> with weight prop 1`] = `
         >
           weight prop test
         </h3>
-      </Primitive>
-    </Styled(Primitive)>
+      </Primitive$2>
+    </Styled(Primitive$2)>
   </TextPrimitive>
 </TertiaryHeading>
 `;
