@@ -3,9 +3,5 @@
 /flow-typed
 /dist
 **/.DS_Store
-<<<<<<< HEAD
 /public
 /storybook-static
-=======
-storybook-static
->>>>>>> 3c7a04c5a03e5d1c9d28ffe5d110fd21bd9b2f66

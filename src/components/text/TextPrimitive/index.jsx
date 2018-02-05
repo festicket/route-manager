@@ -1,3 +1,4 @@
+// @flow
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { prop, switchProp, ifProp } from 'styled-tools';

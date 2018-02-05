@@ -1,3 +1,5 @@
+// @flow
+
 import { css } from 'styled-components';
 import theme from '../theme';
 
@@ -94,3 +96,5 @@ export default function breakpoint(label: string) {
     }
   };
 }
+
+//

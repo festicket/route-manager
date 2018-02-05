@@ -1,15 +1,15 @@
 [ignore]
-.*/dist/.*
-.*/node_modules/.*
-.*/rollup\.config\.js
-.*/commitlint\.config\.js
-.*/package\.json
-.*/\.storybook/config\.js
-.*/setupTests\.js
-.*/svg\.template\.js
-.*/plopfile\.js
-.*/jest\.config\.js
+<PROJECT_ROOT>/dist/.*
+<PROJECT_ROOT>/rollup\.config\.js
+<PROJECT_ROOT>/commitlint\.config\.js
+<PROJECT_ROOT>/package\.json
+<PROJECT_ROOT>/\.storybook/config\.js
+<PROJECT_ROOT>/setupTests\.js
+<PROJECT_ROOT>/svg\.template\.js
+<PROJECT_ROOT>/plopfile\.js
+<PROJECT_ROOT>/jest\.config\.js
 .*/react-generators/.*
+<PROJECT_ROOT>/node_modules/config-chain/.*
 .*/storybook-static/.*
 
 [include]
@@ -19,9 +19,9 @@
 [lints]
 all=warn
 unclear-type=off
+sketchy-null=off
 
 [options]
-all=true
 module.name_mapper='^@festicket\/react-ui-components$' -> '<PROJECT_ROOT>/src/'
 include_warnings=true
 
