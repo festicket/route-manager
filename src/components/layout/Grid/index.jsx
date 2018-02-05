@@ -2,7 +2,7 @@
 
 // Lib
 // -------------
-import React, { type Node } from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 
 // Utils
@@ -26,7 +26,7 @@ type BreakpointsShape = {|
 
 type GridElementTypes = {|
   element?: 'article' | 'section' | 'div' | 'header' | 'footer',
-  children?: Node,
+  children?: React.Node,
   width: number | BreakpointsShape,
 |};
 

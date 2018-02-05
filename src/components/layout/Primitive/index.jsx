@@ -2,13 +2,13 @@
 
 // Lib
 // -------------
-import React, { type Node } from 'react';
+import * as React from 'react';
 
 // Flow Types
 // -------------
 export type PrimitiveTypes = {
   element?: 'article' | 'section' | 'div' | 'header' | 'footer',
-  children?: Node,
+  children?: React.Node,
 };
 
 // Module
@@ -17,7 +17,7 @@ function Primitive({
   element = 'div',
   children,
   ...rest
-}: PrimitiveTypes): Node {
+}: PrimitiveTypes): React.Node {
   return React.createElement(element, rest, children);
 }
 

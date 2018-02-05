@@ -1,12 +1,12 @@
 // @flow
 
-import React, { type Node } from 'react';
+import * as React from 'react';
 import { spy } from 'sinon';
 import { mount, shallow } from 'enzyme';
 import Anchor from '../';
 
 // Simulate a custom link component, for example React Router's Link
-function El({ children, to }: { children?: Node, to: string }) {
+function El({ children, to }: { children?: React.Node, to: string }) {
   return <span title={to}>{children}</span>;
 }
 

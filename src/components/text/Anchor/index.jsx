@@ -2,7 +2,7 @@
 
 // Lib
 // -------------
-import React, { type Node } from 'react';
+import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { switchProp, prop, ifProp } from 'styled-tools';
 import { darken } from 'polished';
@@ -10,7 +10,7 @@ import { darken } from 'polished';
 // Flow Types
 // -------------
 type Props = {
-  children?: Node,
+  children?: React.Node,
   to?: string,
   href?: string,
   hash?: string,
