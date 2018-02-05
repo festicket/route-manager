@@ -9,12 +9,10 @@
   "scripts": {
     "generate": "plop",
     "build": "rollup --config",
-    "postbuild": "npm run flow:libdefs",
     "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
-    "lint:css": "stylelint ./src/**/*",
     "svg": "svgr svgs -d src/components --template svg.template.js --single-quote",
-    "lint": "npm run lint:js && npm run lint:css",
-    "flow": "flow check",
+    "lint": "npm run lint:js && npm run flow",
+    "flow": "flow",
     "flow:libdefs": "flow gen-flow-files src/ --out-dir dist/",
     "test": "jest",
     "start": "start-storybook -p 9001 -c .storybook",
@@ -29,7 +27,6 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint --fix",
-      "stylelint",
       "jest --bail --findRelatedTests",
       "git add"
     ]
@@ -43,7 +40,7 @@
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-angular": "^6.0.2",
-    "@festicket/eslint-config": "^1.0.0",
+    "@festicket/eslint-config": "^1.1.5",
     "@festicket/react-generators": "^0.1.4",
     "@percy-io/percy-storybook": "^1.3.2",
     "@storybook/react": "^3.3.10",
@@ -56,6 +53,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.3.0",
@@ -83,10 +81,6 @@
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.0.0",
     "semantic-release": "^12.4.1",
-    "stylelint": "^8.4.0",
-    "stylelint-config-standard": "^18.0.0",
-    "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.2.2",
     "svgr": "^1.7.0"
   },
   "peerDependencies": {

@@ -6,7 +6,7 @@ export default {
   input: 'src/index.js',
   output: {
     file: 'dist/index.js',
-    format: 'es',
+    format: 'cjs',
   },
   plugins: [
     peerDepsExternal(),
@@ -20,4 +20,5 @@ export default {
       exclude: 'node_modules/**',
     }),
   ],
+  external: ['@festicket/react-ui-components'],
 };
