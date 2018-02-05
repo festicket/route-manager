@@ -1,6 +1,7 @@
+// @flow
 import React from 'react';
 import { mount } from 'enzyme';
-import { TextPrimitive } from '@festicket/react-ui-components';
+import TextPrimitive from '../';
 
 describe('<TextPrimitive />', () => {
   test('with initial props', () => {

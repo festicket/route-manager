@@ -124,7 +124,7 @@ type Props = {
   children: React.Node,
 };
 
-export function TextPrimitive({
+export default function TextPrimitive({
   element = 'p',
   weight = 'regular',
   size = 'regular',
