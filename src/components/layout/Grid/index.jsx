@@ -76,7 +76,7 @@ const StyledGridElement = styled(Primitive)`
   `};
 `;
 
-export const GridElement = (props: GridElementTypes) => (
+export const GridElement = (props: GridElementTypes): React.Node => (
   <StyledGridElement {...props} />
 );
 
@@ -90,4 +90,4 @@ const StyledGrid = styled(Primitive)`
   `};
 `;
 
-export const Grid = (props: GridTypes) => <StyledGrid {...props} />;
+export const Grid = (props: GridTypes): React.Node => <StyledGrid {...props} />;
