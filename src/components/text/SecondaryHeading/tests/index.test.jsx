@@ -5,18 +5,22 @@ import { SecondaryHeading } from '@festicket/react-ui-components';
 
 describe('<SecondaryHeading />', () => {
   test('with initial props', () => {
-    const tree = mount(<SecondaryHeading>test</SecondaryHeading>);
+    const tree = mount(
+      <SecondaryHeading>Secondary heading test</SecondaryHeading>,
+    );
     expect(tree).toMatchSnapshot();
   });
 
   test('with color prop', () => {
-    const tree = mount(<SecondaryHeading color="white">test</SecondaryHeading>);
+    const tree = mount(
+      <SecondaryHeading color="white">color prop test</SecondaryHeading>,
+    );
     expect(tree).toMatchSnapshot();
   });
 
   test('with weight prop', () => {
     const tree = mount(
-      <SecondaryHeading weight="light">test</SecondaryHeading>,
+      <SecondaryHeading weight="light">weight prop test</SecondaryHeading>,
     );
     expect(tree).toMatchSnapshot();
   });

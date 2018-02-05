@@ -52,7 +52,7 @@ exports[`<SecondaryHeading /> with color prop 1`] = `
         <h2
           className="c0"
         >
-          test
+          color prop test
         </h2>
       </Primitive>
     </Styled(Primitive)>
@@ -110,7 +110,7 @@ exports[`<SecondaryHeading /> with initial props 1`] = `
         <h2
           className="c0"
         >
-          test
+          Secondary heading test
         </h2>
       </Primitive>
     </Styled(Primitive)>
@@ -170,7 +170,7 @@ exports[`<SecondaryHeading /> with weight prop 1`] = `
         <h2
           className="c0"
         >
-          test
+          weight prop test
         </h2>
       </Primitive>
     </Styled(Primitive)>

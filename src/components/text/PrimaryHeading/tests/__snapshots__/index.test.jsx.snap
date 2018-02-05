@@ -52,7 +52,7 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
         <h1
           className="c0"
         >
-          Primary Heading
+          Primary Heading test
         </h1>
       </Primitive>
     </Styled(Primitive)>

@@ -48,7 +48,7 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
         <h3
           className="c0"
         >
-          test
+          color prop test
         </h3>
       </Primitive>
     </Styled(Primitive)>
@@ -104,7 +104,7 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
         <h3
           className="c0"
         >
-          test
+          Tertiary heading test
         </h3>
       </Primitive>
     </Styled(Primitive)>
@@ -160,7 +160,7 @@ exports[`<TertiaryHeading /> with weight prop 1`] = `
         <h3
           className="c0"
         >
-          test
+          weight prop test
         </h3>
       </Primitive>
     </Styled(Primitive)>

@@ -92,7 +92,7 @@ exports[`<BodyText /> that it renders correctly with element prop 1`] = `
         <span
           className="c0"
         >
-          Small size
+          Element Prop Test
         </span>
       </Primitive>
     </Styled(Primitive)>
@@ -141,7 +141,7 @@ exports[`<BodyText /> that it renders correctly with spacing prop 1`] = `
         <p
           className="c0"
         >
-          Spacing Test
+          Spacing Prop Test
         </p>
       </Primitive>
     </Styled(Primitive)>

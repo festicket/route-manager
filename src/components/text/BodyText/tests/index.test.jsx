@@ -10,12 +10,12 @@ describe('<BodyText />', () => {
   });
 
   test('that it renders correctly with element prop', () => {
-    const tree = mount(<BodyText element="span">Small size</BodyText>);
+    const tree = mount(<BodyText element="span">Element Prop Test</BodyText>);
     expect(tree).toMatchSnapshot();
   });
 
   test('that it renders correctly with spacing prop', () => {
-    const tree = mount(<BodyText spacing="md">Spacing Test</BodyText>);
+    const tree = mount(<BodyText spacing="md">Spacing Prop Test</BodyText>);
     expect(tree).toMatchSnapshot();
   });
 });

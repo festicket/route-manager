@@ -42,7 +42,7 @@ exports[`<Highlight /> with element prop 1`] = `
         <span
           className="c0"
         >
-          Small size
+          Element prop test
         </span>
       </Primitive>
     </Styled(Primitive)>
@@ -92,7 +92,7 @@ exports[`<Highlight /> with initial props 1`] = `
         <p
           className="c0"
         >
-          Regular size
+          Regular size test
         </p>
       </Primitive>
     </Styled(Primitive)>

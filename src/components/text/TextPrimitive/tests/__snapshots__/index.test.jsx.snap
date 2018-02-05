@@ -34,7 +34,7 @@ exports[`<Text /> primitive should render correctly based on color prop 1`] = `
       <p
         className="c0"
       >
-        default
+        color prop test
       </p>
     </Primitive>
   </Styled(Primitive)>
@@ -74,7 +74,7 @@ exports[`<Text /> primitive should render correctly based on element prop 1`] = 
       <h3
         className="c0"
       >
-        default
+        element prop test
       </h3>
     </Primitive>
   </Styled(Primitive)>
@@ -115,7 +115,7 @@ exports[`<Text /> primitive should render correctly based on size prop 1`] = `
       <p
         className="c0"
       >
-        default
+        size prop test
       </p>
     </Primitive>
   </Styled(Primitive)>
@@ -157,7 +157,7 @@ exports[`<Text /> primitive should render correctly based on underline prop 1`] 
       <p
         className="c0"
       >
-        default
+        underline prop test
       </p>
     </Primitive>
   </Styled(Primitive)>
@@ -210,7 +210,7 @@ exports[`<Text /> primitive should render correctly based on variant prop 1`] = 
       <h3
         className="c0"
       >
-        default
+        variant prop test
       </h3>
     </Primitive>
   </Styled(Primitive)>
@@ -251,7 +251,7 @@ exports[`<Text /> primitive should render correctly based on weight prop 1`] = `
       <p
         className="c0"
       >
-        default
+        weight prop test
       </p>
     </Primitive>
   </Styled(Primitive)>
@@ -289,7 +289,7 @@ exports[`<Text /> primitive with default props 1`] = `
       <p
         className="c0"
       >
-        default
+        default prop test
       </p>
     </Primitive>
   </Styled(Primitive)>
@@ -327,7 +327,7 @@ exports[`<TextPrimitive /> with initial props 1`] = `
       <p
         className="c0"
       >
-        Test
+        Test initial
       </p>
     </Primitive>
   </Styled(Primitive)>
