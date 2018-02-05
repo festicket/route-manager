@@ -96,6 +96,6 @@
     "url": "https://github.com/festicket/react-ui-components.git"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   }
 }
