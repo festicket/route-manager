@@ -1,1 +1,2 @@
-npm run flow
+npm run flow:typed
+npm run flow check
