@@ -3,11 +3,16 @@ import resolve from 'rollup-plugin-node-resolve';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import commonjs from 'rollup-plugin-commonjs';
 
+const globals = {
+  lodash: 'lodash',
+};
+
 export default {
   input: 'src/index.js',
   output: {
     file: 'dist/index.js',
     format: 'cjs',
+    globals,
   },
   plugins: [
     peerDepsExternal(),
@@ -20,10 +25,8 @@ export default {
     babel({
       exclude: 'node_modules/**',
     }),
-    commonjs({
-      exclude: 'node_modules/**',
-      namedExports: { lodash: 'at' },
-    }),
+    // If you uncomment this plugin, the build won't work.
+    commonjs({}),
   ],
   external: ['@festicket/react-ui-components'],
 };
