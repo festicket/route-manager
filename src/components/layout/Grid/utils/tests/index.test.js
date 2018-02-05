@@ -1,3 +1,5 @@
+// @flow
+
 import transformWidthNumber from '../transformWidthNumber';
 
 describe('transformWidthNumber', () => {

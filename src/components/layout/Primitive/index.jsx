@@ -1,3 +1,5 @@
+// @flow
+
 // Lib
 // -------------
 import * as React from 'react';

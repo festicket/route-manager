@@ -1,3 +1,5 @@
+// @flow
+
 // Utils
 export { default as breakpoint } from './utils/breakpoint';
 export { default as spacing } from './utils/spacing';
