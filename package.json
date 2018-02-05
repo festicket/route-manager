@@ -5,7 +5,6 @@
   "files": [
     "dist/"
   ],
-  "private": true,
   "scripts": {
     "generate": "plop",
     "build": "rollup --config",
@@ -18,7 +17,7 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "npm run flow && lint-staged",
-    "postinstall": "flow-typed install --overwrite --ignoreDeps peer",
+    "postinstall": "npx flow-typed install --overwrite --ignoreDeps peer",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release",
     "build-storybook": "build-storybook",
