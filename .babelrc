@@ -1,6 +1,6 @@
 {
   "presets": ["react"],
-  "plugins": ["flow-react-proptypes", "transform-class-properties", "transform-object-rest-spread"],
+  "plugins": ["macros", "flow-react-proptypes", "transform-class-properties", "transform-object-rest-spread"],
   "env": {
     "test": {
       "plugins": ["transform-es2015-modules-commonjs"]

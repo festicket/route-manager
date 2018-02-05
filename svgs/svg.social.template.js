@@ -11,11 +11,14 @@ module.exports = (opts = {}) => {
 
   return (code, state) => `import React from 'react';
 import styled from 'styled-components';
-
+import { colorVariations, hoverColorVariations } from '../styles';
+  
 const ${state.componentName} = (${props}: {}) => ${code}
 
 export default styled(${state.componentName})\`
-  fill: currentColor;
+  height: 22px;
+  \${colorVariations}
+  \${hoverColorVariations}
 \`;
 `;
 };
