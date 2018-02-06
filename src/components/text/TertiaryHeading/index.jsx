@@ -1,8 +1,8 @@
 // @flow
 
-import React, { type Node } from 'react';
+import * as React from 'react';
 
-import { TextPrimitive } from '../TextPrimitive/';
+import TextPrimitive from '../TextPrimitive';
 
 TertiaryHeading.defaultProps = {
   element: 'h3',
@@ -13,7 +13,7 @@ TertiaryHeading.defaultProps = {
 
 type TertiaryHeadingProps = {
   element?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
-  children: Node | string,
+  children: React.Node,
   color?: 'black' | 'white',
   weight?: 'bold' | 'light',
   spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',

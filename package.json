@@ -38,7 +38,8 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "styled-components": "^2.4.0"
+    "styled-components": "^2.4.0",
+    "styled-tools": "^0.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
@@ -82,10 +83,10 @@
     "react-test-renderer": "^16.2.0",
     "rollup": "^0.54.1",
     "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.0.0",
     "sinon": "^4.2.2",
-    "styled-tools": "^0.4.0",
     "semantic-release": "^12.4.1",
     "svgr": "^1.7.0"
   },

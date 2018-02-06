@@ -1,30 +1,23 @@
 // @flow
 
-import React, { type Node } from 'react';
+import * as React from 'react';
 
-import { TextPrimitive } from '../TextPrimitive/';
-
-BodyText.defaultProps = {
-  element: 'p',
-  color: 'black',
-  size: 'regular',
-  spacing: 'none',
-};
+import TextPrimitive from '../TextPrimitive';
 
 type BodyTextProps = {
   element?: 'p' | 'span',
-  children: Node | string,
+  children: React.Node,
   color?: 'black' | 'white',
   size?: 'small' | 'regular' | 'tiny',
   spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',
 };
 
 export default function BodyText({
-  element,
+  element = 'p',
   children,
-  color,
-  size,
-  spacing,
+  color = 'black',
+  size = 'regular',
+  spacing = 'none',
 }: BodyTextProps) {
   return (
     <TextPrimitive

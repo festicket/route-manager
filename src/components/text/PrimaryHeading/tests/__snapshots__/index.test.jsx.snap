@@ -25,23 +25,18 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
 }
 
 <PrimaryHeading
-  color="black"
   element="h1"
-  spacing="none"
 >
   <TextPrimitive
     color="black"
     element="h1"
-    size="regular"
     spacing="none"
-    underline={false}
     variant="h1"
     weight="bold"
   >
     <Styled(Primitive)
       color="black"
       element="h1"
-      size="regular"
       spacing="none"
       underline={false}
       weight="bold"
@@ -50,7 +45,6 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
         className="c0"
         color="black"
         element="h1"
-        size="regular"
         spacing="none"
         underline={false}
         weight="bold"
@@ -58,7 +52,7 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
         <h1
           className="c0"
         >
-          Primary Heading
+          Primary Heading test
         </h1>
       </Primitive>
     </Styled(Primitive)>

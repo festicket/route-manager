@@ -1,8 +1,8 @@
 // @flow
 
 import React from 'react';
-import { configure, addDecorator, setAddon, getStorybook } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
+import { configure, setAddon, getStorybook, addDecorator } from '@storybook/react';
 import createPercyAddon from '@percy-io/percy-storybook';
 import theme from '../src/utils/theme';
 

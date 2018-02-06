@@ -1,6 +1,6 @@
 // @flow
 
-import React, { type Node } from 'react';
+import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { prop, switchProp, ifProp } from 'styled-tools';
 
@@ -122,33 +122,68 @@ type Props = {
   color?: 'white' | 'black' | 'grey' | 'red' | 'inherit',
   spacing?: 'xl' | 'lg' | 'md' | 'sm' | 'tiny' | 'none' | 'default',
   underline?: boolean,
-  children: Node | string,
+  children: React.Node,
 };
 
-TextPrimitive.defaultProps = {
-  element: 'p',
-  weight: 'regular',
-  size: 'regular',
-  variant: 'p',
-  color: 'black',
-  spacing: 'md',
-  underline: false,
-};
-
-export function TextPrimitive(props: Props) {
-  // we don't need variant or children beyond this scope.
-  // we pass the remainder down to the styled primitives.
-  // size, spacing, weight, color and underline.
-  const { variant, children, ...remaining } = props;
-
+export default function TextPrimitive({
+  element = 'p',
+  weight = 'regular',
+  size = 'regular',
+  variant = 'p',
+  color = 'black',
+  spacing = 'md',
+  underline = false,
+  children,
+}: Props) {
   switch (variant) {
     case 'h1':
-      return <H1 {...remaining}>{children}</H1>;
+      return (
+        <H1
+          element={element}
+          color={color}
+          weight={weight}
+          underline={underline}
+          spacing={spacing}
+        >
+          {children}
+        </H1>
+      );
     case 'h2':
-      return <H2 {...remaining}>{children}</H2>;
+      return (
+        <H2
+          element={element}
+          color={color}
+          weight={weight}
+          underline={underline}
+          spacing={spacing}
+        >
+          {children}
+        </H2>
+      );
     case 'h3':
-      return <H3 {...remaining}>{children}</H3>;
+      return (
+        <H3
+          element={element}
+          color={color}
+          weight={weight}
+          underline={underline}
+          spacing={spacing}
+        >
+          {children}
+        </H3>
+      );
     default:
-      return <Paragraph {...remaining}>{children}</Paragraph>;
+      return (
+        <Paragraph
+          size={size}
+          element={element}
+          color={color}
+          weight={weight}
+          underline={underline}
+          spacing={spacing}
+        >
+          {children}
+        </Paragraph>
+      );
   }
 }

@@ -26,23 +26,17 @@ exports[`<SecondaryHeading /> with color prop 1`] = `
 
 <SecondaryHeading
   color="white"
-  element="h2"
-  spacing="none"
-  weight="bold"
 >
   <TextPrimitive
     color="white"
     element="h2"
-    size="regular"
     spacing="none"
-    underline={false}
     variant="h2"
     weight="bold"
   >
     <Styled(Primitive)
       color="white"
       element="h2"
-      size="regular"
       spacing="none"
       underline={false}
       weight="bold"
@@ -51,7 +45,6 @@ exports[`<SecondaryHeading /> with color prop 1`] = `
         className="c0"
         color="white"
         element="h2"
-        size="regular"
         spacing="none"
         underline={false}
         weight="bold"
@@ -59,7 +52,7 @@ exports[`<SecondaryHeading /> with color prop 1`] = `
         <h2
           className="c0"
         >
-          test
+          color prop test
         </h2>
       </Primitive>
     </Styled(Primitive)>
@@ -91,25 +84,17 @@ exports[`<SecondaryHeading /> with initial props 1`] = `
   }
 }
 
-<SecondaryHeading
-  color="black"
-  element="h2"
-  spacing="none"
-  weight="bold"
->
+<SecondaryHeading>
   <TextPrimitive
     color="black"
     element="h2"
-    size="regular"
     spacing="none"
-    underline={false}
     variant="h2"
     weight="bold"
   >
     <Styled(Primitive)
       color="black"
       element="h2"
-      size="regular"
       spacing="none"
       underline={false}
       weight="bold"
@@ -118,7 +103,6 @@ exports[`<SecondaryHeading /> with initial props 1`] = `
         className="c0"
         color="black"
         element="h2"
-        size="regular"
         spacing="none"
         underline={false}
         weight="bold"
@@ -126,7 +110,7 @@ exports[`<SecondaryHeading /> with initial props 1`] = `
         <h2
           className="c0"
         >
-          test
+          Secondary heading test
         </h2>
       </Primitive>
     </Styled(Primitive)>
@@ -159,24 +143,18 @@ exports[`<SecondaryHeading /> with weight prop 1`] = `
 }
 
 <SecondaryHeading
-  color="black"
-  element="h2"
-  spacing="none"
   weight="light"
 >
   <TextPrimitive
     color="black"
     element="h2"
-    size="regular"
     spacing="none"
-    underline={false}
     variant="h2"
     weight="light"
   >
     <Styled(Primitive)
       color="black"
       element="h2"
-      size="regular"
       spacing="none"
       underline={false}
       weight="light"
@@ -185,7 +163,6 @@ exports[`<SecondaryHeading /> with weight prop 1`] = `
         className="c0"
         color="black"
         element="h2"
-        size="regular"
         spacing="none"
         underline={false}
         weight="light"
@@ -193,7 +170,7 @@ exports[`<SecondaryHeading /> with weight prop 1`] = `
         <h2
           className="c0"
         >
-          test
+          weight prop test
         </h2>
       </Primitive>
     </Styled(Primitive)>

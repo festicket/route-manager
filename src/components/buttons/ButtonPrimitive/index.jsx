@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 // Components
 // -------------
-import { TextPrimitive as Text } from '../../text/TextPrimitive';
+import Text from '../../text/TextPrimitive';
 import Link from '../../text/Anchor';
 
 // Styles
