@@ -36,10 +36,6 @@
     "styled-tools": "^0.4.0"
   },
   "devDependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "styled-components": "^2.4.0",
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-angular": "^6.0.2",
     "@festicket/eslint-config": "^1.1.5",
@@ -83,6 +79,9 @@
     "plop": "^1.9.1",
     "polished": "^1.9.2",
     "prettier": "^1.10.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0",
     "rollup": "^0.54.1",
     "rollup-plugin-babel": "^3.0.3",
@@ -90,6 +89,7 @@
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.0.0",
     "semantic-release": "^12.4.1",
+    "styled-components": "^2.4.0",
     "svgr": "^1.8.1"
   },
   "peerDependencies": {
