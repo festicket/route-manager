@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TertiaryHeading /> with color prop 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+<TertiaryHeading
+  color="white"
+  element="h3"
+  spacing="none"
+  weight="bold"
+>
+  <TextPrimitive
+    color="white"
+    element="h3"
+    spacing="none"
+    variant="h3"
+    weight="bold"
+  >
+    <Styled(Primitive)
+      color="white"
+      element="h3"
+      spacing="none"
+      underline={false}
+      weight="bold"
+    >
+      <Primitive
+        className="c0"
+        color="white"
+        element="h3"
+        spacing="none"
+        underline={false}
+        weight="bold"
+      >
+        <h3
+          className="c0"
+        >
+          color prop test
+        </h3>
+      </Primitive>
+    </Styled(Primitive)>
+  </TextPrimitive>
+</TertiaryHeading>
+`;
+
+exports[`<TertiaryHeading /> with initial props 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+<TertiaryHeading
+  color="black"
+  element="h3"
+  spacing="none"
+  weight="bold"
+>
+  <TextPrimitive
+    color="black"
+    element="h3"
+    spacing="none"
+    variant="h3"
+    weight="bold"
+  >
+    <Styled(Primitive)
+      color="black"
+      element="h3"
+      spacing="none"
+      underline={false}
+      weight="bold"
+    >
+      <Primitive
+        className="c0"
+        color="black"
+        element="h3"
+        spacing="none"
+        underline={false}
+        weight="bold"
+      >
+        <h3
+          className="c0"
+        >
+          Tertiary heading test
+        </h3>
+      </Primitive>
+    </Styled(Primitive)>
+  </TextPrimitive>
+</TertiaryHeading>
+`;
+
+exports[`<TertiaryHeading /> with weight prop 1`] = `
+.c0 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+<TertiaryHeading
+  color="black"
+  element="h3"
+  spacing="none"
+  weight="light"
+>
+  <TextPrimitive
+    color="black"
+    element="h3"
+    spacing="none"
+    variant="h3"
+    weight="light"
+  >
+    <Styled(Primitive)
+      color="black"
+      element="h3"
+      spacing="none"
+      underline={false}
+      weight="light"
+    >
+      <Primitive
+        className="c0"
+        color="black"
+        element="h3"
+        spacing="none"
+        underline={false}
+        weight="light"
+      >
+        <h3
+          className="c0"
+        >
+          weight prop test
+        </h3>
+      </Primitive>
+    </Styled(Primitive)>
+  </TextPrimitive>
+</TertiaryHeading>
+`;
