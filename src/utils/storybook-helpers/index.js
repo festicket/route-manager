@@ -13,8 +13,9 @@ const WhiteBackground = styled.div`
 
 const GreyBackground = styled.div`
   background-color: lightgrey;
-  text-align: center;
   padding: 1em;
+  text-align: center;
+  font-family: monospace;
 `;
 
 export const Background = {

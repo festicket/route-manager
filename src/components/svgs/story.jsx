@@ -26,14 +26,10 @@ const componentOnlyTemplate = module =>
   React.createElement(module.default, null, null);
 
 const colorAndHoverVariationTemplate = colorVariants => module =>
-  colorVariants.map(variant => (
-    <div key={variant}>
-      <h3>{variant}</h3>
-      {React.createElement(
-        module.default,
-        { color: variant, hoverable: 'true' },
-        null,
-      )}
+  colorVariants.map(color => (
+    <div key={color}>
+      <h3>color&quot;{color}&quot; hoverable=&quot;true&quot;</h3>
+      {React.createElement(module.default, { color, hoverable: 'true' }, null)}
     </div>
   ));
 
@@ -41,15 +37,16 @@ const logoSizeColorAndHoverVariationTemplate = (
   colorVariants,
   logoSize,
 ) => module =>
-  colorVariants.map(variant =>
+  colorVariants.map(color =>
     logoSize.map(size => (
-      <div key={variant + size}>
+      <div key={color + size}>
         <h3>
-          {variant} {size}
+          color=&quot;{color}&quot; size=&quot;{size}&quot;
+          hoverable=&quot;true&quot;
         </h3>
         {React.createElement(
           module.default,
-          { color: variant, size, hoverable: 'true' },
+          { color, size, hoverable: 'true' },
           null,
         )}
       </div>
