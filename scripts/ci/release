@@ -1,5 +1,7 @@
 #! /bin/bash
 
+set -ex
+
 # Install deps
 npm install
 
