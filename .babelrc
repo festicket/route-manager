@@ -1,5 +1,7 @@
 {
-  "presets": ["react"],
+  "presets": [["env", {
+    "modules": false
+  }], "react"],
   "plugins": ["macros", "flow-react-proptypes", "transform-class-properties", "transform-object-rest-spread"],
   "env": {
     "test": {
