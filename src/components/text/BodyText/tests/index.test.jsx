@@ -1,5 +1,4 @@
 // @flow
-
 import React from 'react';
 import { mount } from 'enzyme';
 import { BodyText } from '@festicket/react-ui-components';

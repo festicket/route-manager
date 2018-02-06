@@ -1,8 +1,7 @@
 // @flow
-
 import * as React from 'react';
 
-import TextPrimitive from '../TextPrimitive';
+import TextPrimitive from '../TextPrimitive/';
 
 TertiaryHeading.defaultProps = {
   element: 'h3',

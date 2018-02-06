@@ -1,5 +1,4 @@
 // @flow
-
 const { BRANCH_NAME } = process.env;
 
 module.exports = {
