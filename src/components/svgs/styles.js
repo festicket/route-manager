@@ -10,7 +10,7 @@ export const BRAND = 'theme';
 export const LOGO_SMALL = 'small';
 export const LOGO_BIG = 'big';
 
-export const logoHeights = {
+const logoHeights = {
   [LOGO_SMALL]: '38px',
   [LOGO_BIG]: '68px',
 };

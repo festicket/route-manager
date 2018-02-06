@@ -14,7 +14,7 @@ module.exports = (opts = {}) => {
 import React from 'react';
 import styled from 'styled-components';
 import { svgColorVariations, svgHoverColorVariations } from '../../styles';
-  
+
 const ${state.componentName} = (${props}: {}) => ${code}
 
 export default styled(${state.componentName})\`

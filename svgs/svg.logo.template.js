@@ -18,7 +18,7 @@ import {
   svgColorVariations,
   svgHoverColorVariations,
 } from '../../styles';
-  
+
 const ${state.componentName} = (${props}: {}) => ${code}
 
 export default styled(${state.componentName})\`

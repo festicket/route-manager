@@ -78,7 +78,6 @@
     "lint-staged": "^6.0.1",
     "plop": "^1.9.1",
     "polished": "^1.9.2",
-    "prettier": "^1.10.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

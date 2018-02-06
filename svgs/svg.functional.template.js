@@ -17,7 +17,7 @@ import {
   functionalSvgColorVariations,
   functionalSvgHoverColorVariations,
 } from '../../styles';
-  
+
 const ${state.componentName} = (${props}: {}) => ${code}
 
 export default styled(${state.componentName})\`

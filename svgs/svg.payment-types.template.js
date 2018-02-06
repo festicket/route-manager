@@ -13,7 +13,7 @@ module.exports = (opts = {}) => {
   return (code, state) => `// @flow
 import React from 'react';
 import styled from 'styled-components';
-  
+
 const ${state.componentName} = (${props}: {}) => ${code}
 
 export default styled(${state.componentName})\`
