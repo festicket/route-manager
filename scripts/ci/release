@@ -21,7 +21,7 @@ find . -name '*.snap' | xargs rm -rf
 npm run build
 
 # Test the build result
-npm run test
+npm run test -- --bail -u
 
 # Release the krakken
 npm run semantic-release
