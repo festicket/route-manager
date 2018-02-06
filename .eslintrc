@@ -17,10 +17,6 @@
     "react/jsx-filename-extension": ["off"],
     "flowtype/define-flow-type": 1,
     "flowtype/use-flow-type": 1,
-    "flowtype/require-valid-file-annotation": [
-      2,
-      "always"
-    ],
     "react/prop-types": ["off"]
   }
 }
