@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import { colorVariations, hoverColorVariations } from '../styles';
+import { svgColorVariations, svgHoverColorVariations } from '../styles';
 
 const Facebook = (props: {}) => (
   <svg viewBox="0 0 22 22" {...props}>
@@ -14,5 +14,5 @@ const Facebook = (props: {}) => (
 
 export default styled(Facebook)`
   height: 22px;
-  ${colorVariations} ${hoverColorVariations};
+  ${svgColorVariations} ${svgHoverColorVariations};
 `;

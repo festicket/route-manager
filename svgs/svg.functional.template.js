@@ -13,14 +13,14 @@ module.exports = (opts = {}) => {
   return (code, state) => `// @flow
 import React from 'react';
 import styled from 'styled-components';
-import { colorVariations, hoverColorVariations } from '../styles';
+import { functionalSvgColorVariations, functionalSvgHoverColorVariations } from '../styles';
   
 const ${state.componentName} = (${props}: {}) => ${code}
 
 export default styled(${state.componentName})\`
   height: 18px;
-  \${colorVariations}
-  \${hoverColorVariations}
+  \${functionalSvgColorVariations}
+  \${functionalSvgHoverColorVariations}
 \`;
 `;
 };

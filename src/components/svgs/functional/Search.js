@@ -1,7 +1,10 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import { colorVariations, hoverColorVariations } from '../styles';
+import {
+  functionalSvgColorVariations,
+  functionalSvgHoverColorVariations,
+} from '../styles';
 
 const Search = (props: {}) => (
   <svg viewBox="0 0 20 20" {...props}>
@@ -11,5 +14,5 @@ const Search = (props: {}) => (
 
 export default styled(Search)`
   height: 18px;
-  ${colorVariations} ${hoverColorVariations};
+  ${functionalSvgColorVariations} ${functionalSvgHoverColorVariations};
 `;

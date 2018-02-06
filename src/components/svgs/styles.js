@@ -1,26 +1,66 @@
 // @flow
 
 import { lighten, darken } from 'polished';
+import theme from '../../utils/theme';
 
-export const colors = {
-  light: '#E00',
-  dark: '#0E0',
-  theme: '#00E',
+export const LIGHT = 'light';
+export const DARK = 'dark';
+export const BRAND = 'theme';
+
+export const LOGO_SMALL = 'small';
+export const LOGO_BIG = 'big';
+
+export const logoHeights = {
+  [LOGO_SMALL]: '38px',
+  [LOGO_BIG]: '68px',
 };
 
-export const colorsHover = {
-  light: darken(0.2, colors.light),
-  dark: lighten(0.2, colors.dark),
-  theme: lighten(0.2, colors.theme),
-};
-
-export const colorVariations = (props: { color: string }) => `
-  fill: ${colors[props.color]};
+export const logoHeightVariations = (props: { size: string }) => `
+  height: ${logoHeights[props.size]};
 `;
 
-export const hoverColorVariations = (props: { color: string }) => `
+const svgColors = {
+  [LIGHT]: theme.colors.white,
+  [DARK]: theme.colors.greyscale.black,
+  [BRAND]: theme.colors.brand.primary,
+};
+
+const svgHoverColors = {
+  [LIGHT]: darken(0.1, svgColors[LIGHT]),
+  [DARK]: lighten(0.2, svgColors[DARK]),
+  [BRAND]: darken(0.2, svgColors[BRAND]),
+};
+
+const functionalSvgColors = {
+  [LIGHT]: theme.colors.white,
+  [DARK]: theme.colors.greyscale[DARK],
+  [BRAND]: theme.colors.brand.primary,
+};
+
+const functionalSvgHoverColors = {
+  [LIGHT]: darken(0.1, functionalSvgColors[LIGHT]),
+  [DARK]: darken(0.2, functionalSvgColors[DARK]),
+  [BRAND]: darken(0.2, functionalSvgColors[BRAND]),
+};
+
+export const svgColorVariations = (props: { color: string }) => `
+  fill: ${svgColors[props.color]};
+`;
+
+export const svgHoverColorVariations = (props: { color: string }) => `
   cursor: pointer;
   &:hover {
-    fill: ${colorsHover[props.color]};
+    fill: ${svgHoverColors[props.color]};
+  }
+`;
+
+export const functionalSvgColorVariations = (props: { color: string }) => `
+  fill: ${functionalSvgColors[props.color]};
+`;
+
+export const functionalSvgHoverColorVariations = (props: { color: string }) => `
+  cursor: pointer;
+  &:hover {
+    fill: ${functionalSvgHoverColors[props.color]};
   }
 `;

@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import { colorVariations, hoverColorVariations } from '../styles';
+import { svgColorVariations, svgHoverColorVariations } from '../styles';
 
 const Snap = (props: {}) => (
   <svg viewBox="0 0 21 20" {...props}>
@@ -14,5 +14,5 @@ const Snap = (props: {}) => (
 
 export default styled(Snap)`
   height: 22px;
-  ${colorVariations} ${hoverColorVariations};
+  ${svgColorVariations} ${svgHoverColorVariations};
 `;

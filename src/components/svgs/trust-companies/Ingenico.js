@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import { colorVariations, hoverColorVariations } from '../styles';
+import { svgColorVariations, svgHoverColorVariations } from '../styles';
 
 const Ingenico = (props: {}) => (
   <svg viewBox="0 0 79 23" {...props}>
@@ -14,5 +14,5 @@ const Ingenico = (props: {}) => (
 
 export default styled(Ingenico)`
   height: 22px;
-  ${colorVariations} ${hoverColorVariations};
+  ${svgColorVariations} ${svgHoverColorVariations};
 `;

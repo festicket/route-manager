@@ -19,12 +19,13 @@
     ]
   ],
   "plugins": [
+    "macros",
     "flow-react-proptypes",
     "transform-class-properties",
     "transform-object-rest-spread"
   ],
   "env": {
-    "test": {
+    "production": {
       "plugins": [
         "transform-es2015-modules-commonjs"
       ]

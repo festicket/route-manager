@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import { colorVariations, hoverColorVariations } from '../styles';
+import { svgColorVariations, svgHoverColorVariations } from '../styles';
 
 const Abta = (props: {}) => (
   <svg viewBox="0 0 82 23" {...props}>
@@ -11,5 +11,5 @@ const Abta = (props: {}) => (
 
 export default styled(Abta)`
   height: 22px;
-  ${colorVariations} ${hoverColorVariations};
+  ${svgColorVariations} ${svgHoverColorVariations};
 `;
