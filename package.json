@@ -35,13 +35,13 @@
   },
   "dependencies": {
     "polished": "^1.9.0",
+    "styled-tools": "^0.4.0"
+  },
+  "devDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "styled-components": "^2.4.0",
-    "styled-tools": "^0.4.0"
-  },
-  "devDependencies": {
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-angular": "^6.0.2",
     "@festicket/eslint-config": "^1.1.5",
@@ -91,11 +91,20 @@
     "svgr": "^1.7.0"
   },
   "peerDependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "styled-components": "^2.4.0"
+    "prop-types": ">=15.5.8",
+    "react": ">=15.5.4",
+    "react-dom": ">=15.4.2",
+    "styled-components": ">=2.1.2"
   },
+  "browserslist": [
+    "last 3 Chrome versions",
+    "last 3 ChromeAndroid versions",
+    "Edge >= 14",
+    "Explorer >= 11",
+    "last 3 Firefox versions",
+    "iOS >= 8",
+    "Safari >= 9"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/festicket/react-ui-components.git"
