@@ -4,15 +4,15 @@ import styled from 'styled-components';
 import {
   functionalSvgColorVariations,
   functionalSvgHoverColorVariations,
-} from '../styles';
+} from '../../styles';
 
-const Basket = (props: {}) => (
+const Down = (props: {}) => (
   <svg viewBox="0 0 20 20" {...props}>
-    <path d="M18 5.9h-4V5c0-2.2-1.8-4-4-4S6 2.8 6 5v.9H2L1 19h18L18 5.9zM8 5c0-1.1.9-2 2-2s2 .9 2 2v.9H8V5zM3.2 17l.7-9.1H6V10h2V7.9h4V10h2V7.9h2.1l.7 9.1H3.2z" />
+    <path d="M15.7 6.6L10 12.2 4.3 6.6 2.9 8l7.1 7.1L17.1 8z" />
   </svg>
 );
 
-export default styled(Basket)`
+export default styled(Down)`
   height: 18px;
   ${functionalSvgColorVariations} ${functionalSvgHoverColorVariations};
 `;

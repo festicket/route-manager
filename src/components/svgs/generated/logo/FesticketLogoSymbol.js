@@ -5,9 +5,9 @@ import {
   logoHeightVariations,
   svgColorVariations,
   svgHoverColorVariations,
-} from '../styles';
+} from '../../styles';
 
-const FesticketLong = (props: {}) => (
+const FesticketLogoSymbol = (props: {}) => (
   <svg id="Layer_1" viewBox="0 0 32.2 35" {...props}>
     <path id="Shape" className="st0" d="M.4.1l.8 15 29.4-3L32 3.4z" />
     <path id="Shape_1_" className="st0" d="M5.7 26.2l.4 7.6 10.3 1.1 2-12.6z" />
@@ -19,7 +19,7 @@ const FesticketLong = (props: {}) => (
   </svg>
 );
 
-export default styled(FesticketLong)`
+export default styled(FesticketLogoSymbol)`
   ${svgColorVariations}
   ${svgHoverColorVariations}
   ${logoHeightVariations}

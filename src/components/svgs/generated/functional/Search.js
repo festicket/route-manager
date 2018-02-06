@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {
   functionalSvgColorVariations,
   functionalSvgHoverColorVariations,
-} from '../styles';
+} from '../../styles';
 
 const Search = (props: {}) => (
   <svg viewBox="0 0 20 20" {...props}>

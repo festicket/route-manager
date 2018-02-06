@@ -13,7 +13,11 @@ module.exports = (opts = {}) => {
   return (code, state) => `// @flow
 import React from 'react';
 import styled from 'styled-components';
-import { logoHeightVariations, svgColorVariations, svgHoverColorVariations } from '../styles';
+import {
+  logoHeightVariations,
+  svgColorVariations,
+  svgHoverColorVariations,
+} from '../../styles';
   
 const ${state.componentName} = (${props}: {}) => ${code}
 

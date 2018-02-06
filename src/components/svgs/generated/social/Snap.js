@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import { svgColorVariations, svgHoverColorVariations } from '../styles';
+import { svgColorVariations, svgHoverColorVariations } from '../../styles';
 
 const Snap = (props: {}) => (
   <svg viewBox="0 0 21 20" {...props}>
