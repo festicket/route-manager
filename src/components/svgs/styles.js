@@ -1,3 +1,5 @@
+// @flow
+
 import { lighten, darken } from 'polished';
 
 export const colors = {
@@ -12,11 +14,11 @@ export const colorsHover = {
   theme: lighten(0.2, colors.theme),
 };
 
-export const colorVariations = props => `
+export const colorVariations = (props: { color: string }) => `
   fill: ${colors[props.color]};
 `;
 
-export const hoverColorVariations = props => `
+export const hoverColorVariations = (props: { color: string }) => `
   cursor: pointer;
   &:hover {
     fill: ${colorsHover[props.color]};

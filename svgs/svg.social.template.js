@@ -1,3 +1,4 @@
+// @flow
 module.exports = (opts = {}) => {
   let props = '';
 
@@ -9,7 +10,8 @@ module.exports = (opts = {}) => {
     props = '{svgRef}';
   }
 
-  return (code, state) => `import React from 'react';
+  return (code, state) => `// @flow
+import React from 'react';
 import styled from 'styled-components';
 import { colorVariations, hoverColorVariations } from '../styles';
   
