@@ -88,10 +88,10 @@
     "svgr": "^1.7.0"
   },
   "peerDependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "styled-components": "^2.4.0"
+    "prop-types": ">=15.5.8",
+    "react": ">=15.5.4",
+    "react-dom": ">=15.4.2",
+    "styled-components": ">=2.1.2"
   },
   "repository": {
     "type": "git",
