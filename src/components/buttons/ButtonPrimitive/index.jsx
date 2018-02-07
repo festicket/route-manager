@@ -10,6 +10,10 @@ import styled from 'styled-components';
 import Text from '../../text/TextPrimitive';
 import Link from '../../text/Anchor';
 
+// Helpers
+// -------------
+import { blacklistProps } from '../../../utils/props';
+
 // Styles
 // -------------
 // import { Wrapper } from './styles';
@@ -29,13 +33,14 @@ function Button(props) {
   // We have to clean the props here as a standard button component
   // Throws errors for the unknown props variant and element
   const { render, isDisabled } = props;
-  const newProps = { ...props };
-  delete newProps.variant;
-  delete newProps.element;
-  delete newProps.fullWidth;
-  delete newProps.fontSize;
-  delete newProps.isDisabled;
-  delete newProps.render;
+  const newProps = blacklistProps(props, [
+    'variant',
+    'element',
+    'fullWidth',
+    'fontSize',
+    'isDisabled',
+    'render',
+  ]);
 
   const resultChildren = render();
 
