@@ -22,33 +22,27 @@ function makeStories(components, template) {
   });
 }
 
-const componentOnlyTemplate = module =>
-  React.createElement(module.default, null, null);
+const componentOnlyTemplate = Module => <Module.default />;
 
-const colorAndHoverVariationTemplate = colorVariants => module =>
+const colorAndHoverVariationTemplate = colorVariants => Module =>
   colorVariants.map(color => (
     <div key={color}>
-      <h3>color&quot;{color}&quot; hoverable=&quot;true&quot;</h3>
-      {React.createElement(module.default, { color, hoverable: 'true' }, null)}
+      <h3>color=&quot;{color}&quot; hoverable</h3>
+      <Module.default color={color} hoverable />
     </div>
   ));
 
 const logoSizeColorAndHoverVariationTemplate = (
   colorVariants,
   logoSize,
-) => module =>
+) => Module =>
   colorVariants.map(color =>
     logoSize.map(size => (
       <div key={color + size}>
         <h3>
-          color=&quot;{color}&quot; size=&quot;{size}&quot;
-          hoverable=&quot;true&quot;
+          color=&quot;{color}&quot; size=&quot;{size}&quot; hoverable
         </h3>
-        {React.createElement(
-          module.default,
-          { color, size, hoverable: 'true' },
-          null,
-        )}
+        <Module.default color={color} size={size} hoverable />
       </div>
     )),
   );
