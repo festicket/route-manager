@@ -1,9 +1,9 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import { svgColorVariations } from '../../color-styles';
-import { svgHoverColorVariations } from '../../hover-styles';
-import { logoHeightVariations } from '../../logo-size-styles';
+import { svgColorVariations } from '../../styles/color-styles';
+import { svgHoverColorVariations } from '../../styles/hover-styles';
+import { logoHeightVariations } from '../../styles/logo-size-styles';
 
 const FesticketLogoWordmark = (props: {}) => (
   <svg id="Layer_1" viewBox="0 0 134 35" {...props}>

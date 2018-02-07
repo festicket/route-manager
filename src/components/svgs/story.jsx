@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import importAll from 'import-all.macro';
-import { BRAND, DARK, LIGHT } from './colors';
+import { BRAND, DARK, LIGHT } from './styles/colors';
+import { LOGO_BIG, LOGO_SMALL } from './styles/logo-size-styles';
 import { Background } from '../../utils/storybook-helpers/index';
-import { LOGO_BIG, LOGO_SMALL } from './logo-size-styles';
 
 // Set up for storybook
 const stories = storiesOf('SVGs', module);
@@ -93,7 +93,7 @@ function colorAndHoverVariationTemplate(colorVariants) {
     colorVariants.map(color => (
       <div key={color}>
         <h3>color=&quot;{color}&quot; hoverable=&quot;true&quot;</h3>
-        <ReactElement color={color} hoverable="true" />
+        <ReactElement color={color} hoverable="false" />
 
         <h3>color=&quot;{color}&quot;</h3>
         <ReactElement color={color} />
@@ -119,7 +119,7 @@ function logoSizeColorAndHoverVariationTemplate(colorVariants, sizeVariants) {
             color=&quot;{color}&quot; size=&quot;{size}&quot;
             hoverable=&quot;true&quot;
           </h3>
-          <ReactElement color={color} size={size} hoverable="true" />
+          <ReactElement color={color} size={size} hoverable="false" />
 
           <h3>
             color=&quot;{color}&quot; size=&quot;{size}&quot;

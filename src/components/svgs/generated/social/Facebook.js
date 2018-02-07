@@ -1,8 +1,8 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import { svgColorVariations } from '../../color-styles';
-import { svgHoverColorVariations } from '../../hover-styles';
+import { svgColorVariations } from '../../styles/color-styles';
+import { svgHoverColorVariations } from '../../styles/hover-styles';
 
 const Facebook = (props: {}) => (
   <svg viewBox="0 0 22 22" {...props}>

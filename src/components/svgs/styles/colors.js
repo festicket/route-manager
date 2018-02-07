@@ -1,6 +1,6 @@
 // @flow
 import { darken, lighten } from 'polished/lib/index';
-import theme from '../../utils/theme';
+import theme from '../../../utils/theme';
 
 export const LIGHT = 'light';
 export const DARK = 'dark';
