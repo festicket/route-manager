@@ -1,8 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import importAll from 'import-all.macro';
-import { LIGHT, DARK, BRAND, LOGO_BIG, LOGO_SMALL } from './styles';
+import { BRAND, DARK, LIGHT } from './colors';
 import { Background } from '../../utils/storybook-helpers/index';
+import { LOGO_BIG, LOGO_SMALL } from './logo-size-styles';
 
 // Set up for storybook
 const stories = storiesOf('SVGs', module);

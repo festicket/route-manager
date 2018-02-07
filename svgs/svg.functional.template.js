@@ -15,10 +15,8 @@ module.exports = (opts = {}) => {
   return (code, state) => `// @flow
 import React from 'react';
 import styled from 'styled-components';
-import {
-  functionalSvgColorVariations,
-  functionalSvgHoverColorVariations,
-} from '../../styles';
+import { functionalSvgColorVariations } from '../../color-styles';
+import { functionalSvgHoverColorVariations } from '../../hover-styles';
 
 const ${state.componentName} = (${props}: {}) => ${code}
 
