@@ -5,4 +5,14 @@
 **/.DS_Store
 /public
 /storybook-static
-/yalc.lock
+
+# Yalc - https://github.com/whitecolor/yalc#keep-it-out-of-git
+yalc.lock
+.yalc
+
+# Lockfiles - https://stackoverflow.com/a/44904494
+yarn.lock
+package-lock.json
+
+# Tern - code-analysis engine for JavaScript
+.tern-port
