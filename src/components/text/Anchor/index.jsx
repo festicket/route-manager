@@ -31,7 +31,7 @@ const TAB_KEY_CODE = 9;
 
 function AnchorComponent(props) {
   const {
-    element: El,
+    element: ComposedElement,
     anchorRef,
     external,
     children,
@@ -90,7 +90,7 @@ function AnchorComponent(props) {
     );
   }
 
-  return <El {...props}>{children}</El>;
+  return <ComposedElement {...props}>{children}</ComposedElement>;
 }
 
 const StyledAnchorComponent = styled(AnchorComponent)`
