@@ -18,6 +18,7 @@ exports[`<UserAvatar /> with avatarLarge 1`] = `
   justify-content: center;
   text-transform: capitalize;
   text-align: center;
+  overflow: hidden;
   background-position: 50% 50%;
   background-size: cover;
   border: 0;
@@ -25,6 +26,12 @@ exports[`<UserAvatar /> with avatarLarge 1`] = `
   font-size: 12px;
   width: 24px;
   height: 24px;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (min-width:568px) {
@@ -40,21 +47,20 @@ exports[`<UserAvatar /> with avatarLarge 1`] = `
 >
   <styled.span
     avatarLarge="http://via.placeholder.com/350x150"
-    style={
-      Object {
-        "backgroundImage": "url(http://via.placeholder.com/350x150)",
-      }
-    }
     variant="small"
   >
     <span
       className="c0"
-      style={
-        Object {
-          "backgroundImage": "url(http://via.placeholder.com/350x150)",
-        }
-      }
-    />
+    >
+      <styled.img
+        src="http://via.placeholder.com/350x150"
+      >
+        <img
+          className="c1"
+          src="http://via.placeholder.com/350x150"
+        />
+      </styled.img>
+    </span>
   </styled.span>
 </UserAvatar>
 `;
@@ -77,6 +83,7 @@ exports[`<UserAvatar /> with initial 1`] = `
   justify-content: center;
   text-transform: capitalize;
   text-align: center;
+  overflow: hidden;
   border: 2px solid;
   font-size: 12px;
   width: 24px;
@@ -96,12 +103,10 @@ exports[`<UserAvatar /> with initial 1`] = `
 >
   <styled.span
     initial="B"
-    style={Object {}}
     variant="small"
   >
     <span
       className="c0"
-      style={Object {}}
     >
       B
     </span>
@@ -127,6 +132,7 @@ exports[`<UserAvatar /> with initial props 1`] = `
   justify-content: center;
   text-transform: capitalize;
   text-align: center;
+  overflow: hidden;
   font-size: 12px;
   width: 24px;
   height: 24px;
@@ -142,12 +148,10 @@ exports[`<UserAvatar /> with initial props 1`] = `
 
 <UserAvatar>
   <styled.span
-    style={Object {}}
     variant="small"
   >
     <span
       className="c0"
-      style={Object {}}
     />
   </styled.span>
 </UserAvatar>

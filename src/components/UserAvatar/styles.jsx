@@ -13,6 +13,7 @@ export const Wrapper = styled.span`
   text-transform: capitalize;
   text-align: center;
   font-weight: ${prop('theme.fontWeight.bold')};
+  overflow: hidden;
 
   ${ifProp(
     'avatarLarge',
@@ -52,4 +53,10 @@ export const Wrapper = styled.span`
       width: 88px;
       height: 88px;`,
   })};
+`;
+
+export const StyledImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;

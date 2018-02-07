@@ -9,7 +9,7 @@ import React from 'react';
 
 // Styles
 // -------------
-import { Wrapper } from './styles';
+import { Wrapper, StyledImage } from './styles';
 
 // Flow Types
 // -------------
@@ -26,17 +26,14 @@ export default function UserAvatar({
   initial,
   variant = 'small',
 }: Props) {
-  const style = avatarLarge ? { backgroundImage: `url(${avatarLarge})` } : {};
-
   return (
     <Wrapper
       className={className}
-      style={style}
       variant={variant}
       avatarLarge={avatarLarge}
       initial={initial}
     >
-      {initial}
+      {avatarLarge ? <StyledImage src={avatarLarge} /> : initial}
     </Wrapper>
   );
 }
