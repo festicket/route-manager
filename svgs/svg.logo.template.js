@@ -1,4 +1,6 @@
 // @flow
+// template based on https://github.com/smooth-code/svgr#use-a-specific-template
+
 module.exports = (opts = {}) => {
   let props = '';
 
