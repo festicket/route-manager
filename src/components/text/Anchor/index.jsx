@@ -46,6 +46,9 @@ function AnchorComponent(props) {
     itemProp,
   } = props;
 
+  // The browser and React don't have an event for an element becoming focused
+  // ONLY as a result of keyboard tabbing, so we must listen for the tab
+  // key-up-press event on the element to call the `onTabFocus` callback.
   const onKeyUp = e =>
     e.keyCode === TAB_KEY_CODE && typeof onTabFocus === 'function'
       ? onTabFocus(e)
