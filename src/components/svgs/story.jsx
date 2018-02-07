@@ -27,8 +27,10 @@ const componentOnlyTemplate = Module => <Module.default />;
 const colorAndHoverVariationTemplate = colorVariants => Module =>
   colorVariants.map(color => (
     <div key={color}>
-      <h3>color=&quot;{color}&quot; hoverable</h3>
-      <Module.default color={color} hoverable />
+      <h3>color=&quot;{color}&quot; hoverable=&quot;true&quot;</h3>
+      <Module.default color={color} hoverable="true" />
+      <h3>color=&quot;{color}&quot;</h3>
+      <Module.default color={color} />
     </div>
   ));
 
@@ -40,9 +42,14 @@ const logoSizeColorAndHoverVariationTemplate = (
     logoSize.map(size => (
       <div key={color + size}>
         <h3>
-          color=&quot;{color}&quot; size=&quot;{size}&quot; hoverable
+          color=&quot;{color}&quot; size=&quot;{size}&quot;
+          hoverable=&quot;true&quot;
         </h3>
-        <Module.default color={color} size={size} hoverable />
+        <Module.default color={color} size={size} hoverable="true" />
+        <h3>
+          color=&quot;{color}&quot; size=&quot;{size}&quot;
+        </h3>
+        <Module.default color={color} size={size} />
       </div>
     )),
   );
@@ -59,7 +66,7 @@ const logoSvgComponents = importAll.sync(`./generated/logo/**/*.js`);
 makeStories(
   logoSvgComponents,
   logoSizeColorAndHoverVariationTemplate(
-    [LIGHT, DARK, BRAND],
+    [DARK, BRAND, LIGHT],
     [LOGO_SMALL, LOGO_BIG],
   ),
 );

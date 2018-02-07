@@ -43,24 +43,27 @@ const functionalSvgHoverColors = {
   [BRAND]: darken(0.1, functionalSvgColors[BRAND]),
 };
 
+const hoverStyle = colorMapping => (props: { color: string }) => `
+cursor: pointer;
+&:hover {
+  fill: ${colorMapping[props.color]};
+}
+`;
+
 export const svgColorVariations = (props: { color: string }) => `
   fill: ${svgColors[props.color]};
 `;
 
-export const svgHoverColorVariations = (props: { color: string }) => `
-  cursor: pointer;
-  &:hover {
-    fill: ${svgHoverColors[props.color]};
-  }
-`;
+export const svgHoverColorVariations = (props: {
+  color: string,
+  hoverable: boolean,
+}) => (props.hoverable ? hoverStyle(svgHoverColors) : null);
 
 export const functionalSvgColorVariations = (props: { color: string }) => `
   fill: ${functionalSvgColors[props.color]};
 `;
 
-export const functionalSvgHoverColorVariations = (props: { color: string }) => `
-  cursor: pointer;
-  &:hover {
-    fill: ${functionalSvgHoverColors[props.color]};
-  }
-`;
+export const functionalSvgHoverColorVariations = (props: {
+  color: string,
+  hoverable: boolean,
+}) => (props.hoverable ? hoverStyle(functionalSvgHoverColors) : null);
