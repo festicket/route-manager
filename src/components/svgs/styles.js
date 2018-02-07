@@ -27,8 +27,8 @@ const svgColors = {
 
 const svgHoverColors = {
   [LIGHT]: darken(0.1, svgColors[LIGHT]),
-  [DARK]: lighten(0.2, svgColors[DARK]),
-  [BRAND]: darken(0.2, svgColors[BRAND]),
+  [DARK]: lighten(0.1, svgColors[DARK]),
+  [BRAND]: darken(0.1, svgColors[BRAND]),
 };
 
 const functionalSvgColors = {
@@ -39,8 +39,8 @@ const functionalSvgColors = {
 
 const functionalSvgHoverColors = {
   [LIGHT]: darken(0.1, functionalSvgColors[LIGHT]),
-  [DARK]: darken(0.2, functionalSvgColors[DARK]),
-  [BRAND]: darken(0.2, functionalSvgColors[BRAND]),
+  [DARK]: darken(0.1, functionalSvgColors[DARK]),
+  [BRAND]: darken(0.1, functionalSvgColors[BRAND]),
 };
 
 export const svgColorVariations = (props: { color: string }) => `
