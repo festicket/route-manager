@@ -4,18 +4,12 @@
 // -------------
 import React, { type Node } from 'react';
 
-// Components
-// -------------
-
 // Styles
 // -------------
 import { HR, Wrapper, Content } from './styles';
 
 // Flow Types
 // -------------
-// type Props = {
-// };
-
 type PropTypes = {
   children?: Node,
   className?: string,
