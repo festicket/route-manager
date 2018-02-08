@@ -64,6 +64,12 @@ export default function Primitive({
     return <ResetButton {...newProps} />;
   }
 
-  newProps = { fontSize, render, ...props, variant: 'inherit' };
+  newProps = blacklistProps(props, [
+    'variant',
+    'element',
+    'fullWidth',
+    'isDisabled',
+  ]);
+
   return <Link {...newProps} weight="bold" />;
 }
