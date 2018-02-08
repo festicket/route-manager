@@ -1,18 +1,8 @@
 // @flow
 
-// Lib
-// -------------
 import React from 'react';
-
-// Components
-// -------------
-
-// Styles
-// -------------
 import { StyledSecondaryButton } from './styles';
 
-// Flow Types
-// -------------
 type Props = {
   to?: string,
   fullWidth?: boolean,

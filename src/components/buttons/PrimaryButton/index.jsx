@@ -1,22 +1,12 @@
 // @flow
 
-// Lib
-// -------------
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { darken, lighten } from 'polished';
 import { prop, ifProp, switchProp } from 'styled-tools';
-
-// Components
-// -------------
 import Primitive from '../ButtonPrimitive';
-
-// Styles
-// -------------
 import buttonMixin from '../styles';
 
-// Flow Types
-// -------------
 type Props = {
   to?: string,
   fullWidth?: boolean,

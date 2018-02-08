@@ -1,15 +1,8 @@
 // @flow
 
-// Lib
-// -------------
 import React, { type Node } from 'react';
-
-// Styles
-// -------------
 import { HR, Wrapper, Content } from './styles';
 
-// Flow Types
-// -------------
 type PropTypes = {
   children?: Node,
   className?: string,

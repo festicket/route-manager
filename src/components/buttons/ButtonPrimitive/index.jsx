@@ -1,25 +1,11 @@
 // @flow
 
-// Lib
-// -------------
 import React, { type Node } from 'react';
 import styled from 'styled-components';
-
-// Components
-// -------------
 import Text from '../../text/TextPrimitive';
 import Link from '../../text/Anchor';
-
-// Helpers
-// -------------
 import { blacklistProps } from '../../../utils/props';
 
-// Styles
-// -------------
-// import { Wrapper } from './styles';
-
-// Flow Types
-// -------------
 type Props = {
   element: string,
   children?: Node,

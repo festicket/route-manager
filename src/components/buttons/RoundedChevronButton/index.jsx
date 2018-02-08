@@ -1,22 +1,11 @@
 // @flow
 
-// Lib
-// -------------
 import React from 'react';
 import styled from 'styled-components';
 import { switchProp } from 'styled-tools';
-
-// Components
-// -------------
 import SecondaryButton from '../SecondaryButton';
 import ChevronRight from '../../icons/ui/ChevronRight';
 
-// Styles
-// -------------
-// import { Wrapper } from './styles';
-
-// Flow Types
-// -------------
 type Props = {
   direction: 'right' | 'down' | 'left' | 'up',
 };

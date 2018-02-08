@@ -1,14 +1,10 @@
 // @flow
 
-// Lib
-// -------------
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { switchProp, prop, ifProp } from 'styled-tools';
 import { darken } from 'polished';
 
-// Flow Types
-// -------------
 type Props = {
   children?: React.Node,
   to?: string,

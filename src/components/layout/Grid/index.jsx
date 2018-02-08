@@ -1,21 +1,11 @@
 // @flow
 
-// Lib
-// -------------
 import * as React from 'react';
 import styled from 'styled-components';
-
-// Utils
-// -------------
 import breakpoint from '../../../utils/breakpoint';
 import transformWidthNumber from './utils/transformWidthNumber';
-
-// Components
-// -------------
 import Primitive, { type PrimitiveTypes } from '../Primitive';
 
-// Flow Types
-// -------------
 type BreakpointsShape = {|
   xs?: number,
   sm?: number,
@@ -32,8 +22,6 @@ type GridElementTypes = {|
 
 type GridTypes = PrimitiveTypes;
 
-// Module
-// -------------
 const gap = 30;
 
 const GridElementWidth = (props: GridElementTypes) => {
