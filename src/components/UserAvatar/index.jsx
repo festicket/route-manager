@@ -1,18 +1,8 @@
 // @flow
 
-// Lib
-// -------------
 import React from 'react';
-
-// Components
-// -------------
-
-// Styles
-// -------------
 import { Wrapper, StyledImage } from './styles';
 
-// Flow Types
-// -------------
 type Props = {
   className?: string,
   initial?: string,
