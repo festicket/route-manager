@@ -12,12 +12,18 @@ const CenterDecorator = storyFn => (
 );
 stories.addDecorator(CenterDecorator);
 
-// Dynamically import all svg components and generate stories showing all their valid variations
+/*
+ Dynamically import all svg components and generate stories showing all their valid variations
+
+  importAll.sync is transpiled by babel to be an object that contains all the files in the glob arg.
+  It is an object whose keys are paths to the module, and whose values are the imported bindings.
+  Each binding is expected to have a default export which is a ReactElement.
+*/
 
 const logoSvgComponents = importAll.sync(`./generated/logo/**/*.js`);
 makeStories(
   logoSvgComponents,
-  logoSizeColorAndHoverVariationTemplate(
+  logoSizeColorAndHoverStoryGenerator(
     [DARK, BRAND, LIGHT],
     [LOGO_SMALL, LOGO_BIG],
   ),
@@ -28,24 +34,24 @@ const functionalSvgComponents = importAll.sync(
 );
 makeStories(
   functionalSvgComponents,
-  colorAndHoverVariationTemplate([LIGHT, DARK, BRAND]),
+  colorAndHoverStoryGenerator([LIGHT, DARK, BRAND]),
 );
 
 const socialSvgComponents = importAll.sync(`./generated/social/**/*.js`);
-makeStories(socialSvgComponents, colorAndHoverVariationTemplate([LIGHT, DARK]));
+makeStories(socialSvgComponents, colorAndHoverStoryGenerator([LIGHT, DARK]));
 
 const trustCompanySvgComponents = importAll.sync(
   `./generated/trust-companies/**/*.js`,
 );
 makeStories(
   trustCompanySvgComponents,
-  colorAndHoverVariationTemplate([LIGHT, DARK]),
+  colorAndHoverStoryGenerator([LIGHT, DARK]),
 );
 
 const paymentSvgComponents = importAll.sync(
   `./generated/payment-types/**/*.js`,
 );
-makeStories(paymentSvgComponents, componentOnlyTemplate);
+makeStories(paymentSvgComponents, componentOnlyStoryGenerator);
 
 /**
  * Dynamically generate stories for each default export ReactElement in each module in the modules
@@ -76,7 +82,7 @@ function makeStories(modules, storyGenerator) {
  * @param ReactElement
  * @returns {ReactElement}
  */
-function componentOnlyTemplate(ReactElement) {
+function componentOnlyStoryGenerator(ReactElement) {
   return <ReactElement />;
 }
 
@@ -88,12 +94,12 @@ function componentOnlyTemplate(ReactElement) {
  * @param colorVariants {[...string]}
  * @returns {function}
  */
-function colorAndHoverVariationTemplate(colorVariants) {
+function colorAndHoverStoryGenerator(colorVariants) {
   return ReactElement =>
     colorVariants.map(color => (
       <div key={color}>
         <h3>color=&quot;{color}&quot; hoverable=&quot;true&quot;</h3>
-        <ReactElement color={color} hoverable="false" />
+        <ReactElement color={color} hoverable="true" />
 
         <h3>color=&quot;{color}&quot;</h3>
         <ReactElement color={color} />
@@ -110,7 +116,7 @@ function colorAndHoverVariationTemplate(colorVariants) {
  * @param sizeVariants {[...string]}
  * @returns {function}
  */
-function logoSizeColorAndHoverVariationTemplate(colorVariants, sizeVariants) {
+function logoSizeColorAndHoverStoryGenerator(colorVariants, sizeVariants) {
   return ReactElement =>
     colorVariants.map(color =>
       sizeVariants.map(size => (
@@ -119,7 +125,7 @@ function logoSizeColorAndHoverVariationTemplate(colorVariants, sizeVariants) {
             color=&quot;{color}&quot; size=&quot;{size}&quot;
             hoverable=&quot;true&quot;
           </h3>
-          <ReactElement color={color} size={size} hoverable="false" />
+          <ReactElement color={color} size={size} hoverable="true" />
 
           <h3>
             color=&quot;{color}&quot; size=&quot;{size}&quot;
