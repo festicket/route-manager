@@ -14,17 +14,10 @@ module.exports = (opts = {}) => {
 
   return (code, state) => `// @flow
 import React from 'react';
-import styled from 'styled-components';
-import { svgColorVariations } from '../../styles/color-styles';
-import { svgHoverColorVariations } from '../../styles/hover-styles';
-import { logoHeightVariations } from '../../styles/logo-size-styles';
+import { logo as baseSVG } from '../../base-svgs';
 
 const ${state.componentName} = (${props}: {}) => ${code}
 
-export default styled(${state.componentName})\`
-  \${svgColorVariations}
-  \${svgHoverColorVariations}
-  \${logoHeightVariations}
-\`;
+export default baseSVG.withComponent(${state.componentName});
 `;
 };

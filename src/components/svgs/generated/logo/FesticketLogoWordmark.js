@@ -1,9 +1,6 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
-import { svgColorVariations } from '../../styles/color-styles';
-import { svgHoverColorVariations } from '../../styles/hover-styles';
-import { logoHeightVariations } from '../../styles/logo-size-styles';
+import { logo as baseSVG } from '../../base-svgs';
 
 const FesticketLogoWordmark = (props: {}) => (
   <svg id="Layer_1" viewBox="0 0 134 35" {...props}>
@@ -62,8 +59,4 @@ const FesticketLogoWordmark = (props: {}) => (
   </svg>
 );
 
-export default styled(FesticketLogoWordmark)`
-  ${svgColorVariations}
-  ${svgHoverColorVariations}
-  ${logoHeightVariations}
-`;
+export default baseSVG.withComponent(FesticketLogoWordmark);

@@ -1,8 +1,6 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
-import { svgColorVariations } from '../../styles/color-styles';
-import { svgHoverColorVariations } from '../../styles/hover-styles';
+import { trustCompanies as baseSVG } from '../../base-svgs';
 
 const Abta = (props: {}) => (
   <svg viewBox="0 0 82 23" {...props}>
@@ -10,7 +8,4 @@ const Abta = (props: {}) => (
   </svg>
 );
 
-export default styled(Abta)`
-  height: 22px;
-  ${svgColorVariations} ${svgHoverColorVariations};
-`;
+export default baseSVG.withComponent(Abta);

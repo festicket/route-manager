@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
+import { paymentTypes as baseSVG } from '../../base-svgs';
 
 const Mastercard = (props: {}) => (
   <svg viewBox="0 0 39 26" {...props}>
@@ -27,6 +27,4 @@ const Mastercard = (props: {}) => (
   </svg>
 );
 
-export default styled(Mastercard)`
-  height: 26px;
-`;
+export default baseSVG.withComponent(Mastercard);

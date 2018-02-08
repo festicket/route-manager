@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
+import { paymentTypes as baseSVG } from '../../base-svgs';
 
 const Paypal = (props: {}) => (
   <svg viewBox="0 0 39 26" {...props}>
@@ -23,6 +23,4 @@ const Paypal = (props: {}) => (
   </svg>
 );
 
-export default styled(Paypal)`
-  height: 26px;
-`;
+export default baseSVG.withComponent(Paypal);

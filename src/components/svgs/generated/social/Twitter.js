@@ -1,8 +1,6 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
-import { svgColorVariations } from '../../styles/color-styles';
-import { svgHoverColorVariations } from '../../styles/hover-styles';
+import { social as baseSVG } from '../../base-svgs';
 
 const Twitter = (props: {}) => (
   <svg viewBox="0 0 23 20" {...props}>
@@ -13,7 +11,4 @@ const Twitter = (props: {}) => (
   </svg>
 );
 
-export default styled(Twitter)`
-  height: 22px;
-  ${svgColorVariations} ${svgHoverColorVariations};
-`;
+export default baseSVG.withComponent(Twitter);

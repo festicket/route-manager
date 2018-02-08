@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
+import { paymentTypes as baseSVG } from '../../base-svgs';
 
 const Maestro = (props: {}) => (
   <svg viewBox="0 0 39 26" {...props}>
@@ -27,6 +27,4 @@ const Maestro = (props: {}) => (
   </svg>
 );
 
-export default styled(Maestro)`
-  height: 26px;
-`;
+export default baseSVG.withComponent(Maestro);

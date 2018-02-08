@@ -1,8 +1,6 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
-import { svgColorVariations } from '../../styles/color-styles';
-import { svgHoverColorVariations } from '../../styles/hover-styles';
+import { social as baseSVG } from '../../base-svgs';
 
 const Pinterest = (props: {}) => (
   <svg viewBox="0 0 22 22" {...props}>
@@ -13,7 +11,4 @@ const Pinterest = (props: {}) => (
   </svg>
 );
 
-export default styled(Pinterest)`
-  height: 22px;
-  ${svgColorVariations} ${svgHoverColorVariations};
-`;
+export default baseSVG.withComponent(Pinterest);

@@ -1,8 +1,6 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
-import { functionalSvgColorVariations } from '../../styles/color-styles';
-import { functionalSvgHoverColorVariations } from '../../styles/hover-styles';
+import { functional as baseSVG } from '../../base-svgs';
 
 const Basket = (props: {}) => (
   <svg viewBox="0 0 20 20" {...props}>
@@ -10,7 +8,4 @@ const Basket = (props: {}) => (
   </svg>
 );
 
-export default styled(Basket)`
-  height: 18px;
-  ${functionalSvgColorVariations} ${functionalSvgHoverColorVariations};
-`;
+export default baseSVG.withComponent(Basket);

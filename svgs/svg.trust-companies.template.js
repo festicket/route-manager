@@ -14,7 +14,7 @@ module.exports = (opts = {}) => {
 
   return (code, state) => `// @flow
 import React from 'react';
-import { functional as baseSVG } from '../../base-svgs';
+import { trustCompanies as baseSVG } from '../../base-svgs';
 
 const ${state.componentName} = (${props}: {}) => ${code}
 

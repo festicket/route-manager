@@ -1,8 +1,6 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
-import { svgColorVariations } from '../../styles/color-styles';
-import { svgHoverColorVariations } from '../../styles/hover-styles';
+import { social as baseSVG } from '../../base-svgs';
 
 const Linkedin = (props: {}) => (
   <svg viewBox="0 0 21 20" {...props}>
@@ -13,7 +11,4 @@ const Linkedin = (props: {}) => (
   </svg>
 );
 
-export default styled(Linkedin)`
-  height: 22px;
-  ${svgColorVariations} ${svgHoverColorVariations};
-`;
+export default baseSVG.withComponent(Linkedin);

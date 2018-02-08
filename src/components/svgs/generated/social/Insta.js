@@ -1,8 +1,6 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
-import { svgColorVariations } from '../../styles/color-styles';
-import { svgHoverColorVariations } from '../../styles/hover-styles';
+import { social as baseSVG } from '../../base-svgs';
 
 const Insta = (props: {}) => (
   <svg id="Layer_1" viewBox="0 0 22 22" {...props}>
@@ -20,7 +18,4 @@ const Insta = (props: {}) => (
   </svg>
 );
 
-export default styled(Insta)`
-  height: 22px;
-  ${svgColorVariations} ${svgHoverColorVariations};
-`;
+export default baseSVG.withComponent(Insta);
