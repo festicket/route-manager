@@ -1,4 +1,12 @@
 // @flow
+
+/**
+ * @file Contains the base Styled Components that are used by the different types of SVGs.
+ *
+ * The exported ReactElements from this file should be used with the components created by `svgr`.
+ * for example: `logo.withComponent(FesticketLogoSymbol);`
+ */
+
 import styled from 'styled-components';
 import {
   svgColorVariations,
