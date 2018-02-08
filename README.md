@@ -20,9 +20,9 @@ You will need to restart Storybook to see the new SVGs there.
 
 **TODO** - `Spot Illustration` and `Display` SVG types which need to be added in the future.
 
-### Why babel caching needs to be disabled for SVGS in Storybook -
+### Why babel caching needs to be disabled for SVGS in Storybook
  
 To make Storybook (ie Webpack) see new SVGs, the `cacheDirectory` option used by `babel-loader` must be set to `false`.
-This is done in the `.babelrc` file. Webpack caches the babel transpilation by hashing changes to the watched files.
+This is done in `.storybook/webpack.config.js`. Webpack caches the babel transpilation by hashing changes to the watched files.
 
 Because the SVG Components are dynamically imported using the babel macro `import-all.macro` in the `story.js` file, Webpack is not actively watching these files. Therefore they are not included in the hash used for caching. Changes to them will not affect the babel cache and Webpack will continue to use the babel transpiled version from the cache that does not pick up added/removed files in the imported directories by `import-all.macro`.
