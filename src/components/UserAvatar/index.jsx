@@ -33,7 +33,7 @@ export default function UserAvatar({
       avatarLarge={avatarLarge}
       initial={initial}
     >
-      {avatarLarge ? <StyledImage src={avatarLarge} /> : initial}
+      {avatarLarge ? <StyledImage src={avatarLarge} alt="" /> : initial}
     </Wrapper>
   );
 }
