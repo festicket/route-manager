@@ -1,10 +1,10 @@
 // @flow
 
-import React, { type Node } from 'react';
+import * as React from 'react';
 import { HR, Wrapper, Content } from './styles';
 
 type PropTypes = {
-  children?: Node,
+  children?: React.Node,
   className?: string,
   variant?: 'light' | 'medium' | 'dark',
   margin?: boolean,

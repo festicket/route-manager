@@ -1,6 +1,6 @@
 // @flow
 
-import React, { type Node } from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 import Text from '../../text/TextPrimitive';
 import Link from '../../text/Anchor';
@@ -8,7 +8,7 @@ import { blacklistProps } from '../../../utils/props';
 
 type Props = {
   element: string,
-  children?: Node,
+  children?: React.Node,
   onClick?: () => mixed,
   fontSize?: string,
   isDisabled?: boolean,
