@@ -2,32 +2,45 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { switchProp } from 'styled-tools';
 import SecondaryButton from '../SecondaryButton';
 import ChevronRight from '../../icons/ui/ChevronRight';
+import ChevronDown from '../../icons/ui/ChevronDown';
+import ChevronLeft from '../../icons/ui/ChevronLeft';
+import ChevronUp from '../../icons/ui/ChevronUp';
 
 type Props = {
   direction: 'right' | 'down' | 'left' | 'up',
 };
 
-const StyledChevronRight = styled(ChevronRight)`
-  ${switchProp('direction', {
-    up: 'transform: rotate(-90deg)',
-    down: 'transform: rotate(90deg)',
-    left: 'transform: rotate(180deg)',
-  })};
-`;
-
 function RoundedChevronButtonComponent({ className, direction, ...props }) {
+  let icon;
+
+  switch (direction) {
+    case 'up':
+      icon = <ChevronUp />;
+      break;
+    case 'down':
+      icon = <ChevronDown />;
+      break;
+    case 'left':
+      icon = <ChevronLeft />;
+      break;
+    case 'right':
+      icon = <ChevronRight />;
+      break;
+    default:
+      icon = null;
+  }
+
   return (
     <SecondaryButton className={className} {...props}>
-      <StyledChevronRight direction={direction} />
+      {icon}
     </SecondaryButton>
   );
 }
 
 const StyledRoundedChevronButton = styled(RoundedChevronButtonComponent)`
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 100%;
   width: auto;
   min-width: 0;

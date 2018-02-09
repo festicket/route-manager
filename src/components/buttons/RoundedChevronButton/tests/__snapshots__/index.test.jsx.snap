@@ -2,7 +2,7 @@
 
 exports[`<RoundedChevronButton /> with initial props 1`] = `
 .c0 {
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 100%;
   width: auto;
   min-width: 0;
