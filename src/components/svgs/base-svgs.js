@@ -19,14 +19,15 @@ import {
 import { logoHeightVariations } from './styles/logo-size-styles';
 
 export const logo = styled.svg`
-  ${svgColorVariations}
-  ${svgHoverColorVariations}
-  ${logoHeightVariations}
+  ${svgColorVariations};
+  ${svgHoverColorVariations};
+  ${logoHeightVariations};
 `;
 
 export const functional = styled.svg`
   height: 18px;
-  ${functionalSvgColorVariations} ${functionalSvgHoverColorVariations};
+  ${functionalSvgColorVariations};
+  ${functionalSvgHoverColorVariations};
 `;
 
 export const paymentTypes = styled.svg`
@@ -35,7 +36,8 @@ export const paymentTypes = styled.svg`
 
 export const social = styled.svg`
   height: 22px;
-  ${svgColorVariations} ${svgHoverColorVariations};
+  ${svgColorVariations};
+  ${svgHoverColorVariations};
 `;
 
 export const trustCompanies = social;
