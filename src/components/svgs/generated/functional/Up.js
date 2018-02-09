@@ -2,10 +2,10 @@
 import React from 'react';
 import { functional as baseSVG } from '../../base-svgs';
 
-const Down = (props: {}) => (
+const Up = (props: {}) => (
   <svg viewBox="0 0 18 18" {...props}>
-    <path d="M14.7 4.8L9 10.4 3.3 4.8 1.9 6.2l7.1 7 7.1-7z" />
+    <path d="M3.3 13.2L9 7.6l5.7 5.6 1.4-1.4-7.1-7-7.1 7z" />
   </svg>
 );
 
-export default baseSVG.withComponent(Down);
+export default baseSVG.withComponent(Up);
