@@ -31,7 +31,7 @@ exports[`<Grid /> with 1 column 1`] = `
 }
 
 <Grid>
-  <Styled(Primitive)>
+  <Styled(Grid)>
     <Primitive
       className="c0"
     >
@@ -41,7 +41,7 @@ exports[`<Grid /> with 1 column 1`] = `
         <GridElement
           width={1}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={1}
           >
             <Primitive
@@ -55,12 +55,12 @@ exports[`<Grid /> with 1 column 1`] = `
                 Item 1
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={1}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={1}
           >
             <Primitive
@@ -74,12 +74,12 @@ exports[`<Grid /> with 1 column 1`] = `
                 Item 2
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={1}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={1}
           >
             <Primitive
@@ -93,12 +93,12 @@ exports[`<Grid /> with 1 column 1`] = `
                 Item 3
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={1}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={1}
           >
             <Primitive
@@ -112,12 +112,12 @@ exports[`<Grid /> with 1 column 1`] = `
                 Item 4
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={1}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={1}
           >
             <Primitive
@@ -131,11 +131,11 @@ exports[`<Grid /> with 1 column 1`] = `
                 Item 5
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
       </div>
     </Primitive>
-  </Styled(Primitive)>
+  </Styled(Grid)>
 </Grid>
 `;
 
@@ -170,7 +170,7 @@ exports[`<Grid /> with 2 columns 1`] = `
 }
 
 <Grid>
-  <Styled(Primitive)>
+  <Styled(Grid)>
     <Primitive
       className="c0"
     >
@@ -180,7 +180,7 @@ exports[`<Grid /> with 2 columns 1`] = `
         <GridElement
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.5}
           >
             <Primitive
@@ -194,12 +194,12 @@ exports[`<Grid /> with 2 columns 1`] = `
                 Item 1
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.5}
           >
             <Primitive
@@ -213,12 +213,12 @@ exports[`<Grid /> with 2 columns 1`] = `
                 Item 2
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.5}
           >
             <Primitive
@@ -232,12 +232,12 @@ exports[`<Grid /> with 2 columns 1`] = `
                 Item 3
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.5}
           >
             <Primitive
@@ -251,12 +251,12 @@ exports[`<Grid /> with 2 columns 1`] = `
                 Item 4
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.5}
           >
             <Primitive
@@ -270,11 +270,11 @@ exports[`<Grid /> with 2 columns 1`] = `
                 Item 5
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
       </div>
     </Primitive>
-  </Styled(Primitive)>
+  </Styled(Grid)>
 </Grid>
 `;
 
@@ -309,7 +309,7 @@ exports[`<Grid /> with 3 columns 1`] = `
 }
 
 <Grid>
-  <Styled(Primitive)>
+  <Styled(Grid)>
     <Primitive
       className="c0"
     >
@@ -319,7 +319,7 @@ exports[`<Grid /> with 3 columns 1`] = `
         <GridElement
           width={0.3333333333333333}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.3333333333333333}
           >
             <Primitive
@@ -333,12 +333,12 @@ exports[`<Grid /> with 3 columns 1`] = `
                 Item 1
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.3333333333333333}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.3333333333333333}
           >
             <Primitive
@@ -352,12 +352,12 @@ exports[`<Grid /> with 3 columns 1`] = `
                 Item 2
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.3333333333333333}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.3333333333333333}
           >
             <Primitive
@@ -371,12 +371,12 @@ exports[`<Grid /> with 3 columns 1`] = `
                 Item 3
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.3333333333333333}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.3333333333333333}
           >
             <Primitive
@@ -390,12 +390,12 @@ exports[`<Grid /> with 3 columns 1`] = `
                 Item 4
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.3333333333333333}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.3333333333333333}
           >
             <Primitive
@@ -409,11 +409,11 @@ exports[`<Grid /> with 3 columns 1`] = `
                 Item 5
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
       </div>
     </Primitive>
-  </Styled(Primitive)>
+  </Styled(Grid)>
 </Grid>
 `;
 
@@ -460,7 +460,7 @@ exports[`<Grid /> with 3 columns and span 1`] = `
 }
 
 <Grid>
-  <Styled(Primitive)>
+  <Styled(Grid)>
     <Primitive
       className="c0"
     >
@@ -470,7 +470,7 @@ exports[`<Grid /> with 3 columns and span 1`] = `
         <GridElement
           width={0.6666666666666666}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.6666666666666666}
           >
             <Primitive
@@ -484,12 +484,12 @@ exports[`<Grid /> with 3 columns and span 1`] = `
                 Item 1
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.3333333333333333}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.3333333333333333}
           >
             <Primitive
@@ -503,12 +503,12 @@ exports[`<Grid /> with 3 columns and span 1`] = `
                 Item 2
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.3333333333333333}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.3333333333333333}
           >
             <Primitive
@@ -522,12 +522,12 @@ exports[`<Grid /> with 3 columns and span 1`] = `
                 Item 3
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.3333333333333333}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.3333333333333333}
           >
             <Primitive
@@ -541,12 +541,12 @@ exports[`<Grid /> with 3 columns and span 1`] = `
                 Item 4
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.3333333333333333}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.3333333333333333}
           >
             <Primitive
@@ -560,11 +560,11 @@ exports[`<Grid /> with 3 columns and span 1`] = `
                 Item 5
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
       </div>
     </Primitive>
-  </Styled(Primitive)>
+  </Styled(Grid)>
 </Grid>
 `;
 
@@ -599,7 +599,7 @@ exports[`<Grid /> with 4 columns 1`] = `
 }
 
 <Grid>
-  <Styled(Primitive)>
+  <Styled(Grid)>
     <Primitive
       className="c0"
     >
@@ -609,7 +609,7 @@ exports[`<Grid /> with 4 columns 1`] = `
         <GridElement
           width={0.25}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.25}
           >
             <Primitive
@@ -623,12 +623,12 @@ exports[`<Grid /> with 4 columns 1`] = `
                 Item 1
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.25}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.25}
           >
             <Primitive
@@ -642,12 +642,12 @@ exports[`<Grid /> with 4 columns 1`] = `
                 Item 2
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.25}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.25}
           >
             <Primitive
@@ -661,12 +661,12 @@ exports[`<Grid /> with 4 columns 1`] = `
                 Item 3
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.25}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.25}
           >
             <Primitive
@@ -680,12 +680,12 @@ exports[`<Grid /> with 4 columns 1`] = `
                 Item 4
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.25}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.25}
           >
             <Primitive
@@ -699,11 +699,11 @@ exports[`<Grid /> with 4 columns 1`] = `
                 Item 5
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
       </div>
     </Primitive>
-  </Styled(Primitive)>
+  </Styled(Grid)>
 </Grid>
 `;
 
@@ -738,7 +738,7 @@ exports[`<Grid /> with 5 columns 1`] = `
 }
 
 <Grid>
-  <Styled(Primitive)>
+  <Styled(Grid)>
     <Primitive
       className="c0"
     >
@@ -748,7 +748,7 @@ exports[`<Grid /> with 5 columns 1`] = `
         <GridElement
           width={0.2}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.2}
           >
             <Primitive
@@ -762,12 +762,12 @@ exports[`<Grid /> with 5 columns 1`] = `
                 Item 1
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.2}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.2}
           >
             <Primitive
@@ -781,12 +781,12 @@ exports[`<Grid /> with 5 columns 1`] = `
                 Item 2
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.2}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.2}
           >
             <Primitive
@@ -800,12 +800,12 @@ exports[`<Grid /> with 5 columns 1`] = `
                 Item 3
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.2}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.2}
           >
             <Primitive
@@ -819,12 +819,12 @@ exports[`<Grid /> with 5 columns 1`] = `
                 Item 4
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.2}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.2}
           >
             <Primitive
@@ -838,11 +838,11 @@ exports[`<Grid /> with 5 columns 1`] = `
                 Item 5
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
       </div>
     </Primitive>
-  </Styled(Primitive)>
+  </Styled(Grid)>
 </Grid>
 `;
 
@@ -879,7 +879,7 @@ exports[`<Grid /> with custom Grid and GridElement elements 1`] = `
 <Grid
   element="article"
 >
-  <Styled(Primitive)
+  <Styled(Grid)
     element="article"
   >
     <Primitive
@@ -893,7 +893,7 @@ exports[`<Grid /> with custom Grid and GridElement elements 1`] = `
           element="section"
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             element="section"
             width={0.5}
           >
@@ -909,13 +909,13 @@ exports[`<Grid /> with custom Grid and GridElement elements 1`] = `
                 Item 1
               </section>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           element="section"
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             element="section"
             width={0.5}
           >
@@ -931,13 +931,13 @@ exports[`<Grid /> with custom Grid and GridElement elements 1`] = `
                 Item 2
               </section>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           element="section"
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             element="section"
             width={0.5}
           >
@@ -953,13 +953,13 @@ exports[`<Grid /> with custom Grid and GridElement elements 1`] = `
                 Item 3
               </section>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           element="section"
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             element="section"
             width={0.5}
           >
@@ -975,13 +975,13 @@ exports[`<Grid /> with custom Grid and GridElement elements 1`] = `
                 Item 4
               </section>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           element="section"
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             element="section"
             width={0.5}
           >
@@ -997,11 +997,11 @@ exports[`<Grid /> with custom Grid and GridElement elements 1`] = `
                 Item 5
               </section>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
       </article>
     </Primitive>
-  </Styled(Primitive)>
+  </Styled(Grid)>
 </Grid>
 `;
 
@@ -1038,7 +1038,7 @@ exports[`<Grid /> with custom Grid element 1`] = `
 <Grid
   element="article"
 >
-  <Styled(Primitive)
+  <Styled(Grid)
     element="article"
   >
     <Primitive
@@ -1051,7 +1051,7 @@ exports[`<Grid /> with custom Grid element 1`] = `
         <GridElement
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.5}
           >
             <Primitive
@@ -1065,12 +1065,12 @@ exports[`<Grid /> with custom Grid element 1`] = `
                 Item 1
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.5}
           >
             <Primitive
@@ -1084,12 +1084,12 @@ exports[`<Grid /> with custom Grid element 1`] = `
                 Item 2
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.5}
           >
             <Primitive
@@ -1103,12 +1103,12 @@ exports[`<Grid /> with custom Grid element 1`] = `
                 Item 3
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.5}
           >
             <Primitive
@@ -1122,12 +1122,12 @@ exports[`<Grid /> with custom Grid element 1`] = `
                 Item 4
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={0.5}
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={0.5}
           >
             <Primitive
@@ -1141,11 +1141,11 @@ exports[`<Grid /> with custom Grid element 1`] = `
                 Item 5
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
       </article>
     </Primitive>
-  </Styled(Primitive)>
+  </Styled(Grid)>
 </Grid>
 `;
 
@@ -1168,7 +1168,7 @@ exports[`<Grid /> with initial props 1`] = `
 }
 
 <Grid>
-  <Styled(Primitive)>
+  <Styled(Grid)>
     <Primitive
       className="c0"
     >
@@ -1176,7 +1176,7 @@ exports[`<Grid /> with initial props 1`] = `
         className="c0"
       />
     </Primitive>
-  </Styled(Primitive)>
+  </Styled(Grid)>
 </Grid>
 `;
 
@@ -1234,7 +1234,7 @@ exports[`<Grid /> with responsive columns 1`] = `
 }
 
 <Grid>
-  <Styled(Primitive)>
+  <Styled(Grid)>
     <Primitive
       className="c0"
     >
@@ -1251,7 +1251,7 @@ exports[`<Grid /> with responsive columns 1`] = `
             }
           }
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={
               Object {
                 "lg": 0.25,
@@ -1286,7 +1286,7 @@ exports[`<Grid /> with responsive columns 1`] = `
                 First Element
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={
@@ -1298,7 +1298,7 @@ exports[`<Grid /> with responsive columns 1`] = `
             }
           }
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={
               Object {
                 "lg": 0.25,
@@ -1333,7 +1333,7 @@ exports[`<Grid /> with responsive columns 1`] = `
                 Second Element
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={
@@ -1345,7 +1345,7 @@ exports[`<Grid /> with responsive columns 1`] = `
             }
           }
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={
               Object {
                 "lg": 0.25,
@@ -1380,7 +1380,7 @@ exports[`<Grid /> with responsive columns 1`] = `
                 Third Element
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={
@@ -1392,7 +1392,7 @@ exports[`<Grid /> with responsive columns 1`] = `
             }
           }
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={
               Object {
                 "lg": 0.25,
@@ -1427,7 +1427,7 @@ exports[`<Grid /> with responsive columns 1`] = `
                 Fourth Element
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={
@@ -1439,7 +1439,7 @@ exports[`<Grid /> with responsive columns 1`] = `
             }
           }
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={
               Object {
                 "lg": 0.25,
@@ -1474,7 +1474,7 @@ exports[`<Grid /> with responsive columns 1`] = `
                 Fifth Element
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={
@@ -1486,7 +1486,7 @@ exports[`<Grid /> with responsive columns 1`] = `
             }
           }
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={
               Object {
                 "lg": 0.25,
@@ -1521,7 +1521,7 @@ exports[`<Grid /> with responsive columns 1`] = `
                 Sixth Element
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={
@@ -1533,7 +1533,7 @@ exports[`<Grid /> with responsive columns 1`] = `
             }
           }
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={
               Object {
                 "lg": 0.25,
@@ -1568,7 +1568,7 @@ exports[`<Grid /> with responsive columns 1`] = `
                 Seventh Element
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
         <GridElement
           width={
@@ -1580,7 +1580,7 @@ exports[`<Grid /> with responsive columns 1`] = `
             }
           }
         >
-          <Styled(Primitive)
+          <Styled(GridElement)
             width={
               Object {
                 "lg": 0.25,
@@ -1615,10 +1615,10 @@ exports[`<Grid /> with responsive columns 1`] = `
                 Eighth Element
               </div>
             </Primitive>
-          </Styled(Primitive)>
+          </Styled(GridElement)>
         </GridElement>
       </div>
     </Primitive>
-  </Styled(Primitive)>
+  </Styled(Grid)>
 </Grid>
 `;

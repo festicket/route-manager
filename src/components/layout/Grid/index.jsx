@@ -76,6 +76,8 @@ const StyledGridElement = styled(Primitive)`
   `};
 `;
 
+StyledGridElement.displayName = 'Styled(GridElement)';
+
 export const GridElement = (props: GridElementTypes): React.Node => (
   <StyledGridElement {...props} />
 );
@@ -89,5 +91,7 @@ const StyledGrid = styled(Primitive)`
     margin: -${gap / 2}px;
   `};
 `;
+
+StyledGrid.displayName = 'Styled(Grid)';
 
 export const Grid = (props: GridTypes): React.Node => <StyledGrid {...props} />;
