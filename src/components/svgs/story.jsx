@@ -1,9 +1,13 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import importAll from 'import-all.macro';
 import { BRAND, DARK, LIGHT } from './styles/colors';
 import { LOGO_BIG, LOGO_SMALL } from './styles/logo-size-styles';
 import { Background } from '../../utils/storybook-helpers/index';
+
+declare type SVGComponent = React.StatelessFunctionalComponent<any>;
+declare type StoryGenerator = (SVGComponent) => React$Node;
 
 // Set up for storybook
 const stories = storiesOf('SVGs', module);
@@ -51,7 +55,7 @@ makeStories(
 const paymentSvgComponents = importAll.sync(
   `./generated/payment-types/**/*.js`,
 );
-makeStories(paymentSvgComponents, componentOnlyStoryGenerator);
+makeStories(paymentSvgComponents, componentOnlyStoryGenerator());
 
 /**
  * Dynamically generate stories for each default export ReactElement in each module in the modules
@@ -64,7 +68,7 @@ makeStories(paymentSvgComponents, componentOnlyStoryGenerator);
  * @param storyGenerator {function} - function that takes a ReactElement and returns a
  * ReactElement that consists of all the variations of the input ReactElement
  */
-function makeStories(modules, storyGenerator) {
+function makeStories(modules, storyGenerator: StoryGenerator) {
   Object.keys(modules).forEach(path => {
     const storyName = path
       .split('/') // split path
@@ -72,18 +76,19 @@ function makeStories(modules, storyGenerator) {
       .map(str => str.replace(/(?!^[A-Z])([A-Z])/g, ' $1')) // PascalCase to 'Normal' Case
       .join(' / ') // put the path back together with spaces between the folders
       .replace(/\.(js$)|(jsx$)/, ''); // remove the file extension form the path
-    stories.add(storyName, () => storyGenerator(modules[path].default));
+
+    const renderFunction: Function = () =>
+      storyGenerator(modules[path].default);
+
+    stories.add(storyName, renderFunction);
   });
 }
 
 /**
  * Story generator that will simply return the passed in ReactElement
- *
- * @param ReactElement
- * @returns {ReactElement}
  */
-function componentOnlyStoryGenerator(ReactElement) {
-  return <ReactElement />;
+function componentOnlyStoryGenerator() {
+  return (ReactElement: SVGComponent) => <ReactElement />;
 }
 
 /**
@@ -94,8 +99,10 @@ function componentOnlyStoryGenerator(ReactElement) {
  * @param colorVariants {[...string]}
  * @returns {function}
  */
-function colorAndHoverStoryGenerator(colorVariants) {
-  return ReactElement =>
+function colorAndHoverStoryGenerator(
+  colorVariants: Array<string>,
+): StoryGenerator {
+  return (ReactElement: SVGComponent) =>
     colorVariants.map(color => (
       <div key={color}>
         <h3>color=&quot;{color}&quot; hoverable=&quot;true&quot;</h3>
@@ -116,8 +123,11 @@ function colorAndHoverStoryGenerator(colorVariants) {
  * @param sizeVariants {[...string]}
  * @returns {function}
  */
-function logoSizeColorAndHoverStoryGenerator(colorVariants, sizeVariants) {
-  return ReactElement =>
+function logoSizeColorAndHoverStoryGenerator(
+  colorVariants: Array<string>,
+  sizeVariants: Array<string>,
+): StoryGenerator {
+  return (ReactElement: SVGComponent) =>
     colorVariants.map(color =>
       sizeVariants.map(size => (
         <div key={color + size}>
