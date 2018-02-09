@@ -36,10 +36,6 @@
     "styled-tools": "^0.4.0"
   },
   "devDependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "styled-components": "^2.4.0",
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-angular": "^6.0.2",
     "@festicket/eslint-config": "^1.1.5",
@@ -52,6 +48,7 @@
     "babel-eslint": "^8.2.1",
     "babel-jest": "^22.1.0",
     "babel-plugin-flow-react-proptypes": "^14.0.2",
+    "babel-plugin-styled-components-named": "^0.1.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -78,6 +75,9 @@
     "jest-styled-components": "^4.11.0-0",
     "lint-staged": "^6.0.1",
     "plop": "^1.9.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0",
     "rollup": "^0.54.1",
     "rollup-plugin-babel": "^3.0.3",
@@ -85,6 +85,7 @@
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.0.0",
     "semantic-release": "^12.4.1",
+    "styled-components": "^2.4.0",
     "svgr": "^1.7.0"
   },
   "peerDependencies": {

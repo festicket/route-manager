@@ -66,7 +66,9 @@ const GridElementWidth = (props: GridElementTypes) => {
   };
 };
 
-const StyledGridElement = styled(Primitive)`
+export const GridElement: React.ComponentType<GridElementTypes> = styled(
+  Primitive,
+)`
   padding: ${gap / 2}px 0;
   box-sizing: border-box;
   ${GridElementWidth};
@@ -76,13 +78,7 @@ const StyledGridElement = styled(Primitive)`
   `};
 `;
 
-StyledGridElement.displayName = 'Styled(GridElement)';
-
-export const GridElement = (props: GridElementTypes): React.Node => (
-  <StyledGridElement {...props} />
-);
-
-const StyledGrid = styled(Primitive)`
+export const Grid: React.ComponentType<GridTypes> = styled(Primitive)`
   margin: -${gap / 2}px 0;
 
   ${breakpoint('from-sm')`
@@ -91,7 +87,3 @@ const StyledGrid = styled(Primitive)`
     margin: -${gap / 2}px;
   `};
 `;
-
-StyledGrid.displayName = 'Styled(Grid)';
-
-export const Grid = (props: GridTypes): React.Node => <StyledGrid {...props} />;

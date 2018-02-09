@@ -2,7 +2,7 @@
   "presets": [["env", {
       "modules": false
     }], "react"],
-  "plugins": ["flow-react-proptypes", "transform-class-properties", "transform-object-rest-spread"],
+  "plugins": ["flow-react-proptypes", "transform-class-properties", "transform-object-rest-spread", "styled-components-named"],
   "env": {
     "test": {
       "plugins": ["transform-es2015-modules-commonjs"]
