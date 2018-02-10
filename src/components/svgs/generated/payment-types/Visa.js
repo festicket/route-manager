@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { paymentTypes as baseSVG } from '../../base-svgs';
-import { PaymentTypePropTypes as PropTypes } from '../../prop-types';
+import { PaymentTypePropTypes as propTypes } from '../../prop-types';
 
 const Visa = (props: {}) => (
   <svg viewBox="0 0 39 26" {...props}>
@@ -24,6 +24,6 @@ const Visa = (props: {}) => (
   </svg>
 );
 
-Visa.propTypes = PropTypes;
+Visa.propTypes = propTypes;
 
 export default baseSVG.withComponent(Visa);

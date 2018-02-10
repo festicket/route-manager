@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { logo as baseSVG } from '../../base-svgs';
-import { LogoPropTypes as PropTypes } from '../../prop-types';
+import { LogoPropTypes as propTypes } from '../../prop-types';
 
 const FesticketLogoSymbol = (props: {}) => (
   <svg id="Layer_1" viewBox="0 0 32.2 35" {...props}>
@@ -15,6 +15,6 @@ const FesticketLogoSymbol = (props: {}) => (
   </svg>
 );
 
-FesticketLogoSymbol.propTypes = PropTypes;
+FesticketLogoSymbol.propTypes = propTypes;
 
 export default baseSVG.withComponent(FesticketLogoSymbol);

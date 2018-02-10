@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { functional as baseSVG } from '../../base-svgs';
-import { FunctionalPropTypes as PropTypes } from '../../prop-types';
+import { FunctionalPropTypes as propTypes } from '../../prop-types';
 
 const ChevronLeft = (props: {}) => (
   <svg viewBox="0 0 18 18" {...props}>
@@ -9,6 +9,6 @@ const ChevronLeft = (props: {}) => (
   </svg>
 );
 
-ChevronLeft.propTypes = PropTypes;
+ChevronLeft.propTypes = propTypes;
 
 export default baseSVG.withComponent(ChevronLeft);

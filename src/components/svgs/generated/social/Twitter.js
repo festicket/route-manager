@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { social as baseSVG } from '../../base-svgs';
-import { SocialPropTypes as PropTypes } from '../../prop-types';
+import { SocialPropTypes as propTypes } from '../../prop-types';
 
 const Twitter = (props: {}) => (
   <svg viewBox="0 0 23 20" {...props}>
@@ -9,6 +9,6 @@ const Twitter = (props: {}) => (
   </svg>
 );
 
-Twitter.propTypes = PropTypes;
+Twitter.propTypes = propTypes;
 
 export default baseSVG.withComponent(Twitter);
