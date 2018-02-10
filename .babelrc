@@ -4,8 +4,9 @@
     "react"
   ],
   "plugins": [
-    "macros",
     "flow-react-proptypes",
+    "macros",
+    "polished",
     "transform-class-properties",
     "transform-object-rest-spread"
   ],
