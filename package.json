@@ -18,6 +18,7 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "npm run flow && lint-staged",
+    "prestart": "npm run flow:typed",
     "pretest": "npm run flow:typed",
     "prepublishOnly": "npm run build",
     "semantic-release": "semantic-release",
