@@ -76,9 +76,10 @@ function makeStories(
   modules: { [string]: SFC },
   storyGenerator: StoryGenerator,
 ) {
-  Object.keys(modules).forEach(path => {
-    const storyName = `${svgType} / ${path}`;
-    const renderFunction: Function = () => storyGenerator(modules[path]);
+  Object.keys(modules).forEach(bindingName => {
+    const svgName = bindingName.replace(/(?!^[A-Z])([A-Z])/g, ' $1'); // PascalCase to 'Normal' Case
+    const storyName = `${svgType} / ${svgName}`;
+    const renderFunction: Function = () => storyGenerator(modules[bindingName]);
     stories.add(storyName, renderFunction);
   });
 }
