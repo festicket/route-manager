@@ -13,3 +13,10 @@ folder-module src/components/svgs/generated/social
 folder-module src/components/svgs/generated/trust-companies
 folder-module src/components/svgs/generated/payment-types
 folder-module src/components/svgs/generated/logo
+
+# add flow to the top of the generated files
+for file in src/components/svgs/generated/*.js
+do
+sed -i '' '1s/^/\/\/ @flow\
+/' $file
+done

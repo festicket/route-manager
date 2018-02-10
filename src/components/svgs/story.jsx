@@ -32,8 +32,8 @@ makeStories(
   'logo',
   logoSvgComponents,
   logoSizeColorAndHoverStoryGenerator(
-    [BLACK, THEME, WHITE, 'ass'],
-    [LOGO_SMALL, LOGO_BIG, 'act'],
+    [BLACK, THEME, WHITE],
+    [LOGO_SMALL, LOGO_BIG],
   ),
 );
 
@@ -68,30 +68,32 @@ makeStories(
  * @param modules {object} - An object whose keys are name of the module, and whose values are
  * the default export React Component of the module.
  *
- * @param storyGenerator {function} - function that takes a ReactElement and returns a
- * ReactElement that consists of all the variations of the input ReactElement
+ * @param storyGenerator {function} - function that takes a ReactComponent and returns a
+ * ReactElement that consists of all the variations of the input ReactComponent
  */
-function makeStories(svgType: string, modules, storyGenerator: StoryGenerator) {
+function makeStories(
+  svgType: string,
+  modules: { [string]: SFC },
+  storyGenerator: StoryGenerator,
+) {
   Object.keys(modules).forEach(path => {
     const storyName = `${svgType} / ${path}`;
-
     const renderFunction: Function = () => storyGenerator(modules[path]);
-
     stories.add(storyName, renderFunction);
   });
 }
 
 /**
- * Story generator that will simply return the passed in ReactElement
+ * Story generator that will simply return a React Element of the passed in React Component
  */
 function componentOnlyStoryGenerator() {
   return (SVGComponent: SFC) => <SVGComponent />;
 }
 
 /**
- * Returns a story generator function that takes a ReactElement and will generate a ReactElement
+ * Returns a story generator function that takes a React Component and will generate a React Element
  * containing every combination of colour in colorVariants and hoverable and non-hoverable variants
- * of the input ReactElement.
+ * of the input React Component.
  *
  * @param colorVariants {[...string]}
  * @returns {function}
@@ -112,9 +114,9 @@ function colorAndHoverStoryGenerator(
 }
 
 /**
- * Returns a story generator function that takes a ReactElement and will generate a ReactElement
+ * Returns a story generator function that takes a React Component and will generate a React Element
  * containing every combination of colour in colorVariants, size in sizeVariants and hoverable and
- * non-hoverable variants of the input ReactElement.
+ * non-hoverable variants of the input React Component.
  *
  * @param colorVariants {[...string]}
  * @param sizeVariants {[...string]}

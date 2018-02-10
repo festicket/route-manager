@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { social as baseSVG } from '../../base-svgs';
-import type { SocialPropTypes as PropTypes } from '../../type-defs';
+import { SocialPropTypes as PropTypes } from '../../prop-types';
 
 const Instagram = (props: {}) => (
   <svg viewBox="0 0 22 22" {...props}>
@@ -10,5 +10,7 @@ const Instagram = (props: {}) => (
     <circle cx={16.8} cy={5.1} r={1.3} />
   </svg>
 );
+
+Instagram.propTypes = PropTypes;
 
 export default baseSVG.withComponent(Instagram);

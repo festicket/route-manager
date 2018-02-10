@@ -15,9 +15,11 @@ module.exports = (opts = {}) => {
   return (code, state) => `// @flow
 import React from 'react';
 import { functional as baseSVG } from '../../base-svgs';
-import type { FunctionalPropTypes as PropTypes } from '../../type-defs';
+import { FunctionalPropTypes as PropTypes } from '../../prop-types';
 
 const ${state.componentName} = (${props}: {}) => ${code}
+
+${state.componentName}.propTypes = PropTypes;
 
 export default baseSVG.withComponent(${state.componentName});
 `;

@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { trustCompanies as baseSVG } from '../../base-svgs';
-import type { TrustCompaniesPropTypes as PropTypes } from '../../type-defs';
+import { TrustCompaniesPropTypes as PropTypes } from '../../prop-types';
 
 const Ingenico = (props: {}) => (
   <svg viewBox="0 0 79 23" {...props}>
@@ -11,5 +11,7 @@ const Ingenico = (props: {}) => (
     <path d="M12.4 6.6c-1.6 0-2.8.9-3.5 1.5l-.1.1c-.2-1-.9-1.3-1.5-1.3h-1V18h2.5V9.8c.5-.3 1.6-1 2.7-1 1.4 0 1.7.7 1.7 2.3V18h2.5v-7.1c.1-2.3-.2-4.3-3.3-4.3zM47.3 6.6c-1.6 0-2.8.9-3.5 1.5l-.1.1c-.2-.9-.9-1.2-1.5-1.2h-1v11h2.5V9.8c.5-.3 1.6-1 2.7-1 1.4 0 1.7.7 1.7 2.3V18h2.5v-7.1c.1-2.3-.1-4.3-3.3-4.3z" />
   </svg>
 );
+
+Ingenico.propTypes = PropTypes;
 
 export default baseSVG.withComponent(Ingenico);

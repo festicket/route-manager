@@ -1,3 +1,4 @@
+// @flow
 export { default as Amex } from "./payment-types/Amex.js";
 export { default as Maestro } from "./payment-types/Maestro.js";
 export { default as Mastercard } from "./payment-types/Mastercard.js";

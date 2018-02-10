@@ -1,3 +1,4 @@
+// @flow
 export { default as Facebook } from "./social/Facebook.js";
 export { default as Instagram } from "./social/Instagram.js";
 export { default as LinkedIn } from "./social/LinkedIn.js";
