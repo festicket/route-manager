@@ -6,8 +6,8 @@ import { BRAND, DARK, LIGHT } from './styles/colors';
 import { LOGO_BIG, LOGO_SMALL } from './styles/logo-size-styles';
 import { Background } from '../../utils/storybook-helpers/index';
 
-declare type SVGComponent = React.StatelessFunctionalComponent<any>;
-declare type StoryGenerator = (SVGComponent) => React$Node;
+type SFC = React.StatelessFunctionalComponent<any>;
+type StoryGenerator = SFC => React$Node;
 
 // Set up for storybook
 const stories = storiesOf('SVGs', module);
@@ -88,7 +88,7 @@ function makeStories(modules, storyGenerator: StoryGenerator) {
  * Story generator that will simply return the passed in ReactElement
  */
 function componentOnlyStoryGenerator() {
-  return (ReactElement: SVGComponent) => <ReactElement />;
+  return (SVGComponent: SFC) => <SVGComponent />;
 }
 
 /**
@@ -102,14 +102,14 @@ function componentOnlyStoryGenerator() {
 function colorAndHoverStoryGenerator(
   colorVariants: Array<string>,
 ): StoryGenerator {
-  return (ReactElement: SVGComponent) =>
+  return (SVGComponent: SFC) =>
     colorVariants.map(color => (
       <div key={color}>
         <h3>color=&quot;{color}&quot; hoverable=&quot;true&quot;</h3>
-        <ReactElement color={color} hoverable="true" />
+        <SVGComponent color={color} hoverable="true" />
 
         <h3>color=&quot;{color}&quot;</h3>
-        <ReactElement color={color} />
+        <SVGComponent color={color} />
       </div>
     ));
 }
@@ -127,7 +127,7 @@ function logoSizeColorAndHoverStoryGenerator(
   colorVariants: Array<string>,
   sizeVariants: Array<string>,
 ): StoryGenerator {
-  return (ReactElement: SVGComponent) =>
+  return (SVGComponent: SFC) =>
     colorVariants.map(color =>
       sizeVariants.map(size => (
         <div key={color + size}>
@@ -135,12 +135,12 @@ function logoSizeColorAndHoverStoryGenerator(
             color=&quot;{color}&quot; size=&quot;{size}&quot;
             hoverable=&quot;true&quot;
           </h3>
-          <ReactElement color={color} size={size} hoverable="true" />
+          <SVGComponent color={color} size={size} hoverable="true" />
 
           <h3>
             color=&quot;{color}&quot; size=&quot;{size}&quot;
           </h3>
-          <ReactElement color={color} size={size} />
+          <SVGComponent color={color} size={size} />
         </div>
       )),
     );
