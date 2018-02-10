@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import { social as baseSVG } from '../../base-svgs';
+import type { SocialPropTypes as PropTypes } from '../../type-defs';
 
 const LinkedIn = (props: {}) => (
   <svg viewBox="0 0 21 20" {...props}>

@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import { trustCompanies as baseSVG } from '../../base-svgs';
+import type { TrustCompaniesPropTypes as PropTypes } from '../../type-defs';
 
 const Abta = (props: {}) => (
   <svg viewBox="0 0 82 23" {...props}>

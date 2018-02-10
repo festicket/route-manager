@@ -15,8 +15,11 @@ module.exports = (opts = {}) => {
   return (code, state) => `// @flow
 import React from 'react';
 import { paymentTypes as baseSVG } from '../../base-svgs';
+import { PaymentTypePropTypes as PropTypes } from '../../prop-types';
 
 const ${state.componentName} = (${props}: {}) => ${code}
+
+${state.componentName}.propTypes = PropTypes;
 
 export default baseSVG.withComponent(${state.componentName});
 `;

@@ -8,26 +8,22 @@
  */
 
 import styled from 'styled-components';
-import {
-  svgColorVariations,
-  functionalSvgColorVariations,
-} from './styles/color-styles';
-import {
-  svgHoverColorVariations,
-  functionalSvgHoverColorVariations,
-} from './styles/hover-styles';
+
+import { hoverStylesMixin } from './styles/hover-styles';
 import { logoHeightVariations } from './styles/logo-size-styles';
 
+import { colorMixin } from '../../utils/mixins';
+
 export const logo = styled.svg`
-  ${svgColorVariations};
-  ${svgHoverColorVariations};
+  fill: ${colorMixin};
+  ${hoverStylesMixin};
   ${logoHeightVariations};
 `;
 
 export const functional = styled.svg`
   height: 18px;
-  ${functionalSvgColorVariations};
-  ${functionalSvgHoverColorVariations};
+  fill: ${colorMixin};
+  ${hoverStylesMixin};
 `;
 
 export const paymentTypes = styled.svg`
@@ -36,8 +32,8 @@ export const paymentTypes = styled.svg`
 
 export const social = styled.svg`
   height: 22px;
-  ${svgColorVariations};
-  ${svgHoverColorVariations};
+  fill: ${colorMixin};
+  ${hoverStylesMixin};
 `;
 
 export const trustCompanies = social;

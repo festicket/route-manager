@@ -1,19 +1,13 @@
 // @flow
-import { functionalSvgHoverColors, svgHoverColors } from './colors';
+import { css } from 'styled-components';
+import { hoverColorMixin } from '../../../utils/mixins';
 
-const hoverStyle = colorMapping => (props: { color: string }) => `
-cursor: pointer;
-&:hover {
-  fill: ${colorMapping[props.color]};
-}
+const hoverStyles = () => css`
+  cursor: pointer;
+  &:hover {
+    fill: ${hoverColorMixin};
+  }
 `;
 
-const colorVariationGenerator = colorMapping => (props: {
-  color: string,
-  hoverable: boolean,
-}) => (props.hoverable ? hoverStyle(colorMapping) : null);
-
-export const svgHoverColorVariations = colorVariationGenerator(svgHoverColors);
-export const functionalSvgHoverColorVariations = colorVariationGenerator(
-  functionalSvgHoverColors,
-);
+export const hoverStylesMixin = (props: { hoverable: boolean }) =>
+  props.hoverable ? hoverStyles : null;

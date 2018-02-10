@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import { functional as baseSVG } from '../../base-svgs';
+import type { FunctionalPropTypes as PropTypes } from '../../type-defs';
 
 const ChevronLeft = (props: {}) => (
   <svg viewBox="0 0 18 18" {...props}>

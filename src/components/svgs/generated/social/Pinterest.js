@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import { social as baseSVG } from '../../base-svgs';
+import type { SocialPropTypes as PropTypes } from '../../type-defs';
 
 const Pinterest = (props: {}) => (
   <svg viewBox="0 0 22 22" {...props}>

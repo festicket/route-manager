@@ -1,10 +1,20 @@
 // @flow
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import importAll from 'import-all.macro';
-import { BRAND, DARK, LIGHT } from './styles/colors';
+
+import * as logoSvgComponents from './generated/logo';
+import * as functionalSvgComponents from './generated/functional';
+import * as paymentSvgComponents from './generated/payment-types';
+import * as socialSvgComponents from './generated/social';
+import * as trustCompaniesSvgComponents from './generated/trust-companies';
+
 import { LOGO_BIG, LOGO_SMALL } from './styles/logo-size-styles';
 import { Background } from '../../utils/storybook-helpers/index';
+
+const WHITE = 'white';
+const BLACK = 'black';
+const GREY = 'grey';
+const THEME = 'primary';
 
 type SFC = React.StatelessFunctionalComponent<any>;
 type StoryGenerator = SFC => React$Node;
@@ -16,69 +26,56 @@ const CenterDecorator = storyFn => (
 );
 stories.addDecorator(CenterDecorator);
 
-/*
- Dynamically import all svg components and generate stories showing all their valid variations
+// Dynamically import all svg components and generate stories showing all their valid variations
 
-  importAll.sync is transpiled by babel to be an object that contains all the files in the glob arg.
-  It is an object whose keys are paths to the module, and whose values are the imported bindings.
-  Each binding is expected to have a default export which is a ReactElement.
-*/
-
-const logoSvgComponents = importAll.sync(`./generated/logo/**/*.js`);
 makeStories(
+  'logo',
   logoSvgComponents,
   logoSizeColorAndHoverStoryGenerator(
-    [DARK, BRAND, LIGHT],
-    [LOGO_SMALL, LOGO_BIG],
+    [BLACK, THEME, WHITE, 'ass'],
+    [LOGO_SMALL, LOGO_BIG, 'act'],
   ),
 );
 
-const functionalSvgComponents = importAll.sync(
-  `./generated/functional/**/*.js`,
-);
 makeStories(
+  'functinoal',
   functionalSvgComponents,
-  colorAndHoverStoryGenerator([LIGHT, DARK, BRAND]),
+  colorAndHoverStoryGenerator([WHITE, GREY, THEME]),
 );
 
-const socialSvgComponents = importAll.sync(`./generated/social/**/*.js`);
-makeStories(socialSvgComponents, colorAndHoverStoryGenerator([LIGHT, DARK]));
-
-const trustCompanySvgComponents = importAll.sync(
-  `./generated/trust-companies/**/*.js`,
-);
 makeStories(
-  trustCompanySvgComponents,
-  colorAndHoverStoryGenerator([LIGHT, DARK]),
+  'social',
+  socialSvgComponents,
+  colorAndHoverStoryGenerator([WHITE, BLACK]),
 );
 
-const paymentSvgComponents = importAll.sync(
-  `./generated/payment-types/**/*.js`,
+makeStories(
+  'trust-companies',
+  trustCompaniesSvgComponents,
+  colorAndHoverStoryGenerator([WHITE, BLACK]),
 );
-makeStories(paymentSvgComponents, componentOnlyStoryGenerator());
+
+makeStories(
+  'payment-types',
+  paymentSvgComponents,
+  componentOnlyStoryGenerator(),
+);
 
 /**
- * Dynamically generate stories for each default export ReactElement in each module in the modules
+ * Dynamically generate stories for each React Component in each module in the modules
  * argument, using the provided storyGenerator function.
  *
- * @param modules {object} - contains all the modules imported by a call to importAll.sync
- * An object whose keys are paths to the module, and whose values are the imported bindings.
- * Each binding is expected to have a default export which is a ReactElement.
+ * @param modules {object} - An object whose keys are name of the module, and whose values are
+ * the default export React Component of the module.
  *
  * @param storyGenerator {function} - function that takes a ReactElement and returns a
  * ReactElement that consists of all the variations of the input ReactElement
  */
-function makeStories(modules, storyGenerator: StoryGenerator) {
+function makeStories(svgType: string, modules, storyGenerator: StoryGenerator) {
   Object.keys(modules).forEach(path => {
-    const storyName = path
-      .split('/') // split path
-      .slice(2) // remove '.' and 'generated'
-      .map(str => str.replace(/(?!^[A-Z])([A-Z])/g, ' $1')) // PascalCase to 'Normal' Case
-      .join(' / ') // put the path back together with spaces between the folders
-      .replace(/\.(js$)|(jsx$)/, ''); // remove the file extension form the path
+    const storyName = `${svgType} / ${path}`;
 
-    const renderFunction: Function = () =>
-      storyGenerator(modules[path].default);
+    const renderFunction: Function = () => storyGenerator(modules[path]);
 
     stories.add(storyName, renderFunction);
   });
