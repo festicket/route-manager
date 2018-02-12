@@ -1,9 +1,9 @@
 // @flow
 import React from 'react';
 import { logo as baseSVG } from '../../styled-base-svgs';
-import type { logoFlowType } from '../../flow-types';
+import type { LogoSVGProps } from '../../flow-types';
 
-const FesticketLogoWordmark = (props: logoFlowType) => (
+const FesticketLogoWordmark = (props: LogoSVGProps) => (
   <svg id="Layer_1" viewBox="0 0 134 35" {...props}>
     <path id="Shape" className="st0" d="M.4.1l.8 15 29.4-3L32 3.4z" />
     <path id="Shape_1_" className="st0" d="M5.7 26.2l.4 7.6 10.3 1.1 2-12.6z" />

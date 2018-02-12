@@ -3,25 +3,25 @@
 // Note: 'hoverable' is a string instead of a boolean due to an issue with Styled Components
 // https://github.com/styled-components/styled-components/issues/1198
 
-export type logoFlowType = {
+export type LogoSVGProps = {
   color: 'white' | 'black' | 'primary',
   hoverable?: 'true',
   size: 'small' | 'big',
 };
 
-export type functionalFlowType = {
+export type FunctionalSVGProps = {
   color: 'white' | 'grey' | 'primary',
   hoverable?: 'true',
 };
 
-export type socialFlowType = {
+export type SocialSVGProps = {
   color: 'white' | 'black',
   hoverable?: 'true',
 };
 
-export type trustCompaniesFlowType = {
+export type TrustCompaniesSVGProps = {
   color: 'white' | 'black',
   hoverable?: 'true',
 };
 
-export type paymentFlowType = {};
+export type PaymentSVGProps = {};

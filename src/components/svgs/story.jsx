@@ -26,7 +26,7 @@ const CenterDecorator = storyFn => (
 );
 stories.addDecorator(CenterDecorator);
 
-// Dynamically import all svg components and generate stories showing all their valid variations
+// Generate stories for all SVG Components showing all their valid variations
 
 makeStories(
   'logo',
