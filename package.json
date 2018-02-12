@@ -8,7 +8,7 @@
   "scripts": {
     "generate": "plop",
     "build": "rollup --config",
-    "lint:js": "eslint ./src/**/* --ext .js --ext .jsx",
+    "lint:js": "eslint ./src/**/* --ext .js --ext .jsx --fix",
     "svgr": "./svgs/svgr.sh",
     "lint": "npm run lint:js && npm run flow",
     "flow": "flow",
