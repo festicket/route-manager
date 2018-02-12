@@ -14,9 +14,12 @@ folder-module src/components/svgs/generated/trust-companies
 folder-module src/components/svgs/generated/payment-types
 folder-module src/components/svgs/generated/logo
 
-# add flow to the top of the generated files
+# add flow to the top of the generated folder-module files
 for file in src/components/svgs/generated/*.js
 do
 sed -i '' '1s/^/\/\/ @flow\
 /' $file
 done
+
+# lint all the generated files
+eslint src/components/svgs/generated/* --fix
