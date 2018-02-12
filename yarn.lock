@@ -1717,6 +1717,12 @@ babel-plugin-react-docgen@^1.8.0:
     lodash "^4.17.0"
     react-docgen "^2.20.0"
 
+babel-plugin-styled-components-named@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components-named/-/babel-plugin-styled-components-named-0.1.1.tgz#1c527f020c7ecb7d0c3ba47aab31f2fd53707994"
+  dependencies:
+    babel-template "^6.16.0"
+
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
