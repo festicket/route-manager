@@ -6,7 +6,8 @@
   "plugins": [
     "flow-react-proptypes",
     "transform-class-properties",
-    "transform-object-rest-spread"
+    "transform-object-rest-spread",
+    "styled-components-named"
   ],
   "env": {
     "test": {
