@@ -12,7 +12,7 @@ export type functionalFlowType = {
 };
 
 export type socialFlowType = {
-  color: 'white' | 'black' | 'primary',
+  color: 'white' | 'black',
   hoverable?: 'true',
 };
 
