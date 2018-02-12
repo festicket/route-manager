@@ -4,12 +4,12 @@ rm -rf src/components/svgs/generated
 
 makeSvgComponents () {
     local svg_type=$1
-    local source=svgs/${svg_type}
+    local source_dir=svgs/${svg_type}
     local template=svgs/svg.${svg_type}.template.js
-    local outdir=src/components/svgs/generated/${svg_type}
+    local output_dir=src/components/svgs/generated/${svg_type}
 
-    svgr --no-title ${source} --template ${template} --out-dir ${outdir}
-    folder-module ${outdir}
+    svgr --no-title ${source_dir} --template ${template} --out-dir ${output_dir}
+    folder-module ${output_dir}
 }
 
 # Generate svg components and export each component from a single file
@@ -26,6 +26,5 @@ find src/components/svgs/generated/*.js -exec sed -i '' '1s/^/\/\/ @flow\
 /' {} \;
 
 # lint all the generated files
-# this fixes some problems svgr can't and means we don't need to use any of svgrs 'prettier' options
 echo "Linting generated files"
 eslint src/components/svgs/generated/* --fix
