@@ -9,7 +9,7 @@
     "generate": "plop",
     "build": "rollup --config",
     "lint:js": "eslint ./src/**/* --ext .js --ext .jsx --fix",
-    "svgr": "./svgs/svgr.sh",
+    "svgr": "./scripts/svgr.sh",
     "lint": "npm run lint:js && npm run flow",
     "flow": "flow",
     "flow:libdefs": "flow gen-flow-files src/ --out-dir dist/",

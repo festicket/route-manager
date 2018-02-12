@@ -18,13 +18,12 @@ export function colorMixin() {
       primary: css`
         ${prop('theme.colors.brand.primary')};`,
       inherit: 'inherit',
-      // currentColor: 'currentColor', // used for SVG fill property
     })};
   `;
 }
 
 // NOTE while we are lighening and darkening colours using withProp,
-// "babel-plugin-polished" will not work with Storybook
+// "babel-plugin-polished" will not work.
 export function hoverColorMixin() {
   return css`
     ${switchProp('color', {
@@ -39,7 +38,6 @@ export function hoverColorMixin() {
       primary: css`
         ${withProp('theme.colors.brand.primary', darken(0.1))};`,
       inherit: 'inherit',
-      // currentColor: 'currentColor', // used for SVG fill property
     })};
   `;
 }

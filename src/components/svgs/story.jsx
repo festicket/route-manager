@@ -8,7 +8,7 @@ import * as paymentSvgComponents from './generated/payment-types';
 import * as socialSvgComponents from './generated/social';
 import * as trustCompaniesSvgComponents from './generated/trust-companies';
 
-import { LOGO_BIG, LOGO_SMALL } from './styles/logo-size-styles';
+import { LOGO_BIG, LOGO_SMALL } from './styles';
 import { Background } from '../../utils/storybook-helpers/index';
 
 const WHITE = 'white';

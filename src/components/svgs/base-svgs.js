@@ -9,15 +9,13 @@
 
 import styled from 'styled-components';
 
-import { hoverStylesMixin } from './styles/hover-styles';
-import { logoHeightVariations } from './styles/logo-size-styles';
-
+import { hoverStylesMixin, logoHeightVariations } from './styles';
 import { colorMixin } from '../../utils/mixins';
 
 export const logo = styled.svg`
+  ${logoHeightVariations};
   fill: ${colorMixin};
   ${hoverStylesMixin};
-  ${logoHeightVariations};
 `;
 
 export const functional = styled.svg`
