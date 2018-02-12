@@ -16,6 +16,4 @@ New SVGs can be added by placing an svg source file inside a folder in `/svgs/`.
 
 Running `npm run svgr` will take all the SVGs from the source svg folders in `/svgs` and use `svgr` to generate React components from them. These will be placed in `src/components/svgs/generated/`.
 
-You will need to restart Storybook to see the new SVGs there. ???
-
 **TODO** - `Spot Illustration` and `Display` SVG types which need to be added in the future.
