@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VerticalSeparator /> with initial props 1`] = `
+.c0 {
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  margin: 0 20px;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    margin: 0 30px;
+  }
+}
+
+<VerticalSeparator>
+  <div
+    className="c0"
+  />
+</VerticalSeparator>
+`;
