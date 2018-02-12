@@ -1,25 +1,18 @@
 #!/usr/bin/env bash
 
 rm -rf src/components/svgs/generated
-svgr --single-quote --no-title --trailing-comma all svgs/functional      --template svgs/svg.functional.template.js      --out-dir src/components/svgs/generated/functional
-svgr --single-quote --no-title --trailing-comma all svgs/social          --template svgs/svg.social.template.js          --out-dir src/components/svgs/generated/social
-svgr --single-quote --no-title --trailing-comma all svgs/trust-companies --template svgs/svg.trust-companies.template.js --out-dir src/components/svgs/generated/trust-companies
-svgr --single-quote --no-title --trailing-comma all svgs/payment-types   --template svgs/svg.payment-types.template.js   --out-dir src/components/svgs/generated/payment-types
-svgr --single-quote --no-title --trailing-comma all svgs/logo            --template svgs/svg.logo.template.js            --out-dir src/components/svgs/generated/logo
 
-# export each type of svg from a single file
-folder-module src/components/svgs/generated/functional
-folder-module src/components/svgs/generated/social
-folder-module src/components/svgs/generated/trust-companies
-folder-module src/components/svgs/generated/payment-types
-folder-module src/components/svgs/generated/logo
-
-# add flow to the top of the generated folder-module files
-for file in src/components/svgs/generated/*.js
+# generate svg components and export each component from a single file
+for svg_type in functional social logo payment-types trust-companies;
 do
-sed -i '' '1s/^/\/\/ @flow\
-/' $file
+    svgr --no-title svgs/$svg_type --template svgs/svg.$svg_type.template.js --out-dir src/components/svgs/generated/$svg_type
+    folder-module src/components/svgs/generated/$svg_type
 done
 
+# add flow to the top of the generated folder-module files
+find src/components/svgs/generated/*.js -exec sed -i '' '1s/^/\/\/ @flow\
+/' {} \;
+
 # lint all the generated files
+# this fixes some problems svgr can't and means we don't need to use any of svgrs 'prettier' options
 eslint src/components/svgs/generated/* --fix
