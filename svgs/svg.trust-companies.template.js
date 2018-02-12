@@ -15,11 +15,9 @@ module.exports = (opts = {}) => {
   return (code, state) => `// @flow
 import React from 'react';
 import { trustCompanies as baseSVG } from '../../base-svgs';
-import { TrustCompaniesPropTypes as propTypes } from '../../prop-types';
+import type { trustCompaniesFlowType } from '../../flow-types';
 
-const ${state.componentName} = (${props}: {}) => ${code}
-
-${state.componentName}.propTypes = propTypes;
+const ${state.componentName} = (${props}: trustCompaniesFlowType) => ${code}
 
 export default baseSVG.withComponent(${state.componentName});
 `;

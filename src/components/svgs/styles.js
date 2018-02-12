@@ -21,5 +21,5 @@ const hoverStyles = css`
   }
 `;
 
-export const hoverStylesMixin = (props: { hoverable: boolean }) =>
+export const hoverStylesMixin = (props: { hoverable: string }) =>
   props.hoverable ? hoverStyles : null;
