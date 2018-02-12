@@ -14,7 +14,7 @@ import { Background } from '../../utils/storybook-helpers/index';
 const WHITE = 'white';
 const BLACK = 'black';
 const GREY = 'grey';
-const THEME = 'primary';
+const THEME_COLOR = 'primary';
 
 type SFC = React.StatelessFunctionalComponent<any>;
 type StoryGenerator = SFC => React$Node;
@@ -32,7 +32,7 @@ makeStories(
   'logo',
   logoSvgComponents,
   logoSizeColorAndHoverStoryGenerator(
-    [BLACK, THEME, WHITE],
+    [BLACK, THEME_COLOR, WHITE],
     [LOGO_SMALL, LOGO_BIG],
   ),
 );
@@ -40,7 +40,7 @@ makeStories(
 makeStories(
   'functinoal',
   functionalSvgComponents,
-  colorAndHoverStoryGenerator([WHITE, GREY, THEME]),
+  colorAndHoverStoryGenerator([WHITE, GREY, THEME_COLOR]),
 );
 
 makeStories(
