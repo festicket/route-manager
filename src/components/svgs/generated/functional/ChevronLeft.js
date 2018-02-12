@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { functional as baseSVG } from '../../base-svgs';
+import { functional as baseSVG } from '../../styled-base-svgs';
 import type { functionalFlowType } from '../../flow-types';
 
 const ChevronLeft = (props: functionalFlowType) => (

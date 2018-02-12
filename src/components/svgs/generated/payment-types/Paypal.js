@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { paymentTypes as baseSVG } from '../../base-svgs';
+import { paymentTypes as baseSVG } from '../../styled-base-svgs';
 import type { paymentFlowType } from '../../flow-types';
 
 const Paypal = (props: paymentFlowType) => (

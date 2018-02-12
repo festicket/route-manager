@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { trustCompanies as baseSVG } from '../../base-svgs';
+import { trustCompanies as baseSVG } from '../../styled-base-svgs';
 import type { trustCompaniesFlowType } from '../../flow-types';
 
 const Abta = (props: trustCompaniesFlowType) => (

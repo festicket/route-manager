@@ -1,5 +1,8 @@
 // @flow
 
+// Note: 'hoverable' is a string instead of a boolean due to an issue with Styled Components
+// https://github.com/styled-components/styled-components/issues/1198
+
 export type logoFlowType = {
   color: 'white' | 'black' | 'primary',
   hoverable?: 'true',

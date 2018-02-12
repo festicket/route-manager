@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { social as baseSVG } from '../../base-svgs';
+import { social as baseSVG } from '../../styled-base-svgs';
 import type { socialFlowType } from '../../flow-types';
 
 const Twitter = (props: socialFlowType) => (
