@@ -17,5 +17,5 @@ export { default as BodyText } from './components/text/BodyText';
 export { default as Highlight } from './components/text/Highlight';
 export { default as Hyperlink } from './components/text/Hyperlink';
 export {
-  default as VerticalSeparator,
-} from './components/layout/VerticalSeparator';
+  default as WithVerticalSeparator,
+} from './components/layout/WithVerticalSeparator';

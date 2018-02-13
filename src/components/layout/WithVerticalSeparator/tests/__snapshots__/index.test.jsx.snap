@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<VerticalSeparator /> with initial props 1`] = `
+exports[`<WithVerticalSeparator /> with initial props 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -26,16 +26,16 @@ exports[`<VerticalSeparator /> with initial props 1`] = `
   }
 }
 
-<Styled(VerticalSeparatorComponent)>
-  <VerticalSeparatorComponent
+<Styled(WithVerticalSeparator)>
+  <WithVerticalSeparator
     className="c0"
   >
     <span
-      className="undefined c0"
+      className="c0"
       key=".0"
     >
       this is some text
     </span>
-  </VerticalSeparatorComponent>
-</Styled(VerticalSeparatorComponent)>
+  </WithVerticalSeparator>
+</Styled(WithVerticalSeparator)>
 `;
