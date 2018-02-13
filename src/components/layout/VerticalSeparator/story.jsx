@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import VerticalSeparator from './';
@@ -19,12 +19,8 @@ storiesOf('Components / Layout / VerticalSeparator', module).add(
   'default',
   () => (
     <Row>
-      <VerticalSeparator
-        render={StyledComponent =>
-          StyledComponent.withComponent(() => <span>Left</span>)
-        }
-      >
-        Hello
+      <VerticalSeparator>
+        <span className="this-is-a-test">Left</span>
       </VerticalSeparator>
       <Right>Right</Right>
     </Row>
