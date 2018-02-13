@@ -1,24 +1,21 @@
 // @flow
 
 import * as React from 'react';
-import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import WithVerticalSeparator from './';
 
-const Row = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import { Background, CenteredFlexRow } from '../../../utils/storybook-helpers';
+import WithVerticalSeparator from './';
 
 storiesOf('Components / Layout / WithVerticalSeparator', module).add(
   'default',
   () => (
-    <Row>
-      <WithVerticalSeparator>
-        <span>Left</span>
-      </WithVerticalSeparator>
-      <span>Right</span>
-    </Row>
+    <Background.White>
+      <CenteredFlexRow>
+        <WithVerticalSeparator>
+          <span>Left</span>
+        </WithVerticalSeparator>
+        <span>Right</span>
+      </CenteredFlexRow>
+    </Background.White>
   ),
 );
