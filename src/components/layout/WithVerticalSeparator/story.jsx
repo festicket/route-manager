@@ -11,7 +11,7 @@ const Row = styled.div`
   justify-content: center;
 `;
 
-storiesOf('Components / Layout / VerticalSeparator', module).add(
+storiesOf('Components / Layout / WithVerticalSeparator', module).add(
   'default',
   () => (
     <Row>
