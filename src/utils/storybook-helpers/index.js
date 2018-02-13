@@ -18,8 +18,14 @@ const GreyBackground = styled.div`
   font-family: monospace;
 `;
 
+const FullWidthBackground = styled.div`
+  height: 100vh;
+  width: 100vw;
+`;
+
 export const Background = {
   White: WhiteBackground,
   Black: BlackBackground,
   Grey: GreyBackground,
+  FullWidth: FullWidthBackground,
 };
