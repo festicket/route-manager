@@ -8,7 +8,9 @@ makeSvgComponents () {
     local template=svgs/svg.${svg_type}.template.js
     local output_dir=src/components/svgs/generated/${svg_type}
 
-    svgr --no-title ${source_dir} --template ${template} --out-dir ${output_dir}
+    svgr ${source_dir} --template ${template} --out-dir ${output_dir} \
+        --no-title --single-quote --trailing-comma all
+
     folder-module ${output_dir}
 }
 
