@@ -11,13 +11,22 @@ const Row = styled.div`
   justify-content: center;
 `;
 
+const Right = styled.span`
+  opacity: 0.5;
+`;
+
 storiesOf('Components / Layout / VerticalSeparator', module).add(
   'default',
   () => (
     <Row>
-      <span>Left</span>
-      <VerticalSeparator />
-      <span>Right</span>
+      <VerticalSeparator
+        render={StyledComponent =>
+          StyledComponent.withComponent(() => <span>Left</span>)
+        }
+      >
+        Hello
+      </VerticalSeparator>
+      <Right>Right</Right>
     </Row>
   ),
 );
