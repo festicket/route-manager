@@ -1,9 +1,11 @@
 {
   "parser": "babel-eslint",
   "extends": "@festicket",
-  "plugins": ["babel", "react", "jsx-a11y", "import", "jest", "flowtype"],
+  "plugins": ["babel", "react", "jsx-a11y", "import", "jest", "flowtype", "cypress"],
   "env": {
-    "jest/globals": true
+    "jest/globals": true,
+    "cypress/globals": true
+
   },
   "settings": {
     "import/resolver": {

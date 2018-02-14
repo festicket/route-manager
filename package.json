@@ -23,7 +23,12 @@
     "prepublishOnly": "npm run build",
     "semantic-release": "semantic-release",
     "build-storybook": "build-storybook",
-    "percy-storybook": "percy-storybook"
+    "percy-storybook": "percy-storybook",
+    "start:wait": "npm run start & wait-on http-get://localhost:9001/",
+    "precypress:open": "npm run start &",
+    "cypress:open": "cypress open",
+    "pretest:cypress": "npm run start:wait",
+    "test:cypress": "cypress run"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -53,6 +58,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "cypress": "^1.4.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.0",
@@ -60,6 +66,7 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-import-resolver-jest": "^1.1.0",
     "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-cypress": "^2.0.1",
     "eslint-plugin-flowtype": "^2.42.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jest": "^21.7.0",
@@ -87,7 +94,8 @@
     "rollup-plugin-peer-deps-external": "^2.0.0",
     "semantic-release": "^12.4.1",
     "styled-components": "^2.4.0",
-    "svgr": "^1.8.1"
+    "svgr": "^1.8.1",
+    "wait-on": "^2.1.0"
   },
   "peerDependencies": {
     "prop-types": ">=15.5.8",
