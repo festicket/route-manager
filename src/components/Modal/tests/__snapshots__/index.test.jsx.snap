@@ -1,0 +1,463 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> should not render anything by default 1`] = `
+.c0 .Modal {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
+  will-change: opacity,transform;
+  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
+  -webkit-transition: transform 0.3s,opacity 0.3s;
+  transition: transform 0.3s,opacity 0.3s;
+  margin: 0 auto;
+  padding: 100px 0;
+  width: 800px;
+}
+
+.c0 .Modal:focus {
+  outline: none;
+}
+
+.c0 .Modal_after-open {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.c0 .Modal_before-close {
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
+  -webkit-transition: transform 0.3s,opacity 0.3s;
+  transition: transform 0.3s,opacity 0.3s;
+}
+
+.c0 .Overlay {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  background-color: #242529;
+  opacity: 0;
+  will-change: background-color;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  z-index: 15;
+}
+
+.c0 .Overlay_after-open {
+  opacity: 0.9;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.c0 .Overlay_before-close {
+  opacity: 0;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
+  -webkit-transition: transform 0.3s,opacity 0.3s;
+  transition: transform 0.3s,opacity 0.3s;
+}
+
+<Modal
+  handleClose={[Function]}
+  isOpen={false}
+>
+  <Styled(ReactModalAdapter)
+    closeTimeoutMS={300}
+    contentLabel="Modal"
+    isOpen={false}
+    onRequestClose={[Function]}
+  >
+    <ReactModalAdapter
+      className="c0"
+      closeTimeoutMS={300}
+      contentLabel="Modal"
+      isOpen={false}
+      modalClassName={
+        Object {
+          "afterOpen": "Modal_after-open",
+          "base": "Modal",
+          "beforeClose": "Modal_before-close",
+        }
+      }
+      onRequestClose={[Function]}
+      overlayClassName={
+        Object {
+          "afterOpen": "Overlay_after-open",
+          "base": "Overlay",
+          "beforeClose": "Overlay_before-close",
+        }
+      }
+    >
+      <Modal
+        ariaHideApp={false}
+        bodyOpenClassName="ReactModal__Body--open"
+        className={
+          Object {
+            "afterOpen": "Modal_after-open",
+            "base": "Modal",
+            "beforeClose": "Modal_before-close",
+          }
+        }
+        closeTimeoutMS={300}
+        contentLabel="Modal"
+        isOpen={false}
+        onRequestClose={[Function]}
+        overlayClassName={
+          Object {
+            "afterOpen": "Overlay_after-open",
+            "base": "Overlay",
+            "beforeClose": "Overlay_before-close",
+          }
+        }
+        parentSelector={[Function]}
+        portalClassName="sc-gZMcBi c0"
+        shouldCloseOnEsc={true}
+        shouldCloseOnOverlayClick={true}
+        shouldFocusAfterRender={true}
+        shouldReturnFocusAfterClose={true}
+      >
+        <ModalPortal
+          ariaHideApp={false}
+          bodyOpenClassName="ReactModal__Body--open"
+          className={
+            Object {
+              "afterOpen": "Modal_after-open",
+              "base": "Modal",
+              "beforeClose": "Modal_before-close",
+            }
+          }
+          closeTimeoutMS={300}
+          contentLabel="Modal"
+          defaultStyles={
+            Object {
+              "content": Object {
+                "WebkitOverflowScrolling": "touch",
+                "background": "#fff",
+                "border": "1px solid #ccc",
+                "borderRadius": "4px",
+                "bottom": "40px",
+                "left": "40px",
+                "outline": "none",
+                "overflow": "auto",
+                "padding": "20px",
+                "position": "absolute",
+                "right": "40px",
+                "top": "40px",
+              },
+              "overlay": Object {
+                "backgroundColor": "rgba(255, 255, 255, 0.75)",
+                "bottom": 0,
+                "left": 0,
+                "position": "fixed",
+                "right": 0,
+                "top": 0,
+              },
+            }
+          }
+          isOpen={false}
+          onRequestClose={[Function]}
+          overlayClassName={
+            Object {
+              "afterOpen": "Overlay_after-open",
+              "base": "Overlay",
+              "beforeClose": "Overlay_before-close",
+            }
+          }
+          parentSelector={[Function]}
+          portalClassName="sc-gZMcBi c0"
+          shouldCloseOnEsc={true}
+          shouldCloseOnOverlayClick={true}
+          shouldFocusAfterRender={true}
+          shouldReturnFocusAfterClose={true}
+          style={
+            Object {
+              "content": Object {},
+              "overlay": Object {},
+            }
+          }
+        />
+      </Modal>
+    </ReactModalAdapter>
+  </Styled(ReactModalAdapter)>
+</Modal>
+`;
+
+exports[`<Modal /> should render children when isOpen is true 1`] = `
+.c2 {
+  height: 18px;
+}
+
+.c0 .Modal {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
+  will-change: opacity,transform;
+  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
+  -webkit-transition: transform 0.3s,opacity 0.3s;
+  transition: transform 0.3s,opacity 0.3s;
+  margin: 0 auto;
+  padding: 100px 0;
+  width: 800px;
+}
+
+.c0 .Modal:focus {
+  outline: none;
+}
+
+.c0 .Modal_after-open {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.c0 .Modal_before-close {
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
+  -webkit-transition: transform 0.3s,opacity 0.3s;
+  transition: transform 0.3s,opacity 0.3s;
+}
+
+.c0 .Overlay {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  background-color: #242529;
+  opacity: 0;
+  will-change: background-color;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  z-index: 15;
+}
+
+.c0 .Overlay_after-open {
+  opacity: 0.9;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.c0 .Overlay_before-close {
+  opacity: 0;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
+  -webkit-transition: transform 0.3s,opacity 0.3s;
+  transition: transform 0.3s,opacity 0.3s;
+}
+
+.c1 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 40px 0 rgba(36,37,41,0.1);
+}
+
+<Modal
+  handleClose={[Function]}
+  isOpen={true}
+>
+  <Styled(ReactModalAdapter)
+    closeTimeoutMS={300}
+    contentLabel="Modal"
+    isOpen={true}
+    onRequestClose={[Function]}
+  >
+    <ReactModalAdapter
+      className="c0"
+      closeTimeoutMS={300}
+      contentLabel="Modal"
+      isOpen={true}
+      modalClassName={
+        Object {
+          "afterOpen": "Modal_after-open",
+          "base": "Modal",
+          "beforeClose": "Modal_before-close",
+        }
+      }
+      onRequestClose={[Function]}
+      overlayClassName={
+        Object {
+          "afterOpen": "Overlay_after-open",
+          "base": "Overlay",
+          "beforeClose": "Overlay_before-close",
+        }
+      }
+    >
+      <Modal
+        ariaHideApp={false}
+        bodyOpenClassName="ReactModal__Body--open"
+        className={
+          Object {
+            "afterOpen": "Modal_after-open",
+            "base": "Modal",
+            "beforeClose": "Modal_before-close",
+          }
+        }
+        closeTimeoutMS={300}
+        contentLabel="Modal"
+        isOpen={true}
+        onRequestClose={[Function]}
+        overlayClassName={
+          Object {
+            "afterOpen": "Overlay_after-open",
+            "base": "Overlay",
+            "beforeClose": "Overlay_before-close",
+          }
+        }
+        parentSelector={[Function]}
+        portalClassName="sc-gZMcBi c0"
+        shouldCloseOnEsc={true}
+        shouldCloseOnOverlayClick={true}
+        shouldFocusAfterRender={true}
+        shouldReturnFocusAfterClose={true}
+      >
+        <ModalPortal
+          ariaHideApp={false}
+          bodyOpenClassName="ReactModal__Body--open"
+          className={
+            Object {
+              "afterOpen": "Modal_after-open",
+              "base": "Modal",
+              "beforeClose": "Modal_before-close",
+            }
+          }
+          closeTimeoutMS={300}
+          contentLabel="Modal"
+          defaultStyles={
+            Object {
+              "content": Object {
+                "WebkitOverflowScrolling": "touch",
+                "background": "#fff",
+                "border": "1px solid #ccc",
+                "borderRadius": "4px",
+                "bottom": "40px",
+                "left": "40px",
+                "outline": "none",
+                "overflow": "auto",
+                "padding": "20px",
+                "position": "absolute",
+                "right": "40px",
+                "top": "40px",
+              },
+              "overlay": Object {
+                "backgroundColor": "rgba(255, 255, 255, 0.75)",
+                "bottom": 0,
+                "left": 0,
+                "position": "fixed",
+                "right": 0,
+                "top": 0,
+              },
+            }
+          }
+          isOpen={true}
+          onRequestClose={[Function]}
+          overlayClassName={
+            Object {
+              "afterOpen": "Overlay_after-open",
+              "base": "Overlay",
+              "beforeClose": "Overlay_before-close",
+            }
+          }
+          parentSelector={[Function]}
+          portalClassName="sc-gZMcBi c0"
+          shouldCloseOnEsc={true}
+          shouldCloseOnOverlayClick={true}
+          shouldFocusAfterRender={true}
+          shouldReturnFocusAfterClose={true}
+          style={
+            Object {
+              "content": Object {},
+              "overlay": Object {},
+            }
+          }
+        >
+          <div
+            aria-modal="true"
+            className="Overlay Overlay_after-open"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseUp={[Function]}
+            style={Object {}}
+          >
+            <div
+              aria-label="Modal"
+              className="Modal Modal_after-open"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              onMouseUp={[Function]}
+              style={Object {}}
+              tabIndex="-1"
+            >
+              <CloseButton
+                onClick={[Function]}
+              >
+                <button
+                  className="c1"
+                  onClick={[Function]}
+                >
+                  <Styled(Close)
+                    color="grey"
+                    height={15}
+                    width={15}
+                  >
+                    <Close
+                      className="c2"
+                      color="grey"
+                      height={15}
+                      width={15}
+                    >
+                      <svg
+                        className="c2"
+                        color="grey"
+                        height={15}
+                        viewBox="0 0 32 32"
+                        width={15}
+                      >
+                        <path
+                          d="M18.507 16l9.404-9.404a1.778 1.778 0 0 0-2.51-2.505l-9.402 9.402-9.404-9.422a1.785 1.785 0 1 0-2.524 2.524l9.422 9.404-9.422 9.404a1.778 1.778 0 1 0 2.505 2.509L16 18.505l9.404 9.404a1.778 1.778 0 0 0 2.505-2.51z"
+                        />
+                      </svg>
+                    </Close>
+                  </Styled(Close)>
+                </button>
+              </CloseButton>
+              <div>
+                <h1>
+                  You can seee this markup.
+                </h1>
+              </div>
+            </div>
+          </div>
+        </ModalPortal>
+      </Modal>
+    </ReactModalAdapter>
+  </Styled(ReactModalAdapter)>
+</Modal>
+`;
