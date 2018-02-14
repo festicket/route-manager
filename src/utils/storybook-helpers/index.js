@@ -1,4 +1,5 @@
 // @flow
+
 import styled, { css } from 'styled-components';
 import { prop, switchProp } from 'styled-tools';
 
@@ -12,6 +13,19 @@ const WhiteBackground = styled.div`
   padding: 1em;
 `;
 
+const GreyBackground = styled.div`
+  background-color: lightgrey;
+  padding: 1em;
+  text-align: center;
+  font-family: monospace;
+`;
+
+export const Background = {
+  White: WhiteBackground,
+  Black: BlackBackground,
+  Grey: GreyBackground,
+};
+
 export const Box = styled.div`
   padding: 50px;
   box-sizing: border-box;
@@ -23,8 +37,3 @@ export const Box = styled.div`
       background: ${prop('theme.colors.white')};`,
   })};
 `;
-
-export const Background = {
-  White: WhiteBackground,
-  Black: BlackBackground,
-};

@@ -45,14 +45,14 @@ exports[`<UserAvatar /> with avatarLarge 1`] = `
 <UserAvatar
   avatarLarge="http://via.placeholder.com/350x150"
 >
-  <styled.span
+  <Wrapper
     avatarLarge="http://via.placeholder.com/350x150"
     variant="small"
   >
     <span
       className="c0"
     >
-      <styled.img
+      <StyledImage
         alt=""
         src="http://via.placeholder.com/350x150"
       >
@@ -61,9 +61,9 @@ exports[`<UserAvatar /> with avatarLarge 1`] = `
           className="c1"
           src="http://via.placeholder.com/350x150"
         />
-      </styled.img>
+      </StyledImage>
     </span>
-  </styled.span>
+  </Wrapper>
 </UserAvatar>
 `;
 
@@ -103,7 +103,7 @@ exports[`<UserAvatar /> with initial 1`] = `
 <UserAvatar
   initial="B"
 >
-  <styled.span
+  <Wrapper
     initial="B"
     variant="small"
   >
@@ -112,7 +112,7 @@ exports[`<UserAvatar /> with initial 1`] = `
     >
       B
     </span>
-  </styled.span>
+  </Wrapper>
 </UserAvatar>
 `;
 
@@ -149,12 +149,12 @@ exports[`<UserAvatar /> with initial props 1`] = `
 }
 
 <UserAvatar>
-  <styled.span
+  <Wrapper
     variant="small"
   >
     <span
       className="c0"
     />
-  </styled.span>
+  </Wrapper>
 </UserAvatar>
 `;

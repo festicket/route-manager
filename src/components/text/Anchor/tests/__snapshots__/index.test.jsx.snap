@@ -9,7 +9,7 @@ exports[`<Anchor /> should render correctly 1`] = `
 <Anchor
   href="http://www.google.com"
 >
-  <Styled(AnchorComponent)
+  <StyledAnchorComponent
     element="a"
     href="http://www.google.com"
     target="_blank"
@@ -32,7 +32,7 @@ exports[`<Anchor /> should render correctly 1`] = `
         Google
       </a>
     </AnchorComponent>
-  </Styled(AnchorComponent)>
+  </StyledAnchorComponent>
 </Anchor>
 `;
 
@@ -46,7 +46,7 @@ exports[`<Anchor /> should render correctly with custom element 1`] = `
   element={[Function]}
   to="http://www.google.com"
 >
-  <Styled(AnchorComponent)
+  <StyledAnchorComponent
     element={[Function]}
     target="_blank"
     to="http://www.google.com"
@@ -73,7 +73,7 @@ exports[`<Anchor /> should render correctly with custom element 1`] = `
         </span>
       </El>
     </AnchorComponent>
-  </Styled(AnchorComponent)>
+  </StyledAnchorComponent>
 </Anchor>
 `;
 
@@ -86,7 +86,7 @@ exports[`<Anchor /> should render correctly with email prop 1`] = `
 <Anchor
   email="email@test.com"
 >
-  <Styled(AnchorComponent)
+  <StyledAnchorComponent
     element="a"
     email="email@test.com"
     target="_blank"
@@ -106,7 +106,7 @@ exports[`<Anchor /> should render correctly with email prop 1`] = `
         Email me
       </a>
     </AnchorComponent>
-  </Styled(AnchorComponent)>
+  </StyledAnchorComponent>
 </Anchor>
 `;
 
@@ -119,7 +119,7 @@ exports[`<Anchor /> should render correctly with tel prop 1`] = `
 <Anchor
   tel="08000337132"
 >
-  <Styled(AnchorComponent)
+  <StyledAnchorComponent
     element="a"
     target="_blank"
     tel="08000337132"
@@ -139,6 +139,6 @@ exports[`<Anchor /> should render correctly with tel prop 1`] = `
         Phone us
       </a>
     </AnchorComponent>
-  </Styled(AnchorComponent)>
+  </StyledAnchorComponent>
 </Anchor>
 `;

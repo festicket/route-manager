@@ -22,7 +22,7 @@ exports[`<BodyText /> that it renders correctly 1`] = `
     variant="p"
     weight="light"
   >
-    <Styled(Primitive)
+    <Paragraph
       color="black"
       element="p"
       size="regular"
@@ -45,7 +45,7 @@ exports[`<BodyText /> that it renders correctly 1`] = `
           Regular size
         </p>
       </Primitive>
-    </Styled(Primitive)>
+    </Paragraph>
   </TextPrimitive>
 </BodyText>
 `;
@@ -72,7 +72,7 @@ exports[`<BodyText /> that it renders correctly with element prop 1`] = `
     variant="p"
     weight="light"
   >
-    <Styled(Primitive)
+    <Paragraph
       color="black"
       element="span"
       size="regular"
@@ -95,7 +95,7 @@ exports[`<BodyText /> that it renders correctly with element prop 1`] = `
           Element Prop Test
         </span>
       </Primitive>
-    </Styled(Primitive)>
+    </Paragraph>
   </TextPrimitive>
 </BodyText>
 `;
@@ -121,7 +121,7 @@ exports[`<BodyText /> that it renders correctly with spacing prop 1`] = `
     variant="p"
     weight="light"
   >
-    <Styled(Primitive)
+    <Paragraph
       color="black"
       element="p"
       size="regular"
@@ -144,7 +144,7 @@ exports[`<BodyText /> that it renders correctly with spacing prop 1`] = `
           Spacing Prop Test
         </p>
       </Primitive>
-    </Styled(Primitive)>
+    </Paragraph>
   </TextPrimitive>
 </BodyText>
 `;

@@ -11,7 +11,7 @@ exports[`<Separator /> with dark variant 1`] = `
 <Separator
   variant="dark"
 >
-  <styled.hr
+  <HR
     margin={true}
     marginLarge={false}
     variant="dark"
@@ -19,7 +19,7 @@ exports[`<Separator /> with dark variant 1`] = `
     <hr
       className="c0"
     />
-  </styled.hr>
+  </HR>
 </Separator>
 `;
 
@@ -32,7 +32,7 @@ exports[`<Separator /> with initial props 1`] = `
 }
 
 <Separator>
-  <styled.hr
+  <HR
     margin={true}
     marginLarge={false}
     variant="medium"
@@ -40,7 +40,7 @@ exports[`<Separator /> with initial props 1`] = `
     <hr
       className="c0"
     />
-  </styled.hr>
+  </HR>
 </Separator>
 `;
 
@@ -55,7 +55,7 @@ exports[`<Separator /> with light variant 1`] = `
 <Separator
   variant="light"
 >
-  <styled.hr
+  <HR
     margin={true}
     marginLarge={false}
     variant="light"
@@ -63,7 +63,7 @@ exports[`<Separator /> with light variant 1`] = `
     <hr
       className="c0"
     />
-  </styled.hr>
+  </HR>
 </Separator>
 `;
 
@@ -80,7 +80,7 @@ exports[`<Separator /> with marginLarge 1`] = `
   marginLarge={true}
   variant="dark"
 >
-  <styled.hr
+  <HR
     margin={true}
     marginLarge={true}
     variant="dark"
@@ -88,7 +88,7 @@ exports[`<Separator /> with marginLarge 1`] = `
     <hr
       className="c0"
     />
-  </styled.hr>
+  </HR>
 </Separator>
 `;
 
@@ -103,7 +103,7 @@ exports[`<Separator /> with medium variant 1`] = `
 <Separator
   variant="medium"
 >
-  <styled.hr
+  <HR
     margin={true}
     marginLarge={false}
     variant="medium"
@@ -111,6 +111,6 @@ exports[`<Separator /> with medium variant 1`] = `
     <hr
       className="c0"
     />
-  </styled.hr>
+  </HR>
 </Separator>
 `;

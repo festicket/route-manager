@@ -34,7 +34,7 @@ exports[`<SecondaryHeading /> with color prop 1`] = `
     variant="h2"
     weight="bold"
   >
-    <Styled(Primitive)
+    <H2
       color="white"
       element="h2"
       spacing="none"
@@ -55,7 +55,7 @@ exports[`<SecondaryHeading /> with color prop 1`] = `
           color prop test
         </h2>
       </Primitive>
-    </Styled(Primitive)>
+    </H2>
   </TextPrimitive>
 </SecondaryHeading>
 `;
@@ -92,7 +92,7 @@ exports[`<SecondaryHeading /> with initial props 1`] = `
     variant="h2"
     weight="bold"
   >
-    <Styled(Primitive)
+    <H2
       color="black"
       element="h2"
       spacing="none"
@@ -113,7 +113,7 @@ exports[`<SecondaryHeading /> with initial props 1`] = `
           Secondary heading test
         </h2>
       </Primitive>
-    </Styled(Primitive)>
+    </H2>
   </TextPrimitive>
 </SecondaryHeading>
 `;
@@ -152,7 +152,7 @@ exports[`<SecondaryHeading /> with weight prop 1`] = `
     variant="h2"
     weight="light"
   >
-    <Styled(Primitive)
+    <H2
       color="black"
       element="h2"
       spacing="none"
@@ -173,7 +173,7 @@ exports[`<SecondaryHeading /> with weight prop 1`] = `
           weight prop test
         </h2>
       </Primitive>
-    </Styled(Primitive)>
+    </H2>
   </TextPrimitive>
 </SecondaryHeading>
 `;
