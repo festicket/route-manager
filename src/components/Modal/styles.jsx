@@ -33,7 +33,7 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
     opacity: 0;
     transform: translateY(20px);
     will-change: opacity, transform;
-    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.8s 0.4s, opacity 0.2s 0.4s;
     margin: 0 auto;
     padding: 100px 0;
     width: 800px;
@@ -50,7 +50,7 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
     &_before-close {
       opacity: 0;
       transform: translateY(40px);
-      transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.8s, opacity 0.2s;
     }
   }
   .Overlay {
@@ -64,8 +64,7 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
     background-color: #242529;
     opacity: 0;
     will-change: background-color;
-    transition: background-color 0.3s;
-    z-index: 15;
+    transition: background-color 0.1s;
 
     &_after-open {
       opacity: 0.9;
@@ -75,7 +74,7 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
     &_before-close {
       opacity: 0;
       transform: translateY(0);
-      transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.8s 0.4s, opacity 0.2s 0.4s;
     }
   }
 `;

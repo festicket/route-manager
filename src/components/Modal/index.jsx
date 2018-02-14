@@ -25,7 +25,7 @@ export default function Modal({
       closeTimeoutMS={300}
       contentLabel="Modal"
     >
-      <CloseButton onClick={handleClose}>
+      <CloseButton id="modal-close" onClick={handleClose}>
         <CloseIcon color="grey" height={15} width={15} />
       </CloseButton>
       {children}

@@ -7,9 +7,9 @@ exports[`<Modal /> should not render anything by default 1`] = `
   -ms-transform: translateY(20px);
   transform: translateY(20px);
   will-change: opacity,transform;
-  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
-  -webkit-transition: transform 0.3s,opacity 0.3s;
-  transition: transform 0.3s,opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.8s 0.4s,opacity 0.2s 0.4s;
+  -webkit-transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
+  transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
   margin: 0 auto;
   padding: 100px 0;
   width: 800px;
@@ -31,9 +31,9 @@ exports[`<Modal /> should not render anything by default 1`] = `
   -webkit-transform: translateY(40px);
   -ms-transform: translateY(40px);
   transform: translateY(40px);
-  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
-  -webkit-transition: transform 0.3s,opacity 0.3s;
-  transition: transform 0.3s,opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.8s,opacity 0.2s;
+  -webkit-transition: transform 0.8s,opacity 0.2s;
+  transition: transform 0.8s,opacity 0.2s;
 }
 
 .c0 .Overlay {
@@ -47,9 +47,8 @@ exports[`<Modal /> should not render anything by default 1`] = `
   background-color: #242529;
   opacity: 0;
   will-change: background-color;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-  z-index: 15;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
 }
 
 .c0 .Overlay_after-open {
@@ -64,9 +63,9 @@ exports[`<Modal /> should not render anything by default 1`] = `
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
-  -webkit-transition: transform 0.3s,opacity 0.3s;
-  transition: transform 0.3s,opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.8s 0.4s,opacity 0.2s 0.4s;
+  -webkit-transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
+  transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
 }
 
 <Modal
@@ -205,9 +204,9 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   -ms-transform: translateY(20px);
   transform: translateY(20px);
   will-change: opacity,transform;
-  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
-  -webkit-transition: transform 0.3s,opacity 0.3s;
-  transition: transform 0.3s,opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.8s 0.4s,opacity 0.2s 0.4s;
+  -webkit-transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
+  transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
   margin: 0 auto;
   padding: 100px 0;
   width: 800px;
@@ -229,9 +228,9 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   -webkit-transform: translateY(40px);
   -ms-transform: translateY(40px);
   transform: translateY(40px);
-  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
-  -webkit-transition: transform 0.3s,opacity 0.3s;
-  transition: transform 0.3s,opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.8s,opacity 0.2s;
+  -webkit-transition: transform 0.8s,opacity 0.2s;
+  transition: transform 0.8s,opacity 0.2s;
 }
 
 .c0 .Overlay {
@@ -245,9 +244,8 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   background-color: #242529;
   opacity: 0;
   will-change: background-color;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-  z-index: 15;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
 }
 
 .c0 .Overlay_after-open {
@@ -262,9 +260,9 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s;
-  -webkit-transition: transform 0.3s,opacity 0.3s;
-  transition: transform 0.3s,opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.8s 0.4s,opacity 0.2s 0.4s;
+  -webkit-transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
+  transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
 }
 
 .c1 {
@@ -416,10 +414,12 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
               tabIndex="-1"
             >
               <CloseButton
+                id="modal-close"
                 onClick={[Function]}
               >
                 <button
                   className="c1"
+                  id="modal-close"
                   onClick={[Function]}
                 >
                   <Styled(Close)
