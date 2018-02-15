@@ -6,6 +6,14 @@ import { storiesOf } from '@storybook/react';
 import { Grid, GridElement } from './';
 
 storiesOf('Components / Layout / Grid', module)
+  .add('Split Columns', () => (
+    <Grid>
+      <GridElement width={{ sm: 1 / 2 }}>First Element</GridElement>
+      <GridElement width={{ sm: 1 / 2 }}>Second Element</GridElement>
+      <GridElement>Third Element</GridElement>
+      <GridElement>Fourth Element</GridElement>
+    </Grid>
+  ))
   .add('2 Columns', () => (
     <Grid>
       <GridElement width={1 / 2}>First Element</GridElement>

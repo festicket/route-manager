@@ -10,9 +10,9 @@
 yalc.lock
 .yalc
 
-# Lockfiles - https://stackoverflow.com/a/44904494
+# Ignore the loackfile to stop netlify
+# From installing a broken version of yarn ... lame
 yarn.lock
-package-lock.json
 
 # Tern - code-analysis engine for JavaScript
 .tern-port

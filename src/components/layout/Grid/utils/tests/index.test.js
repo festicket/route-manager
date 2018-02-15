@@ -3,6 +3,11 @@
 import transformWidthNumber from '../transformWidthNumber';
 
 describe('transformWidthNumber', () => {
+  it('should return 100% for an undefined width', () => {
+    const output = transformWidthNumber(undefined);
+    expect(output).toEqual('100%');
+  });
+
   it('should return a passed integer higher than 1', () => {
     const output = transformWidthNumber(5);
     expect(output).toEqual('5px');
