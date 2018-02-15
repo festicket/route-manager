@@ -40,7 +40,6 @@ exports[`<Modal /> should not render anything by default 1`] = `
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   width: 100vw;
   height: 100%;
   background-color: #242529;
@@ -243,7 +242,6 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   width: 100vw;
   height: 100%;
   background-color: #242529;
