@@ -11,8 +11,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
   -webkit-transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
   transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
   margin: 0 auto;
-  padding: 100px 0;
-  width: 800px;
+  width: 100%;
 }
 
 .c0 .Modal:focus {
@@ -66,6 +65,13 @@ exports[`<Modal /> should not render anything by default 1`] = `
   -webkit-transition: -webkit-transform 0.8s 0.4s,opacity 0.2s 0.4s;
   -webkit-transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
   transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
+}
+
+@media (min-width:768px) {
+  .c0 .Modal {
+    max-width: 800px;
+    padding: 100px 0;
+  }
 }
 
 <Modal
@@ -208,8 +214,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   -webkit-transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
   transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
   margin: 0 auto;
-  padding: 100px 0;
-  width: 800px;
+  width: 100%;
 }
 
 .c0 .Modal:focus {
@@ -274,6 +279,13 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   border-radius: 25px;
   background-color: #ffffff;
   box-shadow: 0 2px 40px 0 rgba(36,37,41,0.1);
+}
+
+@media (min-width:768px) {
+  .c0 .Modal {
+    max-width: 800px;
+    padding: 100px 0;
+  }
 }
 
 <Modal

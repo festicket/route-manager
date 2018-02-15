@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 import styled from 'styled-components';
+import breakpoint from '../../utils/breakpoint/';
 
 // In order to combine styled-components with React Modal
 // We have to use an adapter function and then extend it with styled components.
@@ -35,8 +36,12 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
     will-change: opacity, transform;
     transition: transform 0.8s 0.4s, opacity 0.2s 0.4s;
     margin: 0 auto;
-    padding: 100px 0;
-    width: 800px;
+    width: 100%;
+
+    ${breakpoint('from-md')`
+      max-width: 800px;
+      padding: 100px 0;
+    `};
 
     &:focus {
       outline: none;
