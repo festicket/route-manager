@@ -6,3 +6,5 @@
 /public
 /storybook-static
 /yalc.lock
+cypress/screenshots
+cypress/videos
