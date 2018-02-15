@@ -1,7 +1,9 @@
 [ignore]
 <PROJECT_ROOT>/\.storybook/config\.js
 <PROJECT_ROOT>/dist/.*
+<PROJECT_ROOT>/cypress/.*
 <PROJECT_ROOT>/node_modules/config-chain/.*
+<PROJECT_ROOT>/node_modules/cypress/.*
 <PROJECT_ROOT>/svgs/.*
 <PROJECT_ROOT>/commitlint\.config\.js
 <PROJECT_ROOT>/jest\.config\.js
