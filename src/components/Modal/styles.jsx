@@ -72,7 +72,7 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
     transition: background-color 0.1s;
 
     &_after-open {
-      opacity: 0.9;
+      opacity: 0.99;
       transform: translateY(0);
     }
 

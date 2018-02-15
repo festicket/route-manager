@@ -51,7 +51,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
 }
 
 .c0 .Overlay_after-open {
-  opacity: 0.9;
+  opacity: 0.99;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
@@ -254,7 +254,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
 }
 
 .c0 .Overlay_after-open {
-  opacity: 0.9;
+  opacity: 0.99;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
