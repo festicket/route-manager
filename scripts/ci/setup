@@ -1,0 +1,6 @@
+#! /bin/bash
+
+set -ex
+
+docker build . -f ./docker/base-image/Dockerfile \
+  -t react-ui-components
