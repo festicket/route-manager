@@ -1,9 +1,5 @@
 // @flow
 
-export default function transformWidthNumber(w: number | void): string {
-  if (w === undefined) {
-    return '100%';
-  }
-
+export default function transformWidthNumber(w: number = 1): string {
   return w >= 0 && w <= 1 ? `${w * 100}%` : `${w}px`;
 }
