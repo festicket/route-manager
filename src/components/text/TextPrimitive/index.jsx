@@ -133,6 +133,7 @@ export default function TextPrimitive({
   spacing = 'md',
   underline = false,
   children,
+  ...props
 }: Props) {
   switch (variant) {
     case 'h1':
@@ -143,6 +144,7 @@ export default function TextPrimitive({
           weight={weight}
           underline={underline}
           spacing={spacing}
+          {...props}
         >
           {children}
         </H1>
@@ -155,6 +157,7 @@ export default function TextPrimitive({
           weight={weight}
           underline={underline}
           spacing={spacing}
+          {...props}
         >
           {children}
         </H2>
@@ -167,6 +170,7 @@ export default function TextPrimitive({
           weight={weight}
           underline={underline}
           spacing={spacing}
+          {...props}
         >
           {children}
         </H3>
@@ -180,6 +184,7 @@ export default function TextPrimitive({
           weight={weight}
           underline={underline}
           spacing={spacing}
+          {...props}
         >
           {children}
         </Paragraph>
