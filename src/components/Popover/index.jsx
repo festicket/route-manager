@@ -53,9 +53,13 @@ export default class Popover extends React.Component<Props, State> {
     window.removeEventListener('resize', this.calculatePositioning, false);
   }
 
-  setContentRef(node: HTMLElement) {
+  setContentRef = (node: HTMLElement) => {
     this.contentRef = node;
-  }
+  };
+
+  setTriggerRef = (node: HTMLElement) => {
+    this.triggerRef = node;
+  };
 
   calculatePositioning = () => {
     if (this.triggerRef) {
@@ -98,9 +102,7 @@ export default class Popover extends React.Component<Props, State> {
 
     return React.cloneElement(child, {
       onClick: this.togglePopover,
-      ref: node => {
-        this.triggerRef = node;
-      },
+      ref: this.setTriggerRef,
       'aria-haspopup': 'true',
       'aria-expanded': this.state.shown.toString(),
     });
@@ -136,9 +138,7 @@ export default class Popover extends React.Component<Props, State> {
           style={this.state.positioning}
         >
           <PopoverContent
-            innerRef={node => {
-              this.setContentRef(node);
-            }}
+            innerRef={this.setContentRef}
             aria-labelledby={trigger.props.id}
           >
             {render(this.closePopover)}
