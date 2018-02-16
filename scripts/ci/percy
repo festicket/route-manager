@@ -2,8 +2,9 @@
 
 set -ex
 
-docker run -it --rm react-ui-components \
+docker run -it --rm \
   -e PERCY_TOKEN=$PERCY_TOKEN \
   -e PERCY_PROJECT=$PERCY_PROJECT \
   -e PERCY_BRANCH=$BRANCH_NAME \
+  react-ui-components \
   npm run percy-storybook
