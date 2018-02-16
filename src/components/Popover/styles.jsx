@@ -1,6 +1,14 @@
 // @flow
 
 import * as React from 'react';
+
+/*
+TODO: Replace react-css-transition with the official react-transition-group
+package, once React 16 issues have been resolved;
+
+https://github.com/reactjs/react-transition-group/issues/284
+https://github.com/reactjs/react-transition-group/issues/285
+*/
 import { CSSTransition, transit } from 'react-css-transition';
 import styled from 'styled-components';
 import { prop } from 'styled-tools';
