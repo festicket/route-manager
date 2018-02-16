@@ -16,6 +16,14 @@ export { default as TertiaryHeading } from './components/text/TertiaryHeading';
 export { default as BodyText } from './components/text/BodyText';
 export { default as Highlight } from './components/text/Highlight';
 export { default as Hyperlink } from './components/text/Hyperlink';
+
 export {
   default as WithVerticalSeparator,
 } from './components/layout/WithVerticalSeparator';
+
+// SVGs
+export * from './components/svgs/generated/functional';
+export * from './components/svgs/generated/logo';
+export * from './components/svgs/generated/payment-types';
+export * from './components/svgs/generated/social';
+export * from './components/svgs/generated/trust-companies';

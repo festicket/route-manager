@@ -12,9 +12,17 @@ const WhiteBackground = styled.div`
   padding: 1em;
 `;
 
+const GreyBackground = styled.div`
+  background-color: lightgrey;
+  padding: 1em;
+  text-align: center;
+  font-family: monospace;
+`;
+
 export const Background = {
   White: WhiteBackground,
   Black: BlackBackground,
+  Grey: GreyBackground,
 };
 
 export const CenteredFlexRow = styled.div`
