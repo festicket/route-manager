@@ -13,6 +13,12 @@ type Props = {
 
 type State = {
   shown: boolean,
+  positioning: {
+    position: 'absolute' | 'relative' | 'fixed',
+    top?: number,
+    left?: number,
+    right?: number,
+  },
 };
 
 const ESC_KEY = 27;
@@ -23,20 +29,20 @@ export default class Popover extends React.Component<Props, State> {
 
     this.state = {
       shown: false,
-    };
-
-    this.positioning = {
-      position: 'absolute',
+      positioning: {
+        position: 'absolute',
+      },
     };
   }
 
   componentDidMount() {
     document.addEventListener('click', this.handleClickOutside, false);
     document.addEventListener('keydown', this.escapePressed, false);
+    window.addEventListener('resize', this.calculatePositioning, false);
   }
 
   componentWillUpdate(nextProps: {}, nextState: {}) {
-    if (nextState.shown) {
+    if (!this.state.shown && nextState.shown) {
       this.calculatePositioning();
     }
   }
@@ -44,35 +50,34 @@ export default class Popover extends React.Component<Props, State> {
   componentWillUnmount() {
     document.removeEventListener('click', this.handleClickOutside, false);
     document.removeEventListener('keydown', this.escapePressed, false);
+    window.removeEventListener('resize', this.calculatePositioning, false);
   }
 
   setContentRef(node: HTMLElement) {
     this.contentRef = node;
   }
 
-  calculatePositioning() {
+  calculatePositioning = () => {
     if (this.childRef) {
-      const rect = this.childRef.getBoundingClientRect();
-      this.positioning.top = rect.bottom;
+      this.setState(state => {
+        const positioning = { ...state.positioning };
+        const rect = this.childRef.getBoundingClientRect();
+        positioning.top = rect.bottom;
 
-      if (this.props.horizontalAlign === 'right') {
-        this.positioning.right = rect.right - rect.width;
-      } else {
-        this.positioning.left = rect.left;
-      }
+        if (this.props.horizontalAlign === 'right') {
+          positioning.right = rect.right - rect.width;
+        } else {
+          positioning.left = rect.left;
+        }
+
+        return { positioning };
+      });
     }
-  }
+  };
 
   childRef: HTMLElement;
 
   contentRef: HTMLElement;
-
-  positioning: {
-    position: 'absolute' | 'relative' | 'fixed',
-    top?: number,
-    left?: number,
-    right?: number,
-  };
 
   handleClickOutside = (event: Event) => {
     const { target } = event;
@@ -126,7 +131,10 @@ export default class Popover extends React.Component<Props, State> {
     return (
       <div>
         {trigger}
-        <PopoverTransition shown={this.state.shown} style={this.positioning}>
+        <PopoverTransition
+          shown={this.state.shown}
+          style={this.state.positioning}
+        >
           <PopoverContent
             innerRef={node => {
               this.setContentRef(node);
