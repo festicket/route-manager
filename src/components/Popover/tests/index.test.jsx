@@ -15,13 +15,15 @@ describe('<Popover />', () => {
   });
 
   test('it toggles a popover on click', () => {
+    const TriggerButton = props => <button {...props}>Toggle</button>;
+
     const tree = mount(
       <Popover render={() => <div>Content</div>}>
-        <button>Toggle</button>
+        <TriggerButton />
       </Popover>,
     );
 
-    const trigger = tree.find('button');
+    const trigger = tree.find('TriggerButton');
     const popoverElement = tree
       .childAt(0)
       .childAt(1)
@@ -37,13 +39,15 @@ describe('<Popover />', () => {
   });
 
   test('it updates ARIA attributes on popover show and hide', () => {
+    const TriggerButton = props => <button {...props}>Toggle</button>;
+
     const tree = mount(
       <Popover render={() => <div>Content</div>}>
-        <button>Toggle</button>
+        <TriggerButton />
       </Popover>,
     );
 
-    const trigger = tree.find('button');
+    const trigger = tree.find('TriggerButton');
 
     expect(
       tree
