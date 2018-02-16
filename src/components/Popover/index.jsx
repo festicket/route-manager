@@ -92,7 +92,7 @@ export default class Popover extends React.Component<Props, State> {
     const child = React.Children.only(children);
 
     return React.cloneElement(child, {
-      onClick: () => this.togglePopover(),
+      onClick: this.togglePopover,
       ref: node => {
         this.childRef = node;
       },
