@@ -119,6 +119,10 @@ export default class Popover extends React.Component<Props, State> {
     const { children, render } = this.props;
     const trigger = this.addTriggerToChild(children);
 
+    /*
+    TODO: Refactor wrapping div element to React.Fragment when all apps
+    are upgraded to v16.2
+    */
     return (
       <div>
         {trigger}
