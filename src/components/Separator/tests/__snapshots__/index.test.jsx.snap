@@ -67,6 +67,30 @@ exports[`<Separator /> with light variant 1`] = `
 </Separator>
 `;
 
+exports[`<Separator /> with margin 1`] = `
+.c0 {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 10px 0;
+}
+
+<Separator
+  margin={true}
+  variant="dark"
+>
+  <HR
+    margin={true}
+    marginLarge={false}
+    variant="dark"
+  >
+    <hr
+      className="c0"
+    />
+  </HR>
+</Separator>
+`;
+
 exports[`<Separator /> with marginLarge 1`] = `
 .c0 {
   border: none;

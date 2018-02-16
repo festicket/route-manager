@@ -25,6 +25,11 @@ describe('<Separator />', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  test('with margin', () => {
+    const tree = mount(<Separator variant="dark" margin />);
+    expect(tree).toMatchSnapshot();
+  });
+
   test('with marginLarge', () => {
     const tree = mount(<Separator variant="dark" marginLarge />);
     expect(tree).toMatchSnapshot();
