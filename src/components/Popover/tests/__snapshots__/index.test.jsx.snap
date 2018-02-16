@@ -23,9 +23,7 @@ exports[`<Popover /> with initial props 1`] = `
       shown={false}
       style={
         Object {
-          "left": 0,
           "position": "absolute",
-          "top": 0,
         }
       }
     >
@@ -73,9 +71,7 @@ exports[`<Popover /> with initial props 1`] = `
         }
         style={
           Object {
-            "left": 0,
             "position": "absolute",
-            "top": 0,
           }
         }
       >

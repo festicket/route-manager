@@ -33,16 +33,11 @@ export default class Popover extends React.Component<Props, State> {
   componentDidMount() {
     document.addEventListener('click', this.handleClickOutside, false);
     document.addEventListener('keydown', this.escapePressed, false);
+  }
 
-    if (this.childRef) {
-      const rect = this.childRef.getBoundingClientRect();
-      this.positioning.top = rect.bottom;
-
-      if (this.props.horizontalAlign === 'right') {
-        this.positioning.right = rect.right - rect.width;
-      } else {
-        this.positioning.left = rect.left;
-      }
+  componentWillUpdate(nextProps: {}, nextState: {}) {
+    if (nextState.shown) {
+      this.calculatePositioning();
     }
   }
 
@@ -53,6 +48,19 @@ export default class Popover extends React.Component<Props, State> {
 
   setContentRef(node: HTMLElement) {
     this.contentRef = node;
+  }
+
+  calculatePositioning() {
+    if (this.childRef) {
+      const rect = this.childRef.getBoundingClientRect();
+      this.positioning.top = rect.bottom;
+
+      if (this.props.horizontalAlign === 'right') {
+        this.positioning.right = rect.right - rect.width;
+      } else {
+        this.positioning.left = rect.left;
+      }
+    }
   }
 
   childRef: HTMLElement;
