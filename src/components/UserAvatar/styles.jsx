@@ -17,7 +17,7 @@ export const Wrapper = styled.span`
 
   ${ifProp(
     'avatarLarge',
-    css`
+    `
       background-position: 50% 50%;
       background-size: cover;
       border: 0;
@@ -44,11 +44,11 @@ export const Wrapper = styled.span`
         width: 44px;
         height: 44px;
       `};`,
-    medium: css`
+    medium: `
       font-size: 23px;
       width: 52px;
       height: 52px;`,
-    large: css`
+    large: `
       font-size: 25px;
       width: 88px;
       height: 88px;`,
