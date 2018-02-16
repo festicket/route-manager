@@ -58,10 +58,10 @@ export default class Popover extends React.Component<Props, State> {
   }
 
   calculatePositioning = () => {
-    if (this.childRef) {
+    if (this.triggerRef) {
       this.setState(state => {
         const positioning = { ...state.positioning };
-        const rect = this.childRef.getBoundingClientRect();
+        const rect = this.triggerRef.getBoundingClientRect();
         positioning.top = rect.bottom;
 
         if (this.props.horizontalAlign === 'right') {
@@ -75,7 +75,7 @@ export default class Popover extends React.Component<Props, State> {
     }
   };
 
-  childRef: HTMLElement;
+  triggerRef: HTMLElement;
 
   contentRef: HTMLElement;
 
@@ -86,7 +86,7 @@ export default class Popover extends React.Component<Props, State> {
       this.state.shown &&
       this.contentRef &&
       target instanceof Node &&
-      !this.childRef.contains(target) &&
+      !this.triggerRef.contains(target) &&
       !this.contentRef.contains(target)
     ) {
       this.closePopover();
@@ -99,7 +99,7 @@ export default class Popover extends React.Component<Props, State> {
     return React.cloneElement(child, {
       onClick: this.togglePopover,
       ref: node => {
-        this.childRef = node;
+        this.triggerRef = node;
       },
       'aria-haspopup': 'true',
       'aria-expanded': this.state.shown.toString(),
