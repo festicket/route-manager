@@ -30,12 +30,10 @@ export default class Popover extends React.Component<Props, State> {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     document.addEventListener('click', this.handleClickOutside, false);
     document.addEventListener('keydown', this.escapePressed, false);
-  }
 
-  componentDidMount() {
     if (this.childRef) {
       const rect = this.childRef.getBoundingClientRect();
       this.positioning.top = rect.bottom;
