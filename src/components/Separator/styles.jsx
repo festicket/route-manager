@@ -27,18 +27,8 @@ export const HR = styled.hr`
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-color: ${lineColor};
-  ${ifProp(
-    'margin',
-    css`
-      margin: 10px 0;
-    `,
-  )};
-  ${ifProp(
-    'marginLarge',
-    css`
-      margin: 50px 0;
-    `,
-  )};
+  ${ifProp('margin', 'margin: 10px 0;')};
+  ${ifProp('marginLarge', 'margin: 50px 0;')};
 `;
 
 export const Wrapper = styled.div`
