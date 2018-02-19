@@ -16,8 +16,10 @@ type Props = {
 };
 
 function Button(props) {
-  // We have to clean the props here as a standard button component
-  // Throws errors for the unknown props variant and element
+  /*
+  We have to strip out most props here so they don't get passed
+  as attributes on the <button /> HTML element, which is invalid
+  */
   const { render, isDisabled } = props;
   const newProps = blacklistProps(props, [
     'variant',
