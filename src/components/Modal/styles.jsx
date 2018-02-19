@@ -64,7 +64,7 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background-color: #242529;
     opacity: 0;
     will-change: background-color;
@@ -93,8 +93,4 @@ export const CloseButton = styled.button`
   background-color: #ffffff;
   box-shadow: 0 2px 40px 0 rgba(36, 37, 41, 0.1);
   z-index: 1;
-
-  ${breakpoint('from-md')`
-      position: absolute;
-  `};
 `;

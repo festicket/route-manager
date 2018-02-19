@@ -38,7 +38,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: #242529;
   opacity: 0;
   will-change: background-color;
@@ -240,7 +240,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: #242529;
   opacity: 0;
   will-change: background-color;
@@ -284,12 +284,6 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
     -webkit-transform: translateY(20px);
     -ms-transform: translateY(20px);
     transform: translateY(20px);
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    position: absolute;
   }
 }
 
