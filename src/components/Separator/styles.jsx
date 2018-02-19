@@ -5,7 +5,7 @@ import { prop, ifProp, switchProp } from 'styled-tools';
 
 const spacing = 10;
 
-const lineColor = switchProp('variant', {
+const lineColorMixin = switchProp('variant', {
   light: prop('theme.colors.white'),
   medium: prop('theme.colors.greyscale.silver'),
   dark: prop('theme.colors.greyscale.dark'),
@@ -19,14 +19,14 @@ const line = css`
   width: 50%;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: ${lineColor};
+  border-bottom-color: ${lineColorMixin};
 `;
 
 export const HR = styled.hr`
   border: none;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-color: ${lineColor};
+  border-color: ${lineColorMixin};
   ${ifProp('margin', 'margin: 10px 0;')};
   ${ifProp('marginLarge', 'margin: 50px 0;')};
 `;
