@@ -60,7 +60,7 @@ export default function Primitive({
   let newProps;
 
   if (props.element === 'button') {
-    newProps = { fontSize, render, ...props, variant: null };
+    newProps = { fontSize, render, ...props };
     return <ResetButton {...newProps} />;
   }
 
