@@ -24,10 +24,7 @@ describe('<Popover />', () => {
     );
 
     const trigger = tree.find('TriggerButton');
-    const popoverElement = tree
-      .childAt(0)
-      .childAt(1)
-      .getDOMNode();
+    const popoverElement = tree.find('PopoverTransition').getDOMNode();
 
     expect(popoverElement.style.display).toBe('none');
 
@@ -47,37 +44,14 @@ describe('<Popover />', () => {
       </Popover>,
     );
 
-    const trigger = tree.find('TriggerButton');
+    expect(tree.find('TriggerButton').prop('aria-haspopup')).toBe('true');
+    expect(tree.find('TriggerButton').prop('aria-expanded')).toBe('false');
 
-    expect(
-      tree
-        .childAt(0)
-        .childAt(0)
-        .prop('aria-haspopup'),
-    ).toBe('true');
+    tree.find('TriggerButton').simulate('click');
 
-    expect(
-      tree
-        .childAt(0)
-        .childAt(0)
-        .prop('aria-expanded'),
-    ).toBe('false');
+    expect(tree.find('TriggerButton').prop('aria-expanded')).toBe('true');
 
-    trigger.simulate('click');
-
-    expect(
-      tree
-        .childAt(0)
-        .childAt(0)
-        .prop('aria-expanded'),
-    ).toBe('true');
-
-    trigger.simulate('click');
-    expect(
-      tree
-        .childAt(0)
-        .childAt(0)
-        .prop('aria-expanded'),
-    ).toBe('false');
+    tree.find('TriggerButton').simulate('click');
+    expect(tree.find('TriggerButton').prop('aria-expanded')).toBe('false');
   });
 });
