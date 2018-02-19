@@ -13,4 +13,9 @@ docker run -it --rm \
   cp -r storybook-static/ /mnt/assets
 
 
+# Semaphore doesn't seem to use a good version of npm even when running node v8.x.x
+# As such we will manually install npx
+npm i -g npx
+
+# Run the percy upload without having to install all the dependencies
 npx percy-storybook
