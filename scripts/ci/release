@@ -2,26 +2,26 @@
 
 set -ex
 
-# Install deps
-npm install
+# Run the setup script
+# This means the docker container will be available to the node running the release job
+. ./scripts/ci/setup
 
-# running tests agains dist/index.js will always fail because snapshots
-# import names can clash, for example in src/index you will get:
-# `import { Primitive } from 'src/components/Text'`
+# Run all tests agains the built result
+docker run -it --rm \
+  -e IS_CI=true \
+  react-ui-components \
+  ./scripts/ci/test-build
 
-# where as agaist dist/index you will get
-# `import { Primitive$2 } from 'src/components/Text'`
+# Clean our local env
+rm -rf dist
+mkdir dist
 
-# as such, we delete all snapshots before testing dist/index
-# so we get a clean green build
+# Copy the assets out of the docker container
+docker run -it --rm \
+  -v $(pwd):/mnt/assets \
+  react-ui-components \
+  cp -r dist/ /mnt/assets
 
-find . -name '*.snap' | xargs rm -rf
-
-# Build our lib
-npm run build
-
-# Test the build result
-npm run test -- --bail -u
 
 # Release the krakken
 npm run semantic-release

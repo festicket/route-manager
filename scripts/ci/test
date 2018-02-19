@@ -1,1 +1,6 @@
-npm run test
+#! /bin/bash
+
+set -ex
+
+docker run -it --rm react-ui-components \
+  npm run test
