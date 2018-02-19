@@ -84,7 +84,7 @@ export default class Popover extends React.Component<Props, State> {
     if (
       this.state.shown &&
       this.contentRef &&
-      target instanceof Node &&
+      target instanceof Node && // Needed for .contains below to work with Flow
       !this.triggerRef.contains(target) &&
       !this.contentRef.contains(target)
     ) {
