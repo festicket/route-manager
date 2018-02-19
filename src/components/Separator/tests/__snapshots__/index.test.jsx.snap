@@ -67,7 +67,30 @@ exports[`<Separator /> with light variant 1`] = `
 </Separator>
 `;
 
-exports[`<Separator /> with margin 1`] = `
+exports[`<Separator /> with margin false 1`] = `
+.c0 {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+<Separator
+  margin={false}
+  variant="dark"
+>
+  <HR
+    margin={false}
+    marginLarge={false}
+    variant="dark"
+  >
+    <hr
+      className="c0"
+    />
+  </HR>
+</Separator>
+`;
+
+exports[`<Separator /> with margin true 1`] = `
 .c0 {
   border: none;
   border-bottom-width: 1px;
@@ -91,7 +114,31 @@ exports[`<Separator /> with margin 1`] = `
 </Separator>
 `;
 
-exports[`<Separator /> with marginLarge 1`] = `
+exports[`<Separator /> with marginLarge false 1`] = `
+.c0 {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin: 10px 0;
+}
+
+<Separator
+  marginLarge={false}
+  variant="dark"
+>
+  <HR
+    margin={true}
+    marginLarge={false}
+    variant="dark"
+  >
+    <hr
+      className="c0"
+    />
+  </HR>
+</Separator>
+`;
+
+exports[`<Separator /> with marginLarge true 1`] = `
 .c0 {
   border: none;
   border-bottom-width: 1px;

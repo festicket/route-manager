@@ -25,13 +25,23 @@ describe('<Separator />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test('with margin', () => {
+  test('with margin true', () => {
     const tree = mount(<Separator variant="dark" margin />);
     expect(tree).toMatchSnapshot();
   });
 
-  test('with marginLarge', () => {
+  test('with margin false', () => {
+    const tree = mount(<Separator variant="dark" margin={false} />);
+    expect(tree).toMatchSnapshot();
+  });
+
+  test('with marginLarge true', () => {
     const tree = mount(<Separator variant="dark" marginLarge />);
+    expect(tree).toMatchSnapshot();
+  });
+
+  test('with marginLarge false', () => {
+    const tree = mount(<Separator variant="dark" marginLarge={false} />);
     expect(tree).toMatchSnapshot();
   });
 });
