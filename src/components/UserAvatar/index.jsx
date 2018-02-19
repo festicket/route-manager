@@ -11,17 +11,17 @@ type Props = {
 };
 
 export default function UserAvatar({
-  className,
+  variant = 'small',
   avatarLarge,
   initial,
-  variant = 'small',
+  ...props
 }: Props) {
   return (
     <Wrapper
-      className={className}
       variant={variant}
       avatarLarge={avatarLarge}
       initial={initial}
+      {...props}
     >
       {avatarLarge ? <StyledImage src={avatarLarge} alt="" /> : initial}
     </Wrapper>
