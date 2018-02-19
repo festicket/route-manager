@@ -3,7 +3,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { darken, lighten } from 'polished';
-import { prop, ifProp, switchProp } from 'styled-tools';
+import { prop, ifProp, switchProp, withProp } from 'styled-tools';
 import Primitive from '../ButtonPrimitive';
 import buttonMixin from '../styles';
 
@@ -24,16 +24,18 @@ const StyledPrimaryButton = styled(Primitive)`
   width: ${ifProp({ fullWidth: true }, '100%')};
   ${switchProp('variant', {
     regular: css`
-      background-color: ${({ isDisabled, theme }) => // eslint-disable-line no-confusing-arrow
-        isDisabled
-          ? lighten(0.2, theme.colors.brand.primary)
-          : theme.colors.brand.primary};
+      background-color: ${ifProp(
+        'isDisabled',
+        withProp('theme.colors.brand.primary', lighten(0.2)),
+        prop('theme.colors.brand.primary'),
+      )};
       color: ${prop('theme.colors.white')};
       &:hover {
-        background-color: ${({ isDisabled, theme }) => // eslint-disable-line no-confusing-arrow
-          isDisabled
-            ? lighten(0.2, theme.colors.brand.primary)
-            : darken(0.05, theme.colors.brand.primary)};
+        background-color: ${ifProp(
+          'isDisabled',
+          withProp('theme.colors.brand.primary', lighten(0.2)),
+          withProp('theme.colors.brand.primary', darken(0.05)),
+        )};
       }`,
     bordered: css`
       background-color: transparent;
