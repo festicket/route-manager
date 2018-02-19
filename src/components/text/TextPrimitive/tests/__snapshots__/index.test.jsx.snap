@@ -5,6 +5,7 @@ exports[`<Text /> primitive extended 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;
@@ -52,6 +53,7 @@ exports[`<Text /> primitive should render correctly based on color prop 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;
@@ -93,6 +95,7 @@ exports[`<Text /> primitive should render correctly based on element prop 1`] = 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;
@@ -133,6 +136,7 @@ exports[`<Text /> primitive should render correctly based on size prop 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.12;
@@ -174,6 +178,7 @@ exports[`<Text /> primitive should render correctly based on underline prop 1`] 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
   font-size: 18px;
   line-height: 1.12;
@@ -216,6 +221,7 @@ exports[`<Text /> primitive should render correctly based on variant prop 1`] = 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 26px;
   line-height: 28px;
@@ -269,6 +275,7 @@ exports[`<Text /> primitive should render correctly based on weight prop 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;
@@ -310,6 +317,7 @@ exports[`<Text /> primitive with default props 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;
@@ -348,6 +356,7 @@ exports[`<TextPrimitive /> with initial props 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;

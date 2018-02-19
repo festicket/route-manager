@@ -5,6 +5,7 @@ exports[`<BodyText /> that it renders correctly 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
+  -webkit-text-decoration: none;
   text-decoration: none;
   margin-bottom: 0;
   font-size: 18px;
@@ -55,6 +56,7 @@ exports[`<BodyText /> that it renders correctly with element prop 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
+  -webkit-text-decoration: none;
   text-decoration: none;
   margin-bottom: 0;
   font-size: 18px;
@@ -105,6 +107,7 @@ exports[`<BodyText /> that it renders correctly with spacing prop 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;
