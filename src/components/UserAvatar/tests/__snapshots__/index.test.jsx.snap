@@ -20,6 +20,7 @@ exports[`<UserAvatar /> with avatarLarge 1`] = `
   text-transform: capitalize;
   -webkit-text-align: center;
   text-align: center;
+  font-weight: 700;
   overflow: hidden;
   background-position: 50% 50%;
   background-size: cover;
@@ -44,32 +45,18 @@ exports[`<UserAvatar /> with avatarLarge 1`] = `
   }
 }
 
-<UserAvatar
-  avatarLarge="http://via.placeholder.com/350x150"
+<span
+  className="c0"
 >
-  <Wrapper
-    avatarLarge="http://via.placeholder.com/350x150"
-    variant="small"
-  >
-    <span
-      className="c0"
-    >
-      <StyledImage
-        alt=""
-        src="http://via.placeholder.com/350x150"
-      >
-        <img
-          alt=""
-          className="c1"
-          src="http://via.placeholder.com/350x150"
-        />
-      </StyledImage>
-    </span>
-  </Wrapper>
-</UserAvatar>
+  <img
+    alt=""
+    className="c1"
+    src="http://via.placeholder.com/350x150"
+  />
+</span>
 `;
 
-exports[`<UserAvatar /> with initial 1`] = `
+exports[`<UserAvatar /> with avatarLarge and large variant 1`] = `
 .c0 {
   box-sizing: border-box;
   border-radius: 50%;
@@ -89,38 +76,35 @@ exports[`<UserAvatar /> with initial 1`] = `
   text-transform: capitalize;
   -webkit-text-align: center;
   text-align: center;
+  font-weight: 700;
   overflow: hidden;
-  border: 2px solid;
-  font-size: 12px;
-  width: 24px;
-  height: 24px;
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 0;
+  color: transparent;
+  font-size: 25px;
+  width: 88px;
+  height: 88px;
 }
 
-@media (min-width:568px) {
-  .c0 {
-    font-size: 16px;
-    width: 44px;
-    height: 44px;
-  }
+.c1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-<UserAvatar
-  initial="B"
+<span
+  className="c0"
 >
-  <Wrapper
-    initial="B"
-    variant="small"
-  >
-    <span
-      className="c0"
-    >
-      B
-    </span>
-  </Wrapper>
-</UserAvatar>
+  <img
+    alt=""
+    className="c1"
+    src="http://via.placeholder.com/350x150"
+  />
+</span>
 `;
 
-exports[`<UserAvatar /> with initial props 1`] = `
+exports[`<UserAvatar /> with avatarLarge and medium variant 1`] = `
 .c0 {
   box-sizing: border-box;
   border-radius: 50%;
@@ -140,7 +124,58 @@ exports[`<UserAvatar /> with initial props 1`] = `
   text-transform: capitalize;
   -webkit-text-align: center;
   text-align: center;
+  font-weight: 700;
   overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 0;
+  color: transparent;
+  font-size: 23px;
+  width: 52px;
+  height: 52px;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+<span
+  className="c0"
+>
+  <img
+    alt=""
+    className="c1"
+    src="http://via.placeholder.com/350x150"
+  />
+</span>
+`;
+
+exports[`<UserAvatar /> with name 1`] = `
+.c0 {
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-transform: capitalize;
+  text-transform: capitalize;
+  -webkit-text-align: center;
+  text-align: center;
+  font-weight: 700;
+  overflow: hidden;
+  border: 2px solid #8C64CB;
+  color: #8C64CB;
   font-size: 12px;
   width: 24px;
   height: 24px;
@@ -154,13 +189,81 @@ exports[`<UserAvatar /> with initial props 1`] = `
   }
 }
 
-<UserAvatar>
-  <Wrapper
-    variant="small"
-  >
-    <span
-      className="c0"
-    />
-  </Wrapper>
-</UserAvatar>
+<span
+  className="c0"
+>
+  B
+</span>
+`;
+
+exports[`<UserAvatar /> with name and large variant 1`] = `
+.c0 {
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-transform: capitalize;
+  text-transform: capitalize;
+  -webkit-text-align: center;
+  text-align: center;
+  font-weight: 700;
+  overflow: hidden;
+  border: 2px solid #8C64CB;
+  color: #8C64CB;
+  font-size: 25px;
+  width: 88px;
+  height: 88px;
+}
+
+<span
+  className="c0"
+>
+  B
+</span>
+`;
+
+exports[`<UserAvatar /> with name and medium variant 1`] = `
+.c0 {
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-transform: capitalize;
+  text-transform: capitalize;
+  -webkit-text-align: center;
+  text-align: center;
+  font-weight: 700;
+  overflow: hidden;
+  border: 2px solid #8C64CB;
+  color: #8C64CB;
+  font-size: 23px;
+  width: 52px;
+  height: 52px;
+}
+
+<span
+  className="c0"
+>
+  B
+</span>
 `;

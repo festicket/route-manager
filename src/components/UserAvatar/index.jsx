@@ -5,25 +5,41 @@ import { Wrapper, StyledImage } from './styles';
 
 type Props = {
   className?: string,
-  initial?: string,
-  avatarLarge?: string,
   variant?: 'small' | 'medium' | 'large',
+  user: {
+    name?: string,
+    firstName?: string,
+    avatarLarge?: string,
+  },
 };
+
+function getInitial(name?: string) {
+  if (!name) {
+    return null;
+  }
+
+  return name.charAt(0).toUpperCase();
+}
 
 export default function UserAvatar({
   variant = 'small',
-  avatarLarge,
-  initial,
+  user,
   ...props
 }: Props) {
+  const initial = getInitial(user.firstName || user.name);
+
   return (
     <Wrapper
       variant={variant}
-      avatarLarge={avatarLarge}
+      avatarLarge={user.avatarLarge}
       initial={initial}
       {...props}
     >
-      {avatarLarge ? <StyledImage src={avatarLarge} alt="" /> : initial}
+      {user.avatarLarge ? (
+        <StyledImage src={user.avatarLarge} alt="" />
+      ) : (
+        initial
+      )}
     </Wrapper>
   );
 }
