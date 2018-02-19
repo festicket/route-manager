@@ -7,6 +7,7 @@ import Link from '../../text/Anchor';
 import { blacklistProps } from '../../../utils/props';
 
 type Props = {
+  className?: string,
   element: string,
   children?: React.Node,
   onClick?: () => mixed,
