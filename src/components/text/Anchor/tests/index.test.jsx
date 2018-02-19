@@ -1,7 +1,6 @@
 // @flow
 
 import * as React from 'react';
-import { spy } from 'sinon';
 import { mount, shallow } from 'enzyme';
 import Anchor from '../';
 
@@ -36,38 +35,38 @@ describe('<Anchor />', () => {
   });
 
   it('should call function if onClick property is passed', () => {
-    const handle = spy();
+    const handle = jest.fn();
     const component = shallow(
       <Anchor href="http://www.google.com" onClick={handle}>
         Google
       </Anchor>,
     );
-    expect(handle.callCount).toEqual(0);
+    expect(handle.mock.calls.length).toEqual(0);
     component.simulate('click');
-    expect(handle.callCount).toEqual(1);
+    expect(handle.mock.calls.length).toEqual(1);
   });
 
   it('should call function if onClick property is passed with email', () => {
-    const handle = spy();
+    const handle = jest.fn();
     const component = shallow(
       <Anchor email="email@test.com" onClick={handle}>
         Email me
       </Anchor>,
     );
-    expect(handle.callCount).toEqual(0);
+    expect(handle.mock.calls.length).toEqual(0);
     component.simulate('click');
-    expect(handle.callCount).toEqual(1);
+    expect(handle.mock.calls.length).toEqual(1);
   });
 
   it('should call function if onClick property is passed with external', () => {
-    const handle = spy();
+    const handle = jest.fn();
     const component = shallow(
       <Anchor href="http://www.google.com" onClick={handle} external>
         Google
       </Anchor>,
     );
-    expect(handle.callCount).toEqual(0);
+    expect(handle.mock.calls.length).toEqual(0);
     component.simulate('click');
-    expect(handle.callCount).toEqual(1);
+    expect(handle.mock.calls.length).toEqual(1);
   });
 });
