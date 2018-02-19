@@ -3,7 +3,7 @@
 set -ex
 
 # Run the setup script
-# This means the docker container will be available to the node running teh release job
+# This means the docker container will be available to the node running the release job
 . ./scripts/ci/setup
 
 # Run all tests agains the built result
