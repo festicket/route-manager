@@ -13,7 +13,6 @@ type Props = {
 type State = {
   shown: boolean,
   positioning: {
-    position: 'absolute' | 'relative' | 'fixed',
     top?: number,
     left?: number,
     right?: number,
@@ -25,9 +24,7 @@ const ESC_KEY = 27;
 export default class Popover extends React.Component<Props, State> {
   state = {
     shown: false,
-    positioning: {
-      position: 'absolute',
-    },
+    positioning: {},
   };
 
   componentDidMount() {

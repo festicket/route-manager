@@ -21,11 +21,7 @@ exports[`<Popover /> with initial props 1`] = `
     </button>
     <PopoverTransition
       shown={false}
-      style={
-        Object {
-          "position": "absolute",
-        }
-      }
+      style={Object {}}
     >
       <CSSTransition
         active={false}

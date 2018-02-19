@@ -22,7 +22,6 @@ type TransitionProps = {
   shown: boolean,
   children: React.Node,
   style: {
-    position: 'absolute' | 'relative' | 'fixed',
     top?: number,
     left?: number,
     right?: number,
@@ -36,7 +35,10 @@ export const PopoverTransition = ({
 }: TransitionProps) => (
   <CSSTransition
     active={shown}
-    style={style}
+    style={{
+      position: 'absolute',
+      ...style,
+    }}
     defaultStyle={{
       display: 'none',
       opacity: 0,
