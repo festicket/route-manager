@@ -8,10 +8,6 @@ import ChevronDown from '../../svgs/generated/functional/ChevronDown';
 import ChevronLeft from '../../svgs/generated/functional/ChevronLeft';
 import ChevronUp from '../../svgs/generated/functional/ChevronUp';
 
-type Props = {
-  direction: 'right' | 'down' | 'left' | 'up',
-};
-
 function RoundedChevronButtonComponent({ className, direction, ...props }) {
   let icon;
 
@@ -53,8 +49,8 @@ const StyledRoundedChevronButton = styled(RoundedChevronButtonComponent)`
   justify-content: center;
 `;
 
-const RoundedChevronButton = (props: Props) => (
-  <StyledRoundedChevronButton {...props} />
-);
-
-export default RoundedChevronButton;
+export default function RoundedChevronButton(props: {
+  direction: 'right' | 'down' | 'left' | 'up',
+}) {
+  return <StyledRoundedChevronButton {...props} />;
+}
