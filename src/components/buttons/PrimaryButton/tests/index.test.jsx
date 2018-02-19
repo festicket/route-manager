@@ -9,6 +9,10 @@ describe('<PrimaryButton />', () => {
     const wrapper = renderWithTheme(<PrimaryButton />);
     expect(wrapper).toMatchSnapshot();
   });
+  test('Snapshot isDisabled', () => {
+    const wrapper = renderWithTheme(<PrimaryButton isDisabled />);
+    expect(wrapper).toMatchSnapshot();
+  });
   test('Snapshot Default Button Element', () => {
     const wrapper = renderWithTheme(<PrimaryButton element="button" />);
     expect(wrapper).toMatchSnapshot();
