@@ -42,15 +42,14 @@ const StyledPrimaryButton = styled(Primitive)`
       border: 2px solid ${prop('theme.colors.brand.primary')};
       color: ${prop('theme.colors.brand.primary')};
       &:hover {
-        border-color: ${({ theme }) =>
-          darken(0.05, theme.colors.brand.primary)};
-        color: ${({ theme }) => darken(0.05, theme.colors.brand.primary)};
+        border-color: ${withProp('theme.colors.brand.primary', darken(0.05))};
+        color: ${withProp('theme.colors.brand.primary', darken(0.05))};
       }`,
     transparent: css`
       background-color: transparent;
       color: ${prop('theme.colors.brand.primary')};
       &:hover {
-        color: ${({ theme }) => darken(0.05, theme.colors.brand.primary)};
+        color: ${withProp('theme.colors.brand.primary', darken(0.05))};
       }`,
   })};
   ${ifProp('isDisabled', 'pointer-events: none;')};
