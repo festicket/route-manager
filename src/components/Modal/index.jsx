@@ -23,7 +23,7 @@ export default function Modal({
         <CloseButton id="modal-close" onClick={handleClose}>
           <CloseIcon color="grey" height={15} width={15} />
         </CloseButton>
-      ) : null},
+      ) : null}
       <StyledModal
         className={className}
         isOpen={isOpen}
