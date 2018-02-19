@@ -1,10 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Text /> primitive extended 1`] = `
+.c1 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+.c0 {
+  line-height: 2;
+}
+
+<StyledText>
+  <TextPrimitive
+    className="c0"
+  >
+    <Paragraph
+      className="c0"
+      color="black"
+      element="p"
+      size="regular"
+      spacing="md"
+      underline={false}
+      weight="regular"
+    >
+      <Primitive
+        className="c0 c1"
+        color="black"
+        element="p"
+        size="regular"
+        spacing="md"
+        underline={false}
+        weight="regular"
+      >
+        <p
+          className="c0 c1"
+        >
+          extended text test
+        </p>
+      </Primitive>
+    </Paragraph>
+  </TextPrimitive>
+</StyledText>
+`;
+
 exports[`<Text /> primitive should render correctly based on color prop 1`] = `
 .c0 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;
@@ -46,6 +95,7 @@ exports[`<Text /> primitive should render correctly based on element prop 1`] = 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;
@@ -86,6 +136,7 @@ exports[`<Text /> primitive should render correctly based on size prop 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.12;
@@ -127,6 +178,7 @@ exports[`<Text /> primitive should render correctly based on underline prop 1`] 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
   font-size: 18px;
   line-height: 1.12;
@@ -169,6 +221,7 @@ exports[`<Text /> primitive should render correctly based on variant prop 1`] = 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 26px;
   line-height: 28px;
@@ -222,6 +275,7 @@ exports[`<Text /> primitive should render correctly based on weight prop 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;
@@ -263,6 +317,7 @@ exports[`<Text /> primitive with default props 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;
@@ -301,6 +356,7 @@ exports[`<TextPrimitive /> with initial props 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 20px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 18px;
   line-height: 1.12;

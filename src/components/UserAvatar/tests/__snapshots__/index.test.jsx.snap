@@ -16,7 +16,9 @@ exports[`<UserAvatar /> with avatarLarge 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-text-transform: capitalize;
   text-transform: capitalize;
+  -webkit-text-align: center;
   text-align: center;
   overflow: hidden;
   background-position: 50% 50%;
@@ -83,7 +85,9 @@ exports[`<UserAvatar /> with initial 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-text-transform: capitalize;
   text-transform: capitalize;
+  -webkit-text-align: center;
   text-align: center;
   overflow: hidden;
   border: 2px solid;
@@ -132,7 +136,9 @@ exports[`<UserAvatar /> with initial props 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-text-transform: capitalize;
   text-transform: capitalize;
+  -webkit-text-align: center;
   text-align: center;
   overflow: hidden;
   font-size: 12px;

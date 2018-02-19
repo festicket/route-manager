@@ -17,7 +17,7 @@ type BreakpointsShape = {|
 type GridElementTypes = {|
   element?: 'article' | 'section' | 'div' | 'header' | 'footer',
   children?: React.Node,
-  width: number | BreakpointsShape,
+  width?: number | BreakpointsShape,
 |};
 
 type GridTypes = PrimitiveTypes;

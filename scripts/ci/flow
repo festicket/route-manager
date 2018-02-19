@@ -1,2 +1,6 @@
-npm run flow:typed
-npm run flow check
+#! /bin/bash
+
+set -ex
+
+docker run -it --rm react-ui-components \
+  npm run flow check

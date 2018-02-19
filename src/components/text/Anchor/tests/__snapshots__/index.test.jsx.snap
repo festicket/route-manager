@@ -3,6 +3,7 @@
 exports[`<Anchor /> should render correctly 1`] = `
 .c0 {
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -39,6 +40,7 @@ exports[`<Anchor /> should render correctly 1`] = `
 exports[`<Anchor /> should render correctly with custom element 1`] = `
 .c0 {
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -80,6 +82,7 @@ exports[`<Anchor /> should render correctly with custom element 1`] = `
 exports[`<Anchor /> should render correctly with email prop 1`] = `
 .c0 {
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -113,6 +116,7 @@ exports[`<Anchor /> should render correctly with email prop 1`] = `
 exports[`<Anchor /> should render correctly with tel prop 1`] = `
 .c0 {
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
