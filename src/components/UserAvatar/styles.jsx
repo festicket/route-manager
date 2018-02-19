@@ -10,26 +10,16 @@ export const Wrapper = styled.span`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-transform: capitalize;
-  text-align: center;
-  font-weight: ${prop('theme.fontWeight.bold')};
   overflow: hidden;
-
-  ${ifProp(
-    'avatarLarge',
-    `
-      background-position: 50% 50%;
-      background-size: cover;
-      border: 0;
-      color: transparent;
-    `,
-  )};
 
   ${ifProp(
     'initial',
     css`
       border: 2px solid ${prop('theme.colors.brand.primary')};
       color: ${prop('theme.colors.brand.primary')};
+      text-transform: capitalize;
+      text-align: center;
+      font-weight: ${prop('theme.fontWeight.bold')};
     `,
   )};
 
