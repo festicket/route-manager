@@ -5,6 +5,7 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 36px;
   line-height: 39px;
