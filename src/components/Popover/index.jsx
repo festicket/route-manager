@@ -23,16 +23,12 @@ type State = {
 const ESC_KEY = 27;
 
 export default class Popover extends React.Component<Props, State> {
-  constructor() {
-    super();
-
-    this.state = {
-      shown: false,
-      positioning: {
-        position: 'absolute',
-      },
-    };
-  }
+  state = {
+    shown: false,
+    positioning: {
+      position: 'absolute',
+    },
+  };
 
   componentDidMount() {
     document.addEventListener('click', this.handleClickOutside, false);
