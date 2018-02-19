@@ -3,10 +3,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import SecondaryButton from '../SecondaryButton';
-import ChevronRight from '../../icons/ui/ChevronRight';
-import ChevronDown from '../../icons/ui/ChevronDown';
-import ChevronLeft from '../../icons/ui/ChevronLeft';
-import ChevronUp from '../../icons/ui/ChevronUp';
+import ChevronRight from '../../svgs/generated/functional/ChevronRight';
+import ChevronDown from '../../svgs/generated/functional/ChevronDown';
+import ChevronLeft from '../../svgs/generated/functional/ChevronLeft';
+import ChevronUp from '../../svgs/generated/functional/ChevronUp';
 
 type Props = {
   direction: 'right' | 'down' | 'left' | 'up',
@@ -17,16 +17,16 @@ function RoundedChevronButtonComponent({ className, direction, ...props }) {
 
   switch (direction) {
     case 'up':
-      icon = <ChevronUp />;
+      icon = <ChevronUp color="grey" />;
       break;
     case 'down':
-      icon = <ChevronDown />;
+      icon = <ChevronDown color="grey" />;
       break;
     case 'left':
-      icon = <ChevronLeft />;
+      icon = <ChevronLeft color="grey" />;
       break;
     case 'right':
-      icon = <ChevronRight />;
+      icon = <ChevronRight color="grey" />;
       break;
     default:
       icon = null;
