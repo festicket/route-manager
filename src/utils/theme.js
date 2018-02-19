@@ -1,9 +1,4 @@
 // @flow
-import { darken } from 'polished';
-
-export function hoverColor(color: string): string {
-  return darken(0.05, color);
-}
 
 export default {
   colors: {
