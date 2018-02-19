@@ -3,7 +3,7 @@
 set -ex
 
 # Clean up semaphore
-sudo rm -rf /home/runner/{.phpbrew,.phpunit,.kerl,.kiex,.lein,.nvm,.npm,.rbenv}
+sudo rm -rf /home/runner/{.phpbrew,.phpunit,.kerl,.kiex,.lein,.rbenv}
 
 # build the base image
 docker build . -f ./docker/base-image/Dockerfile \
