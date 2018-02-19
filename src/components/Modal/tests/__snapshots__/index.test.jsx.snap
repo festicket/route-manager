@@ -3,9 +3,6 @@
 exports[`<Modal /> should not render anything by default 1`] = `
 .c0 .Modal {
   opacity: 0;
-  -webkit-transform: translateY(20px);
-  -ms-transform: translateY(20px);
-  transform: translateY(20px);
   will-change: opacity,transform;
   -webkit-transition: -webkit-transform 0.8s 0.4s,opacity 0.2s 0.4s;
   -webkit-transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
@@ -70,6 +67,9 @@ exports[`<Modal /> should not render anything by default 1`] = `
   .c0 .Modal {
     max-width: 800px;
     padding: 100px 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
   }
 }
 
@@ -77,6 +77,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
   handleClose={[Function]}
   isOpen={false}
 >
+  ,
   <Styled(ReactModalAdapter)
     closeTimeoutMS={300}
     contentLabel="Modal"
@@ -199,15 +200,12 @@ exports[`<Modal /> should not render anything by default 1`] = `
 `;
 
 exports[`<Modal /> should render children when isOpen is true 1`] = `
-.c2 {
+.c1 {
   height: 18px;
 }
 
-.c0 .Modal {
+.c2 .Modal {
   opacity: 0;
-  -webkit-transform: translateY(20px);
-  -ms-transform: translateY(20px);
-  transform: translateY(20px);
   will-change: opacity,transform;
   -webkit-transition: -webkit-transform 0.8s 0.4s,opacity 0.2s 0.4s;
   -webkit-transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
@@ -216,18 +214,18 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   width: 100%;
 }
 
-.c0 .Modal:focus {
+.c2 .Modal:focus {
   outline: none;
 }
 
-.c0 .Modal_after-open {
+.c2 .Modal_after-open {
   opacity: 1;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
-.c0 .Modal_before-close {
+.c2 .Modal_before-close {
   opacity: 0;
   -webkit-transform: translateY(40px);
   -ms-transform: translateY(40px);
@@ -237,7 +235,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   transition: transform 0.8s,opacity 0.2s;
 }
 
-.c0 .Overlay {
+.c2 .Overlay {
   overflow-y: scroll;
   position: fixed;
   top: 0;
@@ -251,14 +249,14 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   transition: background-color 0.1s;
 }
 
-.c0 .Overlay_after-open {
+.c2 .Overlay_after-open {
   opacity: 0.99;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
-.c0 .Overlay_before-close {
+.c2 .Overlay_before-close {
   opacity: 0;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -268,8 +266,8 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
 }
 
-.c1 {
-  position: absolute;
+.c0 {
+  position: fixed;
   top: 20px;
   right: 20px;
   width: 38px;
@@ -277,12 +275,22 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   border-radius: 25px;
   background-color: #ffffff;
   box-shadow: 0 2px 40px 0 rgba(36,37,41,0.1);
+  z-index: 1;
 }
 
 @media (min-width:768px) {
-  .c0 .Modal {
+  .c2 .Modal {
     max-width: 800px;
     padding: 100px 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    position: absolute;
   }
 }
 
@@ -290,6 +298,42 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   handleClose={[Function]}
   isOpen={true}
 >
+  <CloseButton
+    id="modal-close"
+    onClick={[Function]}
+  >
+    <button
+      className="c0"
+      id="modal-close"
+      onClick={[Function]}
+    >
+      <Styled(Close)
+        color="grey"
+        height={15}
+        width={15}
+      >
+        <Close
+          className="c1"
+          color="grey"
+          height={15}
+          width={15}
+        >
+          <svg
+            className="c1"
+            color="grey"
+            height={15}
+            viewBox="0 0 32 32"
+            width={15}
+          >
+            <path
+              d="M18.507 16l9.404-9.404a1.778 1.778 0 0 0-2.51-2.505l-9.402 9.402-9.404-9.422a1.785 1.785 0 1 0-2.524 2.524l9.422 9.404-9.422 9.404a1.778 1.778 0 1 0 2.505 2.509L16 18.505l9.404 9.404a1.778 1.778 0 0 0 2.505-2.51z"
+            />
+          </svg>
+        </Close>
+      </Styled(Close)>
+    </button>
+  </CloseButton>
+  ,
   <Styled(ReactModalAdapter)
     closeTimeoutMS={300}
     contentLabel="Modal"
@@ -297,7 +341,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
     onRequestClose={[Function]}
   >
     <ReactModalAdapter
-      className="c0"
+      className="c2"
       closeTimeoutMS={300}
       contentLabel="Modal"
       isOpen={true}
@@ -339,7 +383,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
           }
         }
         parentSelector={[Function]}
-        portalClassName="sc-gZMcBi c0"
+        portalClassName="sc-gZMcBi c2"
         shouldCloseOnEsc={true}
         shouldCloseOnOverlayClick={true}
         shouldFocusAfterRender={true}
@@ -393,7 +437,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
             }
           }
           parentSelector={[Function]}
-          portalClassName="sc-gZMcBi c0"
+          portalClassName="sc-gZMcBi c2"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
           shouldFocusAfterRender={true}
@@ -423,41 +467,6 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
               style={Object {}}
               tabIndex="-1"
             >
-              <CloseButton
-                id="modal-close"
-                onClick={[Function]}
-              >
-                <button
-                  className="c1"
-                  id="modal-close"
-                  onClick={[Function]}
-                >
-                  <Styled(Close)
-                    color="grey"
-                    height={15}
-                    width={15}
-                  >
-                    <Close
-                      className="c2"
-                      color="grey"
-                      height={15}
-                      width={15}
-                    >
-                      <svg
-                        className="c2"
-                        color="grey"
-                        height={15}
-                        viewBox="0 0 32 32"
-                        width={15}
-                      >
-                        <path
-                          d="M18.507 16l9.404-9.404a1.778 1.778 0 0 0-2.51-2.505l-9.402 9.402-9.404-9.422a1.785 1.785 0 1 0-2.524 2.524l9.422 9.404-9.422 9.404a1.778 1.778 0 1 0 2.505 2.509L16 18.505l9.404 9.404a1.778 1.778 0 0 0 2.505-2.51z"
-                        />
-                      </svg>
-                    </Close>
-                  </Styled(Close)>
-                </button>
-              </CloseButton>
               <div>
                 <h1>
                   You can seee this markup.

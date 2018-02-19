@@ -32,7 +32,6 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
 })`
   .Modal {
     opacity: 0;
-    transform: translateY(20px);
     will-change: opacity, transform;
     transition: transform 0.8s 0.4s, opacity 0.2s 0.4s;
     margin: 0 auto;
@@ -41,6 +40,7 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
     ${breakpoint('from-md')`
       max-width: 800px;
       padding: 100px 0;
+      transform: translateY(20px);
     `};
 
     &:focus {
@@ -84,7 +84,7 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
 `;
 
 export const CloseButton = styled.button`
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   width: 38px;
@@ -92,4 +92,9 @@ export const CloseButton = styled.button`
   border-radius: 25px;
   background-color: #ffffff;
   box-shadow: 0 2px 40px 0 rgba(36, 37, 41, 0.1);
+  z-index: 1;
+
+  ${breakpoint('from-md')`
+      position: absolute;
+  `};
 `;
