@@ -1,14 +1,14 @@
 // @flow
 
 import React from 'react';
-import styled from 'styled-components';
-import SecondaryButton from '../SecondaryButton';
+import { Button } from './styles';
+
 import ChevronRight from '../../svgs/generated/functional/ChevronRight';
 import ChevronDown from '../../svgs/generated/functional/ChevronDown';
 import ChevronLeft from '../../svgs/generated/functional/ChevronLeft';
 import ChevronUp from '../../svgs/generated/functional/ChevronUp';
 
-function RoundedChevronButtonComponent({ className, direction, ...props }) {
+function RoundedChevronButtonComponent({ direction, ...props }) {
   let icon;
 
   switch (direction) {
@@ -28,29 +28,17 @@ function RoundedChevronButtonComponent({ className, direction, ...props }) {
       icon = null;
   }
 
-  return (
-    <SecondaryButton className={className} {...props}>
-      {icon}
-    </SecondaryButton>
-  );
+  return <Button {...props}>{icon}</Button>;
 }
 
-const StyledRoundedChevronButton = styled(RoundedChevronButtonComponent)`
-  font-size: 18px;
-  border-radius: 100%;
-  width: auto;
-  min-width: 0;
-  min-height: 0;
-  padding: 0;
-  width: 28px;
-  height: 28px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export default function RoundedChevronButton(props: {
+type Props = {
+  element?: string,
   direction: 'right' | 'down' | 'left' | 'up',
-}) {
-  return <StyledRoundedChevronButton {...props} />;
+};
+
+export default function RoundedChevronButton({
+  element = 'a',
+  ...props
+}: Props) {
+  return <RoundedChevronButtonComponent element={element} {...props} />;
 }

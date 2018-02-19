@@ -1,47 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RoundedChevronButton /> with initial props 1`] = `
-.c2 {
+.c1 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #8C64CB;
 }
 
-.c1 {
-  display: inline-block;
-  -webkit-text-align: center;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 0;
-  min-height: 50px;
-  min-width: 200px;
-  min-height: 50px;
-  padding: 15px 30px;
-  color: #A2A4AD;
-  background-color: rgba(36,37,41,0.05);
-}
-
-.c1:hover {
-  background-color: rgba(36,37,41,0.1);
-  color: #9497a1;
-}
-
-.c3 {
-  height: 18px;
-  fill: #A2A4AD;
-}
-
 .c0 {
-  font-size: 18px;
-  border-radius: 100%;
-  width: auto;
-  min-width: 0;
-  min-height: 0;
-  padding: 0;
-  width: 28px;
-  height: 28px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -54,19 +21,36 @@ exports[`<RoundedChevronButton /> with initial props 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-size: 18px;
+  border-radius: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  background-color: rgba(36,37,41,0.05);
+}
+
+.c0:hover {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
+}
+
+.c2 {
+  height: 18px;
+  fill: #A2A4AD;
 }
 
 <a
-  className="c0 c1 c2"
+  className="c0 c1"
   element="a"
-  size="regular"
   target="_blank"
-  to="#"
   variant="standard"
   weight="bold"
 >
   <svg
-    className="c3"
+    className="c2"
     color="grey"
     viewBox="0 0 18 18"
   >
