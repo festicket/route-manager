@@ -1,14 +1,12 @@
 // @flow
 
 import React from 'react';
-import { shallow } from 'enzyme';
 import { RoundedChevronButton } from '@festicket/react-ui-components';
+import { renderWithTheme } from '../../../../utils/testing';
 
 describe('<RoundedChevronButton />', () => {
   test('with initial props', () => {
-    const tree = shallow(<RoundedChevronButton direction="right" />)
-      .first()
-      .shallow();
+    const tree = renderWithTheme(<RoundedChevronButton direction="right" />);
     expect(tree).toMatchSnapshot();
   });
 });

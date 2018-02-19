@@ -1,28 +1,30 @@
 // @flow
 
 import React from 'react';
-import { shallow } from 'enzyme';
 import { PrimaryButton } from '@festicket/react-ui-components';
+import { renderWithTheme } from '../../../../utils/testing';
 
 describe('<PrimaryButton />', () => {
   test('Snapshot Default', () => {
-    const wrapper = shallow(<PrimaryButton />);
+    const wrapper = renderWithTheme(<PrimaryButton />);
     expect(wrapper).toMatchSnapshot();
   });
   test('Snapshot Default Button Element', () => {
-    const wrapper = shallow(<PrimaryButton element="button" />);
+    const wrapper = renderWithTheme(<PrimaryButton element="button" />);
     expect(wrapper).toMatchSnapshot();
   });
   test('Snapshot Default Small', () => {
-    const wrapper = shallow(<PrimaryButton size="small" />);
+    const wrapper = renderWithTheme(<PrimaryButton size="small" />);
     expect(wrapper).toMatchSnapshot();
   });
   test('Snapshot Bordered', () => {
-    const wrapper = shallow(<PrimaryButton variant="bordered" />);
+    const wrapper = renderWithTheme(<PrimaryButton variant="bordered" />);
     expect(wrapper).toMatchSnapshot();
   });
   test('Snapshot Bordered Small', () => {
-    const wrapper = shallow(<PrimaryButton variant="bordered" size="small" />);
+    const wrapper = renderWithTheme(
+      <PrimaryButton variant="bordered" size="small" />,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 });
