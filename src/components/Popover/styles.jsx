@@ -12,6 +12,7 @@ https://github.com/reactjs/react-transition-group/issues/285
 import { CSSTransition, transit } from 'react-css-transition';
 import styled from 'styled-components';
 import { prop } from 'styled-tools';
+import breakpoint from '../../utils/breakpoint';
 import theme from '../../utils/theme';
 
 const duration = parseInt(theme.animationDuration.short, 10);
@@ -28,12 +29,23 @@ type TransitionProps = {
   },
 };
 
+/*
+On mobile, popover content should always be flush with the horizontal
+sides of the viewport, so override the calculated left/right.
+*/
+const StyledCSSTransition = styled(CSSTransition)`
+  ${breakpoint('sm')`
+    left: 0 !important;
+    right: 0 !important;
+  `};
+`;
+
 export const PopoverTransition = ({
   shown,
   children,
   style,
 }: TransitionProps) => (
-  <CSSTransition
+  <StyledCSSTransition
     active={shown}
     style={{
       position: 'absolute',
@@ -60,11 +72,11 @@ export const PopoverTransition = ({
     activeStyle={{ opacity: 1, transform: 'translateY(0)' }}
   >
     {children}
-  </CSSTransition>
+  </StyledCSSTransition>
 );
 
 export const PopoverContent = styled.div`
-  display: inline-block;
+  display: block;
   text-align: left;
   background: ${prop('theme.colors.white')};
   padding: 20px;
