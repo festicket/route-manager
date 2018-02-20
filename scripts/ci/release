@@ -18,6 +18,7 @@ mkdir dist
 
 # Copy the assets out of the docker container
 docker run -it --rm \
+  --user root \
   -v $(pwd):/mnt/assets \
   react-ui-components \
   cp -r dist/ /mnt/assets
