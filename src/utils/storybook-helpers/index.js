@@ -30,6 +30,8 @@ export const Background = {
   FullWidth: FullWidthBackground,
 };
 
+// Remove this button component and update
+// the modal story when the button primitives are added.
 export const Button = styled.button`
   text-transform: uppercase;
   font-style: normal;
