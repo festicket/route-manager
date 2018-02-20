@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import styled from 'styled-components';
 import { mount } from 'enzyme';
 import TextPrimitive from '../';
 
@@ -14,6 +15,17 @@ describe('<Text /> primitive', () => {
   test('with default props', () => {
     const wrapper = mount(<TextPrimitive>default prop test</TextPrimitive>);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  test('extended', () => {
+    const StyledText = styled(TextPrimitive)`
+      line-height: 2;
+    `;
+
+    const wrapper = mount(<StyledText>extended text test</StyledText>);
+    expect(wrapper).toMatchSnapshot();
+    // $FlowFixMe
+    expect(wrapper).toHaveStyleRule('line-height', '2');
   });
 
   test('should render correctly based on element prop', () => {

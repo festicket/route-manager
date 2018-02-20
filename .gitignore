@@ -10,9 +10,11 @@
 yalc.lock
 .yalc
 
-# Ignore the loackfile to stop netlify
-# From installing a broken version of yarn ... lame
+# Ignore the lockfile to stop netlify from installing a broken version of yarn ... lame - JP
 yarn.lock
 
 # Tern - code-analysis engine for JavaScript
 .tern-port
+
+cypress/screenshots
+cypress/videos
