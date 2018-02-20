@@ -5,6 +5,7 @@ exports[`<Hyperlink /> with element prop 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
   margin-bottom: 0;
   font-size: 18px;
@@ -56,6 +57,7 @@ exports[`<Hyperlink /> with initial props 1`] = `
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
   margin-bottom: 0;
   font-size: 18px;
