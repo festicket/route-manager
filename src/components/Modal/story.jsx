@@ -28,7 +28,7 @@ function ModalWrapper({ isOpen, toggleModal, children }) {
 storiesOf('Components / Modal', module).add('default', () => (
   <ModalWithState>
     <Background.White>
-      <h1 id="storybook-test">Modal Test!</h1>
+      <h1 id="modal-content">Modal Test!</h1>
       <article>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel
