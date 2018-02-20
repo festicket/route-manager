@@ -1,4 +1,5 @@
 // @flow
+
 import styled from 'styled-components';
 
 const BlackBackground = styled.div`
@@ -48,4 +49,10 @@ export const Button = styled.button`
   color: #000;
   background-color: #fff;
   box-shadow: inset 0 0 0 2px #000;
+`;
+
+export const CenteredFlexRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
