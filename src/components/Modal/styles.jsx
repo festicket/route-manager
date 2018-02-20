@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 import styled from 'styled-components';
+import { prop } from 'styled-tools';
 import breakpoint from '../../utils/breakpoint/';
 
 // In order to combine styled-components with react-modal
@@ -65,7 +66,7 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #242529;
+    background-color: ${prop('theme.colors.greyscale.black')};
     opacity: 0;
     will-change: background-color;
     transition: background-color 0.1s;
@@ -90,7 +91,7 @@ export const CloseButton = styled.button`
   width: 38px;
   height: 38px;
   border-radius: 25px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 40px 0 rgba(36, 37, 41, 0.1);
+  background-color: ${prop('theme.colors.white')};
+  box-shadow: 0 2px 30px 0 ${prop('theme.colors.shadowColor')};
   z-index: 1;
 `;
