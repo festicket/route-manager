@@ -1,4 +1,5 @@
 // @flow
+
 import styled from 'styled-components';
 
 const BlackBackground = styled.div`
@@ -23,3 +24,9 @@ export const Background = {
   Black: BlackBackground,
   Grey: GreyBackground,
 };
+
+export const CenteredFlexRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
