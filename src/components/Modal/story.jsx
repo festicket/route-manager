@@ -41,18 +41,30 @@ quis diam nisl. Nulla bibendum feugiat commodo.`;
 // $FlowFixMe
 const modalContent = Array.from({ length: 8 }).fill(dummyText);
 
-storiesOf('Components / Modal', module).add('default', () => (
-  <ModalWithState>
-    <Background.White>
-      <h1 id="modal-content">Modal Test!</h1>
-      <article>
-        {modalContent.map(item => (
-          <Fragment key={Math.random()}>
-            <p>{item}</p>
-            <br />
-          </Fragment>
-        ))}
-      </article>
-    </Background.White>
-  </ModalWithState>
-));
+storiesOf('Components / Modal', module)
+  .add('default', () => (
+    <ModalWithState>
+      <Background.White>
+        <h1 id="modal-content">Modal Test!</h1>
+        <article>
+          <p>{dummyText}</p>
+          <br />
+        </article>
+      </Background.White>
+    </ModalWithState>
+  ))
+  .add('with overflowing content', () => (
+    <ModalWithState>
+      <Background.White>
+        <h1 id="modal-content">Modal Test!</h1>
+        <article>
+          {modalContent.map(item => (
+            <Fragment key={Math.random()}>
+              <p>{item}</p>
+              <br />
+            </Fragment>
+          ))}
+        </article>
+      </Background.White>
+    </ModalWithState>
+  ));
