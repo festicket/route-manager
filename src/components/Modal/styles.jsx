@@ -8,6 +8,8 @@ import breakpoint from '../../utils/breakpoint/';
 // In order to combine styled-components with react-modal
 // We have to use an adapter function and then extend it with styled components,
 // passing in the react-modal class names via the attributes function.
+// The props that are passed in to the adapter have to be in this format,
+// otherwise the overlay and modal animation won't work.
 function ReactModalAdapter({ className, modalClassName, ...props }) {
   return (
     <ReactModal
