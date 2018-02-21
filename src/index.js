@@ -35,6 +35,10 @@ export { default as BodyText } from './components/text/BodyText';
 export { default as Highlight } from './components/text/Highlight';
 export { default as Hyperlink } from './components/text/Hyperlink';
 
+export {
+  default as WithVerticalSeparator,
+} from './components/layout/WithVerticalSeparator';
+
 // SVGs
 export * from './components/svgs/generated/functional';
 export * from './components/svgs/generated/logo';

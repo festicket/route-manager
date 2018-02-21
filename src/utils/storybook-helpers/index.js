@@ -37,3 +37,9 @@ export const Box = styled.div`
       background: ${prop('theme.colors.white')};`,
   })};
 `;
+
+export const CenteredFlexRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
