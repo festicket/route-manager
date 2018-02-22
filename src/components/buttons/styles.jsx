@@ -4,11 +4,14 @@ import { switchProp } from 'styled-tools';
 
 export default function buttonMixin() {
   return css`
-    display: inline-block;
+    display: inline-flex;
     text-align: center;
     cursor: pointer;
     font-weight: bold;
     border-radius: 0;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
 
     ${switchProp('size', {
       regular: css`

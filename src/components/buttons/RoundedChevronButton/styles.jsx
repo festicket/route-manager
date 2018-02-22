@@ -8,10 +8,7 @@ export const Button = styled(ButtonPrimitive)`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
   border-radius: 100%;
-  min-width: 0;
-  min-height: 0;
   padding: 0;
   width: 28px;
   height: 28px;

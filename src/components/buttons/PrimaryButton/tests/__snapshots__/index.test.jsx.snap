@@ -9,12 +9,24 @@ exports[`<PrimaryButton /> Snapshot Bordered 1`] = `
 }
 
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
   border-radius: 0;
+  font-size: 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-width: 200px;
   min-height: 50px;
   padding: 15px 30px;
@@ -49,12 +61,24 @@ exports[`<PrimaryButton /> Snapshot Bordered Small 1`] = `
 }
 
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
   border-radius: 0;
+  font-size: 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-width: 75px;
   min-height: 40px;
   padding: 10px 15px;
@@ -89,12 +113,24 @@ exports[`<PrimaryButton /> Snapshot Default 1`] = `
 }
 
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
   border-radius: 0;
+  font-size: 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-width: 200px;
   min-height: 50px;
   padding: 15px 30px;
@@ -119,31 +155,30 @@ exports[`<PrimaryButton /> Snapshot Default 1`] = `
 `;
 
 exports[`<PrimaryButton /> Snapshot Default Button Element 1`] = `
-.c2 {
-  font-family: brandon-text,Helvetica Neue,Helvetica,Arial,sans-serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 700;
-  color: inherit;
-  margin-bottom: 20px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 1.12;
-}
-
 .c1 {
   border: none;
   outline: none;
 }
 
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
   border-radius: 0;
+  font-size: 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-width: 200px;
   min-height: 50px;
   padding: 15px 30px;
@@ -162,12 +197,7 @@ exports[`<PrimaryButton /> Snapshot Default Button Element 1`] = `
   disabled={false}
   size="regular"
   to="#"
->
-  <span
-    className="c2"
-    id={undefined}
-  />
-</button>
+/>
 `;
 
 exports[`<PrimaryButton /> Snapshot Default Small 1`] = `
@@ -179,12 +209,24 @@ exports[`<PrimaryButton /> Snapshot Default Small 1`] = `
 }
 
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
   border-radius: 0;
+  font-size: 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-width: 75px;
   min-height: 40px;
   padding: 10px 15px;
@@ -217,12 +259,24 @@ exports[`<PrimaryButton /> Snapshot isDisabled 1`] = `
 }
 
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
   border-radius: 0;
+  font-size: 16px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-width: 200px;
   min-height: 50px;
   padding: 15px 30px;

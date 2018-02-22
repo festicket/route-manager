@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-import Text from '../../text/TextPrimitive';
 import Link from '../../text/Anchor';
 import { blacklistProps } from '../../../utils/props';
 
@@ -35,17 +34,7 @@ function Button(props) {
 
   return (
     <button {...newProps} aria-disabled={isDisabled} disabled={isDisabled}>
-      {resultChildren || (
-        <Text
-          element="span"
-          variant="p"
-          weight="bold"
-          size={props.fontSize}
-          color="inherit"
-        >
-          {props.children}
-        </Text>
-      )}
+      {resultChildren || props.children}
     </button>
   );
 }
