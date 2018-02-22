@@ -12,12 +12,10 @@ export default function buttonMixin() {
 
     ${switchProp('size', {
       regular: css`
-        min-height: 50px;
         min-width: 200px;
         min-height: 50px;
         padding: 15px 30px;`,
       small: css`
-        min-height: 38px;
         min-width: 75px;
         min-height: 40px;
         padding: 10px 15px;`,
