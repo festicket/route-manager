@@ -14,6 +14,15 @@ describe('<Popover />', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  test('with showInitially props', () => {
+    const tree = mount(
+      <Popover showInitially render={() => <div>Content</div>}>
+        <button>Toggle</button>
+      </Popover>,
+    );
+    expect(tree).toMatchSnapshot();
+  });
+
   test('it toggles a popover on click', () => {
     const TriggerButton = props => <button {...props}>Toggle</button>;
 
