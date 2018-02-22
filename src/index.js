@@ -25,6 +25,7 @@ export {
 } from './components/buttons/RoundedChevronButton';
 
 // Text
+export { default as Anchor } from './components/text/Anchor';
 export { default as TextPrimitive } from './components/text/TextPrimitive';
 export { default as PrimaryHeading } from './components/text/PrimaryHeading';
 export {
