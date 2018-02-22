@@ -34,6 +34,7 @@ export { default as TertiaryHeading } from './components/text/TertiaryHeading';
 export { default as BodyText } from './components/text/BodyText';
 export { default as Highlight } from './components/text/Highlight';
 export { default as Hyperlink } from './components/text/Hyperlink';
+export { default as Popover } from './components/Popover';
 
 export {
   default as WithVerticalSeparator,
