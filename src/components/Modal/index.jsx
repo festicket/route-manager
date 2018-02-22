@@ -18,7 +18,7 @@ export default function Modal({
   className,
 }: Props) {
   return (
-    <React.Fragment>
+    <div>
       {isOpen ? (
         <CloseButton id="modal-close" onClick={handleClose}>
           <CloseIcon color="grey" height={15} width={15} />
@@ -33,6 +33,6 @@ export default function Modal({
       >
         {children}
       </StyledModal>
-    </React.Fragment>
+    </div>
   );
 }
