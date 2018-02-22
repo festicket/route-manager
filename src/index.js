@@ -17,6 +17,9 @@ export { default as BodyText } from './components/text/BodyText';
 export { default as Highlight } from './components/text/Highlight';
 export { default as Hyperlink } from './components/text/Hyperlink';
 export { default as Popover } from './components/Popover';
+export {
+  default as FrequentlyAskedQuestion,
+} from './components/FrequentlyAskedQuestion';
 
 export {
   default as WithVerticalSeparator,

@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
+.c1 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.c3 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.12;
+}
+
+.c0 {
+  padding: 30px 25px;
+}
+
+.c2 {
+  border-left: 4px solid;
+  padding-left: 20px;
+}
+
+@media (min-width:568px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+<FrequentlyAskedQuestion
+  title="Lorem ipsum dolor sit amet"
+>
+  <Wrapper>
+    <div
+      className="c0"
+    >
+      <TertiaryHeading
+        color="black"
+        element="h3"
+        spacing="md"
+        weight="bold"
+      >
+        <TextPrimitive
+          color="black"
+          element="h3"
+          spacing="md"
+          variant="h3"
+          weight="bold"
+        >
+          <H3
+            color="black"
+            element="h3"
+            spacing="md"
+            underline={false}
+            weight="bold"
+          >
+            <Primitive
+              className="c1"
+              color="black"
+              element="h3"
+              spacing="md"
+              underline={false}
+              weight="bold"
+            >
+              <h3
+                className="c1"
+              >
+                Lorem ipsum dolor sit amet
+              </h3>
+            </Primitive>
+          </H3>
+        </TextPrimitive>
+      </TertiaryHeading>
+      <BodyWrapper>
+        <div
+          className="c2"
+        >
+          <BodyText
+            size="small"
+          >
+            <TextPrimitive
+              color="black"
+              element="p"
+              size="small"
+              spacing="none"
+              variant="p"
+              weight="light"
+            >
+              <Paragraph
+                color="black"
+                element="p"
+                size="small"
+                spacing="none"
+                underline={false}
+                weight="light"
+              >
+                <Primitive
+                  className="c3"
+                  color="black"
+                  element="p"
+                  size="small"
+                  spacing="none"
+                  underline={false}
+                  weight="light"
+                >
+                  <p
+                    className="c3"
+                  >
+                    Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
+                  </p>
+                </Primitive>
+              </Paragraph>
+            </TextPrimitive>
+          </BodyText>
+        </div>
+      </BodyWrapper>
+    </div>
+  </Wrapper>
+</FrequentlyAskedQuestion>
+`;
