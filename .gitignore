@@ -5,6 +5,16 @@
 **/.DS_Store
 /public
 /storybook-static
-/yalc.lock
+
+# Yalc - https://github.com/whitecolor/yalc#keep-it-out-of-git
+yalc.lock
+.yalc
+
+# Ignore the lockfile to stop netlify from installing a broken version of yarn ... lame - JP
+yarn.lock
+
+# Tern - code-analysis engine for JavaScript
+.tern-port
+
 cypress/screenshots
 cypress/videos
