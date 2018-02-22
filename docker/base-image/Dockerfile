@@ -19,7 +19,7 @@ WORKDIR /home/festicket
 
 # Get our node dependencies
 COPY ./package.json package-lock.json ./
-RUN npx yarn install
+RUN npx npm install
 
 # Copy across all configs
 COPY .babelrc \
@@ -40,13 +40,13 @@ COPY ./cypress cypress
 COPY ./src src
 
 # Generate our type files
-RUN npx yarn flow:typed
+RUN npx npm run flow:typed
 
 # Build our assets
-RUN npx yarn build
+RUN npx npm run build
 
 # Build our storybook so we can publish it later
-RUN npx yarn build-storybook
+RUN npx npm run build-storybook
 
 # Make sure festicket user owns: ALL OF THE THINGS
 RUN chown -R festicket:festicket /home/festicket
