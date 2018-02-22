@@ -35,6 +35,8 @@ storiesOf('Components / Separator', module)
   ))
   .add('Margin large variant', () => (
     <Box>
+      <p>This is some text.</p>
       <Separator variant="dark" marginLarge />
+      <p>This is some text.</p>
     </Box>
   ));
