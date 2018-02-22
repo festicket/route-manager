@@ -36,4 +36,22 @@ storiesOf('Components / Popover', module)
         </button>
       </Popover>
     </CenteredBackground>
+  ))
+  .add('Left-aligned initially shown', () => (
+    <CenteredBackground>
+      <Popover showInitially render={popoverContent}>
+        <button id="toggle" style={{ fontSize: '1.5em' }}>
+          Toggle Popover
+        </button>
+      </Popover>
+    </CenteredBackground>
+  ))
+  .add('Right-aligned initially shown', () => (
+    <CenteredBackground>
+      <Popover showInitially horizontalAlign="right" render={popoverContent}>
+        <button id="toggle" style={{ fontSize: '1.5em' }}>
+          Toggle Popover
+        </button>
+      </Popover>
+    </CenteredBackground>
   ));

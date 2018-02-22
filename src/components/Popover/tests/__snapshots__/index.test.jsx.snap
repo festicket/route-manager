@@ -29,7 +29,12 @@ exports[`<Popover /> with initial props 1`] = `
     </button>
     <PopoverTransition
       shown={false}
-      style={Object {}}
+      style={
+        Object {
+          "left": 0,
+          "top": 0,
+        }
+      }
     >
       <StyledCSSTransition
         active={false}
@@ -75,7 +80,9 @@ exports[`<Popover /> with initial props 1`] = `
         }
         style={
           Object {
+            "left": 0,
             "position": "absolute",
+            "top": 0,
           }
         }
       >
@@ -124,7 +131,9 @@ exports[`<Popover /> with initial props 1`] = `
           }
           style={
             Object {
+              "left": 0,
               "position": "absolute",
+              "top": 0,
             }
           }
         >
@@ -134,8 +143,10 @@ exports[`<Popover /> with initial props 1`] = `
             style={
               Object {
                 "display": "none",
+                "left": 0,
                 "opacity": 0,
                 "position": "absolute",
+                "top": 0,
                 "transform": "translateY(15px)",
               }
             }

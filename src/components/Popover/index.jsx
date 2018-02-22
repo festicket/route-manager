@@ -12,6 +12,7 @@ type Props = {
   to programmatically close themselves once open.
   */
   render: (close: () => void) => React.Node,
+  showInitially?: boolean,
 };
 
 type State = {
@@ -31,12 +32,17 @@ type State = {
 const ESC_KEY = 27;
 
 export default class Popover extends React.Component<Props, State> {
-  state = {
-    shown: false,
-    positioning: {},
-  };
+  constructor(props: Props) {
+    super();
+
+    this.state = {
+      shown: props.showInitially || false,
+      positioning: {},
+    };
+  }
 
   componentDidMount() {
+    this.calculatePositioning();
     document.addEventListener('click', this.handleClickOutside, false);
     document.addEventListener('keydown', this.handleEscapePress, false);
     window.addEventListener('resize', this.calculatePositioning, false);
