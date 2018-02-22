@@ -32,7 +32,7 @@ function RoundedChevronButtonComponent({ direction, ...props }) {
 }
 
 type Props = {
-  element?: string,
+  element?: 'a' | 'button',
   direction: 'right' | 'down' | 'left' | 'up',
 };
 
