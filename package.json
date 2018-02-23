@@ -35,6 +35,7 @@
     ]
   },
   "dependencies": {
+    "react-css-transition": "^0.7.4",
     "styled-tools": "^0.4.0"
   },
   "devDependencies": {
