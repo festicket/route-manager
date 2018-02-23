@@ -21,7 +21,7 @@ export default class FrequentlyAskedQuestion extends React.Component<
   Props,
   State,
 > {
-  constructor(props) {
+  constructor(props: Props) {
     super();
 
     this.state = {
