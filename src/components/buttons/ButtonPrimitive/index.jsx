@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-import Link from '../../text/Anchor';
+import Anchor from '../../text/Anchor';
 import { blacklistProps } from '../../../utils/props';
 
 type Props = {
@@ -63,5 +63,5 @@ export default function Primitive({
     'isDisabled',
   ]);
 
-  return <Link {...newProps} weight="bold" />;
+  return <Anchor {...newProps} weight="bold" />;
 }
