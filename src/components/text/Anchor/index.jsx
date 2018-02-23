@@ -6,40 +6,43 @@ import { switchProp, prop, ifProp } from 'styled-tools';
 import { darken } from 'polished';
 
 type Props = {
-  children?: React.Node,
-  to?: string,
-  href?: string,
-  hash?: string,
-  external?: boolean,
-  tel?: string,
-  email?: string,
-  className?: string,
-  variant?: 'standard' | 'inherit' | 'hyperlink' | 'navigation',
-  target?: string,
-  onClick?: (e: SyntheticMouseEvent<*>) => mixed,
-  onTabFocus?: (e: SyntheticKeyboardEvent<*>) => mixed,
-  element?: any,
   anchorRef?: () => mixed,
+  className?: string,
+  children?: React.Node,
+  element?: any,
+  email?: string,
+  external?: boolean,
+  hash?: string,
+  href?: string,
   itemProp?: string,
+  onTabFocus?: (e: SyntheticKeyboardEvent<*>) => mixed,
+  onClick?: (e: SyntheticMouseEvent<*>) => mixed,
+  target?: string,
+  tel?: string,
+  to?: string,
+  variant?: 'standard' | 'inherit' | 'hyperlink' | 'navigation',
 };
 
 const TAB_KEY_CODE = 9;
 
-function AnchorComponent(props) {
+function AnchorComponent(props: Props) {
+  /*
+  `element` is renamed here in order to invoke it as a JSX component.
+  */
   const {
-    element: ComposedElement,
     anchorRef,
-    external,
-    children,
-    to,
-    hash,
-    tel,
-    email,
     className,
-    target,
+    children,
+    element: ComposedElement,
+    email,
+    external,
+    hash,
+    itemProp,
     onClick,
     onTabFocus,
-    itemProp,
+    target,
+    tel,
+    to,
   } = props;
 
   // The browser and React don't have an event for an element becoming focused
@@ -92,7 +95,7 @@ function AnchorComponent(props) {
   return <ComposedElement {...props}>{children}</ComposedElement>;
 }
 
-const StyledAnchorComponent = styled(AnchorComponent)`
+const Anchor = styled(AnchorComponent)`
   cursor: pointer;
   text-decoration: none;
   ${switchProp('variant', {
@@ -131,21 +134,10 @@ const StyledAnchorComponent = styled(AnchorComponent)`
   })};
 `;
 
-export default function Anchor({
-  element = 'a',
-  variant = 'standard',
-  target = '_blank',
-  children,
-  ...rest
-}: Props) {
-  return (
-    <StyledAnchorComponent
-      element={element}
-      variant={variant}
-      target={target}
-      {...rest}
-    >
-      {children}
-    </StyledAnchorComponent>
-  );
-}
+Anchor.defaultProps = {
+  element: 'a',
+  target: '_blank',
+  variant: 'standard',
+};
+
+export default Anchor;

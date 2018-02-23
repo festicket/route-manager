@@ -19,7 +19,6 @@
     "start": "start-storybook -p 9001 -c .storybook",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "npm run flow && lint-staged",
-    "prepublishOnly": "npm run build",
     "semantic-release": "semantic-release",
     "build-storybook": "build-storybook",
     "percy-storybook": "percy-storybook",
