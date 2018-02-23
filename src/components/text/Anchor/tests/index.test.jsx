@@ -1,22 +1,46 @@
 // @flow
 
 import * as React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import Anchor from '../';
+import { renderWithTheme } from '../../../../utils/testing';
 
 // Simulate a custom link component, for example React Router's Link
-function El({ children, to }: { children?: React.Node, to: string }) {
-  return <span title={to}>{children}</span>;
+function El({
+  children,
+  className,
+  to,
+}: {
+  children?: React.Node,
+  className: string,
+  to: string,
+}) {
+  return (
+    <span className={className} title={to}>
+      {children}
+    </span>
+  );
 }
 
 describe('<Anchor />', () => {
   test('should render correctly', () => {
-    const wrapper = mount(<Anchor href="http://www.google.com">Google</Anchor>);
+    const wrapper = renderWithTheme(
+      <Anchor href="http://www.google.com">Google</Anchor>,
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  test('should render correctly with hyperlink variant', () => {
+    const wrapper = renderWithTheme(
+      <Anchor href="http://www.google.com" variant="hyperlink">
+        Google
+      </Anchor>,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
   test('should render correctly with custom element', () => {
-    const wrapper = mount(
+    const wrapper = renderWithTheme(
       <Anchor to="http://www.google.com" element={El}>
         Google
       </Anchor>,
@@ -25,12 +49,16 @@ describe('<Anchor />', () => {
   });
 
   test('should render correctly with email prop', () => {
-    const wrapper = mount(<Anchor email="email@test.com">Email me</Anchor>);
+    const wrapper = renderWithTheme(
+      <Anchor email="email@test.com">Email me</Anchor>,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
   test('should render correctly with tel prop', () => {
-    const wrapper = mount(<Anchor tel="08000337132">Phone us</Anchor>);
+    const wrapper = renderWithTheme(
+      <Anchor tel="08000337132">Phone us</Anchor>,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 

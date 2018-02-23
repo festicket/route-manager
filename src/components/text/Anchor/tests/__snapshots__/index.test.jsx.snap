@@ -5,36 +5,18 @@ exports[`<Anchor /> should render correctly 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
+  color: #8C64CB;
 }
 
-<Anchor
+<a
+  className="c0"
+  element="a"
   href="http://www.google.com"
+  target="_blank"
+  variant="standard"
 >
-  <StyledAnchorComponent
-    element="a"
-    href="http://www.google.com"
-    target="_blank"
-    variant="standard"
-  >
-    <AnchorComponent
-      className="c0"
-      element="a"
-      href="http://www.google.com"
-      target="_blank"
-      variant="standard"
-    >
-      <a
-        className="c0"
-        element="a"
-        href="http://www.google.com"
-        target="_blank"
-        variant="standard"
-      >
-        Google
-      </a>
-    </AnchorComponent>
-  </StyledAnchorComponent>
-</Anchor>
+  Google
+</a>
 `;
 
 exports[`<Anchor /> should render correctly with custom element 1`] = `
@@ -42,41 +24,15 @@ exports[`<Anchor /> should render correctly with custom element 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
+  color: #8C64CB;
 }
 
-<Anchor
-  element={[Function]}
-  to="http://www.google.com"
+<span
+  className="c0"
+  title="http://www.google.com"
 >
-  <StyledAnchorComponent
-    element={[Function]}
-    target="_blank"
-    to="http://www.google.com"
-    variant="standard"
-  >
-    <AnchorComponent
-      className="c0"
-      element={[Function]}
-      target="_blank"
-      to="http://www.google.com"
-      variant="standard"
-    >
-      <El
-        className="c0"
-        element={[Function]}
-        target="_blank"
-        to="http://www.google.com"
-        variant="standard"
-      >
-        <span
-          title="http://www.google.com"
-        >
-          Google
-        </span>
-      </El>
-    </AnchorComponent>
-  </StyledAnchorComponent>
-</Anchor>
+  Google
+</span>
 `;
 
 exports[`<Anchor /> should render correctly with email prop 1`] = `
@@ -84,33 +40,40 @@ exports[`<Anchor /> should render correctly with email prop 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
+  color: #8C64CB;
 }
 
-<Anchor
-  email="email@test.com"
+<a
+  className="c0"
+  href="mailto:email@test.com"
+  onClick={undefined}
 >
-  <StyledAnchorComponent
-    element="a"
-    email="email@test.com"
-    target="_blank"
-    variant="standard"
-  >
-    <AnchorComponent
-      className="c0"
-      element="a"
-      email="email@test.com"
-      target="_blank"
-      variant="standard"
-    >
-      <a
-        className="c0"
-        href="mailto:email@test.com"
-      >
-        Email me
-      </a>
-    </AnchorComponent>
-  </StyledAnchorComponent>
-</Anchor>
+  Email me
+</a>
+`;
+
+exports[`<Anchor /> should render correctly with hyperlink variant 1`] = `
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+  font-weight: 400;
+  color: #242529;
+}
+
+<a
+  className="c0"
+  element="a"
+  href="http://www.google.com"
+  target="_blank"
+  variant="hyperlink"
+>
+  Google
+</a>
 `;
 
 exports[`<Anchor /> should render correctly with tel prop 1`] = `
@@ -118,31 +81,14 @@ exports[`<Anchor /> should render correctly with tel prop 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
+  color: #8C64CB;
 }
 
-<Anchor
-  tel="08000337132"
+<a
+  className="c0"
+  href="tel:08000337132"
+  onClick={undefined}
 >
-  <StyledAnchorComponent
-    element="a"
-    target="_blank"
-    tel="08000337132"
-    variant="standard"
-  >
-    <AnchorComponent
-      className="c0"
-      element="a"
-      target="_blank"
-      tel="08000337132"
-      variant="standard"
-    >
-      <a
-        className="c0"
-        href="tel:08000337132"
-      >
-        Phone us
-      </a>
-    </AnchorComponent>
-  </StyledAnchorComponent>
-</Anchor>
+  Phone us
+</a>
 `;
