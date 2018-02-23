@@ -21,4 +21,8 @@ export const BodyWrapper = styled.div`
   display: ${ifProp('open', 'block', 'none')};
   border-left: 4px solid ${prop('theme.colors.brand.primary')};
   padding-left: 20px;
+
+  p:not(:last-of-type) {
+    ${spacing('md')};
+  }
 `;

@@ -91,6 +91,10 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
   padding-left: 20px;
 }
 
+.c6 p:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
 @media (min-width:568px) {
   .c2 {
     font-size: 20px;
@@ -132,12 +136,21 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
     className="c6"
     open={false}
   >
-    <p
+    <span
       className="c7"
       id={undefined}
     >
-      Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
-    </p>
+      <span
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
+sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
+facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
+comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.",
+          }
+        }
+      />
+    </span>
   </div>
 </div>
 `;
@@ -234,6 +247,10 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
   padding-left: 20px;
 }
 
+.c6 p:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
 @media (min-width:568px) {
   .c2 {
     font-size: 20px;
@@ -275,12 +292,21 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
     className="c6"
     open={true}
   >
-    <p
+    <span
       className="c7"
       id={undefined}
     >
-      Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
-    </p>
+      <span
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
+sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
+facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
+comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.",
+          }
+        }
+      />
+    </span>
   </div>
 </div>
 `;

@@ -1,4 +1,5 @@
 // @flow
+/* eslint-disable react/no-danger */
 
 import * as React from 'react';
 
@@ -8,8 +9,8 @@ import BodyText from '../text/BodyText';
 import { Wrapper, TitleRow, BodyWrapper } from './styles';
 
 type Props = {
-  title: string,
-  children: React.Node,
+  question: string,
+  answer: string,
   openInitially?: boolean,
 };
 
@@ -37,7 +38,7 @@ export default class FrequentlyAskedQuestion extends React.Component<
     return (
       <Wrapper>
         <TitleRow open={this.state.open}>
-          <TertiaryHeading element="h3">{this.props.title}</TertiaryHeading>
+          <TertiaryHeading element="h3">{this.props.question}</TertiaryHeading>
           <RoundedChevronButton
             element="button"
             direction={this.state.open ? 'up' : 'down'}
@@ -45,7 +46,9 @@ export default class FrequentlyAskedQuestion extends React.Component<
           />
         </TitleRow>
         <BodyWrapper open={this.state.open}>
-          <BodyText size="small">{this.props.children}</BodyText>
+          <BodyText element="span" size="small">
+            <span dangerouslySetInnerHTML={{ __html: this.props.answer }} />
+          </BodyText>
         </BodyWrapper>
       </Wrapper>
     );

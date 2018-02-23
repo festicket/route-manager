@@ -5,36 +5,24 @@ import { storiesOf } from '@storybook/react';
 import FrequentlyAskedQuestion from './';
 import { Background } from '../../utils/storybook-helpers';
 
+const question = 'How do I get to the venue?';
+const answer =
+  '<p>BY METRO: Feria de Madrid has its own station, on Line 8 of the city&apos;s metro. Canillas, on Line 4, is also within walking distance (around 2km).&nbsp;</p><p>BY BUS: Buses 112, 122 and 104 run close to the festival venue.</p>';
+
 storiesOf('Components / FrequentlyAskedQuestion', module)
   .add('Single', () => (
     <Background.White>
-      <FrequentlyAskedQuestion title="Lorem ipsum dolor sit amet">
-        Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
-        sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
-        facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
-        comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
-      </FrequentlyAskedQuestion>
+      <FrequentlyAskedQuestion question={question} answer={answer} />
     </Background.White>
   ))
   .add('Multiple', () => (
     <Background.White>
-      <FrequentlyAskedQuestion title="Lorem ipsum dolor sit amet" openInitially>
-        Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
-        sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
-        facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
-        comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
-      </FrequentlyAskedQuestion>
-      <FrequentlyAskedQuestion title="Lorem ipsum dolor sit amet">
-        Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
-        sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
-        facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
-        comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
-      </FrequentlyAskedQuestion>
-      <FrequentlyAskedQuestion title="Lorem ipsum dolor sit amet">
-        Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
-        sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
-        facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
-        comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
-      </FrequentlyAskedQuestion>
+      <FrequentlyAskedQuestion
+        question={question}
+        answer={answer}
+        openInitially
+      />
+      <FrequentlyAskedQuestion question={question} answer={answer} />
+      <FrequentlyAskedQuestion question={question} answer={answer} />
     </Background.White>
   ));

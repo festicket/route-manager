@@ -7,27 +7,27 @@ import { FrequentlyAskedQuestion } from '@festicket/react-ui-components';
 import theme from '../../../utils/theme';
 import { renderWithTheme } from '../../../utils/testing';
 
+const question = 'Lorem ipsum dolor sit amet';
+const answer = `Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
+sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
+facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
+comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.`;
+
 describe('<FrequentlyAskedQuestion />', () => {
   test('with initial props', () => {
     const tree = renderWithTheme(
-      <FrequentlyAskedQuestion title="Lorem ipsum dolor sit amet">
-        Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
-        sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
-        facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
-        comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
-      </FrequentlyAskedQuestion>,
+      <FrequentlyAskedQuestion question={question} answer={answer} />,
     );
     expect(tree).toMatchSnapshot();
   });
 
   test('with openInitially', () => {
     const tree = renderWithTheme(
-      <FrequentlyAskedQuestion title="Lorem ipsum dolor sit amet" openInitially>
-        Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
-        sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
-        facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
-        comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
-      </FrequentlyAskedQuestion>,
+      <FrequentlyAskedQuestion
+        question={question}
+        answer={answer}
+        openInitially
+      />,
     );
     expect(tree).toMatchSnapshot();
   });
@@ -35,12 +35,7 @@ describe('<FrequentlyAskedQuestion />', () => {
   test('should open on button click', () => {
     const tree = mount(
       <ThemeProvider theme={theme}>
-        <FrequentlyAskedQuestion title="Lorem ipsum dolor sit amet">
-          Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
-          sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
-          facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
-          comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
-        </FrequentlyAskedQuestion>
+        <FrequentlyAskedQuestion question={question} answer={answer} />
       </ThemeProvider>,
     );
 
