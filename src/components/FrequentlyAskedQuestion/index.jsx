@@ -13,7 +13,14 @@ type Props = {
   openInitially?: boolean,
 };
 
-export default class FrequentlyAskedQuestion extends React.Component<Props> {
+type State = {
+  open: boolean,
+};
+
+export default class FrequentlyAskedQuestion extends React.Component<
+  Props,
+  State,
+> {
   constructor(props) {
     super();
 
