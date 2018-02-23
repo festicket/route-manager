@@ -8,10 +8,10 @@ import theme from '../../../utils/theme';
 import { renderWithTheme } from '../../../utils/testing';
 
 const question = 'Lorem ipsum dolor sit amet';
-const answer = `Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
+const answer = `<p>Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
 sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
 facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
-comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.`;
+comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.</p>`;
 
 describe('<FrequentlyAskedQuestion />', () => {
   test('with initial props', () => {

@@ -143,10 +143,10 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
       <span
         dangerouslySetInnerHTML={
           Object {
-            "__html": "Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
+            "__html": "<p>Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
 sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
 facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
-comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.",
+comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.</p>",
           }
         }
       />
@@ -299,10 +299,10 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
       <span
         dangerouslySetInnerHTML={
           Object {
-            "__html": "Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
+            "__html": "<p>Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
 sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
 facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
-comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.",
+comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.</p>",
           }
         }
       />
