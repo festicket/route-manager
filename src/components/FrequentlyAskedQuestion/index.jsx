@@ -10,12 +10,17 @@ import { Wrapper, TitleRow, BodyWrapper } from './styles';
 type Props = {
   title: string,
   children: React.Node,
+  openInitially?: boolean,
 };
 
 export default class FrequentlyAskedQuestion extends React.Component<Props> {
-  state = {
-    open: false,
-  };
+  constructor(props) {
+    super();
+
+    this.state = {
+      open: props.openInitially || false,
+    };
+  }
 
   toggleOpen = () => {
     this.setState(state => ({ open: !state.open }));

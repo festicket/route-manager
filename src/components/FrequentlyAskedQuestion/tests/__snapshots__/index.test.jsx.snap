@@ -141,3 +141,146 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
   </div>
 </div>
 `;
+
+exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
+.c4 {
+  border: none;
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  background-color: rgba(36,37,41,0.05);
+}
+
+.c3:hover {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
+}
+
+.c5 {
+  height: 18px;
+  fill: #A2A4AD;
+}
+
+.c2 {
+  font-family: brandon-text,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  color: #242529;
+  margin-bottom: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.c7 {
+  font-family: brandon-text,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  color: #242529;
+  margin-bottom: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.12;
+}
+
+.c0 {
+  background: #F5F5F5;
+  padding: 30px 25px;
+  margin-bottom: 20px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.c6 {
+  display: block;
+  border-left: 4px solid #8C64CB;
+  padding-left: 20px;
+}
+
+@media (min-width:568px) {
+  .c2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    open={true}
+  >
+    <h3
+      className="c2"
+      id={undefined}
+    >
+      Lorem ipsum dolor sit amet
+    </h3>
+    <button
+      aria-disabled={undefined}
+      className="c3 c4"
+      disabled={undefined}
+      onClick={[Function]}
+    >
+      <svg
+        className="c5"
+        color="grey"
+        viewBox="0 0 18 18"
+      >
+        <path
+          d="M3.3 13.2L9 7.6l5.7 5.6 1.4-1.4-7.1-7-7.1 7z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    className="c6"
+    open={true}
+  >
+    <p
+      className="c7"
+      id={undefined}
+    >
+      Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
+    </p>
+  </div>
+</div>
+`;

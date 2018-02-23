@@ -20,6 +20,18 @@ describe('<FrequentlyAskedQuestion />', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  test('with openInitially', () => {
+    const tree = renderWithTheme(
+      <FrequentlyAskedQuestion title="Lorem ipsum dolor sit amet" openInitially>
+        Lorem ipsum dolor sit amet, ius tempor labore te, eu postea scriptorem
+        sit. Diceret saperet per ad, stet utroque quaerendum ius eu, eam zril
+        facilisi eu. Offendit corrumpit at eum, qui verterem scriptorem
+        comprehensam in. Ad eros erant dolores sit, ei cum liber fabellas.
+      </FrequentlyAskedQuestion>,
+    );
+    expect(tree).toMatchSnapshot();
+  });
+
   test('should open on button click', () => {
     const tree = mount(
       <ThemeProvider theme={theme}>
