@@ -21,6 +21,9 @@ export default {
       primary: '#8C64CB',
       primaryBackground: '#F9F7FC', // primary with transrency 5% on white background
     },
+    facebook: {
+      primary: '#4B69AC',
+    },
     shadowColor: 'rgba(36, 37, 41, 0.15)',
   },
   animationDuration: {

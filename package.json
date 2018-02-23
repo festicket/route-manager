@@ -12,6 +12,7 @@
     "svgr": "./scripts/svgr.sh",
     "lint": "npm run lint:js && npm run flow",
     "flow": "flow",
+    "glow": "glow",
     "flow:libdefs": "flow gen-flow-files src/ --out-dir dist/",
     "flow:typed": "npx flow-typed install --overwrite --ignoreDeps peer",
     "test": "jest",
@@ -36,6 +37,7 @@
     ]
   },
   "dependencies": {
+    "polished": "^1.9.2",
     "react-css-transition": "^0.7.4",
     "styled-tools": "^0.4.0"
   },
@@ -74,13 +76,13 @@
     "flow-bin": "^0.63.1",
     "flow-typed": "^2.3.0",
     "folder-module": "^2.0.4",
+    "glow": "^1.2.2",
     "husky": "^0.14.3",
     "jest": "^22.1.4",
     "jest-enzyme": "^4.0.2",
     "jest-styled-components": "^4.11.0-0",
     "lint-staged": "^6.0.1",
     "plop": "^1.9.1",
-    "polished": "^1.9.2",
     "prettier": "^1.10.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",

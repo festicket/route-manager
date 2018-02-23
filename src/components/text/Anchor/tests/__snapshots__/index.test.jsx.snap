@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Anchor /> should render correctly 1`] = `
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<Anchor
+  href="http://www.google.com"
+>
+  <StyledAnchorComponent
+    element="a"
+    href="http://www.google.com"
+    target="_blank"
+    variant="standard"
+  >
+    <AnchorComponent
+      className="c0"
+      element="a"
+      href="http://www.google.com"
+      target="_blank"
+      variant="standard"
+    >
+      <a
+        className="c0"
+        element="a"
+        href="http://www.google.com"
+        target="_blank"
+        variant="standard"
+      >
+        Google
+      </a>
+    </AnchorComponent>
+  </StyledAnchorComponent>
+</Anchor>
+`;
+
+exports[`<Anchor /> should render correctly with custom element 1`] = `
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<Anchor
+  element={[Function]}
+  to="http://www.google.com"
+>
+  <StyledAnchorComponent
+    element={[Function]}
+    target="_blank"
+    to="http://www.google.com"
+    variant="standard"
+  >
+    <AnchorComponent
+      className="c0"
+      element={[Function]}
+      target="_blank"
+      to="http://www.google.com"
+      variant="standard"
+    >
+      <El
+        className="c0"
+        element={[Function]}
+        target="_blank"
+        to="http://www.google.com"
+        variant="standard"
+      >
+        <span
+          title="http://www.google.com"
+        >
+          Google
+        </span>
+      </El>
+    </AnchorComponent>
+  </StyledAnchorComponent>
+</Anchor>
+`;
+
+exports[`<Anchor /> should render correctly with email prop 1`] = `
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<Anchor
+  email="email@test.com"
+>
+  <StyledAnchorComponent
+    element="a"
+    email="email@test.com"
+    target="_blank"
+    variant="standard"
+  >
+    <AnchorComponent
+      className="c0"
+      element="a"
+      email="email@test.com"
+      target="_blank"
+      variant="standard"
+    >
+      <a
+        className="c0"
+        href="mailto:email@test.com"
+      >
+        Email me
+      </a>
+    </AnchorComponent>
+  </StyledAnchorComponent>
+</Anchor>
+`;
+
+exports[`<Anchor /> should render correctly with tel prop 1`] = `
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<Anchor
+  tel="08000337132"
+>
+  <StyledAnchorComponent
+    element="a"
+    target="_blank"
+    tel="08000337132"
+    variant="standard"
+  >
+    <AnchorComponent
+      className="c0"
+      element="a"
+      target="_blank"
+      tel="08000337132"
+      variant="standard"
+    >
+      <a
+        className="c0"
+        href="tel:08000337132"
+      >
+        Phone us
+      </a>
+    </AnchorComponent>
+  </StyledAnchorComponent>
+</Anchor>
+`;

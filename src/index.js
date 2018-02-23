@@ -6,7 +6,26 @@ export { default as spacing } from './utils/spacing';
 export { default as theme } from './utils/theme';
 
 // Components
+export { default as Separator } from './components/Separator';
+export { default as UserAvatar } from './components/UserAvatar';
+
+// Layout
 export { Grid, GridElement } from './components/layout/Grid';
+
+// Buttons
+export {
+  default as ButtonPrimitive,
+} from './components/buttons/ButtonPrimitive';
+export { default as PrimaryButton } from './components/buttons/PrimaryButton';
+export {
+  default as SecondaryButton,
+} from './components/buttons/SecondaryButton';
+export {
+  default as RoundedChevronButton,
+} from './components/buttons/RoundedChevronButton';
+
+// Text
+export { default as Anchor } from './components/text/Anchor';
 export { default as TextPrimitive } from './components/text/TextPrimitive';
 export { default as PrimaryHeading } from './components/text/PrimaryHeading';
 export {
