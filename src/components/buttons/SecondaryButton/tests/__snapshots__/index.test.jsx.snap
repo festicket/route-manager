@@ -8,17 +8,11 @@ exports[`<SecondaryButton /> Snapshot Bordered 1`] = `
   color: #8C64CB;
 }
 
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-text-align: center;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 0;
-  font-size: 16px;
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -27,9 +21,21 @@ exports[`<SecondaryButton /> Snapshot Bordered 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-size: 16px;
   min-width: 200px;
   min-height: 50px;
   padding: 15px 30px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-align: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0;
   color: #A2A4AD;
   background-color: rgba(36,37,41,0.05);
 }
@@ -47,7 +53,12 @@ exports[`<SecondaryButton /> Snapshot Bordered 1`] = `
   to="#"
   variant="standard"
   weight="bold"
-/>
+>
+  <div
+    className="c2"
+    size="regular"
+  />
+</a>
 `;
 
 exports[`<SecondaryButton /> Snapshot Bordered Small 1`] = `
@@ -58,17 +69,11 @@ exports[`<SecondaryButton /> Snapshot Bordered Small 1`] = `
   color: #8C64CB;
 }
 
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-text-align: center;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 0;
-  font-size: 16px;
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -77,9 +82,21 @@ exports[`<SecondaryButton /> Snapshot Bordered Small 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-size: 16px;
   min-width: 75px;
   min-height: 40px;
   padding: 10px 15px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-align: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0;
   color: #A2A4AD;
   background-color: rgba(36,37,41,0.05);
 }
@@ -97,7 +114,12 @@ exports[`<SecondaryButton /> Snapshot Bordered Small 1`] = `
   to="#"
   variant="standard"
   weight="bold"
-/>
+>
+  <div
+    className="c2"
+    size="small"
+  />
+</a>
 `;
 
 exports[`<SecondaryButton /> Snapshot Default 1`] = `
@@ -108,17 +130,11 @@ exports[`<SecondaryButton /> Snapshot Default 1`] = `
   color: #8C64CB;
 }
 
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-text-align: center;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 0;
-  font-size: 16px;
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -127,9 +143,21 @@ exports[`<SecondaryButton /> Snapshot Default 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-size: 16px;
   min-width: 200px;
   min-height: 50px;
   padding: 15px 30px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-align: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0;
   color: #A2A4AD;
   background-color: rgba(36,37,41,0.05);
 }
@@ -147,26 +175,20 @@ exports[`<SecondaryButton /> Snapshot Default 1`] = `
   to="#"
   variant="standard"
   weight="bold"
-/>
+>
+  <div
+    className="c2"
+    size="regular"
+  />
+</a>
 `;
 
 exports[`<SecondaryButton /> Snapshot Default Button Element 1`] = `
-.c1 {
-  border: none;
-  outline: none;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-text-align: center;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 0;
-  font-size: 16px;
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -175,9 +197,26 @@ exports[`<SecondaryButton /> Snapshot Default Button Element 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-size: 16px;
   min-width: 200px;
   min-height: 50px;
   padding: 15px 30px;
+}
+
+.c1 {
+  border: none;
+  outline: none;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-align: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0;
   color: #A2A4AD;
   background-color: rgba(36,37,41,0.05);
 }
@@ -193,7 +232,12 @@ exports[`<SecondaryButton /> Snapshot Default Button Element 1`] = `
   disabled={false}
   size="regular"
   to="#"
-/>
+>
+  <div
+    className="c2"
+    size="regular"
+  />
+</button>
 `;
 
 exports[`<SecondaryButton /> Snapshot Default Small 1`] = `
@@ -204,17 +248,11 @@ exports[`<SecondaryButton /> Snapshot Default Small 1`] = `
   color: #8C64CB;
 }
 
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-text-align: center;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 0;
-  font-size: 16px;
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -223,9 +261,21 @@ exports[`<SecondaryButton /> Snapshot Default Small 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-size: 16px;
   min-width: 75px;
   min-height: 40px;
   padding: 10px 15px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-align: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0;
   color: #A2A4AD;
   background-color: rgba(36,37,41,0.05);
 }
@@ -243,5 +293,10 @@ exports[`<SecondaryButton /> Snapshot Default Small 1`] = `
   to="#"
   variant="standard"
   weight="bold"
-/>
+>
+  <div
+    className="c2"
+    size="small"
+  />
+</a>
 `;
