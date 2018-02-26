@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { Button } from './styles';
+import { FlexWrapper, Button } from './styles';
 
 import ChevronRight from '../../svgs/generated/functional/ChevronRight';
 import ChevronDown from '../../svgs/generated/functional/ChevronDown';
@@ -28,7 +28,11 @@ function RoundedChevronButtonComponent({ direction, ...props }) {
       icon = null;
   }
 
-  return <Button {...props}>{icon}</Button>;
+  return (
+    <Button {...props}>
+      <FlexWrapper>{icon}</FlexWrapper>
+    </Button>
+  );
 }
 
 type Props = {

@@ -1,7 +1,8 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 import { StyledSecondaryButton } from './styles';
+import { FlexWrapper } from '../styles';
 
 type Props = {
   to?: string,
@@ -12,6 +13,7 @@ type Props = {
   fontSize?: 'regular' | 'small' | 'tiny',
   isDisabled?: boolean,
   render?: () => mixed,
+  children?: React.Node,
 };
 
 export default function SecondaryButton({
@@ -23,8 +25,11 @@ export default function SecondaryButton({
   fontSize = 'regular',
   isDisabled = false,
   render = () => null,
+  children,
   ...props
 }: Props) {
+  const resultChildren = render();
+
   return (
     <StyledSecondaryButton
       to={to}
@@ -36,6 +41,8 @@ export default function SecondaryButton({
       isDisabled={isDisabled}
       render={render}
       {...props}
-    />
+    >
+      <FlexWrapper size={size}>{resultChildren || children}</FlexWrapper>
+    </StyledSecondaryButton>
   );
 }

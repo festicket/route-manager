@@ -1,11 +1,11 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { darken, lighten } from 'polished';
 import { prop, ifProp, switchProp, withProp } from 'styled-tools';
 import Primitive from '../ButtonPrimitive';
-import buttonMixin from '../styles';
+import { buttonMixin, FlexWrapper } from '../styles';
 
 type Props = {
   to?: string,
@@ -16,6 +16,7 @@ type Props = {
   fontSize?: 'regular' | 'small' | 'tiny',
   isDisabled?: boolean,
   render?: () => mixed,
+  children?: React.Node,
 };
 
 const StyledPrimaryButton = styled(Primitive)`
@@ -64,8 +65,11 @@ export default function PrimaryButton({
   fontSize = 'regular',
   isDisabled = false,
   render = () => null,
+  children,
   ...props
 }: Props) {
+  const resultChildren = render();
+
   return (
     <StyledPrimaryButton
       to={to}
@@ -77,6 +81,8 @@ export default function PrimaryButton({
       isDisabled={isDisabled}
       render={render}
       {...props}
-    />
+    >
+      <FlexWrapper size={size}>{resultChildren || children}</FlexWrapper>
+    </StyledPrimaryButton>
   );
 }

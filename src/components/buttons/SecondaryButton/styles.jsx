@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { prop, ifProp } from 'styled-tools';
 import { rgba, darken } from 'polished';
 import Primitive from '../ButtonPrimitive';
-import buttonMixin from '../styles';
+import { buttonMixin } from '../styles';
 
 function disabledStyleMixin() {
   return css`
@@ -15,6 +15,10 @@ function disabledStyleMixin() {
   `;
 }
 
+/*
+The secondary button uses a 0.05 rgba background so that it looks good
+against a grey background, which can be seen in the Storybook.
+*/
 export const StyledSecondaryButton = styled(Primitive)`
   ${buttonMixin};
   color: ${prop('theme.colors.greyscale.dark')};

@@ -14,10 +14,8 @@ const WhiteBackground = styled.div`
 `;
 
 const GreyBackground = styled.div`
-  background-color: lightgrey;
+  background-color: ${prop('theme.colors.greyscale.grey')};
   padding: 1em;
-  text-align: center;
-  font-family: monospace;
 `;
 
 export const Background = {

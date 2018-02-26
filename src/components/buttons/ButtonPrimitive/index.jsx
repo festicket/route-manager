@@ -13,6 +13,7 @@ type Props = {
   fontSize?: string,
   isDisabled?: boolean,
   render?: () => mixed,
+  size?: 'regular' | 'small' | 'inline',
 };
 
 function Button(props) {
@@ -20,7 +21,7 @@ function Button(props) {
   We have to strip out most props here so they don't get passed
   as attributes on the <button /> HTML element, which is invalid
   */
-  const { render, isDisabled } = props;
+  const { isDisabled } = props;
   const newProps = blacklistProps(props, [
     'variant',
     'element',
@@ -30,11 +31,9 @@ function Button(props) {
     'render',
   ]);
 
-  const resultChildren = render();
-
   return (
     <button {...newProps} aria-disabled={isDisabled} disabled={isDisabled}>
-      {resultChildren || props.children}
+      {props.children}
     </button>
   );
 }
@@ -47,13 +46,15 @@ const ResetButton = styled(Button)`
 export default function Primitive({
   fontSize = 'regular',
   render = () => null,
+  size = 'regular',
+  children,
   ...props
 }: Props) {
   let newProps;
 
   if (props.element === 'button') {
-    newProps = { fontSize, render, ...props };
-    return <ResetButton {...newProps} />;
+    newProps = { size, fontSize, render, ...props };
+    return <ResetButton {...newProps}>{children}</ResetButton>;
   }
 
   newProps = blacklistProps(props, [
@@ -63,5 +64,9 @@ export default function Primitive({
     'isDisabled',
   ]);
 
-  return <Anchor {...newProps} weight="bold" />;
+  return (
+    <Anchor {...newProps} weight="bold">
+      {children}
+    </Anchor>
+  );
 }

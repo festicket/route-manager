@@ -9,7 +9,7 @@ type Props = {
   anchorRef?: () => mixed,
   className?: string,
   children?: React.Node,
-  element?: any,
+  element: any,
   email?: string,
   external?: boolean,
   hash?: string,
@@ -26,9 +26,7 @@ type Props = {
 const TAB_KEY_CODE = 9;
 
 function AnchorComponent(props: Props) {
-  /*
-  `element` is renamed here in order to invoke it as a JSX component.
-  */
+  // `element` is renamed here in order to invoke it as a JSX component.
   const {
     anchorRef,
     className,
@@ -95,6 +93,11 @@ function AnchorComponent(props: Props) {
   return <ComposedElement {...props}>{children}</ComposedElement>;
 }
 
+/*
+TODO: The standard variant is the pre-rebranding style, and the hyperlink variant
+is the post-rebranding style. Once rebranding has been fully rolled out, the
+hyperlink styles should replace standard.
+*/
 const Anchor = styled(AnchorComponent)`
   cursor: pointer;
   text-decoration: none;
