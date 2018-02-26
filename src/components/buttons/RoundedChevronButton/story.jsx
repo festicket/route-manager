@@ -3,47 +3,64 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import RoundedChevronButton from './';
+import { Background } from '../../../utils/storybook-helpers';
 
 const handleClick = () => console.log('Click!');
 
 storiesOf('Components / Buttons / RoundedChevronButton', module)
   .add('Right - a element', () => (
-    <RoundedChevronButton onClick={handleClick} direction="right" />
+    <Background.White>
+      <RoundedChevronButton onClick={handleClick} direction="right" />
+    </Background.White>
   ))
   .add('Down - a element', () => (
-    <RoundedChevronButton onClick={handleClick} direction="down" />
+    <Background.White>
+      <RoundedChevronButton onClick={handleClick} direction="down" />
+    </Background.White>
   ))
   .add('Left - a element', () => (
-    <RoundedChevronButton onClick={handleClick} direction="left" />
+    <Background.White>
+      <RoundedChevronButton onClick={handleClick} direction="left" />
+    </Background.White>
   ))
   .add('Up - a element', () => (
-    <RoundedChevronButton onClick={handleClick} direction="up" />
+    <Background.White>
+      <RoundedChevronButton onClick={handleClick} direction="up" />
+    </Background.White>
   ))
   .add('Right - button element', () => (
-    <RoundedChevronButton
-      element="button"
-      onClick={handleClick}
-      direction="right"
-    />
+    <Background.White>
+      <RoundedChevronButton
+        element="button"
+        onClick={handleClick}
+        direction="right"
+      />
+    </Background.White>
   ))
   .add('Down - button element', () => (
-    <RoundedChevronButton
-      element="button"
-      onClick={handleClick}
-      direction="down"
-    />
+    <Background.White>
+      <RoundedChevronButton
+        element="button"
+        onClick={handleClick}
+        direction="down"
+      />
+    </Background.White>
   ))
   .add('Left - button element', () => (
-    <RoundedChevronButton
-      element="button"
-      onClick={handleClick}
-      direction="left"
-    />
+    <Background.White>
+      <RoundedChevronButton
+        element="button"
+        onClick={handleClick}
+        direction="left"
+      />
+    </Background.White>
   ))
   .add('Up - button element', () => (
-    <RoundedChevronButton
-      element="button"
-      onClick={handleClick}
-      direction="up"
-    />
+    <Background.White>
+      <RoundedChevronButton
+        element="button"
+        onClick={handleClick}
+        direction="up"
+      />
+    </Background.White>
   ));
