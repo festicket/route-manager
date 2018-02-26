@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Wrapper /> with alternative size 1`] = `
+.c0 {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 650px;
+  }
+}
+
+@media (min-width:960px) {
+  .c0 {
+    width: 800px;
+  }
+}
+
+<Wrapper
+  size="alternative"
+>
+  <Container
+    size="alternative"
+  >
+    <div
+      className="c0"
+      size="alternative"
+    >
+      <span>
+        Content
+      </span>
+    </div>
+  </Container>
+</Wrapper>
+`;
+
+exports[`<Wrapper /> with full size 1`] = `
+<Wrapper
+  size="full"
+>
+  <Container
+    size="full"
+  >
+    <div
+      className=""
+      size="full"
+    >
+      <span>
+        Content
+      </span>
+    </div>
+  </Container>
+</Wrapper>
+`;
+
+exports[`<Wrapper /> with initial props 1`] = `
+.c0 {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width:960px) {
+  .c0 {
+    width: 1220px;
+  }
+}
+
+<Wrapper
+  size="normal"
+>
+  <Container
+    size="normal"
+  >
+    <div
+      className="c0"
+      size="normal"
+    />
+  </Container>
+</Wrapper>
+`;
+
+exports[`<Wrapper /> with normal size 1`] = `
+.c0 {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width:568px) {
+  .c0 {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width:960px) {
+  .c0 {
+    width: 1220px;
+  }
+}
+
+<Wrapper
+  size="normal"
+>
+  <Container
+    size="normal"
+  >
+    <div
+      className="c0"
+      size="normal"
+    >
+      <span>
+        Content
+      </span>
+    </div>
+  </Container>
+</Wrapper>
+`;
