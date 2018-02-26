@@ -23,11 +23,19 @@ const FullWidthBackground = styled.div`
   width: 100vw;
 `;
 
+const MonospaceBackground = styled.div`
+  background-color: lightgrey;
+  padding: 1em;
+  text-align: center;
+  font-family: monospace;
+`;
+
 export const Background = {
   White: WhiteBackground,
   Black: BlackBackground,
   Grey: GreyBackground,
   FullWidth: FullWidthBackground,
+  Monospace: MonospaceBackground,
 };
 
 export const Box = styled.div`

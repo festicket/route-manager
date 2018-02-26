@@ -22,7 +22,7 @@ type StoryGenerator = SFC => React$Node;
 // Set up for storybook
 const stories = storiesOf('SVGs', module);
 const CenterDecorator = storyFn => (
-  <Background.Grey>{storyFn()}</Background.Grey>
+  <Background.Monospace>{storyFn()}</Background.Monospace>
 );
 stories.addDecorator(CenterDecorator);
 
