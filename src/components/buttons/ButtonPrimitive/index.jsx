@@ -16,6 +16,12 @@ type Props = {
   render?: () => mixed,
 };
 
+/*
+Due to a Safari 10.1 bug, we must add a wrapping flex div inside the button,
+as buttons cannot themselves be flex containers.
+
+https://stackoverflow.com/questions/35464067/flexbox-not-working-on-button-or-fieldset-elements
+*/
 const FlexWrapper = styled.div`
   display: flex;
   align-items: center;
