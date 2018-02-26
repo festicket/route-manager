@@ -25,4 +25,4 @@ docker run -it --rm \
 
 
 # Release the krakken
-npm run semantic-release
+npx semantic-release
