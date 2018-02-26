@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SecondaryButton /> Snapshot Bordered 1`] = `
+.c1 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #8C64CB;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 15px 30px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-align: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0;
+  color: #A2A4AD;
+  background-color: rgba(36,37,41,0.05);
+}
+
+.c0:hover {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
+}
+
+<a
+  className="c0 c1"
+  element="a"
+  target="_blank"
+  to="#"
+  variant="standard"
+  weight="bold"
+>
+  <div
+    className="c2"
+    size="regular"
+  />
+</a>
+`;
+
+exports[`<SecondaryButton /> Snapshot Bordered Small 1`] = `
+.c1 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #8C64CB;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  min-width: 75px;
+  min-height: 40px;
+  padding: 10px 15px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-align: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0;
+  color: #A2A4AD;
+  background-color: rgba(36,37,41,0.05);
+}
+
+.c0:hover {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
+}
+
+<a
+  className="c0 c1"
+  element="a"
+  target="_blank"
+  to="#"
+  variant="standard"
+  weight="bold"
+>
+  <div
+    className="c2"
+    size="small"
+  />
+</a>
+`;
+
+exports[`<SecondaryButton /> Snapshot Default 1`] = `
+.c1 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #8C64CB;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 15px 30px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-align: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0;
+  color: #A2A4AD;
+  background-color: rgba(36,37,41,0.05);
+}
+
+.c0:hover {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
+}
+
+<a
+  className="c0 c1"
+  element="a"
+  target="_blank"
+  to="#"
+  variant="standard"
+  weight="bold"
+>
+  <div
+    className="c2"
+    size="regular"
+  />
+</a>
+`;
+
+exports[`<SecondaryButton /> Snapshot Default Button Element 1`] = `
+.c1 {
+  border: none;
+  outline: none;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 15px 30px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-align: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0;
+  color: #A2A4AD;
+  background-color: rgba(36,37,41,0.05);
+}
+
+.c0:hover {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
+}
+
+<button
+  aria-disabled={false}
+  className="c0 c1"
+  disabled={false}
+  size="regular"
+  to="#"
+>
+  <div
+    className="c2"
+    size="regular"
+  />
+</button>
+`;
+
+exports[`<SecondaryButton /> Snapshot Default Small 1`] = `
+.c1 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #8C64CB;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  min-width: 75px;
+  min-height: 40px;
+  padding: 10px 15px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-align: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0;
+  color: #A2A4AD;
+  background-color: rgba(36,37,41,0.05);
+}
+
+.c0:hover {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
+}
+
+<a
+  className="c0 c1"
+  element="a"
+  target="_blank"
+  to="#"
+  variant="standard"
+  weight="bold"
+>
+  <div
+    className="c2"
+    size="small"
+  />
+</a>
+`;

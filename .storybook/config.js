@@ -1,8 +1,10 @@
+// @flow
+
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import theme from '../src/utils/theme';
 import { configure, setAddon, getStorybook, addDecorator } from '@storybook/react';
 import createPercyAddon from '@percy-io/percy-storybook';
+import theme from '../src/utils/theme';
 
 // Init percy io
 const { percyAddon, serializeStories } = createPercyAddon();

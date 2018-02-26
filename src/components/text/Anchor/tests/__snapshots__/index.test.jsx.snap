@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Anchor /> should render correctly 1`] = `
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #8C64CB;
+}
+
+<a
+  className="c0"
+  element="a"
+  href="http://www.google.com"
+  target="_blank"
+  variant="standard"
+>
+  Google
+</a>
+`;
+
+exports[`<Anchor /> should render correctly with custom element 1`] = `
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #8C64CB;
+}
+
+<span
+  className="c0"
+  title="http://www.google.com"
+>
+  Google
+</span>
+`;
+
+exports[`<Anchor /> should render correctly with email prop 1`] = `
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #8C64CB;
+}
+
+<a
+  className="c0"
+  href="mailto:email@test.com"
+  onClick={undefined}
+>
+  Email me
+</a>
+`;
+
+exports[`<Anchor /> should render correctly with hyperlink variant 1`] = `
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+  font-weight: 400;
+  color: #242529;
+}
+
+<a
+  className="c0"
+  element="a"
+  href="http://www.google.com"
+  target="_blank"
+  variant="hyperlink"
+>
+  Google
+</a>
+`;
+
+exports[`<Anchor /> should render correctly with tel prop 1`] = `
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #8C64CB;
+}
+
+<a
+  className="c0"
+  href="tel:08000337132"
+  onClick={undefined}
+>
+  Phone us
+</a>
+`;
