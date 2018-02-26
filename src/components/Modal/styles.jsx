@@ -96,4 +96,5 @@ export const CloseButton = styled.button`
   background-color: ${prop('theme.colors.white')};
   box-shadow: 0 2px 30px 0 ${prop('theme.colors.shadowColor')};
   z-index: 1;
+  border: 0;
 `;
