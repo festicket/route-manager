@@ -6,11 +6,25 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
   outline: none;
 }
 
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
 .c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -21,8 +35,6 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
   justify-content: center;
   border-radius: 100%;
   padding: 0;
-  width: 28px;
-  height: 28px;
   cursor: pointer;
   background-color: rgba(36,37,41,0.05);
 }
@@ -32,7 +44,7 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
   color: #9497a1;
 }
 
-.c5 {
+.c6 {
   height: 18px;
   fill: #A2A4AD;
 }
@@ -50,7 +62,7 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
   line-height: 20px;
 }
 
-.c7 {
+.c8 {
   font-family: brandon-text,Helvetica Neue,Helvetica,Arial,sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -85,13 +97,13 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
   justify-content: space-between;
 }
 
-.c6 {
+.c7 {
   display: none;
   border-left: 4px solid #8C64CB;
   padding-left: 20px;
 }
 
-.c6 p:not(:last-of-type) {
+.c7 p:not(:last-of-type) {
   margin-bottom: 20px;
 }
 
@@ -120,24 +132,29 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
       className="c3 c4"
       disabled={undefined}
       onClick={[Function]}
+      size="regular"
     >
-      <svg
+      <div
         className="c5"
-        color="grey"
-        viewBox="0 0 18 18"
       >
-        <path
-          d="M14.7 4.8L9 10.4 3.3 4.8 1.9 6.2l7.1 7 7.1-7z"
-        />
-      </svg>
+        <svg
+          className="c6"
+          color="grey"
+          viewBox="0 0 18 18"
+        >
+          <path
+            d="M14.7 4.8L9 10.4 3.3 4.8 1.9 6.2l7.1 7 7.1-7z"
+          />
+        </svg>
+      </div>
     </button>
   </div>
   <div
-    className="c6"
+    className="c7"
     open={false}
   >
     <span
-      className="c7"
+      className="c8"
       id={undefined}
     >
       <span
@@ -161,11 +178,25 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
   outline: none;
 }
 
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
 .c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -176,8 +207,6 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
   justify-content: center;
   border-radius: 100%;
   padding: 0;
-  width: 28px;
-  height: 28px;
   cursor: pointer;
   background-color: rgba(36,37,41,0.05);
 }
@@ -187,7 +216,7 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
   color: #9497a1;
 }
 
-.c5 {
+.c6 {
   height: 18px;
   fill: #A2A4AD;
 }
@@ -205,7 +234,7 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
   line-height: 20px;
 }
 
-.c7 {
+.c8 {
   font-family: brandon-text,Helvetica Neue,Helvetica,Arial,sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -241,13 +270,13 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
   margin-bottom: 20px;
 }
 
-.c6 {
+.c7 {
   display: block;
   border-left: 4px solid #8C64CB;
   padding-left: 20px;
 }
 
-.c6 p:not(:last-of-type) {
+.c7 p:not(:last-of-type) {
   margin-bottom: 20px;
 }
 
@@ -276,24 +305,29 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
       className="c3 c4"
       disabled={undefined}
       onClick={[Function]}
+      size="regular"
     >
-      <svg
+      <div
         className="c5"
-        color="grey"
-        viewBox="0 0 18 18"
       >
-        <path
-          d="M3.3 13.2L9 7.6l5.7 5.6 1.4-1.4-7.1-7-7.1 7z"
-        />
-      </svg>
+        <svg
+          className="c6"
+          color="grey"
+          viewBox="0 0 18 18"
+        >
+          <path
+            d="M3.3 13.2L9 7.6l5.7 5.6 1.4-1.4-7.1-7-7.1 7z"
+          />
+        </svg>
+      </div>
     </button>
   </div>
   <div
-    className="c6"
+    className="c7"
     open={true}
   >
     <span
-      className="c7"
+      className="c8"
       id={undefined}
     >
       <span

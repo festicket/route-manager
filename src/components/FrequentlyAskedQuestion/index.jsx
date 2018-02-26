@@ -11,7 +11,7 @@ import { Wrapper, TitleRow, BodyWrapper } from './styles';
 type Props = {
   question: string,
   answer: string,
-  openInitially?: boolean,
+  openInitially: boolean,
 };
 
 type State = {
@@ -22,11 +22,15 @@ export default class FrequentlyAskedQuestion extends React.Component<
   Props,
   State,
 > {
+  static defaultProps = {
+    openInitially: false,
+  };
+
   constructor(props: Props) {
     super();
 
     this.state = {
-      open: props.openInitially || false,
+      open: props.openInitially,
     };
   }
 
