@@ -3,55 +3,82 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import PrimaryButton from './';
+import { Background } from '../../../utils/storybook-helpers';
 
 storiesOf('Components / Buttons / PrimaryButton', module)
-  .add('Default', () => <PrimaryButton>Button</PrimaryButton>)
+  .add('Default', () => (
+    <Background.White>
+      <PrimaryButton>Button</PrimaryButton>
+    </Background.White>
+  ))
   .add('Default Small', () => (
-    <PrimaryButton size="small">Button</PrimaryButton>
+    <Background.White>
+      <PrimaryButton size="small">Button</PrimaryButton>
+    </Background.White>
   ))
   .add('Default inline', () => (
-    <PrimaryButton size="inline">Button</PrimaryButton>
+    <Background.White>
+      <PrimaryButton size="inline">Button</PrimaryButton>
+    </Background.White>
   ))
   .add('Bordered', () => (
-    <PrimaryButton variant="bordered">Button</PrimaryButton>
+    <Background.White>
+      <PrimaryButton variant="bordered">Button</PrimaryButton>
+    </Background.White>
   ))
   .add('Bordered Small', () => (
-    <PrimaryButton variant="bordered" size="small">
-      Button
-    </PrimaryButton>
+    <Background.White>
+      <PrimaryButton variant="bordered" size="small">
+        Button
+      </PrimaryButton>
+    </Background.White>
   ))
   .add('Bordered inline', () => (
-    <PrimaryButton variant="bordered" size="inline">
-      Button
-    </PrimaryButton>
+    <Background.White>
+      <PrimaryButton variant="bordered" size="inline">
+        Button
+      </PrimaryButton>
+    </Background.White>
   ))
   .add('Transparent', () => (
-    <PrimaryButton variant="transparent">Button</PrimaryButton>
+    <Background.White>
+      <PrimaryButton variant="transparent">Button</PrimaryButton>
+    </Background.White>
   ))
   .add('Transparent Small', () => (
-    <PrimaryButton variant="transparent" size="small">
-      Button
-    </PrimaryButton>
+    <Background.White>
+      <PrimaryButton variant="transparent" size="small">
+        Button
+      </PrimaryButton>
+    </Background.White>
   ))
   .add('Transparent inline', () => (
-    <PrimaryButton variant="transparent" size="inline">
-      Button
-    </PrimaryButton>
+    <Background.White>
+      <PrimaryButton variant="transparent" size="inline">
+        Button
+      </PrimaryButton>
+    </Background.White>
   ))
   .add('Button HTML Element', () => (
-    <PrimaryButton element="button">Button</PrimaryButton>
+    <Background.White>
+      <PrimaryButton element="button">Button</PrimaryButton>
+    </Background.White>
   ))
   .add('Disabled variant', () => (
-    <PrimaryButton element="button" isDisabled>
-      Button
-    </PrimaryButton>
+    <Background.White>
+      <PrimaryButton element="button" isDisabled>
+        Button
+      </PrimaryButton>
+    </Background.White>
   ))
   .add('Using a render prop', () => (
-    <PrimaryButton
-      element="button"
-      render={() => [
-        <span key="cart">Add to cart</span>,
-        <span key="thing">Here is a thing</span>,
-      ]}
-    />
+    <Background.White>
+      <PrimaryButton
+        element="button"
+        render={() => [
+          <span key="cart">Add to cart</span>,
+          <span key="thing">Here is a thing</span>,
+        ]}
+      />
+    </Background.White>
   ));
