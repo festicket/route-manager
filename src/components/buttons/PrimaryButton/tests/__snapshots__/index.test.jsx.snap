@@ -50,7 +50,6 @@ exports[`<PrimaryButton /> Snapshot Bordered 1`] = `
 <a
   className="c0 c1"
   element="a"
-  size="regular"
   target="_blank"
   to="#"
   variant="standard"
@@ -113,7 +112,6 @@ exports[`<PrimaryButton /> Snapshot Bordered Small 1`] = `
 <a
   className="c0 c1"
   element="a"
-  size="small"
   target="_blank"
   to="#"
   variant="standard"
@@ -174,7 +172,6 @@ exports[`<PrimaryButton /> Snapshot Default 1`] = `
 <a
   className="c0 c1"
   element="a"
-  size="regular"
   target="_blank"
   to="#"
   variant="standard"
@@ -188,6 +185,11 @@ exports[`<PrimaryButton /> Snapshot Default 1`] = `
 `;
 
 exports[`<PrimaryButton /> Snapshot Default Button Element 1`] = `
+.c1 {
+  border: none;
+  outline: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -205,11 +207,6 @@ exports[`<PrimaryButton /> Snapshot Default Button Element 1`] = `
   min-width: 200px;
   min-height: 50px;
   padding: 15px 30px;
-}
-
-.c1 {
-  border: none;
-  outline: none;
 }
 
 .c0 {
@@ -292,7 +289,6 @@ exports[`<PrimaryButton /> Snapshot Default Small 1`] = `
 <a
   className="c0 c1"
   element="a"
-  size="small"
   target="_blank"
   to="#"
   variant="standard"
@@ -354,7 +350,6 @@ exports[`<PrimaryButton /> Snapshot isDisabled 1`] = `
 <a
   className="c0 c1"
   element="a"
-  size="regular"
   target="_blank"
   to="#"
   variant="standard"

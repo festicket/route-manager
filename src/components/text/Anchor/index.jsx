@@ -9,7 +9,7 @@ type Props = {
   anchorRef?: () => mixed,
   className?: string,
   children?: React.Node,
-  element?: any,
+  element: any,
   email?: string,
   external?: boolean,
   hash?: string,
@@ -94,7 +94,7 @@ function AnchorComponent(props: Props) {
 }
 
 /*
-TODO: The standard variant is the pre-rebranding style, and the hyperlink variant 
+TODO: The standard variant is the pre-rebranding style, and the hyperlink variant
 is the post-rebranding style. Once rebranding has been fully rolled out, the
 hyperlink styles should replace standard.
 */

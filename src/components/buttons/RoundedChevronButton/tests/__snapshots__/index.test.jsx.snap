@@ -21,22 +21,6 @@ exports[`<RoundedChevronButton /> with initial props 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-size: 16px;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   width: 28px;
   height: 28px;
 }
@@ -62,7 +46,7 @@ exports[`<RoundedChevronButton /> with initial props 1`] = `
   color: #9497a1;
 }
 
-.c4 {
+.c3 {
   height: 18px;
   fill: #A2A4AD;
 }
@@ -76,21 +60,16 @@ exports[`<RoundedChevronButton /> with initial props 1`] = `
 >
   <div
     className="c2"
-    size={undefined}
   >
-    <div
+    <svg
       className="c3"
+      color="grey"
+      viewBox="0 0 18 18"
     >
-      <svg
-        className="c4"
-        color="grey"
-        viewBox="0 0 18 18"
-      >
-        <path
-          d="M4.8 3.3L10.4 9l-5.6 5.7 1.4 1.4 7-7.1-7-7.1z"
-        />
-      </svg>
-    </div>
+      <path
+        d="M4.8 3.3L10.4 9l-5.6 5.7 1.4 1.4 7-7.1-7-7.1z"
+      />
+    </svg>
   </div>
 </a>
 `;

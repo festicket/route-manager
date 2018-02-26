@@ -27,4 +27,15 @@ storiesOf('Components / Buttons / SecondaryButton', module)
         Disabled Button
       </SecondaryButton>
     </Background.White>
+  ))
+  .add('Using a render prop', () => (
+    <Background.White>
+      <SecondaryButton
+        element="button"
+        render={() => [
+          <span key="cart">Add to cart</span>,
+          <span key="thing">Here is a thing</span>,
+        ]}
+      />
+    </Background.White>
   ));

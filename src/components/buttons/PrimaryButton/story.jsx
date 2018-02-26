@@ -64,6 +64,13 @@ storiesOf('Components / Buttons / PrimaryButton', module)
       <PrimaryButton element="button">Button</PrimaryButton>
     </Background.White>
   ))
+  .add('Button HTML Element Small', () => (
+    <Background.White>
+      <PrimaryButton element="button" size="small">
+        Button
+      </PrimaryButton>
+    </Background.White>
+  ))
   .add('Disabled variant', () => (
     <Background.White>
       <PrimaryButton element="button" isDisabled>
