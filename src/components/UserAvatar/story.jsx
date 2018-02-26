@@ -4,7 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import UserAvatar from './';
 
-const avatarLarge = 'http://via.placeholder.com/350x150';
+const avatarLarge = 'http://via.placeholder.com/100x100';
 const name = 'Test';
 
 storiesOf('Components / UserAvatar', module)
