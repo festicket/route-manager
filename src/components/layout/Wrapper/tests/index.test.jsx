@@ -6,7 +6,11 @@ import { Wrapper } from '@festicket/react-ui-components';
 
 describe('<Wrapper />', () => {
   test('with initial props', () => {
-    const tree = mount(<Wrapper />);
+    const tree = mount(
+      <Wrapper>
+        <span>Content</span>
+      </Wrapper>,
+    );
     expect(tree).toMatchSnapshot();
   });
 

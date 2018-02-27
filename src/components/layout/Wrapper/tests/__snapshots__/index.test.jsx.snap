@@ -90,7 +90,11 @@ exports[`<Wrapper /> with initial props 1`] = `
     <div
       className="c0"
       size="normal"
-    />
+    >
+      <span>
+        Content
+      </span>
+    </div>
   </Container>
 </Wrapper>
 `;
