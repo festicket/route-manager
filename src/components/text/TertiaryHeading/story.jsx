@@ -1,8 +1,10 @@
 // @flow
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { Background } from 'src/utils/storybook-helpers';
+
 import TertiaryHeading from './';
-import { Background } from '../../../utils/storybook-helpers/';
 
 storiesOf('Components / Text / TertiaryHeading', module)
   .add('default', () => (

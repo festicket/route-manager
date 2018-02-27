@@ -1,7 +1,7 @@
 // @flow
-import * as React from 'react';
 
-import TextPrimitive from '../TextPrimitive/';
+import * as React from 'react';
+import TextPrimitive from 'src/components/text/TextPrimitive';
 
 type PrimaryHeadingProps = {
   element?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',

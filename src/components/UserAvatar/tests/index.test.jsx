@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { UserAvatar } from '@festicket/react-ui-components';
-import { renderWithTheme } from '../../../utils/testing';
+import { renderWithTheme } from 'src/utils/testing';
 
 const avatarLarge = 'http://via.placeholder.com/350x150';
 const name = 'Ben';

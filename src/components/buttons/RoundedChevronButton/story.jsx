@@ -1,9 +1,11 @@
 // @flow
 /* eslint no-console: 0 */
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { Background } from 'src/utils/storybook-helpers';
+
 import RoundedChevronButton from './';
-import { Background } from '../../../utils/storybook-helpers';
 
 const handleClick = () => console.log('Click!');
 

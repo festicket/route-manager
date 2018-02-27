@@ -24,6 +24,7 @@ sketchy-null=off
 
 [options]
 module.name_mapper='^@festicket\/react-ui-components$' -> '<PROJECT_ROOT>/src/'
+module.name_mapper='^src/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
 include_warnings=true
 
 [strict]

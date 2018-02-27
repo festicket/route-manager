@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import { prop } from 'styled-tools';
-import breakpoint from '../../../utils/breakpoint';
+import breakpoint from 'src/utils/breakpoint';
 
 export const VerticalSeparator = styled.div`
   display: inline-flex;

@@ -1,7 +1,9 @@
 // @flow
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Background } from '../../../utils/storybook-helpers/';
+import { Background } from 'src/utils/storybook-helpers';
+
 import Hyperlink from './';
 
 storiesOf('Components / Text / Hyperlink', module).add('variations', () => (

@@ -12,8 +12,8 @@ https://github.com/reactjs/react-transition-group/issues/285
 import { CSSTransition, transit } from 'react-css-transition';
 import styled from 'styled-components';
 import { prop } from 'styled-tools';
-import breakpoint from '../../utils/breakpoint';
-import theme from '../../utils/theme';
+import breakpoint from 'src/utils/breakpoint';
+import theme from 'src/utils/theme';
 
 const duration = parseInt(theme.animationDuration.short, 10);
 const easing = 'ease-out';

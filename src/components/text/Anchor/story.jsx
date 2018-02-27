@@ -3,7 +3,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Anchor from './index';
+import Anchor from './';
 
 const El = ({ to, children, className }) => (
   <abbr title={to} className={className}>

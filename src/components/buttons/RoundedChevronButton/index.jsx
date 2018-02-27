@@ -1,12 +1,13 @@
 // @flow
 
 import React from 'react';
-import { FlexWrapper, Button } from './styles';
 
-import ChevronRight from '../../svgs/generated/functional/ChevronRight';
-import ChevronDown from '../../svgs/generated/functional/ChevronDown';
-import ChevronLeft from '../../svgs/generated/functional/ChevronLeft';
-import ChevronUp from '../../svgs/generated/functional/ChevronUp';
+import ChevronRight from 'src/components/svgs/generated/functional/ChevronRight';
+import ChevronDown from 'src/components/svgs/generated/functional/ChevronDown';
+import ChevronLeft from 'src/components/svgs/generated/functional/ChevronLeft';
+import ChevronUp from 'src/components/svgs/generated/functional/ChevronUp';
+
+import { FlexWrapper, Button } from './styles';
 
 function RoundedChevronButtonComponent({ direction, ...props }) {
   let icon;

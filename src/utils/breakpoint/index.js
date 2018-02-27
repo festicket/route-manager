@@ -1,7 +1,7 @@
 // @flow
 
 import { css } from 'styled-components';
-import theme from '../theme';
+import theme from 'src/utils/theme';
 
 export default function breakpoint(label: string) {
   return (...args: any) => () => {
