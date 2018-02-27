@@ -51,12 +51,14 @@ storiesOf('Components / Layout / SlantedBackground', module)
         backgroundVariant="grey"
         slantVariant="white"
         slantHorizontalDirection="to-right"
+        contentVerticalOffset
       >
         <Wrapper size="alternative">
           <Section>
             <Box>
               <ContentPlaceholder>
-                Grey background variant, white to-right slant
+                Grey background variant, white to-right slant, with content
+                offset
               </ContentPlaceholder>
             </Box>
           </Section>
@@ -72,7 +74,8 @@ storiesOf('Components / Layout / SlantedBackground', module)
           <Section>
             <Box>
               <ContentPlaceholder>
-                Primary background variant, grey to-left slant with offset
+                Primary background variant, grey to-left slant, with slant
+                offset
               </ContentPlaceholder>
             </Box>
           </Section>
@@ -87,7 +90,7 @@ storiesOf('Components / Layout / SlantedBackground', module)
           <Section>
             <Box>
               <ContentPlaceholder>
-                No background variant, primary to-right slant with offset
+                No background variant, primary to-right slant, with slant offset
               </ContentPlaceholder>
             </Box>
           </Section>

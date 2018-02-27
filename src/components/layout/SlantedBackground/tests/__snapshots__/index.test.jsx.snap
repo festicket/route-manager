@@ -120,6 +120,48 @@ exports[`<SlantedBackground /> with primary backgroundVariant and white slantVar
 </div>
 `;
 
+exports[`<SlantedBackground /> with primary backgroundVariant and white slantVariant and contentVerticalOffset 1`] = `
+.c0 {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  min-height: 200px;
+  background: #8C64CB;
+  padding-top: 200px;
+}
+
+.c0 > * {
+  position: relative;
+}
+
+.c0::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  min-width: 2000px;
+  width: 100%;
+  z-index: -1;
+  height: 200px;
+  background: white;
+  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
+  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
+  clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
+}
+
+<div
+  className="c0"
+>
+  <span>
+    Content
+  </span>
+</div>
+`;
+
 exports[`<SlantedBackground /> with primary backgroundVariant and white slantVariant and slantVerticalOffset 1`] = `
 .c0 {
   position: relative;

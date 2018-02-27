@@ -24,6 +24,8 @@ export const StyledSlantedBackground = styled.div`
     grey: prop('theme.colors.greyscale.grey'),
   })};
 
+  ${ifProp('contentVerticalOffset', `padding-top: ${height}px`)};
+
   > * {
     position: relative;
   }

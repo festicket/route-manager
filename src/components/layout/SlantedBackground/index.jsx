@@ -8,12 +8,14 @@ type Props = {|
   slantVariant?: 'primary' | 'grey' | 'white',
   slantHorizontalDirection: 'to-left' | 'to-right',
   slantVerticalOffset: boolean,
+  contentVerticalOffset: boolean,
   children: React.Node,
 |};
 
 SlantedBackground.defaultProps = {
   slantHorizontalDirection: 'to-right',
   slantVerticalOffset: false,
+  contentVerticalOffset: false,
 };
 
 export default function SlantedBackground(props: Props) {

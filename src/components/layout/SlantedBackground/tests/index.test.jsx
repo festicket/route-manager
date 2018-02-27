@@ -54,6 +54,19 @@ describe('<SlantedBackground />', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  test('with primary backgroundVariant and white slantVariant and contentVerticalOffset', () => {
+    const tree = renderWithTheme(
+      <SlantedBackground
+        backgroundVariant="primary"
+        slantVariant="white"
+        contentVerticalOffset
+      >
+        <span>Content</span>
+      </SlantedBackground>,
+    );
+    expect(tree).toMatchSnapshot();
+  });
+
   test('with primary backgroundVariant and white slantVariant and slantVerticalOffset and to-left slantHorizontalDirection', () => {
     const tree = renderWithTheme(
       <SlantedBackground
