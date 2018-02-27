@@ -18,6 +18,7 @@ export {
 export {
   default as WithVerticalSeparator,
 } from './components/layout/WithVerticalSeparator';
+export { default as Section } from './components/layout/Section';
 
 // Buttons
 export {
