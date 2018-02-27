@@ -4,13 +4,6 @@ exports[`<Wrapper /> with alternative size 1`] = `
 .c0 {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media (min-width:568px) {
-  .c0 {
-    padding: 0 50px;
-  }
 }
 
 @media (min-width:768px) {
@@ -50,13 +43,6 @@ exports[`<Wrapper /> with initial props 1`] = `
 .c0 {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media (min-width:568px) {
-  .c0 {
-    padding: 0 50px;
-  }
 }
 
 @media (min-width:960px) {
@@ -79,13 +65,6 @@ exports[`<Wrapper /> with normal size 1`] = `
 .c0 {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media (min-width:568px) {
-  .c0 {
-    padding: 0 50px;
-  }
 }
 
 @media (min-width:960px) {

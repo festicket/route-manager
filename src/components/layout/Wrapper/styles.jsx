@@ -9,11 +9,6 @@ export const StyledWrapper = styled.div`
     normal: css`
       max-width: 100%;
       margin: 0 auto;
-      padding: 0 20px;
-
-      ${breakpoint('from-sm')`
-        padding: 0 50px;
-      `};
 
       ${breakpoint('from-lg')`
         width: 1220px;
@@ -21,11 +16,6 @@ export const StyledWrapper = styled.div`
     alternative: css`
       max-width: 100%;
       margin: 0 auto;
-      padding: 0 20px;
-
-      ${breakpoint('from-sm')`
-        padding: 0 50px;
-      `};
 
       ${breakpoint('from-md')`
         width: 650px;
