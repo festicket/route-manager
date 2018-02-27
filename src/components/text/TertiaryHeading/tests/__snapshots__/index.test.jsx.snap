@@ -2,8 +2,6 @@
 
 exports[`<TertiaryHeading /> with color prop 1`] = `
 .c0 {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -59,8 +57,6 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
 
 exports[`<TertiaryHeading /> with initial props 1`] = `
 .c0 {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -116,8 +112,6 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
 
 exports[`<TertiaryHeading /> with weight prop 1`] = `
 .c0 {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
