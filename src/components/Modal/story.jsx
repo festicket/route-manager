@@ -3,7 +3,8 @@ import React, { Fragment } from 'react';
 import { withState } from 'recompose';
 import { storiesOf } from '@storybook/react';
 import Modal from './';
-import { Background, Button } from '../../utils/storybook-helpers/';
+import Button from '../buttons/PrimaryButton';
+import { Background } from '../../utils/storybook-helpers/';
 
 // Enhance the modal with some component state and a function to toggle it.
 const ModalWithState = withState('isOpen', 'toggleModal', false)(ModalWrapper);
