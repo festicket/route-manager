@@ -95,6 +95,7 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .c7 {
@@ -119,6 +120,7 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
 >
   <div
     className="c1"
+    onClick={[Function]}
     open={false}
   >
     <h3
@@ -131,7 +133,6 @@ exports[`<FrequentlyAskedQuestion /> with initial props 1`] = `
       aria-disabled={undefined}
       className="c3 c4"
       disabled={undefined}
-      onClick={[Function]}
       size="regular"
     >
       <div
@@ -267,6 +268,7 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  cursor: pointer;
   margin-bottom: 20px;
 }
 
@@ -292,6 +294,7 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
 >
   <div
     className="c1"
+    onClick={[Function]}
     open={true}
   >
     <h3
@@ -304,7 +307,6 @@ exports[`<FrequentlyAskedQuestion /> with openInitially 1`] = `
       aria-disabled={undefined}
       className="c3 c4"
       disabled={undefined}
-      onClick={[Function]}
       size="regular"
     >
       <div

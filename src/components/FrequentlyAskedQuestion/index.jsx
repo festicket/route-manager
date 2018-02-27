@@ -41,12 +41,11 @@ export default class FrequentlyAskedQuestion extends React.Component<
   render() {
     return (
       <Wrapper>
-        <TitleRow open={this.state.open}>
+        <TitleRow open={this.state.open} onClick={this.toggleOpen}>
           <TertiaryHeading element="h3">{this.props.question}</TertiaryHeading>
           <RoundedChevronButton
             element="button"
             direction={this.state.open ? 'up' : 'down'}
-            onClick={this.toggleOpen}
           />
         </TitleRow>
         <BodyWrapper open={this.state.open}>
