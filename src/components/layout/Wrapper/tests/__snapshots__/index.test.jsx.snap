@@ -2,497 +2,104 @@
 
 exports[`<Wrapper /> with alternative size 1`] = `
 .c0 {
-  position: relative;
-  overflow: hidden;
-  min-height: 200px;
-}
-
-.c0 > * {
-  position: relative;
-}
-
-.c0::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  min-width: 2000px;
-  width: 100%;
-  height: 200px;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-}
-
-.c1 {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @media (min-width:568px) {
-  .c1 {
+  .c0 {
     padding: 0 50px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c0 {
     width: 650px;
   }
 }
 
 @media (min-width:960px) {
-  .c1 {
+  .c0 {
     width: 800px;
   }
 }
 
 <div
   className="c0"
+  size="alternative"
 >
-  <div
-    className="c1"
-    size="alternative"
-  >
-    <span>
-      Content
-    </span>
-  </div>
+  <span>
+    Content
+  </span>
 </div>
 `;
 
 exports[`<Wrapper /> with full size 1`] = `
-.c0 {
-  position: relative;
-  overflow: hidden;
-  min-height: 200px;
-}
-
-.c0 > * {
-  position: relative;
-}
-
-.c0::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  min-width: 2000px;
-  width: 100%;
-  height: 200px;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-}
-
 <div
-  className="c0"
+  className=""
+  size="full"
 >
-  <div
-    className=""
-    size="full"
-  >
-    <span>
-      Content
-    </span>
-  </div>
-</div>
-`;
-
-exports[`<Wrapper /> with grey slantVariant 1`] = `
-.c0 {
-  position: relative;
-  overflow: hidden;
-  min-height: 200px;
-}
-
-.c0 > * {
-  position: relative;
-}
-
-.c0::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  min-width: 2000px;
-  width: 100%;
-  height: 200px;
-  background: #F5F5F5;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-}
-
-.c1 {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media (min-width:568px) {
-  .c1 {
-    padding: 0 50px;
-  }
-}
-
-@media (min-width:960px) {
-  .c1 {
-    width: 1220px;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-    size="normal"
-  >
-    <span>
-      Content
-    </span>
-  </div>
+  <span>
+    Content
+  </span>
 </div>
 `;
 
 exports[`<Wrapper /> with initial props 1`] = `
 .c0 {
-  position: relative;
-  overflow: hidden;
-  min-height: 200px;
-}
-
-.c0 > * {
-  position: relative;
-}
-
-.c0::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  min-width: 2000px;
-  width: 100%;
-  height: 200px;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-}
-
-.c1 {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @media (min-width:568px) {
-  .c1 {
+  .c0 {
     padding: 0 50px;
   }
 }
 
 @media (min-width:960px) {
-  .c1 {
+  .c0 {
     width: 1220px;
   }
 }
 
 <div
   className="c0"
+  size="normal"
 >
-  <div
-    className="c1"
-    size="normal"
-  >
-    <span>
-      Content
-    </span>
-  </div>
+  <span>
+    Content
+  </span>
 </div>
 `;
 
 exports[`<Wrapper /> with normal size 1`] = `
 .c0 {
-  position: relative;
-  overflow: hidden;
-  min-height: 200px;
-}
-
-.c0 > * {
-  position: relative;
-}
-
-.c0::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  min-width: 2000px;
-  width: 100%;
-  height: 200px;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-}
-
-.c1 {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @media (min-width:568px) {
-  .c1 {
+  .c0 {
     padding: 0 50px;
   }
 }
 
 @media (min-width:960px) {
-  .c1 {
+  .c0 {
     width: 1220px;
   }
 }
 
 <div
   className="c0"
+  size="normal"
 >
-  <div
-    className="c1"
-    size="normal"
-  >
-    <span>
-      Content
-    </span>
-  </div>
-</div>
-`;
-
-exports[`<Wrapper /> with primary slantVariant 1`] = `
-.c0 {
-  position: relative;
-  overflow: hidden;
-  min-height: 200px;
-}
-
-.c0 > * {
-  position: relative;
-}
-
-.c0::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  min-width: 2000px;
-  width: 100%;
-  height: 200px;
-  background: #8C64CB;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-}
-
-.c1 {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media (min-width:568px) {
-  .c1 {
-    padding: 0 50px;
-  }
-}
-
-@media (min-width:960px) {
-  .c1 {
-    width: 1220px;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-    size="normal"
-  >
-    <span>
-      Content
-    </span>
-  </div>
-</div>
-`;
-
-exports[`<Wrapper /> with primary slantVariant and slantVerticalOffset and to-left slantHorizontalDirection 1`] = `
-.c0 {
-  position: relative;
-  overflow: hidden;
-  min-height: 400px;
-}
-
-.c0 > * {
-  position: relative;
-}
-
-.c0::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  min-width: 2000px;
-  width: 100%;
-  height: 400px;
-  background: #8C64CB;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 50%,0 100% );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 50%,0 100% );
-  clip-path: polygon( 0 0,100% 0,100% 50%,0 100% );
-}
-
-<div
-  className="c0"
->
-  <div
-    className=""
-    size="full"
-  >
-    <span>
-      Content
-    </span>
-  </div>
-</div>
-`;
-
-exports[`<Wrapper /> with primary slantVariant and slantVerticalOffset and to-right slantHorizontalDirection 1`] = `
-.c0 {
-  position: relative;
-  overflow: hidden;
-  min-height: 400px;
-}
-
-.c0 > * {
-  position: relative;
-}
-
-.c0::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  min-width: 2000px;
-  width: 100%;
-  height: 400px;
-  background: #8C64CB;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 50% );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 50% );
-  clip-path: polygon( 0 0,100% 0,100% 100%,0 50% );
-}
-
-<div
-  className="c0"
->
-  <div
-    className=""
-    size="full"
-  >
-    <span>
-      Content
-    </span>
-  </div>
-</div>
-`;
-
-exports[`<Wrapper /> with white slantVariant 1`] = `
-.c0 {
-  position: relative;
-  overflow: hidden;
-  min-height: 200px;
-}
-
-.c0 > * {
-  position: relative;
-}
-
-.c0::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  min-width: 2000px;
-  width: 100%;
-  height: 200px;
-  background: white;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-}
-
-.c1 {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media (min-width:568px) {
-  .c1 {
-    padding: 0 50px;
-  }
-}
-
-@media (min-width:960px) {
-  .c1 {
-    width: 1220px;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-    size="normal"
-  >
-    <span>
-      Content
-    </span>
-  </div>
+  <span>
+    Content
+  </span>
 </div>
 `;

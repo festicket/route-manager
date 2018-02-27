@@ -13,6 +13,9 @@ export { default as UserAvatar } from './components/UserAvatar';
 export { Grid, GridElement } from './components/layout/Grid';
 export { default as Wrapper } from './components/layout/Wrapper';
 export {
+  default as SlantedBackground,
+} from './components/layout/SlantedBackground';
+export {
   default as WithVerticalSeparator,
 } from './components/layout/WithVerticalSeparator';
 
