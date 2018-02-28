@@ -3,7 +3,6 @@ import React, { Fragment } from 'react';
 import { withState } from 'recompose';
 import { storiesOf } from '@storybook/react';
 import Modal from './';
-import Button from '../buttons/PrimaryButton';
 import { Background } from '../../utils/storybook-helpers/';
 
 // Enhance the modal with some component state and a function to toggle it.
@@ -13,12 +12,12 @@ const ModalWithState = withState('isOpen', 'toggleModal', false)(ModalWrapper);
 function ModalWrapper({ isOpen, toggleModal, children }) {
   return (
     <Background.FullWidth>
-      <Button
+      <button
         className="modal-button"
         onClick={() => toggleModal(state => !state)}
       >
         Toggle Modal
-      </Button>
+      </button>
       <Modal isOpen={isOpen} handleClose={() => toggleModal(state => !state)}>
         {children}
       </Modal>
