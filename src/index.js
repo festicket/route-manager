@@ -40,6 +40,9 @@ export { default as Popover } from './components/Popover';
 export {
   default as FrequentlyAskedQuestion,
 } from './components/FrequentlyAskedQuestion';
+export {
+  default as ParagraphWrapper,
+} from './components/text/ParagraphWrapper';
 
 export {
   default as WithVerticalSeparator,
