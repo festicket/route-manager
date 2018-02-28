@@ -5,26 +5,31 @@
         width: 100%;
     }
     
+    /*
+        For now, fonts are coming from the Amazon S3 domain. 
+        Once a CORS issue has been resolved, these will come from festicket.com/fonts.
+    */
+
     @font-face {
         font-family: 'f37-bolton';
-        src: url('https://www.festicket.com/fonts/f37bolton/F37Bolton-Light.woff2'),
-        url('https://www.festicket.com/fonts/f37bolton/F37Bolton-Light.woff');
+        src: url('http://festicket-development-static.s3-website.eu-west-2.amazonaws.com/fonts/f37bolton/F37Bolton-Light.woff2'),
+        url('http://festicket-development-static.s3-website.eu-west-2.amazonaws.com/fonts/f37bolton/F37Bolton-Light.woff');
         font-weight: 300;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'f37-bolton';
-        src: url('https://www.festicket.com/fonts/f37bolton/F37Bolton-Regular.woff2'),
-        url('https://www.festicket.com/fonts/f37bolton/F37Bolton-Regular.woff');
+        src: url('http://festicket-development-static.s3-website.eu-west-2.amazonaws.com/fonts/f37bolton/F37Bolton-Regular.woff2'),
+        url('http://festicket-development-static.s3-website.eu-west-2.amazonaws.com/fonts/f37bolton/F37Bolton-Regular.woff');
         font-weight: 400;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'f37-bolton';
-        src: url('https://www.festicket.com/fonts/f37bolton/F37Bolton-Bold.woff2'),
-        url('https://www.festicket.com/fonts/f37bolton/F37Bolton-Bold.woff');
+        src: url('http://festicket-development-static.s3-website.eu-west-2.amazonaws.com/fonts/f37bolton/F37Bolton-Bold.woff2'),
+        url('http://festicket-development-static.s3-website.eu-west-2.amazonaws.com/fonts/f37bolton/F37Bolton-Bold.woff');
         font-weight: 700;
         font-style: normal;
     }
