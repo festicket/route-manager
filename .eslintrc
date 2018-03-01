@@ -21,6 +21,6 @@
     "flowtype/use-flow-type": 1,
     "flowtype/require-valid-file-annotation": [2, "always"],
     "react/prop-types": ["off"],
-    "react/default-props-match-prop-types": ["off"]
+    "react/default-props-match-prop-types": ["off"] // TODO: Fixes an intermittent issue with Flow, to be investigated. Ideally should be fixed and this rule re-enabled.
   }
 }
