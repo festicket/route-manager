@@ -2,14 +2,14 @@
 
 import React from 'react';
 import { mount } from 'enzyme';
-import { Box } from '@festicket/react-ui-components';
+import { Gutter } from '@festicket/react-ui-components';
 
-describe('<Box />', () => {
+describe('<Gutter />', () => {
   test('with initial props', () => {
     const tree = mount(
-      <Box>
+      <Gutter>
         <span>This is some content.</span>
-      </Box>,
+      </Gutter>,
     );
     expect(tree).toMatchSnapshot();
   });

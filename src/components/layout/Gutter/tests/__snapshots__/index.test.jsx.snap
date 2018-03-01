@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Box /> with initial props 1`] = `
+exports[`<Gutter /> with initial props 1`] = `
 .c0 {
   padding: 0 20px;
 }
@@ -11,8 +11,8 @@ exports[`<Box /> with initial props 1`] = `
   }
 }
 
-<Box>
-  <StyledBox>
+<Gutter>
+  <StyledGutter>
     <div
       className="c0"
     >
@@ -20,6 +20,6 @@ exports[`<Box /> with initial props 1`] = `
         This is some content.
       </span>
     </div>
-  </StyledBox>
-</Box>
+  </StyledGutter>
+</Gutter>
 `;

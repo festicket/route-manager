@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Box from './';
+import Gutter from './';
 
-storiesOf('Components / Layout / Box', module).add('default', () => (
-  <Box>
+storiesOf('Components / Layout / Gutter', module).add('default', () => (
+  <Gutter>
     <span>This is some content.</span>
-  </Box>
+  </Gutter>
 ));

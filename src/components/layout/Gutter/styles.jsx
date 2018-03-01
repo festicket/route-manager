@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import breakpoint from '../../../utils/breakpoint';
 
-export const StyledBox = styled.div`
+export const StyledGutter = styled.div`
   padding: 0 20px;
 
   ${breakpoint('from-sm')`
