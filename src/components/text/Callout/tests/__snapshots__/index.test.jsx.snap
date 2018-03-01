@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Callout /> with initial props 1`] = `
+.c0 {
+  border-left: 4px solid #8C64CB;
+  padding-left: 20px;
+}
+
+<div
+  className="c0"
+>
+  Lorem ipsum dolor sit amet, ceteros volutpat incorrupte usu no, ei duo
+tamquam eligendi, vix admodum ceteros epicurei no. Vim et dicam prodesset,
+eu usu quas ponderum. Posse admodum vel in, quodsi voluptua vis an. Vim ad
+maiestatis honestatis.
+</div>
+`;
