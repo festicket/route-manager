@@ -19,6 +19,7 @@ export { Grid, GridElement } from './components/layout/Grid';
 export {
   default as WithVerticalSeparator,
 } from './components/layout/WithVerticalSeparator';
+export { default as Details } from './components/layout/Details';
 
 // Buttons
 export {
