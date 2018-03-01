@@ -10,9 +10,6 @@ export { default as Separator } from './components/Separator';
 export { default as UserAvatar } from './components/UserAvatar';
 export { default as Modal } from './components/Modal';
 export { default as Popover } from './components/Popover';
-export {
-  default as FrequentlyAskedQuestion,
-} from './components/FrequentlyAskedQuestion';
 
 // Layout
 export { Grid, GridElement } from './components/layout/Grid';
