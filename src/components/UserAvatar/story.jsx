@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+
 import UserAvatar from './';
 
 const avatarLarge = 'http://via.placeholder.com/100x100';

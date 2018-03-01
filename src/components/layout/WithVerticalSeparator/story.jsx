@@ -2,8 +2,8 @@
 
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
+import { Background, CenteredFlexRow } from 'src/utils/storybook-helpers';
 
-import { Background, CenteredFlexRow } from '../../../utils/storybook-helpers';
 import WithVerticalSeparator from './';
 
 storiesOf('Components / Layout / WithVerticalSeparator', module).add(

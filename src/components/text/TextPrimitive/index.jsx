@@ -1,10 +1,10 @@
 // @flow
+
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { prop, switchProp, ifProp } from 'styled-tools';
-
-import breakpoint from '../../../utils/breakpoint';
-import spaceMixin from '../../../utils/spacing';
+import breakpoint from 'src/utils/breakpoint';
+import spaceMixin from 'src/utils/spacing';
 
 // Takes props object but we are only interested in passing className.
 // Otherwise we will get annoying warnings about invalid props on html elements.
