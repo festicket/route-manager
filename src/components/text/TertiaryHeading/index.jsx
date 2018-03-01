@@ -11,7 +11,7 @@ TertiaryHeading.defaultProps = {
 };
 
 type TertiaryHeadingProps = {
-  element?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
+  element?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span',
   children: React.Node,
   color?: 'black' | 'white',
   weight?: 'bold' | 'light',
