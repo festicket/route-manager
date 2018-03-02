@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Wrapper } from '@festicket/react-ui-components';
-import { renderWithTheme } from '../../../../utils/testing';
+import { renderWithTheme } from 'src/utils/testing';
 
 describe('<Wrapper />', () => {
   test('with initial props', () => {

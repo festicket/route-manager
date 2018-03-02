@@ -1,7 +1,7 @@
 // @flow
 
 import styled from 'styled-components';
-import breakpoint from '../../../utils/breakpoint';
+import breakpoint from 'src/utils/breakpoint';
 
 export const StyledGutter = styled.div`
   padding: 0 20px;

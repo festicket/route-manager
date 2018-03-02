@@ -2,12 +2,12 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { TallContentPlaceholder } from 'src/utils/storybook-helpers';
 
 import SlantedBackground from './';
 import Wrapper from '../Wrapper';
 import Section from '../Section';
 import Gutter from '../Gutter';
-import { TallContentPlaceholder } from '../../../utils/storybook-helpers';
 
 storiesOf('Components / Layout / SlantedBackground', module)
   .add('With primary slantVariant', () => (

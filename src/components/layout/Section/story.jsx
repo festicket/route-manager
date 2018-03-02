@@ -2,8 +2,9 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { Background } from 'src/utils/storybook-helpers';
+
 import Section from './';
-import { Background } from '../../../utils/storybook-helpers';
 
 storiesOf('Components / Layout / Section', module)
   .add('section variant', () => (
