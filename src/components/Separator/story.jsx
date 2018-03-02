@@ -2,8 +2,9 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { Box } from 'src/utils/storybook-helpers';
+
 import Separator from './';
-import { Box } from '../../utils/storybook-helpers';
 
 storiesOf('Components / Separator', module)
   .add('Light Separator', () => (

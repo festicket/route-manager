@@ -30,7 +30,7 @@ export default {
     shortest: '50ms',
     short: '350ms',
   },
-  fontFamily: 'brandon-text, Helvetica Neue, Helvetica, Arial, sans-serif',
+  fontFamily: 'f37-bolton, Helvetica Neue, Helvetica, Arial, sans-serif',
   fontWeight: {
     light: '300',
     regular: '400',

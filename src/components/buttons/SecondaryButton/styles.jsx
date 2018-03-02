@@ -3,8 +3,8 @@
 import styled, { css } from 'styled-components';
 import { prop, ifProp } from 'styled-tools';
 import { rgba, darken } from 'polished';
-import Primitive from '../ButtonPrimitive';
-import { buttonMixin } from '../styles';
+import Primitive from 'src/components/buttons/ButtonPrimitive';
+import { buttonMixin } from 'src/components/buttons/styles';
 
 function disabledStyleMixin() {
   return css`

@@ -2,8 +2,6 @@
 
 exports[`<SecondaryHeading /> with color prop 1`] = `
 .c0 {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -63,8 +61,6 @@ exports[`<SecondaryHeading /> with color prop 1`] = `
 
 exports[`<SecondaryHeading /> with initial props 1`] = `
 .c0 {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -122,8 +118,6 @@ exports[`<SecondaryHeading /> with initial props 1`] = `
 
 exports[`<SecondaryHeading /> with weight prop 1`] = `
 .c0 {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
   -webkit-text-decoration: none;
   text-decoration: none;

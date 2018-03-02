@@ -2,9 +2,12 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-import breakpoint from '../../../utils/breakpoint';
+import breakpoint from 'src/utils/breakpoint';
+import Primitive, {
+  type PrimitiveTypes,
+} from 'src/components/layout/Primitive';
+
 import transformWidthNumber from './utils/transformWidthNumber';
-import Primitive, { type PrimitiveTypes } from '../Primitive';
 
 type BreakpointsShape = {|
   xs?: number,

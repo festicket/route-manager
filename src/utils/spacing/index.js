@@ -1,7 +1,7 @@
 // @flow
 
 import { css } from 'styled-components';
-import breakpoint from '../breakpoint';
+import breakpoint from 'src/utils/breakpoint';
 
 export default (size: string) => {
   switch (size) {

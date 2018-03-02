@@ -2,8 +2,9 @@
 
 import * as React from 'react';
 import { shallow } from 'enzyme';
+import { renderWithTheme } from 'src/utils/testing';
+
 import Anchor from '../';
-import { renderWithTheme } from '../../../../utils/testing';
 
 // Simulate a custom link component, for example React Router's Link
 function El({
