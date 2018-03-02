@@ -26,10 +26,6 @@ export const StyledSlantedBackground = styled.div`
 
   ${ifProp('contentVerticalOffset', `padding-top: ${height}px`)};
 
-  > * {
-    position: relative;
-  }
-
   ${ifProp(
     'slantVerticalOffset',
     css`
