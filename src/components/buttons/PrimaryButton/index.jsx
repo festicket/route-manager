@@ -4,8 +4,8 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { darken, lighten } from 'polished';
 import { prop, ifProp, switchProp, withProp } from 'styled-tools';
-import Primitive from '../ButtonPrimitive';
-import { buttonMixin, FlexWrapper } from '../styles';
+import Primitive from 'src/components/buttons/ButtonPrimitive';
+import { buttonMixin, FlexWrapper } from 'src/components/buttons/styles';
 
 type Props = {
   to?: string,

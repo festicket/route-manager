@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { RoundedChevronButton } from '@festicket/react-ui-components';
-import { renderWithTheme } from '../../../../utils/testing';
+import { renderWithTheme } from 'src/utils/testing';
 
 describe('<RoundedChevronButton />', () => {
   test('with initial props', () => {

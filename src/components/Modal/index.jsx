@@ -1,6 +1,7 @@
 // @flow
+
 import * as React from 'react';
-import CloseIcon from '../svgs/generated/functional/Close';
+import CloseIcon from 'src/components/svgs/generated/functional/Close';
 
 import { StyledModal, CloseButton } from './styles';
 

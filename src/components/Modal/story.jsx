@@ -1,9 +1,11 @@
 // @flow
+
 import React, { Fragment } from 'react';
 import { withState } from 'recompose';
 import { storiesOf } from '@storybook/react';
+import { Background } from 'src/utils/storybook-helpers';
+
 import Modal from './';
-import { Background } from '../../utils/storybook-helpers/';
 
 // Enhance the modal with some component state and a function to toggle it.
 const ModalWithState = withState('isOpen', 'toggleModal', false)(ModalWrapper);
