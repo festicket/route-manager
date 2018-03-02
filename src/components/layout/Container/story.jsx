@@ -2,21 +2,21 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Wrapper from './';
+import Container from './';
 
-storiesOf('Components / Layout / Wrapper', module)
+storiesOf('Components / Layout / Container', module)
   .add('Normal size', () => (
-    <Wrapper size="normal">
+    <Container size="normal">
       <div>This is some content.</div>
-    </Wrapper>
+    </Container>
   ))
   .add('Alternative size', () => (
-    <Wrapper size="alternative">
+    <Container size="alternative">
       <div>This is some content.</div>
-    </Wrapper>
+    </Container>
   ))
   .add('Full size', () => (
-    <Wrapper size="full">
+    <Container size="full">
       <div>This is some content.</div>
-    </Wrapper>
+    </Container>
   ));

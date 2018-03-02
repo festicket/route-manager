@@ -1,42 +1,42 @@
 // @flow
 
 import React from 'react';
-import { Wrapper } from '@festicket/react-ui-components';
+import { Container } from '@festicket/react-ui-components';
 import { renderWithTheme } from 'src/utils/testing';
 
-describe('<Wrapper />', () => {
+describe('<Container />', () => {
   test('with initial props', () => {
     const tree = renderWithTheme(
-      <Wrapper>
+      <Container>
         <span>Content</span>
-      </Wrapper>,
+      </Container>,
     );
     expect(tree).toMatchSnapshot();
   });
 
   test('with normal size', () => {
     const tree = renderWithTheme(
-      <Wrapper size="normal">
+      <Container size="normal">
         <span>Content</span>
-      </Wrapper>,
+      </Container>,
     );
     expect(tree).toMatchSnapshot();
   });
 
   test('with alternative size', () => {
     const tree = renderWithTheme(
-      <Wrapper size="alternative">
+      <Container size="alternative">
         <span>Content</span>
-      </Wrapper>,
+      </Container>,
     );
     expect(tree).toMatchSnapshot();
   });
 
   test('with full size', () => {
     const tree = renderWithTheme(
-      <Wrapper size="full">
+      <Container size="full">
         <span>Content</span>
-      </Wrapper>,
+      </Container>,
     );
     expect(tree).toMatchSnapshot();
   });

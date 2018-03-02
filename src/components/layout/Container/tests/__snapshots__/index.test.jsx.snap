@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Wrapper /> with alternative size 1`] = `
+exports[`<Container /> with alternative size 1`] = `
 .c0 {
   max-width: 100%;
   margin: 0 auto;
@@ -28,7 +28,7 @@ exports[`<Wrapper /> with alternative size 1`] = `
 </div>
 `;
 
-exports[`<Wrapper /> with full size 1`] = `
+exports[`<Container /> with full size 1`] = `
 <div
   className=""
   size="full"
@@ -39,7 +39,7 @@ exports[`<Wrapper /> with full size 1`] = `
 </div>
 `;
 
-exports[`<Wrapper /> with initial props 1`] = `
+exports[`<Container /> with initial props 1`] = `
 .c0 {
   max-width: 100%;
   margin: 0 auto;
@@ -61,7 +61,7 @@ exports[`<Wrapper /> with initial props 1`] = `
 </div>
 `;
 
-exports[`<Wrapper /> with normal size 1`] = `
+exports[`<Container /> with normal size 1`] = `
 .c0 {
   max-width: 100%;
   margin: 0 auto;

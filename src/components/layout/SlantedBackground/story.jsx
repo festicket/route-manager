@@ -5,14 +5,14 @@ import { storiesOf } from '@storybook/react';
 import { TallContentPlaceholder } from 'src/utils/storybook-helpers';
 
 import SlantedBackground from './';
-import Wrapper from '../Wrapper';
+import Container from '../Container';
 import Section from '../Section';
 import Gutter from '../Gutter';
 
 storiesOf('Components / Layout / SlantedBackground', module)
   .add('With primary slantVariant', () => (
     <SlantedBackground slantVariant="primary">
-      <Wrapper size="alternative">
+      <Container size="alternative">
         <Section>
           <Gutter>
             <TallContentPlaceholder>
@@ -20,12 +20,12 @@ storiesOf('Components / Layout / SlantedBackground', module)
             </TallContentPlaceholder>
           </Gutter>
         </Section>
-      </Wrapper>
+      </Container>
     </SlantedBackground>
   ))
   .add('With primary slantVariant and slantVerticalOffset', () => (
     <SlantedBackground slantVariant="primary" slantVerticalOffset>
-      <Wrapper size="alternative">
+      <Container size="alternative">
         <Section>
           <Gutter>
             <TallContentPlaceholder>
@@ -33,25 +33,25 @@ storiesOf('Components / Layout / SlantedBackground', module)
             </TallContentPlaceholder>
           </Gutter>
         </Section>
-      </Wrapper>
+      </Container>
     </SlantedBackground>
   ))
   .add('Multiple slanted backgrounds', () => (
     <div>
-      <Wrapper size="alternative">
+      <Container size="alternative">
         <Section>
           <Gutter>
             <TallContentPlaceholder>No slant</TallContentPlaceholder>
           </Gutter>
         </Section>
-      </Wrapper>
+      </Container>
       <SlantedBackground
         backgroundVariant="grey"
         slantVariant="white"
         slantHorizontalDirection="to-right"
         contentVerticalOffset
       >
-        <Wrapper size="alternative">
+        <Container size="alternative">
           <Section>
             <Gutter>
               <TallContentPlaceholder>
@@ -60,7 +60,7 @@ storiesOf('Components / Layout / SlantedBackground', module)
               </TallContentPlaceholder>
             </Gutter>
           </Section>
-        </Wrapper>
+        </Container>
       </SlantedBackground>
       <SlantedBackground
         backgroundVariant="primary"
@@ -68,7 +68,7 @@ storiesOf('Components / Layout / SlantedBackground', module)
         slantVerticalOffset
         slantHorizontalDirection="to-left"
       >
-        <Wrapper size="alternative">
+        <Container size="alternative">
           <Section>
             <Gutter>
               <TallContentPlaceholder>
@@ -77,14 +77,14 @@ storiesOf('Components / Layout / SlantedBackground', module)
               </TallContentPlaceholder>
             </Gutter>
           </Section>
-        </Wrapper>
+        </Container>
       </SlantedBackground>
       <SlantedBackground
         slantVariant="primary"
         slantVerticalOffset
         slantHorizontalDirection="to-right"
       >
-        <Wrapper size="alternative">
+        <Container size="alternative">
           <Section>
             <Gutter>
               <TallContentPlaceholder>
@@ -92,7 +92,7 @@ storiesOf('Components / Layout / SlantedBackground', module)
               </TallContentPlaceholder>
             </Gutter>
           </Section>
-        </Wrapper>
+        </Container>
       </SlantedBackground>
     </div>
   ));
