@@ -23,7 +23,6 @@ exports[`<SlantedBackground /> with grey slantVariant 1`] = `
   height: 200px;
   background: #F5F5F5;
   -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
   clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
 }
 
@@ -57,7 +56,6 @@ exports[`<SlantedBackground /> with initial props 1`] = `
   width: 100%;
   z-index: -1;
   height: 200px;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
   -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
   clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
 }
@@ -95,7 +93,6 @@ exports[`<SlantedBackground /> with primary backgroundVariant and white slantVar
   height: 200px;
   background: white;
   -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
   clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
 }
 
@@ -132,7 +129,6 @@ exports[`<SlantedBackground /> with primary backgroundVariant and white slantVar
   z-index: -1;
   height: 200px;
   background: white;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
   -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
   clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
 }
@@ -182,7 +178,6 @@ exports[`<SlantedBackground /> with primary backgroundVariant and white slantVar
   height: 200px;
   background: white;
   -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
   clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
 }
 
@@ -231,7 +226,6 @@ exports[`<SlantedBackground /> with primary backgroundVariant and white slantVar
   height: 200px;
   background: white;
   -webkit-clip-path: polygon( 0 0,100% 0,100% 0,0 100% );
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 0,0 100% );
   clip-path: polygon( 0 0,100% 0,100% 0,0 100% );
 }
 
@@ -266,7 +260,6 @@ exports[`<SlantedBackground /> with primary slantVariant 1`] = `
   z-index: -1;
   height: 200px;
   background: #8C64CB;
-  -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
   -webkit-clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
   clip-path: polygon( 0 0,100% 0,100% 100%,0 0 );
 }

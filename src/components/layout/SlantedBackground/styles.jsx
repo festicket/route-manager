@@ -71,23 +71,11 @@ export const StyledSlantedBackground = styled.div`
       grey: prop('theme.colors.greyscale.grey'),
     })};
 
-    -webkit-clip-path: polygon(
-      ${switchProp('slantHorizontalDirection', {
-        'to-left': '0 0, 100% 0, 100% 0, 0 100%',
-        'to-right': '0 0, 100% 0, 100% 100%, 0 0',
-      })}
-    );
-
     clip-path: polygon(
       ${switchProp('slantHorizontalDirection', {
         'to-left': '0 0, 100% 0, 100% 0, 0 100%',
         'to-right': '0 0, 100% 0, 100% 100%, 0 0',
       })}
     );
-
-    /*
-    styled-components does not yet have support for prefixing
-    the clip-path property, so duplicate for now.
-    */
   }
 `;
