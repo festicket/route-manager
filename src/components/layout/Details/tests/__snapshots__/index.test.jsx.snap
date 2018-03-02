@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Details /> with initial props 1`] = `
+.c5 {
+  height: 18px;
+  fill: #A2A4AD;
+}
+
+.c3 {
+  border: none;
+  outline: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.c2 {
+  display: inline-block;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 0;
+  cursor: pointer;
+  background-color: rgba(36,37,41,0.05);
+}
+
+.c2:hover {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
+}
+
+.c1 {
+  font-weight: 700;
+  color: #242529;
+  margin-bottom: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.c6 {
+  display: none;
+}
+
+@media (min-width:568px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+<div>
+  <div
+    className="c0"
+    onClick={[Function]}
+    open={false}
+  >
+    <h3
+      className="c1"
+      id={undefined}
+    >
+      Lorem ipsum dolor sit amet
+    </h3>
+    <button
+      aria-disabled={undefined}
+      className="c2 c3"
+      disabled={undefined}
+      size="regular"
+    >
+      <div
+        className="c4"
+      >
+        <svg
+          className="c5"
+          color="grey"
+          viewBox="0 0 18 18"
+        >
+          <path
+            d="M14.7 4.8L9 10.4 3.3 4.8 1.9 6.2l7.1 7 7.1-7z"
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+  <div
+    className="c6"
+    open={false}
+  >
+    Et aeterno impedit accusamus nec. Ne porro altera recusabo eum, eos ad
+movet mentitum, id malorum expetenda ius. Nec illud melius repudiandae
+et. Quas prima congue vis ne, erat malorum detraxit in nam. Regione
+iuvaret consulatu duo cu.
+  </div>
+</div>
+`;
+
+exports[`<Details /> with openInitially prop 1`] = `
+.c5 {
+  height: 18px;
+  fill: #A2A4AD;
+}
+
+.c3 {
+  border: none;
+  outline: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.c2 {
+  display: inline-block;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 0;
+  cursor: pointer;
+  background-color: rgba(36,37,41,0.05);
+}
+
+.c2:hover {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
+}
+
+.c1 {
+  font-weight: 700;
+  color: #242529;
+  margin-bottom: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.c6 {
+  display: block;
+}
+
+@media (min-width:568px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+<div>
+  <div
+    className="c0"
+    onClick={[Function]}
+    open={true}
+  >
+    <h3
+      className="c1"
+      id={undefined}
+    >
+      Lorem ipsum dolor sit amet
+    </h3>
+    <button
+      aria-disabled={undefined}
+      className="c2 c3"
+      disabled={undefined}
+      size="regular"
+    >
+      <div
+        className="c4"
+      >
+        <svg
+          className="c5"
+          color="grey"
+          viewBox="0 0 18 18"
+        >
+          <path
+            d="M3.3 13.2L9 7.6l5.7 5.6 1.4-1.4-7.1-7-7.1 7z"
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+  <div
+    className="c6"
+    open={true}
+  >
+    Et aeterno impedit accusamus nec. Ne porro altera recusabo eum, eos ad
+movet mentitum, id malorum expetenda ius. Nec illud melius repudiandae
+et. Quas prima congue vis ne, erat malorum detraxit in nam. Regione
+iuvaret consulatu duo cu.
+  </div>
+</div>
+`;
