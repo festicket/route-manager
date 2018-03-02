@@ -18,10 +18,6 @@ function Primitive({ element = 'p', children, ...props }: any) {
 
 function textMixin() {
   return css`
-    font-family: ${prop('theme.fontFamily')};
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-
     font-weight: ${switchProp('weight', {
       bold: css`
         ${prop('theme.fontWeight.bold')};`,

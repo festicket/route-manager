@@ -1,7 +1,7 @@
 // @flow
 
 import styled, { css } from 'styled-components';
-import { switchProp } from 'styled-tools';
+import { switchProp, prop } from 'styled-tools';
 
 /*
 Due to a Safari 10.1 bug, we must add a wrapping flex div inside the button,
@@ -40,7 +40,7 @@ export function buttonMixin() {
     display: inline-block;
     text-align: center;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: ${prop('theme.fontWeight.bold')};
     border-radius: 0;
     padding: 0;
     font-size: 0;
