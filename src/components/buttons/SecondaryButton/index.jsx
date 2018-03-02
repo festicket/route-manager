@@ -1,8 +1,9 @@
 // @flow
 
 import * as React from 'react';
+import { FlexWrapper } from 'src/components/buttons/styles';
+
 import { StyledSecondaryButton } from './styles';
-import { FlexWrapper } from '../styles';
 
 type Props = {
   to?: string,

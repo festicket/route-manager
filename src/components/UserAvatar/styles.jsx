@@ -2,7 +2,7 @@
 
 import styled, { css } from 'styled-components';
 import { prop, ifProp, switchProp } from 'styled-tools';
-import breakpoint from '../../utils/breakpoint';
+import breakpoint from 'src/utils/breakpoint';
 
 export const Wrapper = styled.span`
   box-sizing: border-box;

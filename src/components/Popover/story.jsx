@@ -2,8 +2,9 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { Background } from 'src/utils/storybook-helpers';
+
 import Popover from './';
-import { Background } from '../../utils/storybook-helpers';
 
 const popoverContent = close => (
   <div data-test-popover-content="true">

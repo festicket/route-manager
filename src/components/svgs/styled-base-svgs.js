@@ -8,9 +8,9 @@
  */
 
 import styled from 'styled-components';
+import { colorMixin } from 'src/utils/mixins';
 
 import { hoverStylesMixin, logoHeightVariations } from './styles';
-import { colorMixin } from '../../utils/mixins';
 
 /**
  * The base styles to be applied to generated Logo SVGs

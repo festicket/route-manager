@@ -2,8 +2,8 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-import Anchor from '../../text/Anchor';
-import { blacklistProps } from '../../../utils/props';
+import Anchor from 'src/components/text/Anchor';
+import { blacklistProps } from 'src/utils/props';
 
 type Props = {
   className?: string,

@@ -1,9 +1,10 @@
 // @flow
+
 import React from 'react';
 import ReactModal from 'react-modal';
 import styled from 'styled-components';
 import { prop } from 'styled-tools';
-import breakpoint from '../../utils/breakpoint/';
+import breakpoint from 'src/utils/breakpoint';
 
 // In order to combine styled-components with react-modal
 // We have to use an adapter function and then extend it with styled components,

@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import { darken, rgba } from 'polished';
-import ButtonPrimitive from '../ButtonPrimitive';
+import ButtonPrimitive from 'src/components/buttons/ButtonPrimitive';
 
 export const FlexWrapper = styled.div`
   display: flex;

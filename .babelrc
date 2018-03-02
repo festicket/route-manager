@@ -7,7 +7,13 @@
     "flow-react-proptypes",
     "transform-class-properties",
     "transform-object-rest-spread",
-    "styled-components-named"
+    "styled-components-named",
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "src": "./src"
+      }
+    }]
   ],
   "env": {
     "test": {

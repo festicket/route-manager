@@ -1,7 +1,7 @@
 // @flow
-import * as React from 'react';
 
-import TextPrimitive from '../TextPrimitive/';
+import * as React from 'react';
+import TextPrimitive from 'src/components/text/TextPrimitive';
 
 type HyperlinkProps = {
   element?: 'p' | 'span',

@@ -1,6 +1,8 @@
 // @flow
+
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
+import { Background } from 'src/utils/storybook-helpers';
 
 import * as logoSvgComponents from './generated/logo';
 import * as functionalSvgComponents from './generated/functional';
@@ -9,7 +11,6 @@ import * as socialSvgComponents from './generated/social';
 import * as trustCompaniesSvgComponents from './generated/trust-companies';
 
 import { LOGO_BIG, LOGO_SMALL } from './styles';
-import { Background } from '../../utils/storybook-helpers/index';
 
 const WHITE = 'white';
 const BLACK = 'black';
