@@ -20,6 +20,7 @@ export {
 } from './components/layout/WithVerticalSeparator';
 export { default as Section } from './components/layout/Section';
 export { default as Gutter } from './components/layout/Gutter';
+export { default as Details } from './components/layout/Details';
 
 // Buttons
 export {
@@ -44,6 +45,10 @@ export { default as TertiaryHeading } from './components/text/TertiaryHeading';
 export { default as BodyText } from './components/text/BodyText';
 export { default as Highlight } from './components/text/Highlight';
 export { default as Hyperlink } from './components/text/Hyperlink';
+export {
+  default as ParagraphWrapper,
+} from './components/text/ParagraphWrapper';
+export { default as Callout } from './components/text/Callout';
 
 // Modals
 export { default as Modal } from './components/Modal';
