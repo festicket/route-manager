@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RoundedSVGButton /> with initial props 1`] = `
+exports[`<RoundedCloseButton /> with initial props 1`] = `
 .c3 {
   height: 18px;
   fill: #A2A4AD;
@@ -26,8 +26,8 @@ exports[`<RoundedSVGButton /> with initial props 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 38px;
+  height: 38px;
 }
 
 .c0 {
@@ -40,15 +40,11 @@ exports[`<RoundedSVGButton /> with initial props 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 100%;
+  border-radius: 50%;
   padding: 0;
   cursor: pointer;
-  background-color: rgba(36,37,41,0.05);
-}
-
-.c0:hover {
-  background-color: rgba(36,37,41,0.1);
-  color: #9497a1;
+  background-color: white;
+  box-shadow: 0 2px 30px 0 rgba(36,37,41,0.15);
 }
 
 <a
@@ -64,10 +60,10 @@ exports[`<RoundedSVGButton /> with initial props 1`] = `
     <svg
       className="c3"
       color="grey"
-      viewBox="0 0 18 18"
+      viewBox="0 0 32 32"
     >
       <path
-        d="M5.8 3.3L11.4 9l-5.6 5.7 1.4 1.4 7-7.1-7-7.1z"
+        d="M18.507 16l9.404-9.404a1.778 1.778 0 0 0-2.51-2.505l-9.402 9.402-9.404-9.422a1.785 1.785 0 1 0-2.524 2.524l9.422 9.404-9.422 9.404a1.778 1.778 0 1 0 2.505 2.509L16 18.505l9.404 9.404a1.778 1.778 0 0 0 2.505-2.51z"
       />
     </svg>
   </div>

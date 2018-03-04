@@ -6,23 +6,26 @@ import ChevronRight from 'src/components/svgs/generated/functional/ChevronRight'
 import ChevronDown from 'src/components/svgs/generated/functional/ChevronDown';
 import ChevronLeft from 'src/components/svgs/generated/functional/ChevronLeft';
 import ChevronUp from 'src/components/svgs/generated/functional/ChevronUp';
-import Close from 'src/components/svgs/generated/functional/Close';
 
-import { FlexWrapper, Button } from './styles';
+import {
+  ChevronFlexWrapper,
+  ChevronButton,
+} from 'src/components/buttons/roundedButtons/ChevronButton/styles';
 
 type Props = {
   element?: 'a' | 'button',
-  icon: 'right' | 'down' | 'left' | 'up' | 'close',
+  direction: 'right' | 'down' | 'left' | 'up',
+  onClick?: () => void,
 };
 
-RoundedSVGButton.defaultProps = {
+RoundedChevronButton.defaultProps = {
   element: 'a',
 };
 
-export default function RoundedSVGButton({ icon, element }: Props) {
+export default function RoundedChevronButton({ direction, ...props }: Props) {
   let iconComponent;
 
-  switch (icon) {
+  switch (direction) {
     case 'up':
       iconComponent = <ChevronUp color="grey" />;
       break;
@@ -35,16 +38,13 @@ export default function RoundedSVGButton({ icon, element }: Props) {
     case 'right':
       iconComponent = <ChevronRight color="grey" />;
       break;
-    case 'close':
-      iconComponent = <Close color="grey" />;
-      break;
     default:
       iconComponent = null;
   }
 
   return (
-    <Button element={element}>
-      <FlexWrapper>{iconComponent}</FlexWrapper>
-    </Button>
+    <ChevronButton {...props}>
+      <ChevronFlexWrapper>{iconComponent}</ChevronFlexWrapper>
+    </ChevronButton>
   );
 }

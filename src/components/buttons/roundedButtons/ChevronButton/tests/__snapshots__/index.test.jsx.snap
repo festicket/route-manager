@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RoundedChevronButton /> with initial props 1`] = `
+.c1 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #8C64CB;
+}
+
+.c3 {
+  height: 18px;
+  fill: #A2A4AD;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  background-color: #F5F5F5;
+}
+
+.c0:hover {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
+}
+
+<a
+  className="c0 c1"
+  element="a"
+  target="_blank"
+  variant="standard"
+  weight="bold"
+>
+  <div
+    className="c2"
+  >
+    <svg
+      className="c3"
+      color="grey"
+      viewBox="0 0 18 18"
+    >
+      <path
+        d="M5.8 3.3L11.4 9l-5.6 5.7 1.4 1.4 7-7.1-7-7.1z"
+      />
+    </svg>
+  </div>
+</a>
+`;

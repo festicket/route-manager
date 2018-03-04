@@ -3,8 +3,8 @@
 
 import * as React from 'react';
 
-import RoundedSVGButton from '../../buttons/RoundedSVGButton';
-import TertiaryHeading from '../../text/TertiaryHeading';
+import RoundedChevronButton from 'src/components/buttons/roundedButtons/ChevronButton';
+import TertiaryHeading from 'src/components/text/TertiaryHeading';
 import { TitleRow, BodyWrapper } from './styles';
 
 type Props = {
@@ -39,9 +39,9 @@ export default class Details extends React.Component<Props, State> {
       <div>
         <TitleRow open={this.state.open} onClick={this.toggleOpen}>
           <TertiaryHeading element="h3">{this.props.title}</TertiaryHeading>
-          <RoundedSVGButton
+          <RoundedChevronButton
             element="button"
-            icon={this.state.open ? 'up' : 'down'}
+            direction={this.state.open ? 'up' : 'down'}
           />
         </TitleRow>
         <BodyWrapper open={this.state.open}>{this.props.children}</BodyWrapper>

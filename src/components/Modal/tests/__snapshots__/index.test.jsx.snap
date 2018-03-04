@@ -126,7 +126,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
             }
           }
           parentSelector={[Function]}
-          portalClassName="sc-iwsKbI c0"
+          portalClassName="sc-jzJRlG c0"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
           shouldFocusAfterRender={true}
@@ -180,7 +180,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
               }
             }
             parentSelector={[Function]}
-            portalClassName="sc-iwsKbI c0"
+            portalClassName="sc-jzJRlG c0"
             shouldCloseOnEsc={true}
             shouldCloseOnOverlayClick={true}
             shouldFocusAfterRender={true}
@@ -200,11 +200,49 @@ exports[`<Modal /> should not render anything by default 1`] = `
 `;
 
 exports[`<Modal /> should render children when isOpen is true 1`] = `
-.c1 {
+.c4 {
   height: 18px;
 }
 
-.c2 .Modal {
+.c2 {
+  border: none;
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+}
+
+.c1 {
+  display: inline-block;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 30px 0;
+}
+
+.c5 .Modal {
   opacity: 0;
   will-change: opacity,transform;
   -webkit-transition: -webkit-transform 0.8s 0.4s,opacity 0.2s 0.4s;
@@ -214,18 +252,18 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   width: 100%;
 }
 
-.c2 .Modal:focus {
+.c5 .Modal:focus {
   outline: none;
 }
 
-.c2 .Modal_after-open {
+.c5 .Modal_after-open {
   opacity: 1;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
-.c2 .Modal_before-close {
+.c5 .Modal_before-close {
   opacity: 0;
   -webkit-transform: translateY(40px);
   -ms-transform: translateY(40px);
@@ -235,7 +273,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   transition: transform 0.8s,opacity 0.2s;
 }
 
-.c2 .Overlay {
+.c5 .Overlay {
   overflow-y: scroll;
   position: fixed;
   top: 0;
@@ -248,14 +286,14 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   transition: background-color 0.1s;
 }
 
-.c2 .Overlay_after-open {
+.c5 .Overlay_after-open {
   opacity: 0.99;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
-.c2 .Overlay_before-close {
+.c5 .Overlay_before-close {
   opacity: 0;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -269,16 +307,11 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   position: fixed;
   top: 20px;
   right: 20px;
-  width: 38px;
-  height: 38px;
-  border-radius: 25px;
-  box-shadow: 0 2px 30px 0;
   z-index: 1;
-  border: 0;
 }
 
 @media (min-width:768px) {
-  .c2 .Modal {
+  .c5 .Modal {
     max-width: 800px;
     padding: 100px 0;
     -webkit-transform: translateY(20px);
@@ -292,41 +325,82 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   isOpen={true}
 >
   <div>
-    <CloseButton
-      id="modal-close"
-      onClick={[Function]}
-    >
-      <button
+    <CloseButtonWrapper>
+      <div
         className="c0"
-        id="modal-close"
-        onClick={[Function]}
       >
-        <Styled(Close)
-          color="grey"
-          height={15}
-          width={15}
+        <RoundedCloseButton
+          element="button"
+          id="modal-close"
+          onClick={[Function]}
         >
-          <Close
-            className="c1"
-            color="grey"
-            height={15}
-            width={15}
+          <Styled(Primitive)
+            element="button"
+            id="modal-close"
+            onClick={[Function]}
           >
-            <svg
+            <Primitive
               className="c1"
-              color="grey"
-              height={15}
-              viewBox="0 0 32 32"
-              width={15}
+              element="button"
+              id="modal-close"
+              onClick={[Function]}
             >
-              <path
-                d="M18.507 16l9.404-9.404a1.778 1.778 0 0 0-2.51-2.505l-9.402 9.402-9.404-9.422a1.785 1.785 0 1 0-2.524 2.524l9.422 9.404-9.422 9.404a1.778 1.778 0 1 0 2.505 2.509L16 18.505l9.404 9.404a1.778 1.778 0 0 0 2.505-2.51z"
-              />
-            </svg>
-          </Close>
-        </Styled(Close)>
-      </button>
-    </CloseButton>
+              <ResetButton
+                className="c1"
+                element="button"
+                fontSize="regular"
+                id="modal-close"
+                onClick={[Function]}
+                render={[Function]}
+                size="regular"
+              >
+                <Button
+                  className="c1 c2"
+                  element="button"
+                  fontSize="regular"
+                  id="modal-close"
+                  onClick={[Function]}
+                  render={[Function]}
+                  size="regular"
+                >
+                  <button
+                    className="c1 c2"
+                    id="modal-close"
+                    onClick={[Function]}
+                    size="regular"
+                  >
+                    <styled.div>
+                      <div
+                        className="c3"
+                      >
+                        <Styled(Close)
+                          color="grey"
+                        >
+                          <Close
+                            className="c4"
+                            color="grey"
+                          >
+                            <svg
+                              className="c4"
+                              color="grey"
+                              viewBox="0 0 32 32"
+                            >
+                              <path
+                                d="M18.507 16l9.404-9.404a1.778 1.778 0 0 0-2.51-2.505l-9.402 9.402-9.404-9.422a1.785 1.785 0 1 0-2.524 2.524l9.422 9.404-9.422 9.404a1.778 1.778 0 1 0 2.505 2.509L16 18.505l9.404 9.404a1.778 1.778 0 0 0 2.505-2.51z"
+                              />
+                            </svg>
+                          </Close>
+                        </Styled(Close)>
+                      </div>
+                    </styled.div>
+                  </button>
+                </Button>
+              </ResetButton>
+            </Primitive>
+          </Styled(Primitive)>
+        </RoundedCloseButton>
+      </div>
+    </CloseButtonWrapper>
     <Styled(ReactModalAdapter)
       closeTimeoutMS={300}
       contentLabel="Modal"
@@ -334,7 +408,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
       onRequestClose={[Function]}
     >
       <ReactModalAdapter
-        className="c2"
+        className="c5"
         closeTimeoutMS={300}
         contentLabel="Modal"
         isOpen={true}
@@ -376,7 +450,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
             }
           }
           parentSelector={[Function]}
-          portalClassName="sc-iwsKbI c2"
+          portalClassName="sc-jzJRlG c5"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
           shouldFocusAfterRender={true}
@@ -430,7 +504,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
               }
             }
             parentSelector={[Function]}
-            portalClassName="sc-iwsKbI c2"
+            portalClassName="sc-jzJRlG c5"
             shouldCloseOnEsc={true}
             shouldCloseOnOverlayClick={true}
             shouldFocusAfterRender={true}

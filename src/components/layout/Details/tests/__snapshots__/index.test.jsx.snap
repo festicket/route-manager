@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Details /> with initial props 1`] = `
-.c5 {
-  height: 18px;
-  fill: #A2A4AD;
-}
-
 .c3 {
   border: none;
   outline: none;
+}
+
+.c5 {
+  height: 18px;
+  fill: #A2A4AD;
 }
 
 .c4 {
@@ -38,10 +38,10 @@ exports[`<Details /> with initial props 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 100%;
+  border-radius: 50%;
   padding: 0;
   cursor: pointer;
-  background-color: rgba(36,37,41,0.05);
+  background-color: #F5F5F5;
 }
 
 .c2:hover {
@@ -132,14 +132,14 @@ iuvaret consulatu duo cu.
 `;
 
 exports[`<Details /> with openInitially prop 1`] = `
-.c5 {
-  height: 18px;
-  fill: #A2A4AD;
-}
-
 .c3 {
   border: none;
   outline: none;
+}
+
+.c5 {
+  height: 18px;
+  fill: #A2A4AD;
 }
 
 .c4 {
@@ -169,10 +169,10 @@ exports[`<Details /> with openInitially prop 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 100%;
+  border-radius: 50%;
   padding: 0;
   cursor: pointer;
-  background-color: rgba(36,37,41,0.05);
+  background-color: #F5F5F5;
 }
 
 .c2:hover {
