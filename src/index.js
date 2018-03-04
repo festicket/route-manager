@@ -27,8 +27,8 @@ export {
   default as SecondaryButton,
 } from './components/buttons/SecondaryButton';
 export {
-  default as RoundedChevronButton,
-} from './components/buttons/RoundedChevronButton';
+  default as RoundedSVGButton,
+} from './components/buttons/RoundedSVGButton';
 
 // Text
 export { default as Anchor } from './components/text/Anchor';

@@ -3,7 +3,7 @@
 
 import * as React from 'react';
 
-import RoundedChevronButton from '../../buttons/RoundedChevronButton';
+import RoundedSVGButton from '../../buttons/RoundedSVGButton';
 import TertiaryHeading from '../../text/TertiaryHeading';
 import { TitleRow, BodyWrapper } from './styles';
 
@@ -39,9 +39,9 @@ export default class Details extends React.Component<Props, State> {
       <div>
         <TitleRow open={this.state.open} onClick={this.toggleOpen}>
           <TertiaryHeading element="h3">{this.props.title}</TertiaryHeading>
-          <RoundedChevronButton
+          <RoundedSVGButton
             element="button"
-            direction={this.state.open ? 'up' : 'down'}
+            icon={this.state.open ? 'up' : 'down'}
           />
         </TitleRow>
         <BodyWrapper open={this.state.open}>{this.props.children}</BodyWrapper>
