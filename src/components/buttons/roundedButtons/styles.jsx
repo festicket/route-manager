@@ -8,7 +8,7 @@ const FlexWrapper = styled.div`
   justify-content: center;
 `;
 
-const Button = styled(ButtonPrimitive)`
+const StyledButtonPrimitive = styled(ButtonPrimitive)`
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -17,4 +17,4 @@ const Button = styled(ButtonPrimitive)`
   cursor: pointer;
 `;
 
-export { FlexWrapper, Button };
+export { FlexWrapper, StyledButtonPrimitive };

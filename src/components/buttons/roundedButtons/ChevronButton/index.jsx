@@ -7,22 +7,15 @@ import ChevronDown from 'src/components/svgs/generated/functional/ChevronDown';
 import ChevronLeft from 'src/components/svgs/generated/functional/ChevronLeft';
 import ChevronUp from 'src/components/svgs/generated/functional/ChevronUp';
 
-import {
-  ChevronFlexWrapper,
-  ChevronButton,
-} from 'src/components/buttons/roundedButtons/ChevronButton/styles';
+import { ChevronFlexWrapper, ChevronStyledButtonPrimitive } from './styles';
 
 type Props = {
-  element?: 'a' | 'button',
+  element: 'a' | 'button',
   direction: 'right' | 'down' | 'left' | 'up',
   onClick?: () => void,
 };
 
-RoundedChevronButton.defaultProps = {
-  element: 'a',
-};
-
-export default function RoundedChevronButton({ direction, ...props }: Props) {
+export default function ChevronButton({ direction, ...props }: Props) {
   let iconElement;
 
   switch (direction) {
@@ -43,8 +36,8 @@ export default function RoundedChevronButton({ direction, ...props }: Props) {
   }
 
   return (
-    <ChevronButton {...props}>
+    <ChevronStyledButtonPrimitive {...props}>
       <ChevronFlexWrapper>{iconElement}</ChevronFlexWrapper>
-    </ChevronButton>
+    </ChevronStyledButtonPrimitive>
   );
 }

@@ -2,14 +2,14 @@
 import { prop } from 'styled-tools';
 import { darken, rgba } from 'polished';
 
-import { Button, FlexWrapper } from '../styles';
+import { StyledButtonPrimitive, FlexWrapper } from '../styles';
 
 const ChevronFlexWrapper = FlexWrapper.extend`
   width: 28px;
   height: 28px;
 `;
 
-const ChevronButton = Button.extend`
+const ChevronStyledButtonPrimitive = StyledButtonPrimitive.extend`
   background-color: ${prop('theme.colors.greyscale.grey')};
 
   &:hover {
@@ -18,4 +18,4 @@ const ChevronButton = Button.extend`
   }
 `;
 
-export { ChevronFlexWrapper, ChevronButton };
+export { ChevronFlexWrapper, ChevronStyledButtonPrimitive };

@@ -329,7 +329,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
       <div
         className="c0"
       >
-        <RoundedCloseButton
+        <CloseButton
           element="button"
           id="modal-close"
           onClick={[Function]}
@@ -398,7 +398,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
               </ResetButton>
             </Primitive>
           </Styled(Primitive)>
-        </RoundedCloseButton>
+        </CloseButton>
       </div>
     </CloseButtonWrapper>
     <Styled(ReactModalAdapter)

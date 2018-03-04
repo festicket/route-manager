@@ -31,7 +31,7 @@ describe('<Details />', () => {
       </ThemeProvider>,
     );
 
-    const button = tree.find('RoundedChevronButton');
+    const button = tree.find('ChevronButton');
 
     expect(tree.find('BodyWrapper').prop('open')).toBe(false);
 

@@ -5,18 +5,18 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Background } from 'src/utils/storybook-helpers/index';
 
-import RoundedCloseButton from './';
+import CloseButton from './';
 
 const handleClick = () => console.log('Click!');
 
-storiesOf('Components / Buttons / RoundedCloseButton', module)
+storiesOf('Components / Buttons / CloseButton', module)
   .add('Close - a element', () => (
     <Background.White>
-      <RoundedCloseButton element="a" onClick={handleClick} />
+      <CloseButton element="a" onClick={handleClick} />
     </Background.White>
   ))
   .add('Close - button element', () => (
     <Background.White>
-      <RoundedCloseButton element="button" onClick={handleClick} />
+      <CloseButton element="button" onClick={handleClick} />
     </Background.White>
   ));

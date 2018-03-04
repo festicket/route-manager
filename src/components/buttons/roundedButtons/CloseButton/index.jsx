@@ -3,19 +3,19 @@ import React from 'react';
 
 import Close from 'src/components/svgs/generated/functional/Close';
 
-import { CloseFlexWrapper, CloseButton } from './styles';
+import { CloseFlexWrapper, CloseStyledButtonPrimitive } from './styles';
 
 type Props = {
   element: 'a' | 'button',
   onClick?: () => void,
 };
 
-export default function RoundedCloseButton(props: Props) {
+export default function CloseButton(props: Props) {
   return (
-    <CloseButton {...props}>
+    <CloseStyledButtonPrimitive {...props}>
       <CloseFlexWrapper>
         <Close color="grey" />
       </CloseFlexWrapper>
-    </CloseButton>
+    </CloseStyledButtonPrimitive>
   );
 }

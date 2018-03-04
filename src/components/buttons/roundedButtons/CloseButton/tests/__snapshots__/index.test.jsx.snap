@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RoundedCloseButton /> as anchor 1`] = `
+exports[`<CloseButton /> as anchor 1`] = `
 .c3 {
   height: 18px;
   fill: #A2A4AD;
@@ -70,7 +70,7 @@ exports[`<RoundedCloseButton /> as anchor 1`] = `
 </a>
 `;
 
-exports[`<RoundedCloseButton /> as button 1`] = `
+exports[`<CloseButton /> as button 1`] = `
 .c3 {
   height: 18px;
   fill: #A2A4AD;
