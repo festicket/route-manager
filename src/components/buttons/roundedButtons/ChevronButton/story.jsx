@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Background } from 'src/utils/storybook-helpers/index';
+import { Background } from 'src/utils/storybook-helpers';
 
 import RoundedChevronButton from './';
 

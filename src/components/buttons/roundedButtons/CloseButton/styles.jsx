@@ -11,6 +11,7 @@ const CloseFlexWrapper = FlexWrapper.extend`
 const CloseButton = Button.extend`
   background-color: ${prop('theme.colors.white')};
   box-shadow: 0 2px 30px 0 ${prop('theme.colors.shadowColor')};
+  // TODO: hover styles
 `;
 
 export { CloseButton, CloseFlexWrapper };

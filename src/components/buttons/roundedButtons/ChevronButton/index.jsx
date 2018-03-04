@@ -23,28 +23,28 @@ RoundedChevronButton.defaultProps = {
 };
 
 export default function RoundedChevronButton({ direction, ...props }: Props) {
-  let iconComponent;
+  let iconElement;
 
   switch (direction) {
     case 'up':
-      iconComponent = <ChevronUp color="grey" />;
+      iconElement = <ChevronUp color="grey" />;
       break;
     case 'down':
-      iconComponent = <ChevronDown color="grey" />;
+      iconElement = <ChevronDown color="grey" />;
       break;
     case 'left':
-      iconComponent = <ChevronLeft color="grey" />;
+      iconElement = <ChevronLeft color="grey" />;
       break;
     case 'right':
-      iconComponent = <ChevronRight color="grey" />;
+      iconElement = <ChevronRight color="grey" />;
       break;
     default:
-      iconComponent = null;
+      iconElement = null;
   }
 
   return (
     <ChevronButton {...props}>
-      <ChevronFlexWrapper>{iconComponent}</ChevronFlexWrapper>
+      <ChevronFlexWrapper>{iconElement}</ChevronFlexWrapper>
     </ChevronButton>
   );
 }
