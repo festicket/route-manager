@@ -1,8 +1,6 @@
 // @flow
-
 import * as React from 'react';
-// import CloseIcon from 'src/components/svgs/generated/functional/Close';
-// import RoundedSVGButton from 'src/components/buttons/RoundedButton/RoundedChevronButton';
+
 import CloseButton from 'src/components/buttons/roundedButtons/CloseButton';
 
 import { StyledModal, CloseButtonWrapper } from './styles';
