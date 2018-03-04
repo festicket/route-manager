@@ -6,7 +6,7 @@ import Close from 'src/components/svgs/generated/functional/Close';
 import { CloseFlexWrapper, CloseButton } from './styles';
 
 type Props = {
-  element?: 'a' | 'button',
+  element: 'a' | 'button',
   onClick?: () => void,
 };
 
