@@ -5,6 +5,7 @@ import { StyledContainer } from './styles';
 
 type Props = {|
   size: 'full' | 'normal' | 'alternative',
+  noPadding?: boolean,
   children: React.Node,
 |};
 

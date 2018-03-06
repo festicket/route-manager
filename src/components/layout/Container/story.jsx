@@ -7,17 +7,36 @@ import Container from './';
 
 storiesOf('Components / Layout / Container', module)
   .add('Normal size', () => (
-    <Container size="normal">
-      <div>{getLoremIpsumParagraph()}</div>
-    </Container>
+    <div>
+      <Container size="normal">
+        Container Normal size<br />
+        {getLoremIpsumParagraph()}
+      </Container>
+      <br />
+      <Container size="normal" noPadding>
+        Container Normal size with no padding<br />
+        {getLoremIpsumParagraph()}
+      </Container>
+    </div>
   ))
   .add('Alternative size', () => (
-    <Container size="alternative">
-      <div>{getLoremIpsumParagraph()}</div>
-    </Container>
+    <div>
+      <Container size="alternative">
+        Container Alternative size<br />
+        {getLoremIpsumParagraph()}
+      </Container>
+      <br />
+      <Container size="alternative" noPadding>
+        Container Alternative size with no padding<br />
+        {getLoremIpsumParagraph()}
+      </Container>
+    </div>
   ))
   .add('Full size', () => (
     <Container size="full">
-      <div>{getLoremIpsumParagraph()}</div>
+      <div>
+        Container Full size<br />
+        {getLoremIpsumParagraph()}
+      </div>
     </Container>
   ));

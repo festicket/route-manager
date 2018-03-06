@@ -1,7 +1,7 @@
 // @flow
 
 import styled, { css } from 'styled-components';
-import { switchProp } from 'styled-tools';
+import { switchProp, ifProp } from 'styled-tools';
 import breakpoint from 'src/utils/breakpoint';
 
 export const StyledContainer = styled.div`
@@ -9,6 +9,11 @@ export const StyledContainer = styled.div`
     normal: css`
       max-width: 100%;
       margin: 0 auto;
+      padding: ${ifProp('noPadding', '0', '0 20px')};
+
+      ${breakpoint('from-sm')`
+        padding: ${ifProp('noPadding', '0', '0px 50px')};
+      `};
 
       ${breakpoint('from-lg')`
         width: 1220px;
@@ -16,6 +21,11 @@ export const StyledContainer = styled.div`
     alternative: css`
       max-width: 100%;
       margin: 0 auto;
+      padding: ${ifProp('noPadding', '0', '0 20px')};
+
+      ${breakpoint('from-sm')`
+        padding: ${ifProp('noPadding', '0', '0px 50px')};
+      `};
 
       ${breakpoint('from-md')`
         width: 650px;
