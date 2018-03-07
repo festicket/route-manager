@@ -39,6 +39,7 @@ export default {
     }),
     babel({
       exclude: 'node_modules/**',
+      plugins: ['external-helpers'],
     }),
     // If you uncomment this plugin, the build won't work.
     commonjs({}),

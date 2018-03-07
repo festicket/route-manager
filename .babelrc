@@ -8,7 +8,6 @@
     "transform-class-properties",
     "transform-object-rest-spread",
     "styled-components-named",
-    "external-helpers",
     ["module-resolver", {
       "root": ["./"],
       "alias": {
