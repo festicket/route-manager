@@ -8,14 +8,18 @@ export { default as theme } from './utils/theme';
 // Components
 export { default as Separator } from './components/Separator';
 export { default as UserAvatar } from './components/UserAvatar';
-export { default as Modal } from './components/Modal';
-export { default as Popover } from './components/Popover';
 
 // Layout
 export { Grid, GridElement } from './components/layout/Grid';
+export { default as Container } from './components/layout/Container';
+export {
+  default as SlantedBackground,
+} from './components/layout/SlantedBackground';
 export {
   default as WithVerticalSeparator,
 } from './components/layout/WithVerticalSeparator';
+export { default as Section } from './components/layout/Section';
+export { default as Gutter } from './components/layout/Gutter';
 export { default as Details } from './components/layout/Details';
 
 // Buttons
@@ -45,6 +49,10 @@ export {
   default as ParagraphWrapper,
 } from './components/text/ParagraphWrapper';
 export { default as Callout } from './components/text/Callout';
+
+// Modals
+export { default as Modal } from './components/Modal';
+export { default as Popover } from './components/Popover';
 
 // SVGs
 export * from './components/svgs/generated/functional';
