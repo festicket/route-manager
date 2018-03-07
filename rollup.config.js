@@ -4,6 +4,7 @@ import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import commonjs from 'rollup-plugin-commonjs';
+import pkg from './package.json';
 
 const globals = {
   lodash: 'lodash',
@@ -11,11 +12,18 @@ const globals = {
 
 export default {
   input: 'src/index.js',
-  output: {
-    file: 'dist/index.js',
-    format: 'cjs',
-    globals,
-  },
+  output: [
+    {
+      file: pkg.main,
+      format: 'cjs',
+      globals,
+    },
+    {
+      file: pkg.module,
+      format: 'es',
+      globals,
+    },
+  ],
   plugins: [
     peerDepsExternal(),
     resolve({
