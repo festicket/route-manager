@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "react-css-transition": "^0.7.4",
-    "styled-tools": "^0.4.0"
+    "styled-tools": "^0.4.0",
+    "recompose": "^0.26.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
@@ -106,8 +107,7 @@
     "react-dom": ">=15.4.2",
     "styled-components": ">=2.1.2",
     "polished": "^1.9.2",
-    "react-modal": "^3.1.13",
-    "recompose": "^0.26.0"
+    "react-modal": "^3.1.13"
   },
   "browserslist": [
     "last 3 Chrome versions",
