@@ -37,9 +37,9 @@
   },
   "dependencies": {
     "polished": "^1.9.2",
+    "react-css-transition": "^0.7.4",
     "react-modal": "^3.1.13",
     "recompose": "^0.26.0",
-    "react-css-transition": "^0.7.4",
     "styled-tools": "^0.4.0"
   },
   "devDependencies": {
@@ -53,6 +53,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-jest": "^22.1.0",
+    "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-flow-react-proptypes": "^14.0.2",
     "babel-plugin-module-resolver": "^3.1.0",
     "babel-plugin-polished": "^1.1.0",
