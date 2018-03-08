@@ -7,7 +7,7 @@ import { Background } from 'src/utils/storybook-helpers/index';
 
 import CloseButton from './';
 
-const handleClick = () => console.log('Click!');
+const handleClick = () => console.log('Click!'); // TODO use Storybook Actions
 
 storiesOf('Components / Buttons / CloseButton', module)
   .add('Close - a element', () => (

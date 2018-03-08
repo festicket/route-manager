@@ -4,11 +4,6 @@ import { darken, rgba } from 'polished';
 
 import { StyledButtonPrimitive, FlexWrapper } from '../styles';
 
-const ChevronFlexWrapper = FlexWrapper.extend`
-  width: 28px;
-  height: 28px;
-`;
-
 const ChevronStyledButtonPrimitive = StyledButtonPrimitive.extend`
   background-color: ${prop('theme.colors.greyscale.grey')};
 
@@ -16,6 +11,11 @@ const ChevronStyledButtonPrimitive = StyledButtonPrimitive.extend`
     background-color: ${({ theme }) => rgba(theme.colors.greyscale.black, 0.1)};
     color: ${({ theme }) => darken(0.05, theme.colors.greyscale.dark)};
   }
+
+  ${FlexWrapper} {
+    width: 28px;
+    height: 28px;
+  }
 `;
 
-export { ChevronFlexWrapper, ChevronStyledButtonPrimitive };
+export default ChevronStyledButtonPrimitive;

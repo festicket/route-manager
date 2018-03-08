@@ -126,7 +126,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
             }
           }
           parentSelector={[Function]}
-          portalClassName="sc-jlyJG c0"
+          portalClassName="sc-gPEVay c0"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
           shouldFocusAfterRender={true}
@@ -180,7 +180,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
               }
             }
             parentSelector={[Function]}
-            portalClassName="sc-jlyJG c0"
+            portalClassName="sc-gPEVay c0"
             shouldCloseOnEsc={true}
             shouldCloseOnOverlayClick={true}
             shouldFocusAfterRender={true}
@@ -206,10 +206,6 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
 }
 
 .c4 {
-  height: 18px;
-}
-
-.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -222,8 +218,10 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+}
+
+.c5 {
+  height: 18px;
 }
 
 .c1 {
@@ -242,7 +240,12 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   box-shadow: 0 2px 30px 0;
 }
 
-.c5 .Modal {
+.c1 .c3 {
+  width: 38px;
+  height: 38px;
+}
+
+.c6 .Modal {
   opacity: 0;
   will-change: opacity,transform;
   -webkit-transition: -webkit-transform 0.8s 0.4s,opacity 0.2s 0.4s;
@@ -252,18 +255,18 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   width: 100%;
 }
 
-.c5 .Modal:focus {
+.c6 .Modal:focus {
   outline: none;
 }
 
-.c5 .Modal_after-open {
+.c6 .Modal_after-open {
   opacity: 1;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
-.c5 .Modal_before-close {
+.c6 .Modal_before-close {
   opacity: 0;
   -webkit-transform: translateY(40px);
   -ms-transform: translateY(40px);
@@ -273,7 +276,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   transition: transform 0.8s,opacity 0.2s;
 }
 
-.c5 .Overlay {
+.c6 .Overlay {
   overflow-y: scroll;
   position: fixed;
   top: 0;
@@ -286,14 +289,14 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   transition: background-color 0.1s;
 }
 
-.c5 .Overlay_after-open {
+.c6 .Overlay_after-open {
   opacity: 0.99;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
-.c5 .Overlay_before-close {
+.c6 .Overlay_before-close {
   opacity: 0;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -311,7 +314,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 .Modal {
+  .c6 .Modal {
     max-width: 800px;
     padding: 100px 0;
     -webkit-transform: translateY(20px);
@@ -369,19 +372,19 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
                     onClick={[Function]}
                     size="regular"
                   >
-                    <styled.div>
+                    <FlexWrapper>
                       <div
-                        className="c3"
+                        className="c3 c4"
                       >
                         <Styled(Close)
                           color="grey"
                         >
                           <Close
-                            className="c4"
+                            className="c5"
                             color="grey"
                           >
                             <svg
-                              className="c4"
+                              className="c5"
                               color="grey"
                               viewBox="0 0 18 18"
                             >
@@ -392,7 +395,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
                           </Close>
                         </Styled(Close)>
                       </div>
-                    </styled.div>
+                    </FlexWrapper>
                   </button>
                 </Button>
               </ResetButton>
@@ -408,7 +411,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
       onRequestClose={[Function]}
     >
       <ReactModalAdapter
-        className="c5"
+        className="c6"
         closeTimeoutMS={300}
         contentLabel="Modal"
         isOpen={true}
@@ -450,7 +453,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
             }
           }
           parentSelector={[Function]}
-          portalClassName="sc-jlyJG c5"
+          portalClassName="sc-gPEVay c6"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
           shouldFocusAfterRender={true}
@@ -504,7 +507,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
               }
             }
             parentSelector={[Function]}
-            portalClassName="sc-jlyJG c5"
+            portalClassName="sc-gPEVay c6"
             shouldCloseOnEsc={true}
             shouldCloseOnOverlayClick={true}
             shouldFocusAfterRender={true}

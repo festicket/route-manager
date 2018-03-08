@@ -7,7 +7,7 @@ import { Background } from 'src/utils/storybook-helpers';
 
 import ChevronButton from './';
 
-const handleClick = () => console.log('Click!');
+const handleClick = () => console.log('Click!'); // TODO use Storybook Actions
 
 storiesOf('Components / Buttons / ChevronButton', module)
   .add('Right - a element', () => (

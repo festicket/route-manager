@@ -7,7 +7,8 @@ import ChevronDown from 'src/components/svgs/generated/functional/ChevronDown';
 import ChevronLeft from 'src/components/svgs/generated/functional/ChevronLeft';
 import ChevronUp from 'src/components/svgs/generated/functional/ChevronUp';
 
-import { ChevronFlexWrapper, ChevronStyledButtonPrimitive } from './styles';
+import ChevronStyledButtonPrimitive from './styles';
+import { FlexWrapper } from '../styles';
 
 type Props = {
   element: 'a' | 'button',
@@ -37,7 +38,7 @@ export default function ChevronButton({ direction, ...props }: Props) {
 
   return (
     <ChevronStyledButtonPrimitive {...props}>
-      <ChevronFlexWrapper>{iconElement}</ChevronFlexWrapper>
+      <FlexWrapper>{iconElement}</FlexWrapper>
     </ChevronStyledButtonPrimitive>
   );
 }

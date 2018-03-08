@@ -9,11 +9,6 @@ exports[`<CloseButton /> as anchor 1`] = `
 }
 
 .c3 {
-  height: 18px;
-  fill: #A2A4AD;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -26,8 +21,11 @@ exports[`<CloseButton /> as anchor 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+}
+
+.c4 {
+  height: 18px;
+  fill: #A2A4AD;
 }
 
 .c0 {
@@ -47,6 +45,11 @@ exports[`<CloseButton /> as anchor 1`] = `
   box-shadow: 0 2px 30px 0 rgba(36,37,41,0.15);
 }
 
+.c0 .c2 {
+  width: 38px;
+  height: 38px;
+}
+
 <a
   className="c0 c1"
   element="a"
@@ -55,10 +58,10 @@ exports[`<CloseButton /> as anchor 1`] = `
   weight="bold"
 >
   <div
-    className="c2"
+    className="c2 c3"
   >
     <svg
-      className="c3"
+      className="c4"
       color="grey"
       viewBox="0 0 18 18"
     >
@@ -77,11 +80,6 @@ exports[`<CloseButton /> as button 1`] = `
 }
 
 .c3 {
-  height: 18px;
-  fill: #A2A4AD;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -94,8 +92,11 @@ exports[`<CloseButton /> as button 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+}
+
+.c4 {
+  height: 18px;
+  fill: #A2A4AD;
 }
 
 .c0 {
@@ -115,6 +116,11 @@ exports[`<CloseButton /> as button 1`] = `
   box-shadow: 0 2px 30px 0 rgba(36,37,41,0.15);
 }
 
+.c0 .c2 {
+  width: 38px;
+  height: 38px;
+}
+
 <button
   aria-disabled={undefined}
   className="c0 c1"
@@ -122,10 +128,10 @@ exports[`<CloseButton /> as button 1`] = `
   size="regular"
 >
   <div
-    className="c2"
+    className="c2 c3"
   >
     <svg
-      className="c3"
+      className="c4"
       color="grey"
       viewBox="0 0 18 18"
     >

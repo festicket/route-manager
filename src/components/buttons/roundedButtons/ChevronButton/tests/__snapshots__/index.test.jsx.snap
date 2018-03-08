@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ChevronButton /> as anchor 1`] = `
-.c3 {
+.c4 {
   height: 18px;
   fill: #A2A4AD;
 }
@@ -13,7 +13,7 @@ exports[`<ChevronButton /> as anchor 1`] = `
   color: #8C64CB;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -26,8 +26,6 @@ exports[`<ChevronButton /> as anchor 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
 }
 
 .c0 {
@@ -51,6 +49,11 @@ exports[`<ChevronButton /> as anchor 1`] = `
   color: #9497a1;
 }
 
+.c0 .c2 {
+  width: 28px;
+  height: 28px;
+}
+
 <a
   className="c0 c1"
   element="a"
@@ -59,10 +62,10 @@ exports[`<ChevronButton /> as anchor 1`] = `
   weight="bold"
 >
   <div
-    className="c2"
+    className="c2 c3"
   >
     <svg
-      className="c3"
+      className="c4"
       color="grey"
       viewBox="0 0 18 18"
     >
@@ -75,7 +78,7 @@ exports[`<ChevronButton /> as anchor 1`] = `
 `;
 
 exports[`<ChevronButton /> as button 1`] = `
-.c3 {
+.c4 {
   height: 18px;
   fill: #A2A4AD;
 }
@@ -85,7 +88,7 @@ exports[`<ChevronButton /> as button 1`] = `
   outline: none;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -98,8 +101,6 @@ exports[`<ChevronButton /> as button 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
 }
 
 .c0 {
@@ -123,6 +124,11 @@ exports[`<ChevronButton /> as button 1`] = `
   color: #9497a1;
 }
 
+.c0 .c2 {
+  width: 28px;
+  height: 28px;
+}
+
 <button
   aria-disabled={undefined}
   className="c0 c1"
@@ -130,10 +136,10 @@ exports[`<ChevronButton /> as button 1`] = `
   size="regular"
 >
   <div
-    className="c2"
+    className="c2 c3"
   >
     <svg
-      className="c3"
+      className="c4"
       color="grey"
       viewBox="0 0 18 18"
     >
