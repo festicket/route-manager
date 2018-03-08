@@ -55,3 +55,10 @@ export const CenteredFlexRow = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const TallContentPlaceholder = styled.div`
+  background: yellow;
+  padding: 2em;
+  min-height: 40em;
+  border: 2px solid red;
+`;

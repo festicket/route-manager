@@ -126,7 +126,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
             }
           }
           parentSelector={[Function]}
-          portalClassName="sc-jzJRlG c0"
+          portalClassName="sc-jlyJG c0"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
           shouldFocusAfterRender={true}
@@ -180,7 +180,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
               }
             }
             parentSelector={[Function]}
-            portalClassName="sc-jzJRlG c0"
+            portalClassName="sc-jlyJG c0"
             shouldCloseOnEsc={true}
             shouldCloseOnOverlayClick={true}
             shouldFocusAfterRender={true}
@@ -200,13 +200,13 @@ exports[`<Modal /> should not render anything by default 1`] = `
 `;
 
 exports[`<Modal /> should render children when isOpen is true 1`] = `
-.c4 {
-  height: 18px;
-}
-
 .c2 {
   border: none;
   outline: none;
+}
+
+.c4 {
+  height: 18px;
 }
 
 .c3 {
@@ -450,7 +450,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
             }
           }
           parentSelector={[Function]}
-          portalClassName="sc-jzJRlG c5"
+          portalClassName="sc-jlyJG c5"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
           shouldFocusAfterRender={true}
@@ -504,7 +504,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
               }
             }
             parentSelector={[Function]}
-            portalClassName="sc-jzJRlG c5"
+            portalClassName="sc-jlyJG c5"
             shouldCloseOnEsc={true}
             shouldCloseOnOverlayClick={true}
             shouldFocusAfterRender={true}

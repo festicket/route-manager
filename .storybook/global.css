@@ -1,0 +1,24 @@
+body {
+    box-sizing: border-box;
+
+    font-family: 'f37-bolton', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    Reset Box-sizing to border-box
+    https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*
+    Make your forms' appearance consistent with the rest of your content
+    https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms#Fonts_and_text
+ */
+button, input, select, textarea {
+    font-family : inherit;
+    font-size   : 100%;
+}

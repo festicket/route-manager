@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CloseButton /> as anchor 1`] = `
-.c3 {
-  height: 18px;
-  fill: #A2A4AD;
-}
-
 .c1 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #8C64CB;
+}
+
+.c3 {
+  height: 18px;
+  fill: #A2A4AD;
 }
 
 .c2 {
@@ -71,14 +71,14 @@ exports[`<CloseButton /> as anchor 1`] = `
 `;
 
 exports[`<CloseButton /> as button 1`] = `
-.c3 {
-  height: 18px;
-  fill: #A2A4AD;
-}
-
 .c1 {
   border: none;
   outline: none;
+}
+
+.c3 {
+  height: 18px;
+  fill: #A2A4AD;
 }
 
 .c2 {
