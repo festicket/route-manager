@@ -26,7 +26,6 @@ const FullWidthBackground = styled.div`
 const MonospaceBackground = styled.div`
   background-color: lightgrey;
   padding: 1em;
-  text-align: center;
   font-family: monospace;
 `;
 
@@ -48,12 +47,6 @@ export const Box = styled.div`
     default: css`
       background: ${prop('theme.colors.white')};`,
   })};
-`;
-
-export const CenteredFlexRow = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 export const TallContentPlaceholder = styled.div`
