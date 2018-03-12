@@ -13,7 +13,7 @@ const StyledButtonPrimitive = styled(ButtonPrimitive)`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  padding: 0;
+  padding: 0; // remove padding from button so it will be a perfect circle
   cursor: pointer;
 `;
 
