@@ -18,7 +18,7 @@ describe('Popover Component Test', () => {
   it('should close on document click', () => {
     cy.get('#toggle').click();
     cy.get('[data-test-popover-content]').should('be.visible');
-    cy.get('body').click();
+    cy.get('#toggle').click();
     cy.get('[data-test-popover-content]').should('not.be.visible');
   });
 
