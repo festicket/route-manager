@@ -2,6 +2,7 @@
   "name": "@festicket/react-ui-components",
   "version": "0.0.0-development",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "files": [
     "dist/"
   ],
@@ -36,11 +37,9 @@
     ]
   },
   "dependencies": {
-    "polished": "^1.9.2",
-    "react-modal": "^3.1.13",
-    "recompose": "^0.26.0",
     "react-css-transition": "^0.7.4",
-    "styled-tools": "^0.4.0"
+    "styled-tools": "^0.4.0",
+    "recompose": "^0.26.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
@@ -53,6 +52,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-jest": "^22.1.0",
+    "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-flow-react-proptypes": "^14.0.2",
     "babel-plugin-module-resolver": "^3.1.0",
     "babel-plugin-polished": "^1.1.0",
@@ -106,7 +106,9 @@
     "prop-types": ">=15.5.8",
     "react": ">=15.5.4",
     "react-dom": ">=15.4.2",
-    "styled-components": ">=2.1.2"
+    "styled-components": ">=2.1.2",
+    "polished": "^1.9.2",
+    "react-modal": "^3.1.13"
   },
   "browserslist": [
     "last 3 Chrome versions",
