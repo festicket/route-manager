@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 
 import CenteredFlexRow from 'src/utils/storybook-helpers/CenteredFlexRow';
-import Background from 'src/utils/storybook-helpers/BackgroundColor';
 
 import WithVerticalSeparator from './';
 
@@ -18,7 +17,6 @@ const UnorderedHorizonalList = styled.ul`
 
 storiesOf('Components / Layout / WithVerticalSeparator', module)
   .addDecorator(CenteredFlexRow)
-  .addDecorator(Background.White)
   .add('default', () => (
     <UnorderedHorizonalList>
       <WithVerticalSeparator>

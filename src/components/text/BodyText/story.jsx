@@ -7,7 +7,7 @@ import { Background } from 'src/utils/storybook-helpers';
 import BodyText from './';
 
 storiesOf('Components / Text / BodyText', module).add('variations', () => (
-  <Background.White>
+  <div>
     <BodyText size="tiny">Tiny size</BodyText>
     <BodyText size="small">Small size</BodyText>
     <BodyText size="regular">Regular size</BodyText>
@@ -19,5 +19,5 @@ storiesOf('Components / Text / BodyText', module).add('variations', () => (
         Small size with small spacing + white color
       </BodyText>
     </Background.Black>
-  </Background.White>
+  </div>
 ));

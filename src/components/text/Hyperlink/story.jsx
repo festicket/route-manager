@@ -7,7 +7,7 @@ import { Background } from 'src/utils/storybook-helpers';
 import Hyperlink from './';
 
 storiesOf('Components / Text / Hyperlink', module).add('variations', () => (
-  <Background.White>
+  <div>
     <Hyperlink size="tiny">Tiny size</Hyperlink>
     <Hyperlink size="small">Small size</Hyperlink>
     <Hyperlink size="regular">Regular size</Hyperlink>
@@ -16,5 +16,5 @@ storiesOf('Components / Text / Hyperlink', module).add('variations', () => (
         Small size with small spacing + white color
       </Hyperlink>
     </Background.Black>
-  </Background.White>
+  </div>
 ));

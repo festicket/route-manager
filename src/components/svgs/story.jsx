@@ -3,6 +3,7 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Background } from 'src/utils/storybook-helpers';
+import { backgroundGreyDefault } from '../../../.storybook/backgrounds';
 
 import * as logoSvgComponents from './generated/logo';
 import * as functionalSvgComponents from './generated/functional';
@@ -26,6 +27,7 @@ const CenterDecorator = storyFn => (
   <Background.Monospace>{storyFn()}</Background.Monospace>
 );
 stories.addDecorator(CenterDecorator);
+stories.addDecorator(backgroundGreyDefault);
 
 // Generate stories for all SVG Components showing all their valid variations
 

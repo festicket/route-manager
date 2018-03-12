@@ -1,8 +1,8 @@
 // @flow
 
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import { Background } from 'src/utils/storybook-helpers';
 
 import Popover from './';
 
@@ -15,7 +15,7 @@ const popoverContent = close => (
   </div>
 );
 
-const CenteredBackground = Background.White.extend`
+const CenteredBackground = styled.div`
   text-align: center;
 `;
 
