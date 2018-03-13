@@ -21,7 +21,7 @@ storiesOf('Components / Popover', module)
   .add('Left-aligned', () => (
     <Background.White>
       <Popover render={popoverContent}>
-        <button id="toggle" data-cy="toggle" style={{ fontSize: '1.5em' }}>
+        <button data-cy="toggle" style={{ fontSize: '1.5em' }}>
           Toggle Popover
         </button>
       </Popover>
@@ -30,7 +30,7 @@ storiesOf('Components / Popover', module)
   .add('Right-aligned', () => (
     <Background.White>
       <Popover horizontalAlign="right" render={popoverContent}>
-        <button id="toggle" data-cy="toggle" style={{ fontSize: '1.5em' }}>
+        <button data-cy="toggle" style={{ fontSize: '1.5em' }}>
           Toggle Popover
         </button>
       </Popover>
@@ -39,7 +39,7 @@ storiesOf('Components / Popover', module)
   .add('Left-aligned initially shown', () => (
     <Background.White>
       <Popover showInitially render={popoverContent}>
-        <button id="toggle" data-cy="toggle" style={{ fontSize: '1.5em' }}>
+        <button data-cy="toggle" style={{ fontSize: '1.5em' }}>
           Toggle Popover
         </button>
       </Popover>
@@ -48,7 +48,7 @@ storiesOf('Components / Popover', module)
   .add('Right-aligned initially shown', () => (
     <Background.White>
       <Popover showInitially horizontalAlign="right" render={popoverContent}>
-        <button id="toggle" data-cy="toggle" style={{ fontSize: '1.5em' }}>
+        <button data-cy="toggle" style={{ fontSize: '1.5em' }}>
           Toggle Popover
         </button>
       </Popover>

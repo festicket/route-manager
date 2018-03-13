@@ -9,21 +9,21 @@ describe('Popover Component Test', () => {
   });
 
   it('should toggle on trigger click', () => {
-    cy.get('#toggle').click();
+    cy.get('[data-cy=toggle]').click();
     cy.get('[data-test-popover-content]').should('be.visible');
     cy.get('[data-cy=toggle]').click();
     cy.get('[data-test-popover-content]').should('not.be.visible');
   });
 
   it('should close on document click', () => {
-    cy.get('#toggle').click();
+    cy.get('[data-cy=toggle]').click();
     cy.get('[data-test-popover-content]').should('be.visible');
     cy.get('[data-cy=toggle]').click();
     cy.get('[data-test-popover-content]').should('not.be.visible');
   });
 
   it('should close on Esc keypress', () => {
-    cy.get('#toggle').click();
+    cy.get('[data-cy=toggle]').click();
     cy.get('[data-test-popover-content]').should('be.visible');
     cy.get('body').type('{esc}');
     cy.get('[data-test-popover-content]').should('not.be.visible');
