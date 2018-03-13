@@ -3,6 +3,7 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import centered from '@storybook/addon-centered';
+import { Background } from 'src/utils/storybook-helpers';
 
 import * as logoSvgComponents from './generated/logo';
 import * as functionalSvgComponents from './generated/functional';
@@ -22,7 +23,6 @@ type StoryGenerator = SFC => React$Node;
 
 // Set up for storybook
 const stories = storiesOf('SVGs', module);
-
 stories.addDecorator(centered);
 
 // Generate stories for all SVG Components showing all their valid variations
@@ -87,7 +87,11 @@ function makeStories(
  * Story generator that will simply return a React Element of the passed in React Component
  */
 function componentOnlyStoryGenerator() {
-  return (SVGComponent: SFC) => <SVGComponent />;
+  return (SVGComponent: SFC) => (
+    <Background.Monospace>
+      <SVGComponent />
+    </Background.Monospace>
+  );
 }
 
 /**
@@ -103,13 +107,13 @@ function colorAndHoverStoryGenerator(
 ): StoryGenerator {
   return (SVGComponent: SFC) =>
     colorVariants.map(color => (
-      <div key={color}>
+      <Background.Monospace key={color}>
         <h3>color=&quot;{color}&quot; hoverable=&quot;true&quot;</h3>
         <SVGComponent color={color} hoverable="true" />
 
         <h3>color=&quot;{color}&quot;</h3>
         <SVGComponent color={color} />
-      </div>
+      </Background.Monospace>
     ));
 }
 
@@ -129,7 +133,7 @@ function logoSizeColorAndHoverStoryGenerator(
   return (SVGComponent: SFC) =>
     colorVariants.map(color =>
       sizeVariants.map(size => (
-        <div key={color + size}>
+        <Background.Monospace key={color + size}>
           <h3>
             color=&quot;{color}&quot; size=&quot;{size}&quot;
             hoverable=&quot;true&quot;
@@ -140,7 +144,7 @@ function logoSizeColorAndHoverStoryGenerator(
             color=&quot;{color}&quot; size=&quot;{size}&quot;
           </h3>
           <SVGComponent color={color} size={size} />
-        </div>
+        </Background.Monospace>
       )),
     );
 }
