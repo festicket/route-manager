@@ -9,6 +9,7 @@ exports[`<Details /> with initial props 1`] = `
 .c3 {
   border: none;
   outline: none;
+  margin: 0;
 }
 
 .c5 {
@@ -143,6 +144,7 @@ exports[`<Details /> with openInitially prop 1`] = `
 .c3 {
   border: none;
   outline: none;
+  margin: 0;
 }
 
 .c5 {

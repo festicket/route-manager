@@ -203,6 +203,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
 .c2 {
   border: none;
   outline: none;
+  margin: 0;
 }
 
 .c4 {

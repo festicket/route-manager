@@ -184,6 +184,7 @@ exports[`<SecondaryButton /> Snapshot Default Button Element 1`] = `
 .c1 {
   border: none;
   outline: none;
+  margin: 0;
 }
 
 .c2 {

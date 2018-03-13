@@ -77,6 +77,7 @@ exports[`<CloseButton /> as button 1`] = `
 .c1 {
   border: none;
   outline: none;
+  margin: 0;
 }
 
 .c3 {
