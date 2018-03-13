@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { CloseButton } from '@festicket/react-ui-components';
-import { renderWithTheme } from 'src/utils/testing/index';
+import { renderWithTheme } from 'src/tests/utils';
 
 describe('<CloseButton />', () => {
   test('as button', () => {

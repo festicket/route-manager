@@ -5,8 +5,8 @@ import { mount } from 'enzyme';
 import { ThemeProvider } from 'styled-components';
 import { Details } from '@festicket/react-ui-components';
 
-import theme from '../../../../utils/theme';
-import { renderWithTheme } from '../../../../utils/testing';
+import theme from 'src/utils/theme';
+import { renderWithTheme } from 'src/tests/utils';
 import { title, body } from './fixtures';
 
 describe('<Details />', () => {
