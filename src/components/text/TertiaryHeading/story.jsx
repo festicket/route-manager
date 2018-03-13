@@ -11,11 +11,11 @@ storiesOf('Components / Text / TertiaryHeading', module)
     <TertiaryHeading element="h3">Tertiary Heading</TertiaryHeading>
   ))
   .add('with white color prop', () => (
-    <Background.Black>
+    <Background.Theme>
       <TertiaryHeading element="h3" color="white">
         Tertiary Heading
       </TertiaryHeading>
-    </Background.Black>
+    </Background.Theme>
   ))
   .add('with light weight prop', () => (
     <TertiaryHeading element="h3" weight="light">

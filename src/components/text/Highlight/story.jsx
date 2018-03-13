@@ -14,10 +14,10 @@ storiesOf('Components / Text / Highlight', module).add('variations', () => (
     <Highlight size="small" spacing="md">
       Small size with medium spacing
     </Highlight>
-    <Background.Black>
+    <Background.Theme>
       <Highlight size="small" spacing="sm" color="white">
         Small size with small spacing + white color
       </Highlight>
-    </Background.Black>
+    </Background.Theme>
   </div>
 ));

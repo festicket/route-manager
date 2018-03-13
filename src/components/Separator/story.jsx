@@ -2,17 +2,13 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import {
-  backgroundWhiteDefault,
-  backgroundThemeDefault,
-} from '../../../.storybook/backgrounds';
+import { Background } from 'src/utils/storybook-helpers';
 
 import Separator from './';
 
 storiesOf('Components / Separator', module)
-  .addDecorator(backgroundThemeDefault)
   .add('Light Separator', () => (
-    <div>
+    <Background.Theme>
       <Separator variant="light" />
       <Separator variant="light">
         <span>or</span>
@@ -20,12 +16,8 @@ storiesOf('Components / Separator', module)
       <Separator variant="light">
         <span>lorem ipsum dolor sit amet nullisque qua suntam</span>
       </Separator>
-    </div>
-  ));
-
-// this extra storiesOf is because we want to have diffrent background color on the first component.
-storiesOf('Components / Separator', module)
-  .addDecorator(backgroundWhiteDefault)
+    </Background.Theme>
+  ))
   .add('Medium Separator', () => (
     <div>
       <Separator />

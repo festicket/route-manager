@@ -3,7 +3,8 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Background } from 'src/utils/storybook-helpers';
-import { backgroundGreyDefault } from '../../../.storybook/backgrounds';
+
+import theme from 'src/utils/theme';
 
 import * as logoSvgComponents from './generated/logo';
 import * as functionalSvgComponents from './generated/functional';
@@ -27,7 +28,6 @@ const CenterDecorator = storyFn => (
   <Background.Monospace>{storyFn()}</Background.Monospace>
 );
 stories.addDecorator(CenterDecorator);
-stories.addDecorator(backgroundGreyDefault);
 
 // Generate stories for all SVG Components showing all their valid variations
 
@@ -95,6 +95,17 @@ function componentOnlyStoryGenerator() {
 }
 
 /**
+ * Return a style object for setting the background to theme color for white svgs
+ * @param color
+ * @returns {*}
+ */
+function setBackgroundColor(color) {
+  return color === WHITE
+    ? { backgroundColor: theme.colors.brand.primary }
+    : null;
+}
+
+/**
  * Returns a story generator function that takes a React Component and will generate a React Element
  * containing every combination of colour in colorVariants and hoverable and non-hoverable variants
  * of the input React Component.
@@ -107,7 +118,7 @@ function colorAndHoverStoryGenerator(
 ): StoryGenerator {
   return (SVGComponent: SFC) =>
     colorVariants.map(color => (
-      <div key={color}>
+      <div key={color} style={setBackgroundColor(color)}>
         <h3>color=&quot;{color}&quot; hoverable=&quot;true&quot;</h3>
         <SVGComponent color={color} hoverable="true" />
 
@@ -133,7 +144,7 @@ function logoSizeColorAndHoverStoryGenerator(
   return (SVGComponent: SFC) =>
     colorVariants.map(color =>
       sizeVariants.map(size => (
-        <div key={color + size}>
+        <div key={color + size} style={setBackgroundColor(color)}>
           <h3>
             color=&quot;{color}&quot; size=&quot;{size}&quot;
             hoverable=&quot;true&quot;

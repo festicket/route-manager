@@ -11,9 +11,9 @@ storiesOf('Components / Text / PrimaryHeading', module)
     <PrimaryHeading element="h1">Primary Heading</PrimaryHeading>
   ))
   .add('with white color prop', () => (
-    <Background.Black>
+    <Background.Theme>
       <PrimaryHeading element="h1" color="white">
         Primary Heading
       </PrimaryHeading>
-    </Background.Black>
+    </Background.Theme>
   ));

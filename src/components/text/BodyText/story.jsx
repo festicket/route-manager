@@ -14,10 +14,10 @@ storiesOf('Components / Text / BodyText', module).add('variations', () => (
     <BodyText size="small" spacing="md">
       Small size with medium spacing
     </BodyText>
-    <Background.Black>
+    <Background.Theme>
       <BodyText size="small" spacing="sm" color="white">
         Small size with small spacing + white color
       </BodyText>
-    </Background.Black>
+    </Background.Theme>
   </div>
 ));

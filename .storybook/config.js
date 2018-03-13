@@ -3,10 +3,11 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { configure, setAddon, getStorybook, addDecorator } from '@storybook/react';
-import { backgroundWhiteDefault } from './backgrounds';
+import addonBackgrounds from '@storybook/addon-backgrounds';
 import createPercyAddon from '@percy-io/percy-storybook';
 
-import theme from '../src/utils/theme';
+import theme from 'src/utils/theme';
+
 import './fonts.css';
 import './global.css';
 
@@ -15,7 +16,11 @@ const { percyAddon, serializeStories } = createPercyAddon();
 setAddon(percyAddon);
 
 addDecorator(story => <ThemeProvider theme={theme}>{story()}</ThemeProvider>);
-addDecorator(backgroundWhiteDefault);
+addDecorator(addonBackgrounds([
+  { name: 'white', value: `${theme.colors.white}`, default: true },
+  { name: 'grey', value: `${theme.colors.greyscale.grey}` },
+  { name: 'theme', value: `${theme.colors.brand.primary}` },
+]));
 
 
 // reguire in all of our story.jsx files

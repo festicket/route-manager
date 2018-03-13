@@ -1,9 +1,11 @@
 // @flow
 
 import styled from 'styled-components';
+import theme from 'src/utils/theme';
 
-const BlackBackground = styled.div`
-  background-color: black;
+const ThemeBackground = styled.div`
+  background-color: ${theme.colors.brand.primary};
+  color: ${theme.colors.white};
   padding: 1em;
 `;
 
@@ -25,7 +27,7 @@ const MonospaceBackground = styled.div`
 
 export const Background = {
   White: WhiteBackground,
-  Black: BlackBackground,
+  Theme: ThemeBackground,
   FullWidth: FullWidthBackground,
   Monospace: MonospaceBackground,
 };
