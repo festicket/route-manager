@@ -4,8 +4,8 @@ import { functional as baseSVG } from '../../styled-base-svgs';
 import type { FunctionalSVGProps } from '../../flow-types';
 
 const Close = (props: FunctionalSVGProps) => (
-  <svg viewBox="0 0 32 32" {...props}>
-    <path d="M18.507 16l9.404-9.404a1.778 1.778 0 0 0-2.51-2.505l-9.402 9.402-9.404-9.422a1.785 1.785 0 1 0-2.524 2.524l9.422 9.404-9.422 9.404a1.778 1.778 0 1 0 2.505 2.509L16 18.505l9.404 9.404a1.778 1.778 0 0 0 2.505-2.51z" />
+  <svg viewBox="0 0 18 18" {...props}>
+    <path d="M16 14.7l-5.6-5.6L16 3.5l-1.4-1.4L9 7.7 3.4 2.1 2 3.5l5.6 5.6L2 14.7l1.4 1.4L9 10.5l5.6 5.6z" />
   </svg>
 );
 
