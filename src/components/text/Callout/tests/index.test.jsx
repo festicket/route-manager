@@ -3,7 +3,7 @@
 import React from 'react';
 import { Callout } from '@festicket/react-ui-components';
 
-import { renderWithTheme } from '../../../../utils/testing';
+import { renderWithTheme } from 'src/tests/utils';
 import fixture from './fixtures';
 
 describe('<Callout />', () => {

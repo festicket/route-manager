@@ -87,15 +87,9 @@ export const StyledModal = styled(ReactModalAdapter).attrs({
   }
 `;
 
-export const CloseButton = styled.button`
+export const CloseButtonWrapper = styled.div`
   position: fixed;
   top: 20px;
   right: 20px;
-  width: 38px;
-  height: 38px;
-  border-radius: 25px;
-  background-color: ${prop('theme.colors.white')};
-  box-shadow: 0 2px 30px 0 ${prop('theme.colors.shadowColor')};
   z-index: 1;
-  border: 0;
 `;

@@ -31,8 +31,11 @@ export {
   default as SecondaryButton,
 } from './components/buttons/SecondaryButton';
 export {
-  default as RoundedChevronButton,
-} from './components/buttons/RoundedChevronButton';
+  default as ChevronButton,
+} from './components/buttons/roundedButtons/ChevronButton';
+export {
+  default as CloseButton,
+} from './components/buttons/roundedButtons/CloseButton';
 
 // Text
 export { default as Anchor } from './components/text/Anchor';
