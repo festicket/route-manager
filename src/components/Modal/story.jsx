@@ -15,7 +15,7 @@ function ModalWrapper({ isOpen, toggleModal, children }) {
   return (
     <Background.FullWidth>
       <button
-        className="modal-button"
+        data-cy="modal-button"
         onClick={() => toggleModal(state => !state)}
       >
         Toggle Modal
@@ -47,7 +47,7 @@ storiesOf('Components / Modal', module)
   .add('default', () => (
     <ModalWithState>
       <Background.White>
-        <h1 id="modal-content">Modal Test!</h1>
+        <h1 data-cy="modal-content">Modal Test!</h1>
         <article>
           <p>{dummyText}</p>
           <br />
@@ -58,7 +58,7 @@ storiesOf('Components / Modal', module)
   .add('with overflowing content', () => (
     <ModalWithState>
       <Background.White>
-        <h1 id="modal-content">Modal Test!</h1>
+        <h1 data-cy="modal-content">Modal Test!</h1>
         <article>
           {modalContent.map(item => (
             <Fragment key={Math.random()}>
