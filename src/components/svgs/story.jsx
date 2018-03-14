@@ -41,7 +41,7 @@ makeStories(
 );
 
 makeStories(
-  'functinoal',
+  'functional',
   functionalSvgComponents,
   colorAndHoverStoryGenerator([WHITE, GREY, THEME_COLOR]),
 );
