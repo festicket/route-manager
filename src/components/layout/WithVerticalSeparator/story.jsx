@@ -3,9 +3,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-
-import CenteredFlexRow from 'src/utils/storybook-helpers/CenteredFlexRow';
-import Background from 'src/utils/storybook-helpers/BackgroundColor';
+import centered from '@storybook/addon-centered';
 
 import WithVerticalSeparator from './';
 
@@ -17,8 +15,7 @@ const UnorderedHorizonalList = styled.ul`
 `;
 
 storiesOf('Components / Layout / WithVerticalSeparator', module)
-  .addDecorator(CenteredFlexRow)
-  .addDecorator(Background.White)
+  .addDecorator(centered)
   .add('default', () => (
     <UnorderedHorizonalList>
       <WithVerticalSeparator>

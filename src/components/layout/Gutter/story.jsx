@@ -8,9 +8,9 @@ import Gutter from './';
 
 storiesOf('Components / Layout / Gutter', module).add('default', () => (
   <div>
-    <Background.Monospace>
+    <Background.Documentation>
       <p>Horizontal padding should change according to viewport width.</p>
-    </Background.Monospace>
+    </Background.Documentation>
     <Gutter>{getLoremIpsumParagraph()}</Gutter>
   </div>
 ));

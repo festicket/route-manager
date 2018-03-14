@@ -330,42 +330,42 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
         className="c0"
       >
         <CloseButton
+          data-cy="modal-close"
           element="button"
-          id="modal-close"
           onClick={[Function]}
         >
           <Styled(Primitive)
+            data-cy="modal-close"
             element="button"
-            id="modal-close"
             onClick={[Function]}
           >
             <Primitive
               className="c1"
+              data-cy="modal-close"
               element="button"
-              id="modal-close"
               onClick={[Function]}
             >
               <ResetButton
                 className="c1"
+                data-cy="modal-close"
                 element="button"
                 fontSize="regular"
-                id="modal-close"
                 onClick={[Function]}
                 render={[Function]}
                 size="regular"
               >
                 <Button
                   className="c1 c2"
+                  data-cy="modal-close"
                   element="button"
                   fontSize="regular"
-                  id="modal-close"
                   onClick={[Function]}
                   render={[Function]}
                   size="regular"
                 >
                   <button
                     className="c1 c2"
-                    id="modal-close"
+                    data-cy="modal-close"
                     onClick={[Function]}
                     size="regular"
                   >
