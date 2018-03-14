@@ -21,7 +21,7 @@ export default function Modal({
   return (
     <div>
       {isOpen ? (
-        <CloseButton id="modal-close" onClick={handleClose}>
+        <CloseButton data-cy="modal-close" onClick={handleClose}>
           <CloseIcon color="grey" height={15} width={15} />
         </CloseButton>
       ) : null}

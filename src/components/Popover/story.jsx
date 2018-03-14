@@ -8,7 +8,7 @@ import { Background } from 'src/utils/storybook-helpers';
 import Popover from './';
 
 const popoverContent = close => (
-  <div data-test-popover-content="true">
+  <div data-cy="popover-content">
     <p>Hello!</p>
     <p>
       <button onClick={close}>Close</button>
