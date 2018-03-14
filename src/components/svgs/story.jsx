@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Background } from 'src/utils/storybook-helpers';
+import centered from '@storybook/addon-centered';
 
 import theme from 'src/utils/theme';
 
@@ -24,10 +24,7 @@ type StoryGenerator = SFC => React$Node;
 
 // Set up for storybook
 const stories = storiesOf('SVGs', module);
-const CenterDecorator = storyFn => (
-  <Background.Monospace>{storyFn()}</Background.Monospace>
-);
-stories.addDecorator(CenterDecorator);
+stories.addDecorator(centered);
 
 // Generate stories for all SVG Components showing all their valid variations
 

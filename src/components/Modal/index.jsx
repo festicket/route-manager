@@ -24,7 +24,7 @@ export default function Modal({
         <CloseButtonWrapper>
           <CloseButton
             element="button"
-            id="modal-close"
+            data-cy="modal-close"
             onClick={handleClose}
           />
         </CloseButtonWrapper>

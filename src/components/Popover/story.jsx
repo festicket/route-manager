@@ -1,13 +1,13 @@
 // @flow
 
 import React from 'react';
-import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import centered from '@storybook/addon-centered';
 
 import Popover from './';
 
 const popoverContent = close => (
-  <div data-test-popover-content="true">
+  <div data-cy="popover-content">
     <p>Hello!</p>
     <p>
       <button onClick={close}>Close</button>
@@ -15,44 +15,33 @@ const popoverContent = close => (
   </div>
 );
 
-const CenteredBackground = styled.div`
-  text-align: center;
-`;
-
 storiesOf('Components / Popover', module)
+  .addDecorator(centered)
   .add('Left-aligned', () => (
-    <CenteredBackground>
-      <Popover render={popoverContent}>
-        <button id="toggle" style={{ fontSize: '1.5em' }}>
-          Toggle Popover
-        </button>
-      </Popover>
-    </CenteredBackground>
+    <Popover render={popoverContent}>
+      <button data-cy="toggle" style={{ fontSize: '1.5em' }}>
+        Toggle Popover
+      </button>
+    </Popover>
   ))
   .add('Right-aligned', () => (
-    <CenteredBackground>
-      <Popover horizontalAlign="right" render={popoverContent}>
-        <button id="toggle" style={{ fontSize: '1.5em' }}>
-          Toggle Popover
-        </button>
-      </Popover>
-    </CenteredBackground>
+    <Popover horizontalAlign="right" render={popoverContent}>
+      <button data-cy="toggle" style={{ fontSize: '1.5em' }}>
+        Toggle Popover
+      </button>
+    </Popover>
   ))
   .add('Left-aligned initially shown', () => (
-    <CenteredBackground>
-      <Popover showInitially render={popoverContent}>
-        <button id="toggle" style={{ fontSize: '1.5em' }}>
-          Toggle Popover
-        </button>
-      </Popover>
-    </CenteredBackground>
+    <Popover showInitially render={popoverContent}>
+      <button data-cy="toggle" style={{ fontSize: '1.5em' }}>
+        Toggle Popover
+      </button>
+    </Popover>
   ))
   .add('Right-aligned initially shown', () => (
-    <CenteredBackground>
-      <Popover showInitially horizontalAlign="right" render={popoverContent}>
-        <button id="toggle" style={{ fontSize: '1.5em' }}>
-          Toggle Popover
-        </button>
-      </Popover>
-    </CenteredBackground>
+    <Popover showInitially horizontalAlign="right" render={popoverContent}>
+      <button data-cy="toggle" style={{ fontSize: '1.5em' }}>
+        Toggle Popover
+      </button>
+    </Popover>
   ));

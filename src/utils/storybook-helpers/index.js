@@ -21,7 +21,6 @@ const FullWidthBackground = styled.div`
 
 const MonospaceBackground = styled.div`
   padding: 1em;
-  text-align: center;
   font-family: monospace;
 `;
 
@@ -31,12 +30,6 @@ export const Background = {
   FullWidth: FullWidthBackground,
   Monospace: MonospaceBackground,
 };
-
-export const CenteredFlexRow = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 export const TallContentPlaceholder = styled.div`
   background: yellow;
