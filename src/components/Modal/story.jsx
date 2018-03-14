@@ -13,7 +13,7 @@ const ModalWithState = withState('isOpen', 'toggleModal', false)(ModalWrapper);
 // StorybookWrapper for the state enhanced modal.
 function ModalWrapper({ isOpen, toggleModal, children }) {
   return (
-    <Background.FullWidth>
+    <div>
       <button
         data-cy="modal-button"
         onClick={() => toggleModal(state => !state)}
@@ -23,7 +23,7 @@ function ModalWrapper({ isOpen, toggleModal, children }) {
       <Modal isOpen={isOpen} handleClose={() => toggleModal(state => !state)}>
         {children}
       </Modal>
-    </Background.FullWidth>
+    </div>
   );
 }
 
