@@ -10,8 +10,6 @@ import * as paymentSvgComponents from './generated/payment-types';
 import * as socialSvgComponents from './generated/social';
 import * as trustCompaniesSvgComponents from './generated/trust-companies';
 
-import { LOGO_BIG, LOGO_SMALL } from './styles';
-
 const WHITE = 'white';
 const BLACK = 'black';
 const GREY = 'grey';
@@ -32,10 +30,7 @@ stories.addDecorator(CenterDecorator);
 makeStories(
   'logo',
   logoSvgComponents,
-  logoSizeColorAndHoverStoryGenerator(
-    [BLACK, THEME_COLOR, WHITE],
-    [LOGO_SMALL, LOGO_BIG],
-  ),
+  colorAndHoverStoryGenerator([BLACK, THEME_COLOR, WHITE]),
 );
 
 makeStories(
@@ -113,36 +108,4 @@ function colorAndHoverStoryGenerator(
         <SVGComponent color={color} />
       </div>
     ));
-}
-
-/**
- * Returns a story generator function that takes a React Component and will generate a React Element
- * containing every combination of colour in colorVariants, size in sizeVariants and hoverable and
- * non-hoverable variants of the input React Component.
- *
- * @param colorVariants {[...string]}
- * @param sizeVariants {[...string]}
- * @returns {function}
- */
-function logoSizeColorAndHoverStoryGenerator(
-  colorVariants: Array<string>,
-  sizeVariants: Array<string>,
-): StoryGenerator {
-  return (SVGComponent: SFC) =>
-    colorVariants.map(color =>
-      sizeVariants.map(size => (
-        <div key={color + size}>
-          <h3>
-            color=&quot;{color}&quot; size=&quot;{size}&quot;
-            hoverable=&quot;true&quot;
-          </h3>
-          <SVGComponent color={color} size={size} hoverable="true" />
-
-          <h3>
-            color=&quot;{color}&quot; size=&quot;{size}&quot;
-          </h3>
-          <SVGComponent color={color} size={size} />
-        </div>
-      )),
-    );
 }

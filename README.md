@@ -14,6 +14,11 @@ SVG Components are dynamically generated in the repo.
 
 New SVGs can be added by placing an svg source file inside a folder in `/svgs/`. Each type of folder generates SVGs with different variation - based on the template that is configured for that folder in `svgs/svgr.sh`
 
+// There is a bug in IE 11 where SVGs without width have width of 100%
+// http://nicolasgallagher.com/canvas-fix-svg-scaling-in-internet-explorer/
+// Make sure svgs set a width and height property
+
+
 Running `npm run svgr` will take all the SVGs from the source svg folders in `/svgs` and use `svgr` to generate React components from them. These will be placed in `src/components/svgs/generated/`.
 
 **TODO** - `Spot Illustration` and `Display` SVG types which need to be added in the future.
