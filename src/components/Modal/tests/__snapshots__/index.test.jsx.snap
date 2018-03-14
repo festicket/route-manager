@@ -293,12 +293,12 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
 >
   <div>
     <CloseButton
-      id="modal-close"
+      data-cy="modal-close"
       onClick={[Function]}
     >
       <button
         className="c0"
-        id="modal-close"
+        data-cy="modal-close"
         onClick={[Function]}
       >
         <Styled(Close)
