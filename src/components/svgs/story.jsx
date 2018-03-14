@@ -3,7 +3,8 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import centered from '@storybook/addon-centered';
-import { Background } from 'src/utils/storybook-helpers';
+
+import theme from 'src/utils/theme';
 
 import * as logoSvgComponents from './generated/logo';
 import * as functionalSvgComponents from './generated/functional';
@@ -87,11 +88,18 @@ function makeStories(
  * Story generator that will simply return a React Element of the passed in React Component
  */
 function componentOnlyStoryGenerator() {
-  return (SVGComponent: SFC) => (
-    <Background.Monospace>
-      <SVGComponent />
-    </Background.Monospace>
-  );
+  return (SVGComponent: SFC) => <SVGComponent />;
+}
+
+/**
+ * Return a style object for setting the background to theme color for white svgs
+ * @param color
+ * @returns {*}
+ */
+function setBackgroundColor(color) {
+  return color === WHITE
+    ? { backgroundColor: theme.colors.brand.primary }
+    : null;
 }
 
 /**
@@ -107,13 +115,13 @@ function colorAndHoverStoryGenerator(
 ): StoryGenerator {
   return (SVGComponent: SFC) =>
     colorVariants.map(color => (
-      <Background.Monospace key={color}>
+      <div key={color} style={setBackgroundColor(color)}>
         <h3>color=&quot;{color}&quot; hoverable=&quot;true&quot;</h3>
         <SVGComponent color={color} hoverable="true" />
 
         <h3>color=&quot;{color}&quot;</h3>
         <SVGComponent color={color} />
-      </Background.Monospace>
+      </div>
     ));
 }
 
@@ -133,7 +141,7 @@ function logoSizeColorAndHoverStoryGenerator(
   return (SVGComponent: SFC) =>
     colorVariants.map(color =>
       sizeVariants.map(size => (
-        <Background.Monospace key={color + size}>
+        <div key={color + size} style={setBackgroundColor(color)}>
           <h3>
             color=&quot;{color}&quot; size=&quot;{size}&quot;
             hoverable=&quot;true&quot;
@@ -144,7 +152,7 @@ function logoSizeColorAndHoverStoryGenerator(
             color=&quot;{color}&quot; size=&quot;{size}&quot;
           </h3>
           <SVGComponent color={color} size={size} />
-        </Background.Monospace>
+        </div>
       )),
     );
 }
