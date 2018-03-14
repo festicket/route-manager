@@ -7,9 +7,6 @@ import SecondaryButton from './';
 
 storiesOf('Components / Buttons / SecondaryButton', module)
   .add('Default', () => <SecondaryButton>Button</SecondaryButton>)
-  .add('Default with grey background', () => (
-    <SecondaryButton>Button</SecondaryButton>
-  ))
   .add('Default Small', () => (
     <SecondaryButton size="small">Button</SecondaryButton>
   ))
