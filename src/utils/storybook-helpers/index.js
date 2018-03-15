@@ -1,60 +1,39 @@
 // @flow
 
-import styled, { css } from 'styled-components';
-import { prop, switchProp } from 'styled-tools';
+import styled from 'styled-components';
+import theme from 'src/utils/theme';
 
-const BlackBackground = styled.div`
-  background-color: black;
+/**
+ * Use when the Storybook Component should only ever appear on a theme coloured background
+ */
+const ThemeBackground = styled.div`
+  background-color: ${theme.colors.brand.primary};
+  color: ${theme.colors.white};
   padding: 1em;
 `;
 
+/**
+ * Try not to use. For situations when a component needs child content with a white background
+ */
 const WhiteBackground = styled.div`
   background-color: white;
   padding: 1em;
 `;
 
-const GreyBackground = styled.div`
-  background-color: ${prop('theme.colors.greyscale.grey')};
-  padding: 1em;
-`;
-
-const FullWidthBackground = styled.div`
-  height: 100vh;
-  width: 100vw;
-`;
-
-const MonospaceBackground = styled.div`
+/**
+ * Use when adding documentation to the Storybook for a component
+ */
+const DocumentationBackground = styled.div`
   background-color: lightgrey;
-  padding: 1em;
-  text-align: center;
   font-family: monospace;
+  padding: 1em;
 `;
 
 export const Background = {
   White: WhiteBackground,
-  Black: BlackBackground,
-  Grey: GreyBackground,
-  FullWidth: FullWidthBackground,
-  Monospace: MonospaceBackground,
+  Theme: ThemeBackground,
+  Documentation: DocumentationBackground,
 };
-
-export const Box = styled.div`
-  padding: 50px;
-  box-sizing: border-box;
-  ${switchProp('variant', {
-    dark: css`
-      background: ${prop('theme.colors.brand.primary')};
-      color: ${prop('theme.colors.white')};`,
-    default: css`
-      background: ${prop('theme.colors.white')};`,
-  })};
-`;
-
-export const CenteredFlexRow = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 export const TallContentPlaceholder = styled.div`
   background: yellow;

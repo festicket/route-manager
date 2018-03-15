@@ -11,11 +11,11 @@ storiesOf('Components / Text / SecondaryHeading', module)
     <SecondaryHeading element="h2">Secondary Heading</SecondaryHeading>
   ))
   .add('with white color prop', () => (
-    <Background.Black>
+    <Background.Theme>
       <SecondaryHeading element="h2" color="white">
         Secondary Heading
       </SecondaryHeading>
-    </Background.Black>
+    </Background.Theme>
   ))
   .add('with light weight prop', () => (
     <SecondaryHeading element="h2" weight="light">
