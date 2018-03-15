@@ -2,41 +2,25 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Background } from 'src/utils/storybook-helpers';
 
 import SecondaryButton from './';
 
 storiesOf('Components / Buttons / SecondaryButton', module)
-  .add('Default', () => (
-    <Background.White>
-      <SecondaryButton>Button</SecondaryButton>
-    </Background.White>
-  ))
-  .add('Default with grey background', () => (
-    <Background.Grey>
-      <SecondaryButton>Button</SecondaryButton>
-    </Background.Grey>
-  ))
+  .add('Default', () => <SecondaryButton>Button</SecondaryButton>)
   .add('Default Small', () => (
-    <Background.White>
-      <SecondaryButton size="small">Button</SecondaryButton>
-    </Background.White>
+    <SecondaryButton size="small">Button</SecondaryButton>
   ))
   .add('Default Small with isDisabled', () => (
-    <Background.White>
-      <SecondaryButton size="small" element="button" isDisabled>
-        Disabled Button
-      </SecondaryButton>
-    </Background.White>
+    <SecondaryButton size="small" element="button" isDisabled>
+      Disabled Button
+    </SecondaryButton>
   ))
   .add('Using a render prop', () => (
-    <Background.White>
-      <SecondaryButton
-        element="button"
-        render={() => [
-          <span key="cart">Add to cart</span>,
-          <span key="thing">Here is a thing</span>,
-        ]}
-      />
-    </Background.White>
+    <SecondaryButton
+      element="button"
+      render={() => [
+        <span key="cart">Add to cart</span>,
+        <span key="thing">Here is a thing</span>,
+      ]}
+    />
   ));

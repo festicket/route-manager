@@ -13,9 +13,9 @@ const ModalWithState = withState('isOpen', 'toggleModal', false)(ModalWrapper);
 // StorybookWrapper for the state enhanced modal.
 function ModalWrapper({ isOpen, toggleModal, children }) {
   return (
-    <Background.FullWidth>
+    <div>
       <button
-        className="modal-button"
+        data-cy="modal-button"
         onClick={() => toggleModal(state => !state)}
       >
         Toggle Modal
@@ -23,7 +23,7 @@ function ModalWrapper({ isOpen, toggleModal, children }) {
       <Modal isOpen={isOpen} handleClose={() => toggleModal(state => !state)}>
         {children}
       </Modal>
-    </Background.FullWidth>
+    </div>
   );
 }
 
@@ -47,7 +47,7 @@ storiesOf('Components / Modal', module)
   .add('default', () => (
     <ModalWithState>
       <Background.White>
-        <h1 id="modal-content">Modal Test!</h1>
+        <h1 data-cy="modal-content">Modal Test!</h1>
         <article>
           <p>{dummyText}</p>
           <br />
@@ -58,7 +58,7 @@ storiesOf('Components / Modal', module)
   .add('with overflowing content', () => (
     <ModalWithState>
       <Background.White>
-        <h1 id="modal-content">Modal Test!</h1>
+        <h1 data-cy="modal-content">Modal Test!</h1>
         <article>
           {modalContent.map(item => (
             <Fragment key={Math.random()}>

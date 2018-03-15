@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import { renderWithTheme } from 'src/utils/testing';
+import { renderWithTheme } from 'src/tests/utils';
 
 import Anchor from '../';
 

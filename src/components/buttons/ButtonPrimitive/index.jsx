@@ -41,6 +41,7 @@ function Button(props) {
 const ResetButton = styled(Button)`
   border: none;
   outline: none;
+  margin: 0; // This is needed to remove margin only added in Safari (11.0.3)
 `;
 
 export default function Primitive({

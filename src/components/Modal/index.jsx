@@ -1,13 +1,13 @@
 // @flow
-
 import * as React from 'react';
-import CloseIcon from 'src/components/svgs/generated/functional/Close';
 
-import { StyledModal, CloseButton } from './styles';
+import CloseButton from 'src/components/buttons/roundedButtons/CloseButton';
+
+import { StyledModal, CloseButtonWrapper } from './styles';
 
 type Props = {
   isOpen?: boolean,
-  handleClose?: () => mixed,
+  handleClose?: () => void,
   children: React.Node,
   className?: string,
 };
@@ -21,9 +21,13 @@ export default function Modal({
   return (
     <div>
       {isOpen ? (
-        <CloseButton id="modal-close" onClick={handleClose}>
-          <CloseIcon color="grey" height={15} width={15} />
-        </CloseButton>
+        <CloseButtonWrapper>
+          <CloseButton
+            element="button"
+            data-cy="modal-close"
+            onClick={handleClose}
+          />
+        </CloseButtonWrapper>
       ) : null}
       <StyledModal
         className={className}

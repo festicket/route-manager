@@ -10,25 +10,21 @@ import Section from './';
 storiesOf('Components / Layout / Section', module)
   .add('section variant', () => (
     <div>
-      <Background.Monospace>
+      <Background.Documentation>
         <p>Margin-bottom should change depending on the viewport width.</p>
-      </Background.Monospace>
-      <Background.White>
-        <Section variant="section">{getLoremIpsumParagraph()}</Section>
-        <Section variant="section">{getLoremIpsumParagraph()}</Section>
-        <Section variant="section">{getLoremIpsumParagraph()}</Section>
-      </Background.White>
+      </Background.Documentation>
+      <Section variant="section">{getLoremIpsumParagraph()}</Section>
+      <Section variant="section">{getLoremIpsumParagraph()}</Section>
+      <Section variant="section">{getLoremIpsumParagraph()}</Section>
     </div>
   ))
   .add('semi-section variant', () => (
     <div>
-      <Background.Monospace>
+      <Background.Documentation>
         <p>Margin-bottom should change depending on the viewport width.</p>
-      </Background.Monospace>
-      <Background.White>
-        <Section variant="semi-section">{getLoremIpsumParagraph()}</Section>
-        <Section variant="semi-section">{getLoremIpsumParagraph()}</Section>
-        <Section variant="semi-section">{getLoremIpsumParagraph()}</Section>
-      </Background.White>
+      </Background.Documentation>
+      <Section variant="semi-section">{getLoremIpsumParagraph()}</Section>
+      <Section variant="semi-section">{getLoremIpsumParagraph()}</Section>
+      <Section variant="semi-section">{getLoremIpsumParagraph()}</Section>
     </div>
   ));

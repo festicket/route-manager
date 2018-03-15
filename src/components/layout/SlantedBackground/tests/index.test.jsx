@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { SlantedBackground } from '@festicket/react-ui-components';
-import { renderWithTheme } from 'src/utils/testing';
+import { renderWithTheme } from 'src/tests/utils';
 
 describe('<SlantedBackground />', () => {
   test('with initial props', () => {
