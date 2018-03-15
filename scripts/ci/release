@@ -6,12 +6,6 @@ set -ex
 # This means the docker container will be available to the node running the release job
 . ./scripts/ci/setup
 
-# Run all tests agains the built result
-docker run -it --rm \
-  -e IS_CI=true \
-  react-ui-components \
-  ./scripts/ci/test-build
-
 # Clean our local env
 rm -rf dist
 mkdir dist
