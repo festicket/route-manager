@@ -4,7 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs/react';
 import { Background } from 'src/utils/storybook-helpers';
-import { variant, size, fontSize, element } from './knobs';
+import { variant, size, fontSize, element } from '../knobs';
 
 import PrimaryButton from './';
 

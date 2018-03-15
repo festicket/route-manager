@@ -2,25 +2,35 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withKnobs, text, boolean, select } from '@storybook/addon-knobs/react';
+import { variant, size, fontSize, element } from '../knobs';
 
 import SecondaryButton from './';
 
 storiesOf('Components / Buttons / SecondaryButton', module)
-  .add('Default', () => <SecondaryButton>Button</SecondaryButton>)
-  .add('Default Small', () => (
-    <SecondaryButton size="small">Button</SecondaryButton>
-  ))
-  .add('Default Small with isDisabled', () => (
-    <SecondaryButton size="small" element="button" isDisabled>
-      Disabled Button
+  .addDecorator(withKnobs)
+  .add('Button with Children', () => (
+    <SecondaryButton
+      to={text('to', '#')}
+      fullWidth={boolean('fullWidth', false)}
+      size={select(...size)}
+      variant={select(...variant)}
+      element={select(...element)}
+      fontSize={select(...fontSize)}
+      isDisabled={boolean('isDisabled', false)}
+    >
+      {text('children - text content', 'Children')}
     </SecondaryButton>
   ))
-  .add('Using a render prop', () => (
+  .add('Button with Render Props', () => (
     <SecondaryButton
-      element="button"
-      render={() => [
-        <span key="cart">Add to cart</span>,
-        <span key="thing">Here is a thing</span>,
-      ]}
+      to={text('to', '#')}
+      fullWidth={boolean('fullWidth', false)}
+      size={select(...size)}
+      variant={select(...variant)}
+      element={select(...element)}
+      fontSize={select(...fontSize)}
+      isDisabled={boolean('isDisabled', false)}
+      render={() => <div>{text('render - text content', 'Render Props')}</div>}
     />
   ));
