@@ -34,15 +34,31 @@ storiesOf('Components / Buttons / PrimaryButton', module)
     )),
   )
 
-  .add('Button with Render Props', () => (
-    <PrimaryButton
-      to={text('to', '#')}
-      fullWidth={boolean('fullWidth', false)}
-      size={select(...size)}
-      variant={select(...variant)}
-      element={select(...element)}
-      fontSize={select(...fontSize)}
-      isDisabled={boolean('isDisabled', false)}
-      render={() => <div>{text('render - text content', 'Render Props')}</div>}
-    />
-  ));
+  .add(
+    'Button with Render Props',
+    withInfo(`
+      # Deprecated
+      Button with Render Props uses the \`render\` prop as the content of the button.
+      Will override \`children\` if both are provided. 
+    
+      ~~~js
+      <PrimaryButton>Click Here</PrimaryButton>
+      ~~~
+    
+    `)(() => (
+      <PrimaryButton
+        to={text('to', '#')}
+        fullWidth={boolean('fullWidth', false)}
+        size={select(...size)}
+        variant={select(...variant)}
+        element={select(...element)}
+        fontSize={select(...fontSize)}
+        isDisabled={boolean('isDisabled', false)}
+        // The next line can be done by passing 2 spans as children
+        render={() => [
+          <span key={1}>{text('render - span1', 'Render')}</span>,
+          <span key={2}>{text('render - span2', 'Props')}</span>,
+        ]}
+      />
+    )),
+  );

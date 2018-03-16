@@ -22,10 +22,11 @@ type Props = {
   fontSize?: 'regular' | 'small' | 'tiny',
   /** Boolean indicating whether the button should render as disabled */
   isDisabled?: boolean,
-  /** The content of the button */
+  /** The content of the button  - can be text or HTML */
   children?: React.Node,
   /**
-   * Will get used instead of `children` prop if it is passed in. Rich to explain.
+   * TODO - remove - `children` can do everything this can do.
+   * Will get used instead of `children` prop if it is passed in.
    */
   render?: () => mixed,
 };
