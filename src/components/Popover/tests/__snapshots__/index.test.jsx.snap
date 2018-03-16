@@ -9,7 +9,7 @@ exports[`<Popover /> with initial props 1`] = `
   box-shadow: 0 2px 40px 0;
 }
 
-@media (min-width:0px) and (max-width:568px) {
+@media (max-width:568px) {
   .c0 {
     left: 0 !important;
     right: 0 !important;
@@ -188,7 +188,7 @@ exports[`<Popover /> with showInitially props 1`] = `
   box-shadow: 0 2px 40px 0;
 }
 
-@media (min-width:0px) and (max-width:568px) {
+@media (max-width:568px) {
   .c0 {
     left: 0 !important;
     right: 0 !important;

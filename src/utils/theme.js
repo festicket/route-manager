@@ -36,12 +36,14 @@ export default {
     regular: '400',
     bold: '700',
   },
+  // Breakpoints are defined as a map of (name: minimum width)
+  // https://zpl.io/25RJPjV
   breakpoints: {
     xs: 0,
-    sm: 568,
-    md: 768,
-    lg: 960,
-    xlg: 1220,
+    sm: 569,
+    md: 769,
+    lg: 961,
+    xlg: 1221,
   },
   clipPath: {
     polygonBottomLarge: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)',

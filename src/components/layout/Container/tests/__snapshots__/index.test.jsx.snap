@@ -7,19 +7,19 @@ exports[`<Container /> with alternative size 1`] = `
   padding: 0 20px;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     padding: 0px 50px;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c0 {
     width: 650px;
   }
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c0 {
     width: 800px;
   }
@@ -53,13 +53,13 @@ exports[`<Container /> with initial props 1`] = `
   padding: 0 20px;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     padding: 0px 50px;
   }
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c0 {
     width: 1220px;
   }
@@ -82,13 +82,13 @@ exports[`<Container /> with normal size 1`] = `
   padding: 0 20px;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     padding: 0px 50px;
   }
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c0 {
     width: 1220px;
   }

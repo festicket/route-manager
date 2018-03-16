@@ -28,7 +28,7 @@ exports[`<UserAvatar /> with avatarLarge 1`] = `
   object-fit: cover;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     font-size: 16px;
     width: 44px;
@@ -154,7 +154,7 @@ exports[`<UserAvatar /> with name 1`] = `
   height: 24px;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     font-size: 16px;
     width: 44px;

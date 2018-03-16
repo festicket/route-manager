@@ -215,14 +215,14 @@ exports[`<Text /> primitive should render correctly based on variant prop 1`] = 
   line-height: 28px;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     font-size: 30px;
     line-height: 32px;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c0 {
     font-size: 32px;
     line-height: 35px;

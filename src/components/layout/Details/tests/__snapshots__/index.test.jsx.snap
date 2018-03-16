@@ -83,7 +83,7 @@ exports[`<Details /> with initial props 1`] = `
   display: none;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     font-size: 20px;
     line-height: 22px;
@@ -219,7 +219,7 @@ exports[`<Details /> with openInitially prop 1`] = `
   display: block;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     font-size: 20px;
     line-height: 22px;
