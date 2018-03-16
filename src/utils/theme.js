@@ -39,7 +39,7 @@ export default {
   // Breakpoints are defined as a map of (name: minimum width)
   // https://zpl.io/25RJPjV
   breakpoints: {
-    xs: 0,
+    xs: 0, // officially we support a minimum width of 320px
     sm: 569,
     md: 769,
     lg: 961,
