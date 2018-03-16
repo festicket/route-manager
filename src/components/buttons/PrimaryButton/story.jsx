@@ -9,21 +9,30 @@ import { variant, size, fontSize, element } from './knobs';
 import PrimaryButton from './';
 
 storiesOf('Components / Buttons / PrimaryButton', module)
-  .addDecorator((story, context) => withInfo('common info')(story)(context))
   .addDecorator(withKnobs)
-  .add('Button with Children', () => (
-    <PrimaryButton
-      to={text('to', '#')}
-      fullWidth={boolean('fullWidth', false)}
-      size={select(...size)}
-      variant={select(...variant)}
-      element={select(...element)}
-      fontSize={select(...fontSize)}
-      isDisabled={boolean('isDisabled', false)}
-    >
-      {text('children - text content', 'Children')}
-    </PrimaryButton>
-  ))
+  .add(
+    'Button with Children',
+    withInfo(`
+      Button with Children uses the \`children\` prop as the content of the button. 
+    
+      ~~~js
+      <PrimaryButton>Click Here</PrimaryButton>
+      ~~~
+    
+    `)(() => (
+      <PrimaryButton
+        to={text('to', '#')}
+        fullWidth={boolean('fullWidth', false)}
+        size={select(...size)}
+        variant={select(...variant)}
+        element={select(...element)}
+        fontSize={select(...fontSize)}
+        isDisabled={boolean('isDisabled', false)}
+      >
+        {text('children - text content', 'Children')}
+      </PrimaryButton>
+    )),
+  )
 
   .add('Button with Render Props', () => (
     <PrimaryButton

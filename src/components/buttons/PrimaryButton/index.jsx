@@ -8,15 +8,26 @@ import Primitive from 'src/components/buttons/ButtonPrimitive';
 import { buttonMixin, FlexWrapper } from 'src/components/buttons/styles';
 
 type Props = {
+  /** React Router `to` prop - like href */
   to?: string,
+  /** Boolean indicating whether the button should have `width: 100%` */
   fullWidth?: boolean,
+  /** String indicating the size of the button */
   size?: 'regular' | 'small' | 'inline',
+  /** String indicating the variant of the button */
   variant?: 'regular' | 'bordered' | 'transparent',
+  /** String indicating the HTML element the component should be */
   element?: 'a' | 'button',
+  /** BUG: This prop has no effect on the component */
   fontSize?: 'regular' | 'small' | 'tiny',
+  /** Boolean indicating whether the button should render as disabled */
   isDisabled?: boolean,
-  render?: () => mixed,
+  /** The content of the button */
   children?: React.Node,
+  /**
+   * Will get used instead of `children` prop if it is passed in. Rich to explain.
+   */
+  render?: () => mixed,
 };
 
 const StyledPrimaryButton = styled(Primitive)`
