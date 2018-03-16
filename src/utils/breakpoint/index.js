@@ -15,7 +15,7 @@ export default function breakpoint(label: string) {
           }
         `;
 
-      case 'md': // there is a bug in orinial implementation - this should be 'xs'
+      case 'md': // there is a bug in orinial implementation - this should be 'sm'
         return css`
           @media (min-width: ${theme.breakpoints.sm}px) and (max-width: ${theme
               .breakpoints.md - 1}px) {
@@ -23,13 +23,21 @@ export default function breakpoint(label: string) {
           }
         `;
 
-      case 'lg': // there is a bug in orinial implementation - this should be 'md'
+      case 'lg': // This should be replaces with the 'lg' media query below. Left for now to not break anything
         return css`
-          @media (min-width: ${theme.breakpoints.md}px) and (max-width: ${theme
-              .breakpoints.lg - 1}px) {
+          @media (min-width: ${theme.breakpoints.md}px) {
             ${css(...args)};
           }
         `;
+
+      // until above bugs are fixed, this can't be used.
+      // case 'md':
+      //   return css`
+      //     @media (min-width: ${theme.breakpoints.md}px) and (max-width: ${theme
+      //         .breakpoints.lg - 1}px) {
+      //       ${css(...args)};
+      //     }
+      //   `;
 
       // until above bugs are fixed, this can't be used.
       // case 'lg':
