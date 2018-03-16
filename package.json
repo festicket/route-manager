@@ -21,7 +21,7 @@
     "precommit": "npm run flow && lint-staged",
     "semantic-release": "semantic-release",
     "build-storybook": "build-storybook",
-    "percy-storybook": "percy-storybook --debug",
+    "percy-storybook": "percy-storybook",
     "start:wait": "npm run start & wait-on http-get://localhost:9001/",
     "precypress:open": "npm run start &",
     "cypress:open": "cypress open",
