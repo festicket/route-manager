@@ -1,6 +1,8 @@
 // @flow
 
-export default `<p>
+export const h2AndParagraphs = `
+<h2>Here's the h2 heading</h2>
+<p>
   Lorem ipsum dolor sit amet, ceteros volutpat incorrupte usu no, ei duo
   tamquam eligendi, vix admodum ceteros epicurei no. Vim et dicam prodesset,
   eu usu quas ponderum. Posse admodum vel in, quodsi voluptua vis an. Vim ad
@@ -19,3 +21,5 @@ export default `<p>
   dissentiunt pro ad. At dicta putent causae per. At est amet case, qui
   dictas partiendo aliquando ut.
 </p>`;
+
+export const oneParagraph = `<p>This is just a single paragraph of text</p>`;
