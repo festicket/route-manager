@@ -35,8 +35,9 @@ storiesOf('Components / Buttons / PrimaryButton', module)
   )
 
   .add(
-    'Button with Render Props',
-    withInfo(`
+    'Button with Render Props - Deprecated',
+    withInfo({
+      text: `
       # Deprecated
       Button with Render Props uses the \`render\` prop as the content of the button.
       Will override \`children\` if both are provided. 
@@ -45,7 +46,8 @@ storiesOf('Components / Buttons / PrimaryButton', module)
       <PrimaryButton>Click Here</PrimaryButton>
       ~~~
     
-    `)(() => (
+    `,
+    })(() => (
       <PrimaryButton
         to={text('to', '#')}
         fullWidth={boolean('fullWidth', false)}
@@ -54,7 +56,7 @@ storiesOf('Components / Buttons / PrimaryButton', module)
         element={select(...element)}
         fontSize={select(...fontSize)}
         isDisabled={boolean('isDisabled', false)}
-        // The next line can be done by passing 2 spans as children
+        // The next line can be done by passing 2 spans as children - hence deprecation
         render={() => [
           <span key={1}>{text('render - span1', 'Render')}</span>,
           <span key={2}>{text('render - span2', 'Props')}</span>,
