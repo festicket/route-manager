@@ -126,7 +126,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
             }
           }
           parentSelector={[Function]}
-          portalClassName="sc-gPEVay c0"
+          portalClassName="sc-cMljjf c0"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
           shouldFocusAfterRender={true}
@@ -180,7 +180,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
               }
             }
             parentSelector={[Function]}
-            portalClassName="sc-gPEVay c0"
+            portalClassName="sc-cMljjf c0"
             shouldCloseOnEsc={true}
             shouldCloseOnOverlayClick={true}
             shouldFocusAfterRender={true}
@@ -221,10 +221,6 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   justify-content: center;
 }
 
-.c5 {
-  height: 18px;
-}
-
 .c1 {
   display: inline-block;
   -webkit-align-items: center;
@@ -246,7 +242,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   height: 38px;
 }
 
-.c6 .Modal {
+.c5 .Modal {
   opacity: 0;
   will-change: opacity,transform;
   -webkit-transition: -webkit-transform 0.8s 0.4s,opacity 0.2s 0.4s;
@@ -256,18 +252,18 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   width: 100%;
 }
 
-.c6 .Modal:focus {
+.c5 .Modal:focus {
   outline: none;
 }
 
-.c6 .Modal_after-open {
+.c5 .Modal_after-open {
   opacity: 1;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
-.c6 .Modal_before-close {
+.c5 .Modal_before-close {
   opacity: 0;
   -webkit-transform: translateY(40px);
   -ms-transform: translateY(40px);
@@ -277,7 +273,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   transition: transform 0.8s,opacity 0.2s;
 }
 
-.c6 .Overlay {
+.c5 .Overlay {
   overflow-y: scroll;
   position: fixed;
   top: 0;
@@ -290,14 +286,14 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   transition: background-color 0.1s;
 }
 
-.c6 .Overlay_after-open {
+.c5 .Overlay_after-open {
   opacity: 0.99;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
-.c6 .Overlay_before-close {
+.c5 .Overlay_before-close {
   opacity: 0;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -315,7 +311,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
 }
 
 @media (min-width:769px) {
-  .c6 .Modal {
+  .c5 .Modal {
     max-width: 800px;
     padding: 100px 0;
     -webkit-transform: translateY(20px);
@@ -381,13 +377,15 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
                           color="grey"
                         >
                           <Close
-                            className="c5"
+                            className=""
                             color="grey"
                           >
                             <svg
-                              className="c5"
+                              className=""
                               color="grey"
+                              height={18}
                               viewBox="0 0 18 18"
+                              width={18}
                             >
                               <path
                                 d="M16 14.7l-5.6-5.6L16 3.5l-1.4-1.4L9 7.7 3.4 2.1 2 3.5l5.6 5.6L2 14.7l1.4 1.4L9 10.5l5.6 5.6z"
@@ -412,7 +410,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
       onRequestClose={[Function]}
     >
       <ReactModalAdapter
-        className="c6"
+        className="c5"
         closeTimeoutMS={300}
         contentLabel="Modal"
         isOpen={true}
@@ -454,7 +452,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
             }
           }
           parentSelector={[Function]}
-          portalClassName="sc-gPEVay c6"
+          portalClassName="sc-cMljjf c5"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
           shouldFocusAfterRender={true}
@@ -508,7 +506,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
               }
             }
             parentSelector={[Function]}
-            portalClassName="sc-gPEVay c6"
+            portalClassName="sc-cMljjf c5"
             shouldCloseOnEsc={true}
             shouldCloseOnOverlayClick={true}
             shouldFocusAfterRender={true}

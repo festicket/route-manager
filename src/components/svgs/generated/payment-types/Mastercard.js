@@ -1,10 +1,9 @@
 // @flow
 import React from 'react';
-import { paymentTypes as baseSVG } from '../../styled-base-svgs';
-import type { PaymentSVGProps } from '../../flow-types';
+import type { PaymentSVGProps } from '../../types';
 
 const Mastercard = (props: PaymentSVGProps) => (
-  <svg viewBox="0 0 39 26" {...props}>
+  <svg width={39} height={26} viewBox="0 0 39 26" {...props}>
     <path
       d="M1.8 0h35.4c1 0 1.8.8 1.8 1.9v22.3c0 1-.8 1.9-1.8 1.9H1.8c-1 0-1.8-.8-1.8-1.9V1.9C0 .8.8 0 1.8 0z"
       fill="#f5f6f8"
@@ -28,4 +27,4 @@ const Mastercard = (props: PaymentSVGProps) => (
   </svg>
 );
 
-export default baseSVG.withComponent(Mastercard);
+export default Mastercard;

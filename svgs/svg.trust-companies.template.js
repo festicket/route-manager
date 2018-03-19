@@ -14,11 +14,11 @@ module.exports = (opts = {}) => {
 
   return (code, state) => `// @flow
 import React from 'react';
-import { trustCompanies as baseSVG } from '../../styled-base-svgs';
-import type { TrustCompaniesSVGProps } from '../../flow-types';
+import { StyledSVG } from '../../styles';
+import type { TrustCompaniesSVGProps } from '../../types';
 
 const ${state.componentName} = (${props}: TrustCompaniesSVGProps) => ${code}
 
-export default baseSVG.withComponent(${state.componentName});
+export default StyledSVG.withComponent(${state.componentName});
 `;
 };
