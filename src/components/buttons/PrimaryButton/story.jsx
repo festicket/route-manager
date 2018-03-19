@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs/react';
 
@@ -28,6 +29,7 @@ storiesOf('Components / Buttons / PrimaryButton', module)
         element={select(...element)}
         fontSize={select(...fontSize)}
         isDisabled={boolean('isDisabled', false)}
+        onClick={action('Button with Children-click')}
       >
         {text('children - text content', 'Children')}
       </PrimaryButton>
@@ -61,6 +63,7 @@ storiesOf('Components / Buttons / PrimaryButton', module)
           <span key={1}>{text('render - span1', 'Render')}</span>,
           <span key={2}>{text('render - span2', 'Props')}</span>,
         ]}
+        onClick={action('Button with Render Props-click')}
       />
     )),
   );
