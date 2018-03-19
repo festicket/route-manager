@@ -72,19 +72,6 @@ storiesOf('Utilities', module).add(
     propTables: null,
   })(() => (
     <div>
-      <Styles.WrapperHeading>
-        <p>
-          Current Screen Breakpoint:{' '}
-          <span className="current xs-only">Extra small</span>
-          <span className="current sm-only">Small</span>
-          <span className="current md-only">Medium</span>
-          <span className="current lg-only">Large</span>
-        </p>
-        <p>
-          The green divs are targeted by the breakpoint function specified
-          inside that div.
-        </p>
-      </Styles.WrapperHeading>
       <Styles.Wrapper>
         <div>
           <div className="xs">breakpoint(&apos;xs&apos;)</div>
@@ -103,6 +90,19 @@ storiesOf('Utilities', module).add(
           <div className="to-lg">breakpoint(&apos;to-lg&apos;)</div>
         </div>
       </Styles.Wrapper>
+      <Styles.WrapperHeading>
+        <p>
+          Current Screen Breakpoint:{' '}
+          <span className="current xs-only">Extra small</span>
+          <span className="current sm-only">Small</span>
+          <span className="current md-only">Medium</span>
+          <span className="current lg-only">Large</span>
+        </p>
+        <p>
+          The green divs are targeted by the breakpoint function specified
+          inside that div.
+        </p>
+      </Styles.WrapperHeading>
     </div>
   )),
 );
