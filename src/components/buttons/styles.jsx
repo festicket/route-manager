@@ -9,7 +9,7 @@ as buttons cannot themselves be flex containers.
 
 https://stackoverflow.com/questions/35464067/flexbox-not-working-on-button-or-fieldset-elements
 */
-export const FlexWrapper = styled.div`
+export const FlexWrapper = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;

@@ -5,7 +5,7 @@ import { FlexWrapper } from 'src/components/buttons/styles';
 
 import { StyledSecondaryButton } from './styles';
 
-import type { sizeProp, element, fontSize, variant } from '../flow-types';
+import type { SizeProp, ElementProp, FontSizeProp } from '../flow-types';
 
 type ButtonProps = {
   /** React Router `to` prop - like href */
@@ -13,13 +13,11 @@ type ButtonProps = {
   /** Boolean indicating whether the button should have `width: 100%` */
   fullWidth?: boolean,
   /** String indicating the size of the button */
-  size?: sizeProp,
-  /** String indicating the variant of the button */
-  variant?: variant,
+  size?: SizeProp,
   /** String indicating the HTML element the component should be */
-  element?: element,
+  element?: ElementProp,
   /** BUG: This prop has no effect on the component */
-  fontSize?: fontSize,
+  fontSize?: FontSizeProp,
   /** Boolean indicating whether the button should render as disabled */
   isDisabled?: boolean,
   /** The content of the button  - can be text or HTML */
@@ -34,7 +32,6 @@ type ButtonProps = {
 SecondaryButton.defaultProps = {
   to: '#',
   size: 'regular',
-  variant: 'regular',
   element: 'a',
   fullWidth: false,
   fontSize: 'regular',

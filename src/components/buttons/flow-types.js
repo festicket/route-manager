@@ -1,6 +1,6 @@
 // @flow
 
-export type sizeProp = 'regular' | 'small' | 'inline';
-export type variant = 'regular' | 'bordered' | 'transparent';
-export type element = 'a' | 'button';
-export type fontSize = 'regular' | 'small' | 'tiny';
+export type SizeProp = 'regular' | 'small' | 'inline';
+export type VariantProp = 'regular' | 'bordered' | 'transparent';
+export type ElementProp = 'a' | 'button';
+export type FontSizeProp = 'regular' | 'small' | 'tiny';

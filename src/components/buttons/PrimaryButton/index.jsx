@@ -7,7 +7,12 @@ import { prop, ifProp, switchProp, withProp } from 'styled-tools';
 import Primitive from 'src/components/buttons/ButtonPrimitive';
 import { buttonMixin, FlexWrapper } from 'src/components/buttons/styles';
 
-import type { sizeProp, element, fontSize, variant } from '../flow-types';
+import type {
+  SizeProp,
+  ElementProp,
+  FontSizeProp,
+  VariantProp,
+} from '../flow-types';
 
 type ButtonProps = {
   /** React Router `to` prop - like href */
@@ -15,13 +20,13 @@ type ButtonProps = {
   /** Boolean indicating whether the button should have `width: 100%` */
   fullWidth?: boolean,
   /** String indicating the size of the button */
-  size?: sizeProp,
+  size?: SizeProp,
   /** String indicating the variant of the button */
-  variant?: variant,
+  variant?: VariantProp,
   /** String indicating the HTML element the component should be */
-  element?: element,
+  element?: ElementProp,
   /** BUG: This prop has no effect on the component */
-  fontSize?: fontSize,
+  fontSize?: FontSizeProp,
   /** Boolean indicating whether the button should render as disabled */
   isDisabled?: boolean,
   /** The content of the button  - can be text or HTML */
