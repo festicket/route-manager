@@ -5,17 +5,7 @@ import { FlexWrapper } from 'src/components/buttons/styles';
 
 import { StyledSecondaryButton } from './styles';
 
-type Props = {
-  to?: string,
-  fullWidth?: boolean,
-  size?: 'regular' | 'small' | 'inline',
-  variant?: 'regular' | 'bordered' | 'transparent',
-  element?: 'a' | 'button',
-  fontSize?: 'regular' | 'small' | 'tiny',
-  isDisabled?: boolean,
-  render?: () => mixed,
-  children?: React.Node,
-};
+import type { ButtonProps } from '../flow-types';
 
 export default function SecondaryButton({
   to = '#',
@@ -28,7 +18,7 @@ export default function SecondaryButton({
   render = () => null,
   children,
   ...props
-}: Props) {
+}: ButtonProps) {
   const resultChildren = render();
 
   return (

@@ -24,7 +24,7 @@ storiesOf('Components / Buttons / SecondaryButton', module)
       {text('children - text content', 'Children')}
     </SecondaryButton>
   ))
-  .add('Button with Render Props', () => (
+  .add('Button with Render Props - Deprecated', () => (
     <SecondaryButton
       to={text('to', '#')}
       fullWidth={boolean('fullWidth', false)}
@@ -33,7 +33,11 @@ storiesOf('Components / Buttons / SecondaryButton', module)
       element={select(...element)}
       fontSize={select(...fontSize)}
       isDisabled={boolean('isDisabled', false)}
-      render={() => <div>{text('render - text content', 'Render Props')}</div>}
+      // The next line can be done by passing 2 spans as children - hence deprecation
+      render={() => [
+        <span key={1}>{text('render - span1', 'Render')}</span>,
+        <span key={2}>{text('render - span2', 'Props')}</span>,
+      ]}
       onClick={action('Button with Render Props-click')}
     />
   ));
