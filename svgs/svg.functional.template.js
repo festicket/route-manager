@@ -14,11 +14,11 @@ module.exports = (opts = {}) => {
 
   return (code, state) => `// @flow
 import React from 'react';
-import { functional as baseSVG } from '../../styled-base-svgs';
-import type { FunctionalSVGProps } from '../../flow-types';
+import { StyledSVG } from '../../styles';
+import type { FunctionalSVGProps } from '../../types';
 
 const ${state.componentName} = (${props}: FunctionalSVGProps) => ${code}
 
-export default baseSVG.withComponent(${state.componentName});
+export default StyledSVG.withComponent(${state.componentName});
 `;
 };

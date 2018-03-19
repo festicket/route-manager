@@ -2,7 +2,6 @@
 
 exports[`<ChevronButton /> as anchor 1`] = `
 .c4 {
-  height: 18px;
   fill: #A2A4AD;
 }
 
@@ -67,7 +66,9 @@ exports[`<ChevronButton /> as anchor 1`] = `
     <svg
       className="c4"
       color="grey"
+      height={18}
       viewBox="0 0 18 18"
+      width={18}
     >
       <path
         d="M5.8 3.3L11.4 9l-5.6 5.7 1.4 1.4 7-7.1-7-7.1z"
@@ -79,7 +80,6 @@ exports[`<ChevronButton /> as anchor 1`] = `
 
 exports[`<ChevronButton /> as button 1`] = `
 .c4 {
-  height: 18px;
   fill: #A2A4AD;
 }
 
@@ -142,7 +142,9 @@ exports[`<ChevronButton /> as button 1`] = `
     <svg
       className="c4"
       color="grey"
+      height={18}
       viewBox="0 0 18 18"
+      width={18}
     >
       <path
         d="M5.8 3.3L11.4 9l-5.6 5.7 1.4 1.4 7-7.1-7-7.1z"

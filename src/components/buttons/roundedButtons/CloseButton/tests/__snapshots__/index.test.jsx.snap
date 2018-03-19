@@ -24,7 +24,6 @@ exports[`<CloseButton /> as anchor 1`] = `
 }
 
 .c4 {
-  height: 18px;
   fill: #A2A4AD;
 }
 
@@ -63,7 +62,9 @@ exports[`<CloseButton /> as anchor 1`] = `
     <svg
       className="c4"
       color="grey"
+      height={18}
       viewBox="0 0 18 18"
+      width={18}
     >
       <path
         d="M16 14.7l-5.6-5.6L16 3.5l-1.4-1.4L9 7.7 3.4 2.1 2 3.5l5.6 5.6L2 14.7l1.4 1.4L9 10.5l5.6 5.6z"
@@ -96,7 +97,6 @@ exports[`<CloseButton /> as button 1`] = `
 }
 
 .c4 {
-  height: 18px;
   fill: #A2A4AD;
 }
 
@@ -134,7 +134,9 @@ exports[`<CloseButton /> as button 1`] = `
     <svg
       className="c4"
       color="grey"
+      height={18}
       viewBox="0 0 18 18"
+      width={18}
     >
       <path
         d="M16 14.7l-5.6-5.6L16 3.5l-1.4-1.4L9 7.7 3.4 2.1 2 3.5l5.6 5.6L2 14.7l1.4 1.4L9 10.5l5.6 5.6z"
