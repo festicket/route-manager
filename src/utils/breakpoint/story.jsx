@@ -12,10 +12,9 @@ const info = `
 
 The breakpoint utility provides a shorthand way to generate media queries in your css.
 
-The table below shows what screen sizes each label targets.
+The table below shows what screen sizes each function targets.
 
-
-label                     | xs | sm | md | lg |
+function                  | xs | sm | md | lg |
 -|-|-|-|-|
 \`breakpoint('xs')\`      | 💯 |    |    |    |
 \`breakpoint('sm')\`      |    | 💯 |    |    |
@@ -36,9 +35,9 @@ import { spacing, breakpoint } from '@festicket/react-ui-components';
 
 const Button = styled.button\`
   .button {
-    background-color: blue;
+    background-color: blue; // background-color on xs
     \${breakpoint('from-sm')\`
-      background-color: green;
+      background-color: green; // background-color on small width and above
     \`
   }
 \`
