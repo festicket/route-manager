@@ -1,18 +1,17 @@
 // @flow
-import { css } from 'styled-components';
-import { switchProp, ifProp } from 'styled-tools';
 
-import { hoverColorMixin } from '../../utils/mixins';
+/**
+ * @file Contains the base Styled Component that is used by the different types of SVGs.
+ *
+ * The `StyledSVG` should be used with the components created by `svgr`
+ * For example: `StyledSVG.withComponent(FesticketLogoSymbol);`
+ */
+import styled, { css } from 'styled-components';
+import { ifProp } from 'styled-tools';
 
-export const LOGO_SMALL = 'small';
-export const LOGO_BIG = 'big';
+import { colorMixin, hoverColorMixin } from '../../utils/mixins';
 
-export const logoHeightVariations = switchProp('size', {
-  [LOGO_SMALL]: 'height: 38px',
-  [LOGO_BIG]: 'height: 68px',
-});
-
-export const hoverStylesMixin = ifProp(
+const hoverStylesMixin = ifProp(
   'hoverable',
   css`
     cursor: pointer;
@@ -21,3 +20,8 @@ export const hoverStylesMixin = ifProp(
     }
   `,
 );
+
+export const StyledSVG = styled.svg`
+  fill: ${colorMixin};
+  ${hoverStylesMixin};
+`;
