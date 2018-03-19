@@ -9,7 +9,7 @@ import { oneParagraph } from './fixtures';
 
 describe('<HtmlWrapper />', () => {
   test('with initial props', () => {
-    const tree = shallow(<HtmlWrapper html={oneParagraph} />);
+    const tree = shallow(<HtmlWrapper htmlString={oneParagraph} />);
     expect(tree).toMatchSnapshot();
   });
 });

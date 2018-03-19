@@ -1,15 +1,17 @@
 // @flow
-/* eslint-disable react/no-danger */
 
 import * as React from 'react';
 import StyledHtmlWrapper from './styles';
 
 type Props = {
-  html: string,
+  htmlString: string,
 };
 
-export default function HtmlWrapper({ html, ...props }: Props) {
+export default function HtmlWrapper({ htmlString, ...props }: Props) {
   return (
-    <StyledHtmlWrapper {...props} dangerouslySetInnerHTML={{ __html: html }} />
+    <StyledHtmlWrapper
+      {...props}
+      dangerouslySetInnerHTML={{ __html: htmlString }} // eslint-disable-line react/no-danger
+    />
   );
 }
