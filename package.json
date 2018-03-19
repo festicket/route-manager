@@ -52,6 +52,7 @@
     "@storybook/addon-actions": "^3.3.15",
     "@storybook/addon-backgrounds": "^3.3.15",
     "@storybook/addon-centered": "^3.3.15",
+    "@storybook/addon-info": "^3.3.15",
     "@storybook/addon-knobs": "^3.3.15",
     "@storybook/react": "^3.3.10",
     "babel-cli": "^6.26.0",
