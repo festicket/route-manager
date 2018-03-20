@@ -58,8 +58,6 @@ theme.breakpoints: {
   md: ${theme.breakpoints.md}px,
   // Large screen / desktop
   lg: ${theme.breakpoints.lg}px,
-  // Extra large screen / wide desktop
-  xl: ${theme.breakpoints.xlg}px
 };
 ~~~
 `;
@@ -92,11 +90,7 @@ storiesOf('Utilities', module).add(
       </Styles.Wrapper>
       <Styles.WrapperHeading>
         <p>
-          Current Screen Breakpoint:{' '}
-          <span className="current xs-only">Extra small</span>
-          <span className="current sm-only">Small</span>
-          <span className="current md-only">Medium</span>
-          <span className="current lg-only">Large</span>
+          Current Screen Breakpoint: <span className="current" />
         </p>
         <p>
           The green divs are targeted by the breakpoint function specified

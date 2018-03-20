@@ -4,30 +4,52 @@ import styled from 'styled-components';
 import breakpoint from 'src/utils/breakpoint';
 
 export const WrapperHeading = styled.div`
-  .current {
-    display: none;
-  }
   ${breakpoint('xs')`
-  .xs-only {
-    display: inline;
-  }
+    .xs-only {
+      display: inline;
+    }
+
+    .current {
+      ::after {
+        content: 'xs';
+      }
+    }
   `};
   ${breakpoint('sm')`
-  .sm-only {
-    display: inline;
-  }
+    .sm-only {
+      display: inline;
+    }
+
+    .current {
+      ::after {
+        content: 'sm';
+      }
+    }
   `};
   ${breakpoint('md')`
-  .md-only {
-    display: inline;
-  }
+    .md-only {
+      display: inline;
+    }
+
+    .current {
+      ::after {
+        content: 'md';
+      }
+    }
   `};
   ${breakpoint('lg')`
-  .lg-only {
-    display: inline;
-  }
+    .lg-only {
+      display: inline;
+    }
+
+    .current {
+      ::after {
+        content: 'lg';
+      }
+    }
   `};
 `;
+
 export const Wrapper = styled.div`
   font-family: monospace;
   font-weight: 900;
@@ -42,6 +64,7 @@ export const Wrapper = styled.div`
       flex-direction: column;
     `};
   }
+
   > * > * {
     background-color: red;
     margin-bottom: 5px;
@@ -59,53 +82,62 @@ export const Wrapper = styled.div`
   }
 
   ${breakpoint('xs')`
-  .xs {
-    background-color: green;
-  }
+    .xs {
+      background-color: green;
+    }
   `};
+
   ${breakpoint('sm')`
-  .sm {
-    background-color: green;
-  }
+    .sm {
+      background-color: green;
+    }
   `};
+
   ${breakpoint('md')`
-  .md {
-    background-color: green;
-  }
+    .md {
+      background-color: green;
+    }
   `};
+
   ${breakpoint('lg')`
-  .lg {
-    background-color: green;
-  }
+    .lg {
+      background-color: green;
+    }
   `};
+
   ${breakpoint('from-sm')`
-  .from-sm {
-    background-color: green;
-  }
+    .from-sm {
+      background-color: green;
+    }
   `};
+
   ${breakpoint('from-md')`
-  .from-md {
-    background-color: green;
-  }
+    .from-md {
+      background-color: green;
+    }
   `};
+
   ${breakpoint('from-lg')`
-  .from-lg {
-    background-color: green;
-  }
+    .from-lg {
+      background-color: green;
+    }
   `};
+
   ${breakpoint('to-sm')`
-  .to-sm {
-    background-color: green;
-  }
+    .to-sm {
+      background-color: green;
+    }
   `};
+
   ${breakpoint('to-md')`
-  .to-md {
-    background-color: green;
-  }
+    .to-md {
+      background-color: green;
+    }
   `};
+
   ${breakpoint('to-lg')`
-  .to-lg {
-    background-color: green;
-  }
+    .to-lg {
+      background-color: green;
+    }
   `};
 `;

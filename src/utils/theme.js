@@ -43,7 +43,7 @@ export default {
     sm: 569,
     md: 769,
     lg: 961,
-    xlg: 1221,
+    xlg: 1221, // DEPRECATED
   },
   clipPath: {
     polygonBottomLarge: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)',
