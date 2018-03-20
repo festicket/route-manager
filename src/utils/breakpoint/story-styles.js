@@ -4,50 +4,22 @@ import styled from 'styled-components';
 import breakpoint from 'src/utils/breakpoint';
 
 export const WrapperHeading = styled.div`
-  ${breakpoint('xs')`
-    .xs-only {
-      display: inline;
-    }
-
-    .current {
-      ::after {
+  .current {
+    ::after {
+      ${breakpoint('xs')`
         content: 'xs';
-      }
-    }
-  `};
-  ${breakpoint('sm')`
-    .sm-only {
-      display: inline;
-    }
-
-    .current {
-      ::after {
+      `};
+      ${breakpoint('sm')`
         content: 'sm';
-      }
-    }
-  `};
-  ${breakpoint('md')`
-    .md-only {
-      display: inline;
-    }
-
-    .current {
-      ::after {
+      `};
+      ${breakpoint('md')`
         content: 'md';
-      }
-    }
-  `};
-  ${breakpoint('lg')`
-    .lg-only {
-      display: inline;
-    }
-
-    .current {
-      ::after {
+      `};
+      ${breakpoint('lg')`
         content: 'lg';
-      }
+      `};
     }
-  `};
+  }
 `;
 
 export const Wrapper = styled.div`
