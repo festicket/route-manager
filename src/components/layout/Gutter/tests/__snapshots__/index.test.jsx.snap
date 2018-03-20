@@ -5,7 +5,7 @@ exports[`<Gutter /> with initial props 1`] = `
   padding: 0 20px;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     padding: 0 50px;
   }

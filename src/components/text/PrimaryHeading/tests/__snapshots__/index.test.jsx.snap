@@ -9,14 +9,14 @@ exports[`<PrimaryHeading /> with initial props 1`] = `
   line-height: 39px;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     font-size: 42px;
     line-height: 45px;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c0 {
     font-size: 48px;
     line-height: 52px;

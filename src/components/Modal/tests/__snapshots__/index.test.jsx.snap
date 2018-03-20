@@ -62,7 +62,7 @@ exports[`<Modal /> should not render anything by default 1`] = `
   transition: transform 0.8s 0.4s,opacity 0.2s 0.4s;
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c0 .Modal {
     max-width: 800px;
     padding: 100px 0;
@@ -310,7 +310,7 @@ exports[`<Modal /> should render children when isOpen is true 1`] = `
   z-index: 1;
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c5 .Modal {
     max-width: 800px;
     padding: 100px 0;
