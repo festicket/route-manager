@@ -20,7 +20,7 @@ exports[`<WithVerticalSeparator /> with initial props 1`] = `
   margin: 0 20px;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0::after {
     margin: 0 30px;
   }
