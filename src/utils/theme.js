@@ -5,7 +5,7 @@ export default {
     white: 'white',
     success: '#57C0B4',
     danger: '#DE5E5E',
-    dangerBackground: '#FDF6F6', // primary with transrency 5% on white background
+    dangerBackground: '#FDF6F6', // danger with transrency 5% on white background
     info: '#A3A6CB',
     star: '#FFCD00',
     background: {
