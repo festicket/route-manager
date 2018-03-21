@@ -1,40 +1,33 @@
 // @flow
 
-// -------------
-import React from 'react';
+import * as React from 'react';
 
-// Components
-// -------------
-
-// Styles
-// -------------
 import { Wrapper, StyledTextPrimitive } from './styles';
 
-// Flow Types
-// -------------
 type Props = {
   element: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span',
-  variant: 'default' | 'bordered' | 'grey' | 'red',
-  children: string,
+  variant: 'theme' | 'white' | 'grey' | 'red',
+  children: React.Node,
 };
 
 Tag.defaultProps = {
-  variant: 'default',
   element: 'span',
 };
 
+const mapVariantTextColor = {
+  theme: 'white',
+  white: 'grey',
+  grey: 'grey',
+  red: 'red',
+};
+
 export default function Tag({ children, element, ...props }: Props) {
-  const mapVariantTextColor = {
-    default: 'white',
-    bordered: 'grey',
-    grey: 'grey',
-    red: 'red',
-  };
+  const color = mapVariantTextColor[props.variant];
 
   return (
     <Wrapper {...props}>
       <StyledTextPrimitive
-        color={mapVariantTextColor[props.variant]}
+        color={color}
         element={element}
         size="tiny"
         weight="bold"

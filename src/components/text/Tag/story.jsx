@@ -5,30 +5,25 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text, select } from '@storybook/addon-knobs/react';
 import Tag from './';
 
-export const variant = [
-  'variant',
-  {
-    default: 'default',
-    bordered: 'bordered',
-    grey: 'grey',
-    red: 'red',
-  },
-  'default',
-];
-
 storiesOf('Components / Text / Tag', module)
   .addDecorator(withKnobs)
-  .add('default', () => (
-    <Tag variant={select(...variant)}>
+  .add('with Knobs', () => (
+    <Tag
+      variant={select('variant', ['theme', 'white', 'grey', 'red'], 'theme')}
+    >
       {text('children - text content', 'Tag component')}
     </Tag>
   ))
-  .add('default h3', () => <Tag element="h3">Big stage</Tag>)
-  .add('bordered', () => (
+  .add('theme with h3 element', () => (
+    <Tag variant="theme" element="h3">
+      Big stage
+    </Tag>
+  ))
+  .add('white', () => (
     <div>
-      <Tag variant="bordered">Coming soon</Tag>
+      <Tag variant="white">Coming soon</Tag>
       &nbsp;
-      <Tag variant="bordered">Sold out</Tag>
+      <Tag variant="white">Sold out</Tag>
     </div>
   ))
   .add('grey', () => (
@@ -38,7 +33,9 @@ storiesOf('Components / Text / Tag', module)
   ))
   .add('red', () => (
     <div>
-      <Tag variant="red">In High Demand</Tag>
+      <Tag variant="red">
+        <span>In High Demand</span>
+      </Tag>
       &nbsp;
       <Tag variant="red">Almost Sold Out</Tag>
     </div>

@@ -5,22 +5,26 @@ import styled, { css } from 'styled-components';
 import { prop, switchProp } from 'styled-tools';
 import TextPrimitive from 'src/components/text/TextPrimitive';
 
-// sometimes semanticly we need an heading, but we never want the
+// sometimes semantically we need a heading, but we never want the
 // text to be block
 export const StyledTextPrimitive = styled(TextPrimitive)`
   display: inline;
   margin: 0;
+  line-height: 18px; // needed to correctly vertically center code
 `;
 
 export const Wrapper = styled.div`
-  display: inline-block;
-  padding: 3px 5px;
+  display: inline-flex;
+  padding: 0 5px;
+  height: 24px;
+  align-items: center;
+
   ${switchProp('variant', {
-    default: css`
+    theme: css`
       background-color: ${prop('theme.colors.brand.primary')};`,
-    bordered: css`
+    white: css`
       background-color: ${prop('theme.colors.white')};
-      border: 1px solid ${prop('theme.colors.greyscale.dark')};`,
+      border: 1px solid ${prop('theme.colors.greyscale.silver')};`,
     grey: css`
       background-color: ${prop('theme.colors.greyscale.grey')};
       border: 1px solid transparent;`,
