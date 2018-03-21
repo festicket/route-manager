@@ -1,13 +1,13 @@
 // @flow
 
-export const size = ['size', ['regular', 'small', 'inline'], 'regular'];
+export const sizes = ['size', ['regular', 'small', 'inline'], 'regular'];
 
-export const variant = [
+export const variants = [
   'variant',
   ['regular', 'bordered', 'transparent'],
   'regular',
 ];
 
-export const fontSize = ['fontSize', ['regular', 'small', 'tiny'], 'regular'];
+export const fontSizes = ['fontSize', ['regular', 'small', 'tiny'], 'regular'];
 
-export const element = ['element', ['a', 'button'], 'a'];
+export const elements = ['element', ['a', 'button'], 'a'];

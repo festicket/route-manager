@@ -16,7 +16,7 @@ type ButtonProps = {
   size?: SizeProp,
   /** String indicating the HTML element the component should be */
   element?: ElementProp,
-  /** BUG: This prop has no effect on the component */
+  /** BUG: This prop has no effect on the component - fix in FES-5750 */
   fontSize?: FontSizeProp,
   /** Boolean indicating whether the button should render as disabled */
   isDisabled?: boolean,

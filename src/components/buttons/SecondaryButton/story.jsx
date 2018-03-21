@@ -6,7 +6,7 @@ import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs/react';
 
-import { variant, size, fontSize, element } from '../knobs';
+import { variants, sizes, fontSizes, elements } from '../knobs';
 import SecondaryButton from './';
 
 const info = `
@@ -22,9 +22,9 @@ storiesOf('Components / Buttons / SecondaryButton', module)
       <SecondaryButton
         to={text('to', '#')}
         fullWidth={boolean('fullWidth', false)}
-        size={select(...size)}
-        element={select(...element)}
-        fontSize={select(...fontSize)}
+        size={select(...sizes)}
+        element={select(...elements)}
+        fontSize={select(...fontSizes)}
         isDisabled={boolean('isDisabled', false)}
         onClick={action('Secondary Button - click')}
       >
@@ -44,10 +44,10 @@ storiesOf('Components / Buttons / SecondaryButton', module)
       <SecondaryButton
         to={text('to', '#')}
         fullWidth={boolean('fullWidth', false)}
-        size={select(...size)}
-        variant={select(...variant)}
-        element={select(...element)}
-        fontSize={select(...fontSize)}
+        size={select(...sizes)}
+        variant={select(...variants)}
+        element={select(...elements)}
+        fontSize={select(...fontSizes)}
         isDisabled={boolean('isDisabled', false)}
         // The next line can be done by passing 2 spans as children - hence deprecation
         render={() => [
