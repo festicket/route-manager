@@ -11,6 +11,7 @@ export const StyledTextPrimitive = styled(TextPrimitive)`
   display: inline;
   margin: 0;
   line-height: 18px; // needed to correctly vertically center code
+  white-space: nowrap; // Tags should only ever be a single line of text
 `;
 
 export const Wrapper = styled.div`

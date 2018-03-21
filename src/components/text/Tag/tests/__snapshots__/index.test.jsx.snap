@@ -13,6 +13,7 @@ exports[`<Tag /> with initial props 1`] = `
   display: inline;
   margin: 0;
   line-height: 18px;
+  white-space: nowrap;
 }
 
 .c0 {
