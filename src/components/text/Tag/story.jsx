@@ -14,12 +14,12 @@ storiesOf('Components / Text / Tag', module)
       {text('children - text content', 'Tag component')}
     </Tag>
   ))
-  .add('theme with h3 element', () => (
+  .add('theme - with h3 element', () => (
     <Tag variant="theme" element="h3">
       Big stage
     </Tag>
   ))
-  .add('white', () => (
+  .add('white - 2 side by side', () => (
     <div>
       <Tag variant="white">Coming soon</Tag>
       &nbsp;
@@ -31,12 +31,14 @@ storiesOf('Components / Text / Tag', module)
       <Tag variant="grey">Ends Soon</Tag>
     </div>
   ))
-  .add('red', () => (
+  .add('red - with spans as children', () => (
     <div>
       <Tag variant="red">
         <span>In High Demand</span>
       </Tag>
       &nbsp;
-      <Tag variant="red">Almost Sold Out</Tag>
+      <Tag variant="red">
+        <span>Almost</span> <span>Sold Out</span>
+      </Tag>
     </div>
   ));
