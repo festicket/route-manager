@@ -5,11 +5,6 @@ import { prop } from 'styled-tools';
 import spacing from 'src/utils/spacing';
 
 export default styled.span`
-  p,
-  ul {
-    margin: 0;
-  }
-
   h1,
   h2,
   h3,
