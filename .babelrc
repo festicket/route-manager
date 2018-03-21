@@ -4,7 +4,7 @@
     "react"
   ],
   "plugins": [
-    "flow-react-proptypes",
+    ["flow-react-proptypes", {"useESModules": true}],
     "transform-class-properties",
     "transform-object-rest-spread",
     "styled-components-named",
