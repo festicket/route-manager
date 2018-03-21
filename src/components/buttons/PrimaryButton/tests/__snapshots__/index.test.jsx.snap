@@ -29,6 +29,7 @@ exports[`<PrimaryButton /> Snapshot Bordered 1`] = `
 
 .c0 {
   display: inline-block;
+  -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: 700;
@@ -90,6 +91,7 @@ exports[`<PrimaryButton /> Snapshot Bordered Small 1`] = `
 
 .c0 {
   display: inline-block;
+  -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: 700;
@@ -151,6 +153,7 @@ exports[`<PrimaryButton /> Snapshot Default 1`] = `
 
 .c0 {
   display: inline-block;
+  -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: 700;
@@ -209,6 +212,7 @@ exports[`<PrimaryButton /> Snapshot Default Button Element 1`] = `
 
 .c0 {
   display: inline-block;
+  -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: 700;
@@ -267,6 +271,7 @@ exports[`<PrimaryButton /> Snapshot Default Small 1`] = `
 
 .c0 {
   display: inline-block;
+  -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: 700;
@@ -326,6 +331,7 @@ exports[`<PrimaryButton /> Snapshot isDisabled 1`] = `
 
 .c0 {
   display: inline-block;
+  -webkit-text-align: center;
   text-align: center;
   cursor: pointer;
   font-weight: 700;
