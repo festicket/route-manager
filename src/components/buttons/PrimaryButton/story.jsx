@@ -4,20 +4,15 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
-import { withKnobs, text, boolean, select } from '@storybook/addon-knobs/react';
+import { boolean, select, text, withKnobs } from '@storybook/addon-knobs/react';
 
-import * as knobs from '../knobs';
 import PrimaryButton from './';
-
-const info = `
-- Uses the \`children\` prop as the content of the button.
-- **Important** - if using with \`element="button"\`, the child content cannot contain \`divs\` 
-as this is [not valid HTML](https://stackoverflow.com/a/12982334).      
-`;
+import { info } from '../storybook-info';
+import * as knobs from '../knobs';
 
 storiesOf('Components / Buttons / PrimaryButton', module)
   .addDecorator(withKnobs)
-  // $FlowFixMe
+  // $FlowFixMe - FLow doesn't like addWithPercyOptions
   .addWithPercyOptions(
     'Primary Button Documentation',
     { skip: true },
@@ -30,7 +25,7 @@ storiesOf('Components / Buttons / PrimaryButton', module)
         element={select(...knobs.elements)}
         fontSize={select(...knobs.fontSizes)}
         isDisabled={boolean('isDisabled', false)}
-        onClick={action('Regular Primary Button - click')}
+        onClick={action('Primary Button - click')}
       >
         {text('children - text content', 'Children')}
       </PrimaryButton>

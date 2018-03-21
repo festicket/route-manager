@@ -3,7 +3,7 @@
 
 import * as React from 'react';
 
-import ChevronButton from 'src/components/buttons/roundedButtons/ChevronButton';
+import ChevronButton from 'src/components/buttonsRound/ChevronButton';
 import TertiaryHeading from 'src/components/text/TertiaryHeading';
 import { TitleRow, BodyWrapper } from './styles';
 
