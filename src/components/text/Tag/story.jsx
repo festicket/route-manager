@@ -7,7 +7,8 @@ import Tag from './';
 
 storiesOf('Components / Text / Tag', module)
   .addDecorator(withKnobs)
-  .add('with Knobs', () => (
+  // $FlowFixMe - Flow doesn't like addWithPercyOptions
+  .addWithPercyOptions('Tag Documentation', { skip: true }, () => (
     <Tag
       variant={select('variant', ['theme', 'white', 'grey', 'red'], 'theme')}
     >
