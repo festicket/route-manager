@@ -9,7 +9,7 @@ exports[`<TertiaryHeading /> with color prop 1`] = `
   line-height: 20px;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     font-size: 20px;
     line-height: 22px;
@@ -64,7 +64,7 @@ exports[`<TertiaryHeading /> with initial props 1`] = `
   line-height: 20px;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     font-size: 20px;
     line-height: 22px;
@@ -119,7 +119,7 @@ exports[`<TertiaryHeading /> with weight prop 1`] = `
   line-height: 20px;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     font-size: 20px;
     line-height: 22px;

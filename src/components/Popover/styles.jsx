@@ -34,7 +34,7 @@ On mobile, popover content should always be flush with the horizontal
 sides of the viewport, so override the calculated left/right.
 */
 const StyledCSSTransition = styled(CSSTransition)`
-  ${breakpoint('sm')`
+  ${breakpoint('xs')`
     left: 0 !important;
     right: 0 !important;
   `};

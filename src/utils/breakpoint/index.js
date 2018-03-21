@@ -8,58 +8,51 @@ export default function breakpoint(label: string) {
     switch (label) {
       case 'xs':
         return css`
-          @media (max-width: ${theme.breakpoints.xs}px) {
+          @media (max-width: ${theme.breakpoints.sm - 1}px) {
             ${css(...args)};
           }
         `;
 
       case 'sm':
         return css`
-          @media (min-width: ${theme.breakpoints.xs}px) and (max-width: ${theme
-              .breakpoints.sm}px) {
+          @media (min-width: ${theme.breakpoints.sm}px) and (max-width: ${theme
+              .breakpoints.md - 1}px) {
             ${css(...args)};
           }
         `;
 
       case 'md':
         return css`
-          @media (min-width: ${theme.breakpoints.sm}px) and (max-width: ${theme
-              .breakpoints.md}px) {
+          @media (min-width: ${theme.breakpoints.md}px) and (max-width: ${theme
+              .breakpoints.lg - 1}px) {
             ${css(...args)};
           }
         `;
 
       case 'lg':
         return css`
-          @media (min-width: ${theme.breakpoints.md}px) {
+          @media (min-width: ${theme.breakpoints.lg}px) {
             ${css(...args)};
           }
         `;
 
       case 'to-sm':
         return css`
-          @media (max-width: ${theme.breakpoints.sm}px) {
+          @media (max-width: ${theme.breakpoints.sm - 1}px) {
             ${css(...args)};
           }
         `;
 
       case 'to-md':
         return css`
-          @media (max-width: ${theme.breakpoints.md}px) {
+          @media (max-width: ${theme.breakpoints.md - 1}px) {
             ${css(...args)};
           }
         `;
 
       case 'to-lg':
         return css`
-          @media (max-width: ${theme.breakpoints.lg}px) {
-            ${css(...args)};
-          }
-        `;
-
-      case 'from-xs':
-        return css`
-          @media (min-width: ${theme.breakpoints.xs}px) {
+          @media (max-width: ${theme.breakpoints.lg - 1}px) {
             ${css(...args)};
           }
         `;
@@ -85,6 +78,7 @@ export default function breakpoint(label: string) {
           }
         `;
 
+      // Deprecated
       case 'from-xlg':
         return css`
           @media (min-width: ${theme.breakpoints.xlg}px) {

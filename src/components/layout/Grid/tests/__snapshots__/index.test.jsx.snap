@@ -11,13 +11,13 @@ exports[`<Grid /> with 1 column 1`] = `
   margin: -15px 0;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     padding: 15px;
   }
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -128,13 +128,13 @@ exports[`<Grid /> with 2 columns 1`] = `
   margin: -15px 0;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     padding: 15px;
   }
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -245,13 +245,13 @@ exports[`<Grid /> with 3 columns 1`] = `
   margin: -15px 0;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     padding: 15px;
   }
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -368,19 +368,19 @@ exports[`<Grid /> with 3 columns and span 1`] = `
   margin: -15px 0;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c2 {
     padding: 15px;
   }
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     padding: 15px;
   }
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -491,13 +491,13 @@ exports[`<Grid /> with 4 columns 1`] = `
   margin: -15px 0;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     padding: 15px;
   }
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -608,13 +608,13 @@ exports[`<Grid /> with 5 columns 1`] = `
   margin: -15px 0;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     padding: 15px;
   }
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -725,13 +725,13 @@ exports[`<Grid /> with custom Grid and GridElement elements 1`] = `
   margin: -15px 0;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     padding: 15px;
   }
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -855,13 +855,13 @@ exports[`<Grid /> with custom Grid element 1`] = `
   margin: -15px 0;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     padding: 15px;
   }
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -969,7 +969,7 @@ exports[`<Grid /> with initial props 1`] = `
   margin: -15px 0;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1003,37 +1003,37 @@ exports[`<Grid /> with responsive columns 1`] = `
   margin: -15px 0;
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     width: 50%;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c1 {
     width: 33.33333333333333%;
   }
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c1 {
     width: 25%;
   }
 }
 
-@media (min-width:1220px) {
+@media (min-width:1221px) {
   .c1 {
     width: 20%;
   }
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c1 {
     padding: 15px;
   }
 }
 
-@media (min-width:568px) {
+@media (min-width:569px) {
   .c0 {
     display: -webkit-box;
     display: -webkit-flex;
