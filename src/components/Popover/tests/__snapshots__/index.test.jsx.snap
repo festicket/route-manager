@@ -3,7 +3,6 @@
 exports[`<Popover /> with initial props 1`] = `
 .c1 {
   display: block;
-  -webkit-text-align: left;
   text-align: left;
   padding: 20px;
   box-shadow: 0 2px 40px 0;
@@ -182,7 +181,6 @@ exports[`<Popover /> with initial props 1`] = `
 exports[`<Popover /> with showInitially props 1`] = `
 .c1 {
   display: block;
-  -webkit-text-align: left;
   text-align: left;
   padding: 20px;
   box-shadow: 0 2px 40px 0;
