@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 
-import CloseButton from 'src/components/buttons/roundedButtons/CloseButton';
+import CloseButton from 'src/components/buttonsRound/CloseButton';
 
 import { StyledModal, CloseButtonWrapper } from './styles';
 
