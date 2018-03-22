@@ -7,13 +7,6 @@ body {
 }
 
 /*
-    Reset margin of all elements to 0 to match the global style rule in festicket-app
-*/
-* {
-    margin: 0;
-}
-
-/*
     Reset Box-sizing to border-box
     https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 */
