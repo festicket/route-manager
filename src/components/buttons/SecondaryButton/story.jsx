@@ -12,7 +12,7 @@ import * as knobs from '../knobs';
 
 storiesOf('Components / Buttons / SecondaryButton', module)
   .addDecorator(withKnobs)
-  // $FlowFixMe - FLow doesn't like addWithPercyOptions
+  // $FlowFixMe - Flow doesn't like addWithPercyOptions
   .addWithPercyOptions(
     'Secondary Button Documentation',
     { skip: true },

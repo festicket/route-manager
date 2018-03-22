@@ -59,3 +59,4 @@ export * from './components/svgs/generated/logo';
 export * from './components/svgs/generated/payment-types';
 export * from './components/svgs/generated/social';
 export * from './components/svgs/generated/trust-companies';
+export { default as Tag } from './components/text/Tag';
