@@ -1,0 +1,19 @@
+/*
+TODO: This reset matches festicket-app and should be used in all Storybooks to
+maintain rendering consistency. In future we should revisit this to see if we
+can either improve it or bring in a third-party dependency.
+*/
+
+* {
+  margin: 0;
+  font-family: 'f37-bolton', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
