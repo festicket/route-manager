@@ -32,10 +32,8 @@ export {
 } from './components/buttons/SecondaryButton';
 export {
   default as ChevronButton,
-} from './components/buttons/roundedButtons/ChevronButton';
-export {
-  default as CloseButton,
-} from './components/buttons/roundedButtons/CloseButton';
+} from './components/buttonsRound/ChevronButton';
+export { default as CloseButton } from './components/buttonsRound/CloseButton';
 
 // Text
 export { default as Anchor } from './components/text/Anchor';
@@ -61,3 +59,4 @@ export * from './components/svgs/generated/logo';
 export * from './components/svgs/generated/payment-types';
 export * from './components/svgs/generated/social';
 export * from './components/svgs/generated/trust-companies';
+export { default as Tag } from './components/text/Tag';

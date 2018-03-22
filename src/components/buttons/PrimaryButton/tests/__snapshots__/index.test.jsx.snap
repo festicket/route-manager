@@ -55,7 +55,7 @@ exports[`<PrimaryButton /> Snapshot Bordered 1`] = `
   variant="standard"
   weight="bold"
 >
-  <div
+  <span
     className="c2"
     size="regular"
   />
@@ -117,7 +117,7 @@ exports[`<PrimaryButton /> Snapshot Bordered Small 1`] = `
   variant="standard"
   weight="bold"
 >
-  <div
+  <span
     className="c2"
     size="small"
   />
@@ -177,7 +177,7 @@ exports[`<PrimaryButton /> Snapshot Default 1`] = `
   variant="standard"
   weight="bold"
 >
-  <div
+  <span
     className="c2"
     size="regular"
   />
@@ -235,7 +235,7 @@ exports[`<PrimaryButton /> Snapshot Default Button Element 1`] = `
   size="regular"
   to="#"
 >
-  <div
+  <span
     className="c2"
     size="regular"
   />
@@ -295,7 +295,7 @@ exports[`<PrimaryButton /> Snapshot Default Small 1`] = `
   variant="standard"
   weight="bold"
 >
-  <div
+  <span
     className="c2"
     size="small"
   />
@@ -356,7 +356,7 @@ exports[`<PrimaryButton /> Snapshot isDisabled 1`] = `
   variant="standard"
   weight="bold"
 >
-  <div
+  <span
     className="c2"
     size="regular"
   />
