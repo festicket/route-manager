@@ -11,7 +11,10 @@ storiesOf('Components / Text / HtmlWrapper', module)
   .add('Varied content', () => (
     <div>
       <Background.Documentation>
-        <p>Below this, expect a span containing an h2 and some paragraphs.</p>
+        <p>
+          Below this, expect a h1, some paragraphs, an ordered list, an
+          unordered list and links.
+        </p>
       </Background.Documentation>
       <Content>
         <HtmlWrapper htmlString={variedContent} />
