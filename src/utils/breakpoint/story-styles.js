@@ -1,7 +1,7 @@
 // @flow
 
 import styled from 'styled-components';
-import breakpoint from 'src/utils/breakpoint';
+import breakpoint, { media } from 'src/utils/breakpoint';
 
 export const WrapperHeading = styled.div`
   .current {
@@ -22,7 +22,7 @@ export const WrapperHeading = styled.div`
   }
 `;
 
-export const Wrapper = styled.div`
+const WrapperBase = styled.div`
   font-family: monospace;
   font-weight: 900;
   display: flex;
@@ -52,7 +52,9 @@ export const Wrapper = styled.div`
       };
     `};
   }
+`;
 
+export const WrapperBreakpoint = styled(WrapperBase)`
   ${breakpoint('xs')`
     .xs {
       background-color: green;
@@ -112,4 +114,66 @@ export const Wrapper = styled.div`
       background-color: green;
     }
   `};
+`;
+
+export const WrapperBreakpointMedia = styled(WrapperBase)`
+  ${media('media-xs')} {
+    .media-xs {
+      background-color: green;
+    }
+  }
+
+  ${media('media-sm')} {
+    .media-sm {
+      background-color: green;
+    }
+  }
+
+  ${media('media-md')} {
+    .media-md {
+      background-color: green;
+    }
+  }
+
+  ${media('media-lg')} {
+    .media-lg {
+      background-color: green;
+    }
+  }
+
+  ${media('media-from-sm')} {
+    .media-from-sm {
+      background-color: green;
+    }
+  }
+
+  ${media('media-from-md')} {
+    .media-from-md {
+      background-color: green;
+    }
+  }
+
+  ${media('media-from-lg')} {
+    .media-from-lg {
+      background-color: green;
+    }
+  }
+
+  ${media('media-to-sm')} {
+    .media-to-sm {
+      background-color: green;
+    }
+  }
+
+  ${media('media-to-md')} {
+    .media-to-md {
+      background-color: green;
+    }
+  }
+
+  ${media('media-to-lg')} {
+    .media-to-lg {
+      background-color: green;
+    }
+  }
 `;

@@ -38,7 +38,7 @@ const Button = styled.button\`
     background-color: blue; // background-color on xs
     \${breakpoint('from-sm')\`
       background-color: green; // background-color on small width and above
-    \`
+    \`};
   }
 \`
 ~~~
@@ -70,7 +70,26 @@ storiesOf('Utilities', module).add(
     propTables: null,
   })(() => (
     <div>
-      <Styles.Wrapper>
+      <Styles.WrapperBreakpointMedia>
+        <div>
+          <div className="media-xs">media(&apos;media-xs&apos;)</div>
+          <div className="media-sm">media(&apos;media-sm&apos;)</div>
+          <div className="media-md">media(&apos;media-md&apos;)</div>
+          <div className="media-lg">media(&apos;media-lg&apos;)</div>
+        </div>
+        <div>
+          <div className="media-from-sm">media(&apos;media-from-sm&apos;)</div>
+          <div className="media-from-md">media(&apos;media-from-md&apos;)</div>
+          <div className="media-from-lg">media(&apos;media-from-lg&apos;)</div>
+        </div>
+        <div>
+          <div className="media-to-sm">media(&apos;media-to-sm&apos;)</div>
+          <div className="media-to-md">media(&apos;media-to-md&apos;)</div>
+          <div className="media-to-lg">media(&apos;media-to-lg&apos;)</div>
+        </div>
+      </Styles.WrapperBreakpointMedia>
+      <br />
+      <Styles.WrapperBreakpoint>
         <div>
           <div className="xs">breakpoint(&apos;xs&apos;)</div>
           <div className="sm">breakpoint(&apos;sm&apos;)</div>
@@ -87,7 +106,7 @@ storiesOf('Utilities', module).add(
           <div className="to-md">breakpoint(&apos;to-md&apos;)</div>
           <div className="to-lg">breakpoint(&apos;to-lg&apos;)</div>
         </div>
-      </Styles.Wrapper>
+      </Styles.WrapperBreakpoint>
       <Styles.WrapperHeading>
         <p>
           Current Screen Breakpoint: <span className="current" />
