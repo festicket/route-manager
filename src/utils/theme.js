@@ -1,6 +1,6 @@
 // @flow
 
-import breakpoints from 'src/utils/breakpoints';
+import minWidths from 'src/utils/min-widths';
 
 export default {
   colors: {
@@ -38,7 +38,7 @@ export default {
     regular: '400',
     bold: '700',
   },
-  breakpoints, // breakpoints are only here for backwards compatibility
+  breakpoints: minWidths, // breakpoints are only here for backwards compatibility
   clipPath: {
     polygonBottomLarge: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)',
   },

@@ -1,8 +1,9 @@
 // @flow
 
-// Breakpoints are defined as a map of (name: minimum width)
+// minWidths defines the minimum widths of our responsive breakpoints
+// as a map of (name: minimum width)
 // https://zpl.io/25RJPjV
-const breakpoints = {
+const minWidths = {
   xs: 0, // officially we support a minimum width of 320px
   sm: 569,
   md: 769,
@@ -10,4 +11,4 @@ const breakpoints = {
   xlg: 1221, // DEPRECATED
 };
 
-export default breakpoints;
+export default minWidths;

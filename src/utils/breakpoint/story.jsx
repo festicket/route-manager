@@ -3,7 +3,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-import breakpoints from 'src/utils/breakpoints';
 
 import * as Styles from './story-styles';
 
@@ -43,28 +42,10 @@ const Button = styled.button\`
   }
 \`
 ~~~
-
----
-
-The breakpoints are exported as \`breakpoints\`. 
-They are based on minimum viewport widths. 
-
-~~~js
-breakpoints: {
-  // Extra small screen / phone
-  xs: ${breakpoints.xs}px,
-  // Small screen / phone
-  sm: ${breakpoints.sm}px,
-  // Medium screen / tablet
-  md: ${breakpoints.md}px,
-  // Large screen / desktop
-  lg: ${breakpoints.lg}px,
-};
-~~~
 `;
 
 // $FlowFixMe - Flow doesn't like addWithPercyOptions
-storiesOf('Utilities', module).addWithPercyOptions(
+storiesOf('Utilities / Responsive Utilities', module).addWithPercyOptions(
   'Breakpoint',
   { widths: [320, 568, 569, 768, 769, 960, 961] },
   withInfo({

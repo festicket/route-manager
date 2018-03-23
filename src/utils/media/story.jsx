@@ -4,8 +4,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
-import breakpoints from 'src/utils/breakpoints';
-
 import * as Styles from './story-styles';
 
 const info = `
@@ -39,33 +37,16 @@ import { media } from '@festicket/react-ui-components';
 
 const Button = styled.button\`
   .button {
-    \${breakpoint('from-sm')} { // line will render as: @media (min-width: 569px) {
+    \${media('from-sm')} { // line will render as: @media (min-width: 569px) {
       background-color: green;
     };
   }
 \`
 ~~~
-
----
-
-The breakpoints used are as follows. They are based on minimum viewport widths. 
-
-~~~js
-breakpoints: {
-  // Extra small screen / phone
-  xs: ${breakpoints.xs}px,
-  // Small screen / phone
-  sm: ${breakpoints.sm}px,
-  // Medium screen / tablet
-  md: ${breakpoints.md}px,
-  // Large screen / desktop
-  lg: ${breakpoints.lg}px,
-};
-~~~
 `;
 
 // $FlowFixMe - Flow doesn't like addWithPercyOptions
-storiesOf('Utilities', module).addWithPercyOptions(
+storiesOf('Utilities / Responsive Utilities', module).addWithPercyOptions(
   'Media',
   { widths: [320, 568, 569, 768, 769, 960, 961] },
   withInfo({
