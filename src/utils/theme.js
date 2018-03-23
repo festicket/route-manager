@@ -1,6 +1,6 @@
 // @flow
 
-import { breakpoints } from './breakpoint';
+import breakpoints from 'src/utils/breakpoints';
 
 export default {
   colors: {

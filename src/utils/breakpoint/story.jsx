@@ -3,7 +3,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-import { breakpoints } from './';
+import breakpoints from 'src/utils/breakpoints';
 
 import * as Styles from './story-styles';
 
@@ -12,42 +12,27 @@ const info = `
 
 The breakpoint utility provides a shorthand way to generate media queries in your css.
 
+Use the **media utility** instead for IDE syntax highlighting of nested CSS.
+
 The table below shows what screen sizes each function targets.
 
 function                  | xs | sm | md | lg |
 -|-|-|-|-|
-\`breakpoint('[media-]xs')\`      | 💯 |    |    |    |
-\`breakpoint('[media-]sm')\`      |    | 💯 |    |    |
-\`breakpoint('[media-]md')\`      |    |    | 💯 |    |
-\`breakpoint('[media-]lg')\`      |    |    |    | 💯 |
-\`breakpoint('[media-]from-sm')\` |    | 💯 | 💯 | 💯  |
-\`breakpoint('[media-]from-md')\` |    |    | 💯 | 💯 |
-\`breakpoint('[media-]from-lg')\` |    |    |    | 💯  |
-\`breakpoint('[media-]to-sm')\`   | 💯 |    |    |    |
-\`breakpoint('[media-]to-md')\`   | 💯 | 💯 |    |    |
-\`breakpoint('[media-]to-lg')\`   | 💯 | 💯 | 💯 |     |
+\`breakpoint('xs')\`      | 💯 |    |    |    |
+\`breakpoint('sm')\`      |    | 💯 |    |    |
+\`breakpoint('md')\`      |    |    | 💯 |    |
+\`breakpoint('lg')\`      |    |    |    | 💯 |
+\`breakpoint('from-sm')\` |    | 💯 | 💯 | 💯  |
+\`breakpoint('from-md')\` |    |    | 💯 | 💯 |
+\`breakpoint('from-lg')\` |    |    |    | 💯  |
+\`breakpoint('to-sm')\`   | 💯 |    |    |    |
+\`breakpoint('to-md')\`   | 💯 | 💯 |    |    |
+\`breakpoint('to-lg')\`   | 💯 | 💯 | 💯 |     |
 
 ---
 ## Usage Example (with Styled Components):
 
-Use the media prefix to only proved the media selector text inline in the code.
-The advantage of this approach is that you will get CSS syntax highlighting in your IDE.
-
-~~~js
-import { breakpoint } from '@festicket/react-ui-components';
-
-const Button = styled.button\`
-  .button {
-    \${breakpoint('from-sm')} { // line will render as: @media (min-width: 569px) {
-      background-color: green;
-    };
-  }
-\`
 ~~~
-
-Without the media prefix, it acts as a string interpolation function.
-
-~~~js
 import { breakpoint } from '@festicket/react-ui-components';
 
 const Button = styled.button\`
@@ -86,32 +71,7 @@ storiesOf('Utilities', module).add(
     propTables: null,
   })(() => (
     <div>
-      <Styles.WrapperBreakpointMedia>
-        <div>
-          <div className="media-xs">breakpoint(&apos;media-xs&apos;)</div>
-          <div className="media-sm">breakpoint(&apos;media-sm&apos;)</div>
-          <div className="media-md">breakpoint(&apos;media-md&apos;)</div>
-          <div className="media-lg">breakpoint(&apos;media-lg&apos;)</div>
-        </div>
-        <div>
-          <div className="media-from-sm">
-            breakpoint(&apos;media-from-sm&apos;)
-          </div>
-          <div className="media-from-md">
-            breakpoint(&apos;media-from-md&apos;)
-          </div>
-          <div className="media-from-lg">
-            breakpoint(&apos;media-from-lg&apos;)
-          </div>
-        </div>
-        <div>
-          <div className="media-to-sm">breakpoint(&apos;media-to-sm&apos;)</div>
-          <div className="media-to-md">breakpoint(&apos;media-to-md&apos;)</div>
-          <div className="media-to-lg">breakpoint(&apos;media-to-lg&apos;)</div>
-        </div>
-      </Styles.WrapperBreakpointMedia>
-      <br />
-      <Styles.WrapperBreakpoint>
+      <Styles.Wrapper>
         <div>
           <div className="xs">breakpoint(&apos;xs&apos;)</div>
           <div className="sm">breakpoint(&apos;sm&apos;)</div>
@@ -128,7 +88,7 @@ storiesOf('Utilities', module).add(
           <div className="to-md">breakpoint(&apos;to-md&apos;)</div>
           <div className="to-lg">breakpoint(&apos;to-lg&apos;)</div>
         </div>
-      </Styles.WrapperBreakpoint>
+      </Styles.Wrapper>
       <Styles.WrapperHeading>
         <p>
           Current Screen Breakpoint: <span className="current" />

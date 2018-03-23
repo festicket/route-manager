@@ -2,51 +2,11 @@
 
 import { css } from 'styled-components';
 
-// Breakpoints are defined as a map of (name: minimum width)
-// https://zpl.io/25RJPjV
-const bp = {
-  xs: 0, // officially we support a minimum width of 320px
-  sm: 569,
-  md: 769,
-  lg: 961,
-  xlg: 1221, // DEPRECATED
-};
-
-export const breakpoints = bp;
+import bp from 'src/utils/breakpoints';
 
 export default function breakpoint(label: string) {
   return (...args: any) => () => {
     switch (label) {
-      case 'media-xs':
-        return `@media (max-width: ${bp.sm - 1}px)`;
-
-      case 'media-sm':
-        return `@media (min-width: ${bp.sm}px) and (max-width: ${bp.md - 1}px)`;
-
-      case 'media-md':
-        return `@media (min-width: ${bp.md}px) and (max-width: ${bp.lg - 1}px)`;
-
-      case 'media-lg':
-        return `@media (min-width: ${bp.lg}px)`;
-
-      case 'media-to-sm':
-        return `@media (max-width: ${bp.sm - 1}px)`;
-
-      case 'media-to-md':
-        return `@media (max-width: ${bp.md - 1}px)`;
-
-      case 'media-to-lg':
-        return `@media (max-width: ${bp.lg - 1}px)`;
-
-      case 'media-from-sm':
-        return `@media (min-width: ${bp.sm}px)`;
-
-      case 'media-from-md':
-        return `@media (min-width: ${bp.md}px)`;
-
-      case 'media-from-lg':
-        return `@media (min-width: ${bp.lg}px)`;
-
       case 'xs':
         return css`
           @media (max-width: ${bp.sm - 1}px) {

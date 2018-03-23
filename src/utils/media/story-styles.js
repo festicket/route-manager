@@ -1,28 +1,28 @@
 // @flow
 
 import styled from 'styled-components';
-import breakpoint from 'src/utils/breakpoint';
+import media from 'src/utils/media';
 
 export const WrapperHeading = styled.div`
   .current {
     ::after {
-      ${breakpoint('xs')`
+      ${media('xs')} {
         content: 'xs';
-      `};
-      ${breakpoint('sm')`
+      }
+      ${media('sm')} {
         content: 'sm';
-      `};
-      ${breakpoint('md')`
+      }
+      ${media('md')} {
         content: 'md';
-      `};
-      ${breakpoint('lg')`
+      }
+      ${media('lg')} {
         content: 'lg';
-      `};
+      }
     }
   }
 `;
 
-export const Wrapper = styled.div`
+export const WrapperBase = styled.div`
   font-family: monospace;
   font-weight: 900;
   display: flex;
@@ -32,9 +32,9 @@ export const Wrapper = styled.div`
     display: flex;
     flex-basis: 100%;
 
-    ${breakpoint('to-md')`
+    ${media('to-md')} {
       flex-direction: column;
-    `};
+    }
   }
 
   > * > * {
@@ -46,70 +46,70 @@ export const Wrapper = styled.div`
     align-items: center;
     color: white;
 
-    ${breakpoint('from-md')`
+    ${media('from-md')} {
       &:not(:last-child) {
         margin-right: 10px;
-      };
-    `};
+      }
+    }
   }
 
-  ${breakpoint('xs')`
+  ${media('xs')} {
     .xs {
       background-color: green;
     }
-  `};
+  }
 
-  ${breakpoint('sm')`
+  ${media('sm')} {
     .sm {
       background-color: green;
     }
-  `};
+  }
 
-  ${breakpoint('md')`
+  ${media('md')} {
     .md {
       background-color: green;
     }
-  `};
+  }
 
-  ${breakpoint('lg')`
+  ${media('lg')} {
     .lg {
       background-color: green;
     }
-  `};
+  }
 
-  ${breakpoint('from-sm')`
+  ${media('from-sm')} {
     .from-sm {
       background-color: green;
     }
-  `};
+  }
 
-  ${breakpoint('from-md')`
+  ${media('from-md')} {
     .from-md {
       background-color: green;
     }
-  `};
+  }
 
-  ${breakpoint('from-lg')`
+  ${media('from-lg')} {
     .from-lg {
       background-color: green;
     }
-  `};
+  }
 
-  ${breakpoint('to-sm')`
+  ${media('to-sm')} {
     .to-sm {
       background-color: green;
     }
-  `};
+  }
 
-  ${breakpoint('to-md')`
+  ${media('to-md')} {
     .to-md {
       background-color: green;
     }
-  `};
+  }
 
-  ${breakpoint('to-lg')`
+  ${media('to-lg')} {
     .to-lg {
       background-color: green;
     }
-  `};
+  }
 `;
