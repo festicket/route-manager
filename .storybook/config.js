@@ -10,7 +10,7 @@ import createPercyAddon from '@percy-io/percy-storybook';
 import theme from 'src/utils/theme';
 
 import './fonts.css';
-import './global.css';
+import './reset.css';
 
 // Init percy io
 const { percyAddon, serializeStories } = createPercyAddon();
