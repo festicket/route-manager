@@ -3,7 +3,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-import theme from 'src/utils/theme';
+import { breakpoints } from './';
 
 import * as Styles from './story-styles';
 
@@ -16,28 +16,44 @@ The table below shows what screen sizes each function targets.
 
 function                  | xs | sm | md | lg |
 -|-|-|-|-|
-\`breakpoint('xs')\`      | 💯 |    |    |    |
-\`breakpoint('sm')\`      |    | 💯 |    |    |
-\`breakpoint('md')\`      |    |    | 💯 |    |
-\`breakpoint('lg')\`      |    |    |    | 💯 |
-\`breakpoint('from-sm')\` |    | 💯 | 💯 | 💯  |
-\`breakpoint('from-md')\` |    |    | 💯 | 💯 |
-\`breakpoint('from-lg')\` |    |    |    | 💯  |
-\`breakpoint('to-sm')\`   | 💯 |    |    |    |
-\`breakpoint('to-md')\`   | 💯 | 💯 |    |    |
-\`breakpoint('to-lg')\`   | 💯 | 💯 | 💯 |     |
+\`breakpoint('[media-]xs')\`      | 💯 |    |    |    |
+\`breakpoint('[media-]sm')\`      |    | 💯 |    |    |
+\`breakpoint('[media-]md')\`      |    |    | 💯 |    |
+\`breakpoint('[media-]lg')\`      |    |    |    | 💯 |
+\`breakpoint('[media-]from-sm')\` |    | 💯 | 💯 | 💯  |
+\`breakpoint('[media-]from-md')\` |    |    | 💯 | 💯 |
+\`breakpoint('[media-]from-lg')\` |    |    |    | 💯  |
+\`breakpoint('[media-]to-sm')\`   | 💯 |    |    |    |
+\`breakpoint('[media-]to-md')\`   | 💯 | 💯 |    |    |
+\`breakpoint('[media-]to-lg')\`   | 💯 | 💯 | 💯 |     |
 
 ---
 ## Usage Example (with Styled Components):
 
-~~~
-import { spacing, breakpoint } from '@festicket/react-ui-components';
+Use the media prefix to only proved the media selector text inline in the code.
+The advantage of this approach is that you will get CSS syntax highlighting in your IDE.
+
+~~~js
+import { breakpoint } from '@festicket/react-ui-components';
 
 const Button = styled.button\`
   .button {
-    background-color: blue; // background-color on xs
+    \${breakpoint('from-sm')} { // @media (min-width: 569px) {
+      background-color: green;
+    };
+  }
+\`
+~~~
+
+Without the media prefix, it acts as a string interpolation function.
+
+~~~js
+import { breakpoint } from '@festicket/react-ui-components';
+
+const Button = styled.button\`
+  .button {
     \${breakpoint('from-sm')\`
-      background-color: green; // background-color on small width and above
+      background-color: green;
     \`};
   }
 \`
@@ -45,19 +61,19 @@ const Button = styled.button\`
 
 ---
 
-The breakpoints that we use are defined in \`theme.js\`. 
+The breakpoints are exported as \`breakpoints\`. 
 They are based on minimum viewport widths. 
 
 ~~~js
-theme.breakpoints: {
+breakpoints: {
   // Extra small screen / phone
-  xs: ${theme.breakpoints.xs}px,
+  xs: ${breakpoints.xs}px,
   // Small screen / phone
-  sm: ${theme.breakpoints.sm}px,
+  sm: ${breakpoints.sm}px,
   // Medium screen / tablet
-  md: ${theme.breakpoints.md}px,
+  md: ${breakpoints.md}px,
   // Large screen / desktop
-  lg: ${theme.breakpoints.lg}px,
+  lg: ${breakpoints.lg}px,
 };
 ~~~
 `;
@@ -72,20 +88,26 @@ storiesOf('Utilities', module).add(
     <div>
       <Styles.WrapperBreakpointMedia>
         <div>
-          <div className="media-xs">media(&apos;media-xs&apos;)</div>
-          <div className="media-sm">media(&apos;media-sm&apos;)</div>
-          <div className="media-md">media(&apos;media-md&apos;)</div>
-          <div className="media-lg">media(&apos;media-lg&apos;)</div>
+          <div className="media-xs">breakpoint(&apos;media-xs&apos;)</div>
+          <div className="media-sm">breakpoint(&apos;media-sm&apos;)</div>
+          <div className="media-md">breakpoint(&apos;media-md&apos;)</div>
+          <div className="media-lg">breakpoint(&apos;media-lg&apos;)</div>
         </div>
         <div>
-          <div className="media-from-sm">media(&apos;media-from-sm&apos;)</div>
-          <div className="media-from-md">media(&apos;media-from-md&apos;)</div>
-          <div className="media-from-lg">media(&apos;media-from-lg&apos;)</div>
+          <div className="media-from-sm">
+            breakpoint(&apos;media-from-sm&apos;)
+          </div>
+          <div className="media-from-md">
+            breakpoint(&apos;media-from-md&apos;)
+          </div>
+          <div className="media-from-lg">
+            breakpoint(&apos;media-from-lg&apos;)
+          </div>
         </div>
         <div>
-          <div className="media-to-sm">media(&apos;media-to-sm&apos;)</div>
-          <div className="media-to-md">media(&apos;media-to-md&apos;)</div>
-          <div className="media-to-lg">media(&apos;media-to-lg&apos;)</div>
+          <div className="media-to-sm">breakpoint(&apos;media-to-sm&apos;)</div>
+          <div className="media-to-md">breakpoint(&apos;media-to-md&apos;)</div>
+          <div className="media-to-lg">breakpoint(&apos;media-to-lg&apos;)</div>
         </div>
       </Styles.WrapperBreakpointMedia>
       <br />

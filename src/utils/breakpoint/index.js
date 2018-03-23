@@ -14,8 +14,8 @@ const bp = {
 
 export const breakpoints = bp;
 
-export function media(label: string) {
-  return () => {
+export default function breakpoint(label: string) {
+  return (...args: any) => () => {
     switch (label) {
       case 'media-xs':
         return `@media (max-width: ${bp.sm - 1}px)`;
@@ -47,15 +47,6 @@ export function media(label: string) {
       case 'media-from-lg':
         return `@media (min-width: ${bp.lg}px)`;
 
-      default:
-        return null;
-    }
-  };
-}
-
-export default function breakpoint(label: string) {
-  return (...args: any) => () => {
-    switch (label) {
       case 'xs':
         return css`
           @media (max-width: ${bp.sm - 1}px) {

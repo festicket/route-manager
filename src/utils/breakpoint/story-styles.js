@@ -1,7 +1,7 @@
 // @flow
 
 import styled from 'styled-components';
-import breakpoint, { media } from 'src/utils/breakpoint';
+import breakpoint from 'src/utils/breakpoint';
 
 export const WrapperHeading = styled.div`
   .current {
@@ -117,61 +117,61 @@ export const WrapperBreakpoint = styled(WrapperBase)`
 `;
 
 export const WrapperBreakpointMedia = styled(WrapperBase)`
-  ${media('media-xs')} {
+  ${breakpoint('media-xs')} {
     .media-xs {
       background-color: green;
     }
   }
 
-  ${media('media-sm')} {
+  ${breakpoint('media-sm')} {
     .media-sm {
       background-color: green;
     }
   }
 
-  ${media('media-md')} {
+  ${breakpoint('media-md')} {
     .media-md {
       background-color: green;
     }
   }
 
-  ${media('media-lg')} {
+  ${breakpoint('media-lg')} {
     .media-lg {
       background-color: green;
     }
   }
 
-  ${media('media-from-sm')} {
+  ${breakpoint('media-from-sm')} {
     .media-from-sm {
       background-color: green;
     }
   }
 
-  ${media('media-from-md')} {
+  ${breakpoint('media-from-md')} {
     .media-from-md {
       background-color: green;
     }
   }
 
-  ${media('media-from-lg')} {
+  ${breakpoint('media-from-lg')} {
     .media-from-lg {
       background-color: green;
     }
   }
 
-  ${media('media-to-sm')} {
+  ${breakpoint('media-to-sm')} {
     .media-to-sm {
       background-color: green;
     }
   }
 
-  ${media('media-to-md')} {
+  ${breakpoint('media-to-md')} {
     .media-to-md {
       background-color: green;
     }
   }
 
-  ${media('media-to-lg')} {
+  ${breakpoint('media-to-lg')} {
     .media-to-lg {
       background-color: green;
     }

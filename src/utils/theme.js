@@ -38,7 +38,7 @@ export default {
     regular: '400',
     bold: '700',
   },
-  breakpoints, // these are here for backwards compatability
+  breakpoints, // breakpoints are only here for backwards compatibility
   clipPath: {
     polygonBottomLarge: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)',
   },
