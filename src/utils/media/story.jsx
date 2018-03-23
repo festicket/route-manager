@@ -64,8 +64,10 @@ breakpoints: {
 ~~~
 `;
 
-storiesOf('Utilities', module).add(
+// $FlowFixMe - Flow doesn't like addWithPercyOptions
+storiesOf('Utilities', module).addWithPercyOptions(
   'Media',
+  { widths: [320, 568, 569, 768, 769, 960, 961] },
   withInfo({
     text: info,
     source: false,
