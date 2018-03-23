@@ -38,7 +38,7 @@ import { breakpoint } from '@festicket/react-ui-components';
 
 const Button = styled.button\`
   .button {
-    \${breakpoint('from-sm')} { // @media (min-width: 569px) {
+    \${breakpoint('from-sm')} { // line will render as: @media (min-width: 569px) {
       background-color: green;
     };
   }
