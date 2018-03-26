@@ -8,6 +8,7 @@ import * as Styles from './story-styles';
 
 const info = `
 # breakpoint
+## Deprecated - use \`media\`
 
 The breakpoint utility provides a shorthand way to generate media queries in your css.
 
