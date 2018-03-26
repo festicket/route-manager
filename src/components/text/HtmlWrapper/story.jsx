@@ -2,18 +2,33 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Background } from 'src/utils/storybook-helpers';
+import { Background, Content } from 'src/utils/storybook-helpers';
 
 import HtmlWrapper from './';
-import { h2AndParagraphs, oneParagraph } from './tests/fixtures';
+import { h2AndParagraphs, oneParagraph, variedContent } from './tests/fixtures';
 
 storiesOf('Components / Text / HtmlWrapper', module)
+  .add('Varied content', () => (
+    <div>
+      <Background.Documentation>
+        <p>
+          Below this, expect a h1, some paragraphs, an ordered list, an
+          unordered list and links.
+        </p>
+      </Background.Documentation>
+      <Content>
+        <HtmlWrapper htmlString={variedContent} />
+      </Content>
+    </div>
+  ))
   .add('H2 and several paragraphs', () => (
     <div>
       <Background.Documentation>
         <p>Below this, expect a span containing an h2 and some paragraphs.</p>
       </Background.Documentation>
-      <HtmlWrapper htmlString={h2AndParagraphs} />
+      <Content>
+        <HtmlWrapper htmlString={h2AndParagraphs} />
+      </Content>
     </div>
   ))
   .add('One paragraph', () => (
@@ -21,6 +36,8 @@ storiesOf('Components / Text / HtmlWrapper', module)
       <Background.Documentation>
         <p>Below this, expect a span containing one paragraph.</p>
       </Background.Documentation>
-      <HtmlWrapper htmlString={oneParagraph} />
+      <Content>
+        <HtmlWrapper htmlString={oneParagraph} />
+      </Content>
     </div>
   ));

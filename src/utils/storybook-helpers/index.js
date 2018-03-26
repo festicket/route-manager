@@ -20,6 +20,14 @@ const WhiteBackground = styled.div`
   padding: 1em;
 `;
 
+/*
+  Use when creating a story for a component that is not designed to be
+  flush against the horizontal viewport
+*/
+export const Content = styled.div`
+  padding: 1em;
+`;
+
 /**
  * Use when adding documentation to the Storybook for a component
  */
