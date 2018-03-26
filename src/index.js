@@ -2,6 +2,8 @@
 
 // Utils
 export { default as breakpoint } from './utils/breakpoint';
+export { default as media } from './utils/media';
+export { default as minWidths } from './utils/min-widths';
 export { default as spacing } from './utils/spacing';
 export { default as theme } from './utils/theme';
 

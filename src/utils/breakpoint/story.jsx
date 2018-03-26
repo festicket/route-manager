@@ -3,14 +3,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-import theme from 'src/utils/theme';
 
 import * as Styles from './story-styles';
 
 const info = `
 # breakpoint
+## Deprecated - use \`media\`
 
 The breakpoint utility provides a shorthand way to generate media queries in your css.
+
+Use the **media utility** instead for IDE syntax highlighting of nested CSS.
 
 The table below shows what screen sizes each function targets.
 
@@ -31,39 +33,22 @@ function                  | xs | sm | md | lg |
 ## Usage Example (with Styled Components):
 
 ~~~
-import { spacing, breakpoint } from '@festicket/react-ui-components';
+import { breakpoint } from '@festicket/react-ui-components';
 
 const Button = styled.button\`
   .button {
-    background-color: blue; // background-color on xs
     \${breakpoint('from-sm')\`
-      background-color: green; // background-color on small width and above
-    \`
+      background-color: green;
+    \`};
   }
 \`
 ~~~
-
----
-
-The breakpoints that we use are defined in \`theme.js\`. 
-They are based on minimum viewport widths. 
-
-~~~js
-theme.breakpoints: {
-  // Extra small screen / phone
-  xs: ${theme.breakpoints.xs}px,
-  // Small screen / phone
-  sm: ${theme.breakpoints.sm}px,
-  // Medium screen / tablet
-  md: ${theme.breakpoints.md}px,
-  // Large screen / desktop
-  lg: ${theme.breakpoints.lg}px,
-};
-~~~
 `;
 
-storiesOf('Utilities', module).add(
+// $FlowFixMe - Flow doesn't like addWithPercyOptions
+storiesOf('Utilities / Responsive Utilities', module).addWithPercyOptions(
   'Breakpoint',
+  { widths: [320, 568, 569, 768, 769, 960, 961] },
   withInfo({
     text: info,
     source: false,
