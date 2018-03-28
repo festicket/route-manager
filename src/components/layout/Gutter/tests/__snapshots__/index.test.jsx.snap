@@ -11,8 +11,12 @@ exports[`<Gutter /> with initial props 1`] = `
   }
 }
 
-<Gutter>
-  <StyledGutter>
+<Gutter
+  variant="page"
+>
+  <StyledGutter
+    variant="page"
+  >
     <div
       className="c0"
     >

@@ -1,12 +1,16 @@
 // @flow
 
 import styled from 'styled-components';
-import breakpoint from 'src/utils/breakpoint';
+import { switchProp } from 'styled-tools';
+import media from 'src/utils/media';
 
 export const StyledGutter = styled.div`
   padding: 0 20px;
 
-  ${breakpoint('from-sm')`
-    padding: 0 50px;
-  `};
+  ${media('from-sm')} {
+    padding: ${switchProp('variant', {
+      page: '0 50px',
+      small: '0 25px',
+    })};
+  }
 `;
