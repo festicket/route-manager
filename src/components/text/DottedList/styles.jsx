@@ -16,7 +16,6 @@ export const List = styled.ul`
   list-style: none;
 `;
 
-// eslint-disable-next-line
 export const ListItem = styled.li`
   display: inline-block;
 
