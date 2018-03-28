@@ -5,11 +5,11 @@ import { StyledGutter } from './styles';
 
 type Props = {|
   children: React.Node,
-  variant: 'page' | 'small',
+  variant: 'default' | 'small',
 |};
 
 Gutter.defaultProps = {
-  variant: 'page',
+  variant: 'default',
 };
 
 export default function Gutter(props: Props) {

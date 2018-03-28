@@ -9,7 +9,7 @@ export const StyledGutter = styled.div`
 
   ${media('from-sm')} {
     padding: ${switchProp('variant', {
-      page: '0 50px',
+      default: '0 50px',
       small: '0 25px',
     })};
   }
