@@ -5,7 +5,7 @@ import * as React from 'react';
 
 import ChevronButton from 'src/components/buttonsRound/ChevronButton';
 import TertiaryHeading from 'src/components/text/TertiaryHeading';
-import { TitleRow, BodyWrapper } from './styles';
+import { StyledGutter, BodyWrapper } from './styles';
 
 type Props = {
   openInitially: boolean,
@@ -37,13 +37,17 @@ export default class Details extends React.Component<Props, State> {
   render() {
     return (
       <div>
-        <TitleRow open={this.state.open} onClick={this.toggleOpen}>
+        <StyledGutter
+          variant="small"
+          open={this.state.open}
+          onClick={this.toggleOpen}
+        >
           <TertiaryHeading element="h3">{this.props.title}</TertiaryHeading>
           <ChevronButton
             element="button"
             direction={this.state.open ? 'up' : 'down'}
           />
-        </TitleRow>
+        </StyledGutter>
         <BodyWrapper open={this.state.open}>{this.props.children}</BodyWrapper>
       </div>
     );
