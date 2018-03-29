@@ -39,7 +39,7 @@ export default class Details extends React.Component<Props, State> {
     return (
       <div>
         <StyledButton onClick={this.toggleOpen}>
-          <StyledGutter open={this.state.open} variant="small">
+          <StyledGutter variant="small">
             <TertiaryHeading element="h3">{this.props.title}</TertiaryHeading>
             <ChevronButton
               element="button"

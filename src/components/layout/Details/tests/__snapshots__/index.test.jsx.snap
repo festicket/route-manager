@@ -133,7 +133,6 @@ exports[`<Details /> with initial props 1`] = `
   >
     <div
       className="c1 c2"
-      open={false}
     >
       <h3
         className="c3"
@@ -314,7 +313,6 @@ exports[`<Details /> with openInitially prop 1`] = `
   >
     <div
       className="c1 c2"
-      open={true}
     >
       <h3
         className="c3"
