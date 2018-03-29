@@ -5,55 +5,8 @@ exports[`<Details /> with initial props 1`] = `
   padding: 0 20px;
 }
 
-.c8 {
+.c6 {
   fill: #A2A4AD;
-}
-
-.c5 {
-  border: none;
-  outline: none;
-  margin: 0;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c4 {
-  display: inline-block;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 50%;
-  padding: 0;
-  cursor: pointer;
-  background-color: #F5F5F5;
-}
-
-.c4:hover {
-  background-color: rgba(36,37,41,0.1);
-  color: #9497a1;
-}
-
-.c4 .c6 {
-  width: 28px;
-  height: 28px;
 }
 
 .c3 {
@@ -66,6 +19,25 @@ exports[`<Details /> with initial props 1`] = `
   line-height: 20px;
 }
 
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+}
+
 .c0 {
   display: inline-block;
   background: transparent;
@@ -75,6 +47,11 @@ exports[`<Details /> with initial props 1`] = `
   width: 100%;
   -webkit-text-align: left;
   text-align: left;
+}
+
+.c0:hover .c4 {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
 }
 
 .c1 {
@@ -95,7 +72,7 @@ exports[`<Details /> with initial props 1`] = `
   padding-bottom: 20px;
 }
 
-.c9 {
+.c7 {
   display: none;
 }
 
@@ -140,32 +117,25 @@ exports[`<Details /> with initial props 1`] = `
       >
         Lorem ipsum dolor sit amet
       </h3>
-      <button
-        aria-disabled={undefined}
+      <div
         className="c4 c5"
-        disabled={undefined}
-        size="regular"
       >
-        <div
-          className="c6 c7"
+        <svg
+          className="c6"
+          color="grey"
+          height={18}
+          viewBox="0 0 18 18"
+          width={18}
         >
-          <svg
-            className="c8"
-            color="grey"
-            height={18}
-            viewBox="0 0 18 18"
-            width={18}
-          >
-            <path
-              d="M14.7 5.8L9 11.4 3.3 5.8 1.9 7.2l7.1 7 7.1-7z"
-            />
-          </svg>
-        </div>
-      </button>
+          <path
+            d="M14.7 5.8L9 11.4 3.3 5.8 1.9 7.2l7.1 7 7.1-7z"
+          />
+        </svg>
+      </div>
     </div>
   </button>
   <div
-    className="c9"
+    className="c7"
     open={false}
   >
     <div
@@ -185,55 +155,8 @@ exports[`<Details /> with openInitially prop 1`] = `
   padding: 0 20px;
 }
 
-.c8 {
+.c6 {
   fill: #A2A4AD;
-}
-
-.c5 {
-  border: none;
-  outline: none;
-  margin: 0;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c4 {
-  display: inline-block;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 50%;
-  padding: 0;
-  cursor: pointer;
-  background-color: #F5F5F5;
-}
-
-.c4:hover {
-  background-color: rgba(36,37,41,0.1);
-  color: #9497a1;
-}
-
-.c4 .c6 {
-  width: 28px;
-  height: 28px;
 }
 
 .c3 {
@@ -246,6 +169,25 @@ exports[`<Details /> with openInitially prop 1`] = `
   line-height: 20px;
 }
 
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+}
+
 .c0 {
   display: inline-block;
   background: transparent;
@@ -255,6 +197,11 @@ exports[`<Details /> with openInitially prop 1`] = `
   width: 100%;
   -webkit-text-align: left;
   text-align: left;
+}
+
+.c0:hover .c4 {
+  background-color: rgba(36,37,41,0.1);
+  color: #9497a1;
 }
 
 .c1 {
@@ -275,7 +222,7 @@ exports[`<Details /> with openInitially prop 1`] = `
   padding-bottom: 20px;
 }
 
-.c9 {
+.c7 {
   display: block;
 }
 
@@ -320,32 +267,25 @@ exports[`<Details /> with openInitially prop 1`] = `
       >
         Lorem ipsum dolor sit amet
       </h3>
-      <button
-        aria-disabled={undefined}
+      <div
         className="c4 c5"
-        disabled={undefined}
-        size="regular"
       >
-        <div
-          className="c6 c7"
+        <svg
+          className="c6"
+          color="grey"
+          height={18}
+          viewBox="0 0 18 18"
+          width={18}
         >
-          <svg
-            className="c8"
-            color="grey"
-            height={18}
-            viewBox="0 0 18 18"
-            width={18}
-          >
-            <path
-              d="M3.3 13.2L9 7.6l5.7 5.6 1.4-1.4-7.1-7-7.1 7z"
-            />
-          </svg>
-        </div>
-      </button>
+          <path
+            d="M3.3 13.2L9 7.6l5.7 5.6 1.4-1.4-7.1-7-7.1 7z"
+          />
+        </svg>
+      </div>
     </div>
   </button>
   <div
-    className="c9"
+    className="c7"
     open={true}
   >
     <div

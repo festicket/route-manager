@@ -1,9 +1,21 @@
 // @flow
 
 import styled from 'styled-components';
-import { ifProp } from 'styled-tools';
+import { ifProp, prop } from 'styled-tools';
+import { darken, rgba } from 'polished';
 import Gutter from 'src/components/layout/Gutter';
 import media from 'src/utils/media';
+
+// align the chevron and add a grey background
+export const ChevronBackground = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: ${prop('theme.colors.greyscale.grey')};
+`;
 
 // reset styles for the button
 export const StyledButton = styled.button`
@@ -14,6 +26,11 @@ export const StyledButton = styled.button`
   outline: 0;
   width: 100%;
   text-align: left;
+
+  &:hover ${ChevronBackground} {
+    background-color: ${({ theme }) => rgba(theme.colors.greyscale.black, 0.1)};
+    color: ${({ theme }) => darken(0.05, theme.colors.greyscale.dark)};
+  }
 `;
 
 export const StyledGutter = styled(Gutter)`
