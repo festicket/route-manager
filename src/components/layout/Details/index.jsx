@@ -3,9 +3,16 @@
 
 import * as React from 'react';
 
-import ChevronButton from 'src/components/buttonsRound/ChevronButton';
+import ChevronUp from 'src/components/svgs/generated/functional/ChevronUp';
+import ChevronDown from 'src/components/svgs/generated/functional/ChevronDown';
 import TertiaryHeading from 'src/components/text/TertiaryHeading';
-import { TitleRow, BodyWrapper } from './styles';
+import Gutter from 'src/components/layout/Gutter';
+import {
+  StyledButton,
+  StyledGutter,
+  ChevronBackground,
+  BodyWrapper,
+} from './styles';
 
 type Props = {
   openInitially: boolean,
@@ -37,14 +44,21 @@ export default class Details extends React.Component<Props, State> {
   render() {
     return (
       <div>
-        <TitleRow open={this.state.open} onClick={this.toggleOpen}>
-          <TertiaryHeading element="h3">{this.props.title}</TertiaryHeading>
-          <ChevronButton
-            element="button"
-            direction={this.state.open ? 'up' : 'down'}
-          />
-        </TitleRow>
-        <BodyWrapper open={this.state.open}>{this.props.children}</BodyWrapper>
+        <StyledButton onClick={this.toggleOpen}>
+          <StyledGutter variant="small">
+            <TertiaryHeading element="h3">{this.props.title}</TertiaryHeading>
+            <ChevronBackground>
+              {this.state.open ? (
+                <ChevronUp color="grey" />
+              ) : (
+                <ChevronDown color="grey" />
+              )}
+            </ChevronBackground>
+          </StyledGutter>
+        </StyledButton>
+        <BodyWrapper open={this.state.open}>
+          <Gutter variant="small">{this.props.children}</Gutter>
+        </BodyWrapper>
       </div>
     );
   }

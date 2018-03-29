@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ChevronButton /> as anchor 1`] = `
-.c4 {
-  fill: #A2A4AD;
-}
-
 .c1 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #8C64CB;
+}
+
+.c4 {
+  fill: #A2A4AD;
 }
 
 .c3 {
@@ -79,14 +79,14 @@ exports[`<ChevronButton /> as anchor 1`] = `
 `;
 
 exports[`<ChevronButton /> as button 1`] = `
-.c4 {
-  fill: #A2A4AD;
-}
-
 .c1 {
   border: none;
   outline: none;
   margin: 0;
+}
+
+.c4 {
+  fill: #A2A4AD;
 }
 
 .c3 {
