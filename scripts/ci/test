@@ -2,5 +2,5 @@
 
 set -ex
 
-docker run -it --rm react-ui-components \
+docker run -it --rm route-manager \
   npm run test

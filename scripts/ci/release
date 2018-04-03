@@ -14,7 +14,7 @@ mkdir dist
 docker run -it --rm \
   --user root \
   -v $(pwd):/mnt/assets \
-  react-ui-components \
+  route-manager \
   cp -r dist/ /mnt/assets
 
 

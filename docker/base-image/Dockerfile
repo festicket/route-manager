@@ -44,9 +44,6 @@ RUN npm run flow:typed
 # Build our assets
 RUN npm run build
 
-# Build our storybook so we can publish it later
-RUN npm run build-storybook
-
 # Make sure festicket user owns: ALL OF THE THINGS
 RUN chown -R festicket:festicket /home/festicket
 

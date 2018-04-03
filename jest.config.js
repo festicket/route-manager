@@ -5,7 +5,7 @@ module.exports = {
   snapshotSerializers: ['enzyme-to-json/serializer'],
   setupTestFrameworkScriptFile: '<rootDir>/setupTests.js',
   moduleNameMapper: {
-    '@festicket/react-ui-components': `<rootDir>/${
+    '@festicket/route-manager': `<rootDir>/${
       SEMAPHORE_SERVER_NAME ? 'dist' : 'src'
     }/index.js`,
   },

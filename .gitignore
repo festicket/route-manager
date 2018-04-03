@@ -17,8 +17,5 @@ yarn.lock
 # Tern - code-analysis engine for JavaScript
 .tern-port
 
-cypress/screenshots
-cypress/videos
-
 # Ignore the folder where we put the fonts so they are kept out of version control.
 /fonts
