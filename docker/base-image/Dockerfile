@@ -26,16 +26,12 @@ COPY .babelrc \
      .eslintignore \
      .eslintrc \
      .flowconfig \
-     cypress.json \
      jest.config.js \
      setupTests.js \
      ./
 
 # Copy our application code across
-COPY ./.storybook .storybook
 COPY ./scripts scripts
-COPY ./svgs svgs
-COPY ./cypress cypress
 COPY ./src src
 
 # Generate our type files
