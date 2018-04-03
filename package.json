@@ -61,6 +61,7 @@
     "jest": "^22.1.4",
     "jest-enzyme": "^4.0.2",
     "lint-staged": "^6.0.1",
+    "prettier": "^1.11.1",
     "prop-types": "^15.6.0",
     "semantic-release": "^12.4.1"
   },
