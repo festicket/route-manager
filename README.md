@@ -75,3 +75,6 @@ const patterns = getAllPatterns();
 // reutrns => { home: '/', search: '/search', foo: '/baz/:bar1/:bar2' }
 
 ```
+
+---
+[![Build Status](https://semaphoreci.com/api/v1/festicketci/route-manager/branches/master/badge.svg)](https://semaphoreci.com/festicketci/route-manager)
