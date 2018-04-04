@@ -1,6 +1,6 @@
 // @flow
 
-import routing from '../';
+import routing from './';
 
 const config = {
   home: '/',
