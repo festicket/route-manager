@@ -1,11 +1,9 @@
 /node_modules
 /.DS_Store
 *.log
-/flow-typed
 /dist
 **/.DS_Store
 /public
-/storybook-static
 
 # Yalc - https://github.com/whitecolor/yalc#keep-it-out-of-git
 yalc.lock
@@ -16,6 +14,3 @@ yarn.lock
 
 # Tern - code-analysis engine for JavaScript
 .tern-port
-
-# Ignore the folder where we put the fonts so they are kept out of version control.
-/fonts
