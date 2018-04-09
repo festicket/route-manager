@@ -1,4 +1,7 @@
-# Festicket Route Manager
+# Route Manager
+
+[![Build Status](https://semaphoreci.com/api/v1/festicketci/route-manager/branches/master/badge.svg)](https://semaphoreci.com/festicketci/route-manager)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 This router utility generates all the different route configurations required by our stack (React Router, Express routing etc.) and URLs.
 
@@ -75,6 +78,3 @@ const patterns = getAllPatterns();
 // reutrns => { home: '/', search: '/search', foo: '/baz/:bar1/:bar2' }
 
 ```
-
----
-[![Build Status](https://semaphoreci.com/api/v1/festicketci/route-manager/branches/master/badge.svg)](https://semaphoreci.com/festicketci/route-manager)
