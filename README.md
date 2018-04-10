@@ -16,7 +16,7 @@ Url definitions are comprised of key/value pairs:
 
 import routing from '@festicket/route-manager';
 
-export const { getUrl, getPath, getAllPatterns } = routing({
+export const { getUrl, getPattern, getAllPatterns } = routing({
   home: '/',
   search: '/search',
   foo: '/baz`/:bar1/:bar2',
@@ -66,12 +66,12 @@ const complexPattern = getPattern('foo');
 
 ```
 
-### getPatterns
+### getAllPatterns
 
 We can get all patterns (usefull for debugging) by calling `getAllPatterns`:
 
 ```js
-import { getAllPattern } from 'app/utils/route-config'
+import { getAllPatterns } from 'app/utils/route-config'
 
 const patterns = getAllPatterns();
 
