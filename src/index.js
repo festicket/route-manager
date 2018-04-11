@@ -14,7 +14,7 @@ export default function routing(config: Config) {
   const getUrl = function(
     key: string,
     params?: { [string]: string },
-    queryStrings?: { [string]: string },
+    queryStrings?: { [string]: mixed },
   ): string {
     const path = paths[key](params);
     if (queryStrings) {

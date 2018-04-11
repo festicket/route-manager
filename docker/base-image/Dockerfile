@@ -33,9 +33,7 @@ COPY .babelrc \
 # Copy our application code across
 COPY ./scripts scripts
 COPY ./src src
-
-# Generate our type files
-RUN npm run flow:typed
+COPY ./flow-typed flow-typed
 
 # Build our assets
 RUN npm run build
