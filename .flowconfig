@@ -3,8 +3,6 @@
 <PROJECT_ROOT>/node_modules/config-chain/.*
 <PROJECT_ROOT>/commitlint\.config\.js
 <PROJECT_ROOT>/jest\.config\.js
-<PROJECT_ROOT>/rollup\.config\.js
-<PROJECT_ROOT>/setupTests\.js
 
 [include]
 
