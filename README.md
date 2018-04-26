@@ -9,17 +9,17 @@ This router utility generates all the different route configurations required by
 
 ### URL definitions
 
-Url definitions are comprised of key/value pairs:
+URL definitions are comprised of key/value pairs:
 
 ```js
 // app/utils/route-config.js
 
 import routing from '@festicket/route-manager';
 
-export const { getUrl, getPath, getAllPatterns } = routing({
+export const { getUrl, getPattern, getAllPatterns } = routing({
   home: '/',
   search: '/search',
-  foo: '/baz`/:bar1/:bar2',
+  foo: '/baz/:bar1/:bar2',
 });
 ```
 
@@ -28,7 +28,7 @@ export const { getUrl, getPath, getAllPatterns } = routing({
  We can generate URLs by referring to them using the format `key`:
 
  ```js
-import { getUrl } from 'app/utils/route-config'
+import { getUrl } from 'app/utils/route-config';
 
 // Generate a simple url with no route params
 
@@ -50,11 +50,11 @@ const searchUrl = getUrl('search', {}, {q: 'something'});
 
 ### getPattern
 
-We can generate url Patterns by referring to them by `key`:
+We can generate URL patterns by referring to them by `key`:
 
 
 ```js
-import { getPattern } from 'app/utils/route-config'
+import { getPattern } from 'app/utils/route-config';
 
 // Generate the home pattern
 
@@ -66,15 +66,15 @@ const complexPattern = getPattern('foo');
 
 ```
 
-### getPatterns
+### getAllPatterns
 
-We can get all patterns (usefull for debugging) by calling `getAllPatterns`:
+We can get all patterns (useful for debugging) by calling `getAllPatterns`:
 
 ```js
-import { getAllPattern } from 'app/utils/route-config'
+import { getAllPatterns } from 'app/utils/route-config';
 
 const patterns = getAllPatterns();
 
-// reutrns => { home: '/', search: '/search', foo: '/baz/:bar1/:bar2' }
+// returns => { home: '/', search: '/search', foo: '/baz/:bar1/:bar2' }
 
 ```
