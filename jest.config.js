@@ -2,7 +2,6 @@
 const { SEMAPHORE_SERVER_NAME } = process.env;
 
 module.exports = {
-  setupTestFrameworkScriptFile: '<rootDir>/setupTests.js',
   moduleNameMapper: {
     '@festicket/route-manager': `<rootDir>/${
       SEMAPHORE_SERVER_NAME ? 'dist' : 'src'

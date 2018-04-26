@@ -1,6 +1,0 @@
-#! /bin/bash
-
-set -ex
-
-docker run -it --rm route-manager \
-  npm run lint
