@@ -80,11 +80,6 @@ We can get named params as an object by calling `getParams`:
 ```js
 import { getParams } from 'app/utils/route-config';
 
-// the first argument is the path and the second is the pattern
-
-const params = getParams(
-  'festivals/creamfields/2018/shop',
-  '/festivals/:festivalSeries/:festivalEdition/shop'
-);
+const params = getParams('festivals/creamfields/2018/shop');
 // returns => { festivalSeries: 'creamfields', festivalEdition: '2018' }
 ```
