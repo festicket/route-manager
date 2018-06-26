@@ -45,7 +45,7 @@ export default function routing(config: Config) {
     return paramKeys.reduce(
       (params, currentParam, index) => ({
         ...params,
-        // the first paramsArray item is the path, so start at index = 1
+        // the first paramsArray item is the path, so start at index === 1
         [currentParam.name]: paramsArray[index + 1],
       }),
       {},
