@@ -19,15 +19,15 @@ import routing from '@festicket/route-manager';
 export const { getUrl, getPattern, getAllPatterns } = routing({
   home: '/',
   search: '/search',
-  foo: '/baz/:bar1/:bar2',
+  foo: '/baz/:bar1/:bar2'
 });
 ```
 
 ### getUrl
 
- We can generate URLs by referring to them using the format `key`:
+We can generate URLs by referring to them using the format `key`:
 
- ```js
+```js
 import { getUrl } from 'app/utils/route-config';
 
 // Generate a simple url with no route params
@@ -42,16 +42,13 @@ const complexUrl = getUrl('foo', { bar1: 'test-1', bar2: 'test-2' });
 
 // Generate a url with a query
 
-const searchUrl = getUrl('search', {}, {q: 'something'});
+const searchUrl = getUrl('search', {}, { q: 'something' });
 // returns => '/search?q=something'
-
- ```
-
+```
 
 ### getPattern
 
 We can generate URL patterns by referring to them by `key`:
-
 
 ```js
 import { getPattern } from 'app/utils/route-config';
@@ -63,7 +60,6 @@ const homePattern = getPattern('home');
 
 const complexPattern = getPattern('foo');
 // returns /baz/:bar1/bar2
-
 ```
 
 ### getAllPatterns
@@ -74,7 +70,21 @@ We can get all patterns (useful for debugging) by calling `getAllPatterns`:
 import { getAllPatterns } from 'app/utils/route-config';
 
 const patterns = getAllPatterns();
-
 // returns => { home: '/', search: '/search', foo: '/baz/:bar1/:bar2' }
+```
 
+### getParams
+
+We can get named params as an object by calling `getParams`:
+
+```js
+import { getParams } from 'app/utils/route-config';
+
+// the first argument is the path and the second is the pattern
+
+const params = getParams(
+  'festivals/creamfields/2018/shop',
+  '/festivals/:festivalSeries/:festivalEdition/shop'
+);
+// returns => { festivalSeries: 'creamfields', festivalEdition: '2018' }
 ```
