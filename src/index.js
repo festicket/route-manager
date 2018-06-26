@@ -31,11 +31,17 @@ export default function routing(config: Config) {
     return config;
   };
 
-  const getParams = function(path: string, pattern: string): Object {
+  const getParams = function(path: string): Object {
+    const pattern = Object.keys(config).find(patternKey =>
+      pathToRegexp(config[patternKey]).exec(path),
+    );
+
+    if (!pattern) {
+      return {};
+    }
+
     const paramKeys = [];
-    // the second argument should be an empty array to be filled with keys for parameters
-    const patternRegex = pathToRegexp(pattern, paramKeys);
-    const paramsArray = patternRegex.exec(path);
+    const paramsArray = pathToRegexp(config[pattern], paramKeys).exec(path);
     return paramKeys.reduce(
       (params, currentParam, index) => ({
         ...params,

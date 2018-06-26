@@ -49,20 +49,20 @@ describe('getAllPatterns function', () => {
 
 describe('getParams function', () => {
   test('should return an object with the correct params when there are only named params', () => {
-    expect(getParams('/value1/value2', config.justParams)).toEqual({
+    expect(getParams('/value1/value2')).toEqual({
       param1: 'value1',
       param2: 'value2',
     });
   });
 
   test('should return an object with the correct params when there are named and unnamed params', () => {
-    expect(getParams('/complex/value1/value2', config.complex)).toEqual({
+    expect(getParams('/complex/value1/value2')).toEqual({
       param1: 'value1',
       param2: 'value2',
     });
   });
 
   test('should return an empty object when there are no named params', () => {
-    expect(getParams('/search', config.search)).toEqual({});
+    expect(getParams('/search')).toEqual({});
   });
 });
