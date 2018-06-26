@@ -31,9 +31,25 @@ export default function routing(config: Config) {
     return config;
   };
 
+  const getParams = function(path: string, pattern: string): Object {
+    const paramKeys = [];
+    // the second argument should be an empty array to be filled with keys for parameters
+    const patternRegex = pathToRegexp(pattern, paramKeys);
+    const paramsArray = patternRegex.exec(path);
+    return paramKeys.reduce(
+      (params, currentParam, index) => ({
+        ...params,
+        // the first paramsArray item is the path, so start at index = 1
+        [currentParam.name]: paramsArray[index + 1],
+      }),
+      {},
+    );
+  };
+
   return {
     getUrl,
     getPattern,
     getAllPatterns,
+    getParams,
   };
 }
