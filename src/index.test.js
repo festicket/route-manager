@@ -63,6 +63,6 @@ describe('getParams function', () => {
   });
 
   test('should return an empty object when there are no named params', () => {
-    expect(getParams('/complex/value1/value2', config.search)).toEqual({});
+    expect(getParams('/search', config.search)).toEqual({});
   });
 });
