@@ -5,10 +5,11 @@ import routing from './';
 const config = {
   home: '/',
   search: '/search',
+  justParams: '/:param1/:param2',
   complex: '/complex/:param1/:param2',
 };
 
-const { getPattern, getUrl, getAllPatterns } = routing(config);
+const { getPattern, getUrl, getAllPatterns, getParams } = routing(config);
 
 describe('getUrl function', () => {
   test('getUrl with no route params', () => {
@@ -43,5 +44,25 @@ describe('getPattern function', () => {
 describe('getAllPatterns function', () => {
   test('getPattern returns config object', () => {
     expect(getAllPatterns()).toBe(config);
+  });
+});
+
+describe('getParams function', () => {
+  test('should return an object with the correct params when there are only named params', () => {
+    expect(getParams('/value1/value2')).toEqual({
+      param1: 'value1',
+      param2: 'value2',
+    });
+  });
+
+  test('should return an object with the correct params when there are named and unnamed params', () => {
+    expect(getParams('/complex/value1/value2')).toEqual({
+      param1: 'value1',
+      param2: 'value2',
+    });
+  });
+
+  test('should return an empty object when there are no named params', () => {
+    expect(getParams('/search')).toEqual({});
   });
 });
