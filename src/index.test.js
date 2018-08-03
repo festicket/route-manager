@@ -39,11 +39,22 @@ describe('getPattern function', () => {
   test('getPattern for url with params', () => {
     expect(getPattern('complex')).toBe('/complex/:param1/:param2');
   });
+  test('getPattern should not return a leading slash if a relative pattern is required', () => {
+    expect(getPattern('complex', true)).toBe('complex/:param1/:param2');
+  });
 });
 
 describe('getAllPatterns function', () => {
   test('getPattern returns config object', () => {
-    expect(getAllPatterns()).toBe(config);
+    expect(getAllPatterns()).toEqual(config);
+  });
+  test('getPattern should not return a leading slash if a relative pattern is required', () => {
+    expect(getAllPatterns(true)).toEqual({
+      home: '/',
+      search: 'search',
+      justParams: ':param1/:param2',
+      complex: 'complex/:param1/:param2',
+    });
   });
 });
 
