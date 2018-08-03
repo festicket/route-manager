@@ -62,6 +62,14 @@ const complexPattern = getPattern('foo');
 // returns /baz/:bar1/bar2
 ```
 
+If you need a relative url you can pass a param to `getPattern`:
+
+```js
+const complexPattern = getPattern('foo', true);
+// returns baz/:bar1/bar2
+```
+
+
 ### getAllPatterns
 
 We can get all patterns (useful for debugging) by calling `getAllPatterns`:
@@ -71,6 +79,13 @@ import { getAllPatterns } from 'app/utils/route-config';
 
 const patterns = getAllPatterns();
 // returns => { home: '/', search: '/search', foo: '/baz/:bar1/:bar2' }
+```
+
+If you need a relative url you can pass a param to `getAllPatterns`:
+
+```js
+const patterns = getAllPatterns(true);
+// returns => { home: '/', search: 'search', foo: 'baz/:bar1/:bar2' }
 ```
 
 ### getParams

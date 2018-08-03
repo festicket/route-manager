@@ -23,11 +23,24 @@ export default function routing(config: Config) {
     return path;
   };
 
-  const getPattern = function(key: string): string {
-    return config[key];
+  const getPattern = function(key: string, relative?: boolean): string {
+    const pattern = config[key];
+    if (relative && pattern.startsWith('/') && pattern.length > 1) {
+      return pattern.substring(1);
+    }
+    return pattern;
   };
 
-  const getAllPatterns = function(): Config {
+  const getAllPatterns = function(relative?: boolean): Config {
+    if (relative) {
+      return Object.keys(config).reduce(
+        (accumulator, current) => ({
+          ...accumulator,
+          [current]: getPattern(current, true),
+        }),
+        {},
+      );
+    }
     return config;
   };
 
