@@ -25,7 +25,7 @@ export default function routing(config: Config) {
 
   const getPattern = function(key: string, relative?: boolean): string {
     const pattern = config[key];
-    if (relative && pattern.startsWith('/') && pattern.length > 1) {
+    if (relative && pattern.charAt(0) === '/' && pattern.length > 1) {
       return pattern.substring(1);
     }
     return pattern;
