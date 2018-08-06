@@ -11,11 +11,11 @@ export default function routing(config: Config) {
     paths[key] = pathToRegexp.compile(config[key]);
   });
 
-  const getUrl = function(
+  const getUrl = (
     key: string,
     params?: { [string]: string },
     queryStrings?: { [string]: mixed },
-  ): string {
+  ): string => {
     const path = paths[key](params);
     if (queryStrings) {
       return `${path}?${qs.stringify(queryStrings)}`;
@@ -23,7 +23,7 @@ export default function routing(config: Config) {
     return path;
   };
 
-  const getPattern = function(key: string, relative?: boolean): string {
+  const getPattern = (key: string, relative?: boolean): string => {
     const pattern = config[key];
     if (relative && pattern.charAt(0) === '/' && pattern.length > 1) {
       return pattern.substring(1);
@@ -31,7 +31,7 @@ export default function routing(config: Config) {
     return pattern;
   };
 
-  const getAllPatterns = function(relative?: boolean): Config {
+  const getAllPatterns = (relative?: boolean): Config => {
     if (relative) {
       return Object.keys(config).reduce(
         (accumulator, current) => ({
@@ -44,7 +44,7 @@ export default function routing(config: Config) {
     return config;
   };
 
-  const getParams = function(path: string): Object {
+  const getParams = (path: string): Object => {
     const pattern = Object.keys(config).find(patternKey =>
       pathToRegexp(config[patternKey]).exec(path),
     );
