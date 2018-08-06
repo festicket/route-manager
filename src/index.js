@@ -23,20 +23,28 @@ export default function routing(config: Config) {
     return path;
   };
 
-  const getPattern = (key: string, relative?: boolean): string => {
+  const getPattern = (
+    key: string,
+    options?: { relative?: boolean },
+  ): string => {
     const pattern = config[key];
-    if (relative && pattern.charAt(0) === '/' && pattern.length > 1) {
+    if (
+      options &&
+      options.relative &&
+      pattern.charAt(0) === '/' &&
+      pattern.length > 1
+    ) {
       return pattern.substring(1);
     }
     return pattern;
   };
 
-  const getAllPatterns = (relative?: boolean): Config => {
-    if (relative) {
+  const getAllPatterns = (options?: { relative?: boolean }): Config => {
+    if (options && options.relative) {
       return Object.keys(config).reduce(
         (accumulator, current) => ({
           ...accumulator,
-          [current]: getPattern(current, true),
+          [current]: getPattern(current, { relative: true }),
         }),
         {},
       );

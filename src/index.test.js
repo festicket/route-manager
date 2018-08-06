@@ -40,7 +40,9 @@ describe('getPattern function', () => {
     expect(getPattern('complex')).toBe('/complex/:param1/:param2');
   });
   test('getPattern should not return a leading slash if a relative pattern is required', () => {
-    expect(getPattern('complex', true)).toBe('complex/:param1/:param2');
+    expect(getPattern('complex', { relative: true })).toBe(
+      'complex/:param1/:param2',
+    );
   });
 });
 
@@ -49,7 +51,7 @@ describe('getAllPatterns function', () => {
     expect(getAllPatterns()).toEqual(config);
   });
   test('getPattern should not return a leading slash if a relative pattern is required', () => {
-    expect(getAllPatterns(true)).toEqual({
+    expect(getAllPatterns({ relative: true })).toEqual({
       home: '/',
       search: 'search',
       justParams: ':param1/:param2',
