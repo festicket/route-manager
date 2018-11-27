@@ -1,4 +1,4 @@
-// flow-typed signature: 43f5fee6aa6e6d65ce649fbc4b4f35a1
+// flow-typed signature: d838873420e1101c21feda0e591f403b
 // flow-typed version: <<STUB>>/eslint-plugin-import_v^2.8.0/flow_v0.63.1
 
 /**
@@ -75,6 +75,10 @@ declare module 'eslint-plugin-import/lib/index' {
 }
 
 declare module 'eslint-plugin-import/lib/rules/default' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-import/lib/rules/dynamic-import-chunkname' {
   declare module.exports: any;
 }
 
@@ -186,6 +190,10 @@ declare module 'eslint-plugin-import/lib/rules/no-nodejs-modules' {
   declare module.exports: any;
 }
 
+declare module 'eslint-plugin-import/lib/rules/no-relative-parent-imports' {
+  declare module.exports: any;
+}
+
 declare module 'eslint-plugin-import/lib/rules/no-restricted-paths' {
   declare module.exports: any;
 }
@@ -269,6 +277,9 @@ declare module 'eslint-plugin-import/lib/index.js' {
 declare module 'eslint-plugin-import/lib/rules/default.js' {
   declare module.exports: $Exports<'eslint-plugin-import/lib/rules/default'>;
 }
+declare module 'eslint-plugin-import/lib/rules/dynamic-import-chunkname.js' {
+  declare module.exports: $Exports<'eslint-plugin-import/lib/rules/dynamic-import-chunkname'>;
+}
 declare module 'eslint-plugin-import/lib/rules/export.js' {
   declare module.exports: $Exports<'eslint-plugin-import/lib/rules/export'>;
 }
@@ -349,6 +360,9 @@ declare module 'eslint-plugin-import/lib/rules/no-namespace.js' {
 }
 declare module 'eslint-plugin-import/lib/rules/no-nodejs-modules.js' {
   declare module.exports: $Exports<'eslint-plugin-import/lib/rules/no-nodejs-modules'>;
+}
+declare module 'eslint-plugin-import/lib/rules/no-relative-parent-imports.js' {
+  declare module.exports: $Exports<'eslint-plugin-import/lib/rules/no-relative-parent-imports'>;
 }
 declare module 'eslint-plugin-import/lib/rules/no-restricted-paths.js' {
   declare module.exports: $Exports<'eslint-plugin-import/lib/rules/no-restricted-paths'>;
