@@ -17,17 +17,17 @@ describe('getUrl function', () => {
   });
   test('getUrl with route params', () => {
     expect(getUrl('complex', { param1: 'test-1', param2: 'test-2' })).toBe(
-      '/complex/test-1/test-2',
+      '/complex/test-1/test-2'
     );
   });
   test('getUrl with a query', () => {
     expect(getUrl('search', {}, { q: 'something' })).toBe(
-      '/search?q=something',
+      '/search?q=something'
     );
   });
   test('getUrl with multiple queries', () => {
     expect(getUrl('search', {}, { q: 'something', foo: 'bar' })).toBe(
-      '/search?foo=bar&q=something',
+      '/search?foo=bar&q=something'
     );
   });
 });

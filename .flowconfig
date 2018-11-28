@@ -1,6 +1,7 @@
 [ignore]
 <PROJECT_ROOT>/dist/.*
 <PROJECT_ROOT>/node_modules/config-chain/.*
+<PROJECT_ROOT>/node_modules/npm/node_modules/config-chain/.*
 <PROJECT_ROOT>/commitlint\.config\.js
 <PROJECT_ROOT>/jest\.config\.js
 

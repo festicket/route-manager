@@ -28,26 +28,22 @@
     ]
   },
   "dependencies": {
-    "babel-preset-es2015": "^6.24.1",
-    "esm": "^3.0.2",
     "path-to-regexp": "^2.2.0",
     "query-string": "^5.1.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-flow": "^7.0.0",
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-angular": "^6.0.2",
     "@festicket/eslint-config": "^1.1.5",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.2",
-    "babel-jest": "^22.1.0",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-module-resolver": "^3.1.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-flow": "^6.23.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-import-resolver-babel-module": "^4.0.0",
@@ -62,10 +58,10 @@
     "folder-module": "^2.0.4",
     "glow": "^1.2.2",
     "husky": "^0.14.3",
-    "jest": "^22.1.4",
+    "jest": "^23.6.0",
     "lint-staged": "^6.0.1",
     "prettier": "^1.11.1",
-    "semantic-release": "^12.4.1"
+    "semantic-release": "^15.12.2"
   },
   "browserslist": [
     "last 3 Chrome versions",

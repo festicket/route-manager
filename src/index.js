@@ -14,7 +14,7 @@ export default function routing(config: Config) {
   const getUrl = function(
     key: string,
     params?: { [string]: string },
-    queryStrings?: { [string]: mixed },
+    queryStrings?: { [string]: mixed }
   ): string {
     const path = paths[key](params);
     if (queryStrings) {
@@ -38,7 +38,7 @@ export default function routing(config: Config) {
           ...accumulator,
           [current]: getPattern(current, true),
         }),
-        {},
+        {}
       );
     }
     return config;
@@ -46,7 +46,7 @@ export default function routing(config: Config) {
 
   const getParams = function(path: string): Object {
     const pattern = Object.keys(config).find(patternKey =>
-      pathToRegexp(config[patternKey]).exec(path),
+      pathToRegexp(config[patternKey]).exec(path)
     );
 
     if (!pattern) {
@@ -61,7 +61,7 @@ export default function routing(config: Config) {
         // the first paramsArray item is the path, so start at index === 1
         [currentParam.name]: paramsArray[index + 1],
       }),
-      {},
+      {}
     );
   };
 
