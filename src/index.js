@@ -65,10 +65,21 @@ export default function routing(config: Config) {
     );
   };
 
+  const getPatternFromUrl = function(path: string) {
+    const key = Object.keys(config).find(patternKey =>
+      pathToRegexp(config[patternKey]).exec(path)
+    );
+    if (key) {
+      return config[key];
+    }
+    return '';
+  };
+
   return {
     getUrl,
     getPattern,
     getAllPatterns,
     getParams,
+    getPatternFromUrl,
   };
 }
