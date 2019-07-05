@@ -6,10 +6,17 @@ const config = {
   home: '/',
   search: '/search',
   justParams: '/:param1/:param2',
+  staticValue: '/complex/staticvalue/:param2',
   complex: '/complex/:param1/:param2',
 };
 
-const { getPattern, getUrl, getAllPatterns, getParams } = routing(config);
+const {
+  getPattern,
+  getUrl,
+  getAllPatterns,
+  getParams,
+  getPatternFromUrl,
+} = routing(config);
 
 describe('getUrl function', () => {
   test('getUrl with no route params', () => {
@@ -53,6 +60,7 @@ describe('getAllPatterns function', () => {
       home: '/',
       search: 'search',
       justParams: ':param1/:param2',
+      staticValue: 'complex/staticvalue/:param2',
       complex: 'complex/:param1/:param2',
     });
   });
@@ -75,5 +83,20 @@ describe('getParams function', () => {
 
   test('should return an empty object when there are no named params', () => {
     expect(getParams('/search')).toEqual({});
+  });
+});
+
+describe('getPatternFromUrl', () => {
+  test('should return the correct url patterns based on the path', () => {
+    expect(getPatternFromUrl('/complex/staticvalue/param2')).toEqual(
+      '/complex/staticvalue/:param2'
+    );
+    expect(getPatternFromUrl('/complex/somerandomvalue/param2')).toEqual(
+      '/complex/:param1/:param2'
+    );
+  });
+
+  test('should return empty string if there is no matching pattern', () => {
+    expect(getPatternFromUrl('/random1/random2/random3')).toEqual('');
   });
 });
